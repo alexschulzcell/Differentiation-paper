@@ -1,0 +1,12 @@
+71_check_references.py -- two-way cross-check
+  references in the list    : 48
+  citations in running text : 47 (46 distinct)
+
+(a) References NOT cited in the text
+    none -- every reference is cited.
+
+(b) Citations in the text WITHOUT an entry in the list
+    none -- every citation has an entry.
+
+
+=== 0 open items in the cross-check ===

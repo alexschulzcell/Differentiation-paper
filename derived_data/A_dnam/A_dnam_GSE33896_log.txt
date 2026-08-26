@@ -1,0 +1,50 @@
+==============================================================================
+Ebene A -- DNA-Methylierung, GSE33896 (27K, hASC -> Osteozyt / Myozyt)
+==============================================================================
+Sonden in der Serienmatrix: 27578 | Proben: 16
+
+Proben nach Ausschluss von Zelllinien und ungepaarten Primaerproben:
+  GSM838506    Donor 1  naiv    hASC1
+  GSM838507    Donor 2  naiv    hASC2
+  GSM838508    Donor 3  naiv    hASC3
+  GSM838510    Donor 1  osteo   DIF.O1
+  GSM838511    Donor 2  osteo   DIF.O2
+  GSM838512    Donor 3  osteo   DIF.O3
+  GSM838513    Donor 1  myo     DIF.M1
+  GSM838514    Donor 2  myo     DIF.M2
+  GSM838515    Donor 3  myo     DIF.M3
+  ausgeschlossen (7): hASC5, MG-63, TE 32.T, RD, NPT.O1, NPT.M1, NPT.M2
+
+Beta-Werte: 27578 Sonden x 9 Proben, 0.04 % fehlend
+Sonden mit Genzuordnung: 27551 auf 14476 Symbolen
+davon promotornah (|d(TSS)| <= 1500 bp): 26929 Sonden auf 14472 Symbolen
+
+--- Abdeckung des festen 173-Gen-Moduls auf dem 27K-Array ---------
+abgedeckt: 126 von 173 (72.8 %)
+
+--- Achse: osteogen (Zielachse) -------------------------------------------
+Gene mit promotornaher Messung: 14472
+globaler Drift (Median delta beta ueber alle Gene): +0.0058
+Modulgene messbar: 126 | konkordant: 44 (0.349, Wilson 0.272-0.436)
+Null (Hintergrundziehung, gleiche Vorzeichenmenge): 0.367 +- 0.040
+z = -0.46 | p = 1 | MDE80-Schwelle = 0.478
+stetig (vorzeichenbehafteter Rang): +0.0142, z +0.56, p 0.5757
+Schwelle erreicht: nein
+
+--- Achse: myogen (Linienkontrolle) -------------------------------------------
+Gene mit promotornaher Messung: 14472
+globaler Drift (Median delta beta ueber alle Gene): -0.0083
+Modulgene messbar: 126 | konkordant: 67 (0.532, Wilson 0.445-0.617)
+Null (Hintergrundziehung, gleiche Vorzeichenmenge): 0.604 +- 0.041
+z = -1.76 | p = 1 | MDE80-Schwelle = 0.720
+stetig (vorzeichenbehafteter Rang): -0.0391, z -1.51, p 1
+Schwelle erreicht: nein
+
+--- Osteogen gegen myogen, dieselben Donoren, dieselben Gene ------
+mittlerer erwartungsgerichteter delta beta: osteo -0.0043 gegen myo +0.0060
+Wilcoxon gepaart ueber 126 Modulgene: W 2774, p 0.002824
+
+Hinweis zur Lesart: die myogene Achse ist keine Negativkontrolle im
+strengen Sinn -- sie teilt mit der osteogenen den Austritt aus dem
+naiven Zustand. Sie trennt nur zwischen 'Differenzierung ueberhaupt'
+und 'osteogene Differenzierung'.

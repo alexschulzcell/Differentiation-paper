@@ -1,0 +1,36 @@
+==============================================================================
+Die eingebaute Eichung auf den 18 Perturbationsdatensaetzen
+Regel unveraendert aus PRAEREG_M_D.md §6
+==============================================================================
+   1  LAMA5-KO (chondr)            chondrogen  chondrogen  Kontrast  +1.765 | z  +2.67 | p   0.0051 -> BESTANDEN
+   2  LAMA5-KO (osteo)             osteogen    osteogen    Kontrast  -0.100 | z  -0.21 | p        1 -> DURCHGEFALLEN
+   3  FN1 FNC123R                  chondrogen  chondrogen  Kontrast  +0.275 | z  +0.71 | p   0.4803 -> DURCHGEFALLEN
+   4  FN1 FNC231W                  chondrogen  chondrogen  Kontrast  +0.173 | z  +0.42 | p   0.6803 -> DURCHGEFALLEN
+   5  SERPINA3-KD                  chondrogen  chondrogen  Kontrast    +nan | z   +nan | p      nan -> DURCHGEFALLEN
+   6  MIR181A1HG-KD                osteogen    osteogen    Kontrast  -0.214 | z  -0.69 | p        1 -> DURCHGEFALLEN
+   7  LINC01638-KD (GSE227512)     osteogen    osteogen    Kontrast  -0.120 | z  -0.32 | p        1 -> DURCHGEFALLEN
+   8  ARSB / MPS VI (GSE218101)    chondrogen  chondrogen  Kontrast  +0.342 | z  +0.83 | p   0.4101 -> DURCHGEFALLEN
+   9  ACVR1 / FOP (GSE221128)      chondrogen  chondrogen  Kontrast  +0.606 | z  +1.90 | p   0.0574 -> DURCHGEFALLEN
+  10  RNF4-KD (GSE205432)          osteogen    osteogen    Kontrast  -0.174 | z  -0.83 | p        1 -> DURCHGEFALLEN
+  11  RB1 +/- (GSE245585)          osteogen    osteogen    Kontrast  -0.431 | z  -1.03 | p        1 -> DURCHGEFALLEN
+  12  Nonunion (GSE226565)         osteogen    osteogen    Kontrast  -0.103 | z  -0.57 | p        1 -> DURCHGEFALLEN
+  13  SERPINA3-KD osteo (GSE247528 osteogen    osteogen    Kontrast  -0.458 | z  -0.77 | p        1 -> DURCHGEFALLEN
+  14  ERCC6L2-KD (GSE190542)       osteogen    osteogen    Kontrast  +0.716 | z  +2.13 | p    0.034 -> BESTANDEN
+  15  TP53 LFS (GSE102732)         osteogen    osteogen    Kontrast  -0.084 | z  -0.33 | p        1 -> DURCHGEFALLEN
+  16  YAP/TAZ-KD (GSE137035)       osteogen    osteogen    Kontrast  +0.056 | z  +0.26 | p   0.7944 -> DURCHGEFALLEN
+  17  RB1-mut isogen (GSE145235)   osteogen    osteogen    Kontrast  +0.628 | z  +1.93 | p   0.0539 -> DURCHGEFALLEN
+  18  RB1-del isogen (GSE145235)   osteogen    osteogen    Kontrast  +0.468 | z  +1.39 | p   0.1636 -> DURCHGEFALLEN
+
+------------------------------------------------------------------------------
+STUDIENEBENE (18 Perturbationsdatensaetze): 2 von 18 bestanden, 16 durchgefallen (89 %)
+   davon chondrogen  1 von 6 bestanden
+   davon osteogen    1 von 12 bestanden
+
+SPENDEREBENE (14 Phase-D-Zellen): 7 von 14 bestanden, 7 durchgefallen (50 %)
+
+ZUSAMMEN: 23 von 32 Eichungsversuchen durchgefallen (72 %).
+ACHTUNG: das sind KEINE 32 unabhaengigen Experimente. Alle sechs
+Studieneinheiten der Phase D stecken auch in den 18; die beiden
+Zaehlungen unterscheiden sich in der AUFLOESUNG, nicht im Material.
+Die belastbare Kopfzahl ist die Studienebene: 16 von 18.
+------------------------------------------------------------------------------

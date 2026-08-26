@@ -1,0 +1,24 @@
+route,gse,kandidat,art,candidate_units,status,n_units,effect_type,effect,null_mean,null_sd,mde80,p_perm,z,reachable_lt_1.0,final_verdict
+A,GSE185951,hMSC Osteogenese 5 Donoren D0/D7/D14,bulk RNA-seq,5,ausgewertet,5.0,share,0.861271676300578,0.5015635838150289,0.2507774307294759,1.2037403898575612,0.1877,1.434371870862579,False,unter Schwelle
+A,GSE161176,BMSC chondrogene Differenzierung TGF-B1 21d,bulk RNA-seq,3,ausgewertet,3.0,share,0.6588235294117647,0.4972435294117646,0.170546513448347,0.9747737670671364,0.7427,0.947424821140875,True,unter Schwelle
+A,GSE113253,Primary stromal cells WAT/MUS/BM Osteo 9d,bulk RNA-seq,3,ausgewertet,9.0,share,0.824,0.49854,0.209937980831434,1.086366346328015,0.0468,1.550267363299651,False,unter Schwelle
+A,GSE210984,MSC Chondrogenese C7/C14/C21/MSC,bulk RNA-seq,unklar,ausgewertet,3.0,share,0.7803468208092486,0.5010526011560694,0.2097342503422441,1.0883085021143528,0.2492,1.3316576534229727,False,unter Schwelle
+A,GSE202080,MSC/OB aus 12 Zellquellen,bulk RNA-seq,1,ausgewertet,11.0,share,0.8670520231213873,0.4989884393063583,0.2326305688859746,1.150354032187087,0.0824,1.582180646239307,False,unter Schwelle
+A,GSE37521,Dermis/Adipose MSC Osteo/Adipo 3 Protokolle,bulk RNA-seq,2,ausgewertet,2.0,share,0.3619631901840491,0.4075337423312883,0.1564530069768956,0.8456021618665961,1.0,-0.291273098726501,True,nicht konfirmatorisch wegen n
+A,GSE159140,MSCORS Osteogenese W1/W2/W3,bulk RNA-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+A,GSE54461,Calvaria Osteoblasten Maus,bulk RNA-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+A,GSE225530,BMSC frueh/spaet Passage + Reanalyse GSE109503,bulk RNA-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+A,GSE200492,iPSC-MSC->OB,bulk RNA-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+A,GSE113253_TERT4,BM-hMSC-TERT4/AT-TERT Phaenom,bulk+ChIP+DNase,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+B,GSE125166,hMSC ChIP naiv vs D3 osteogen (ControlSi),ChIP-seq,3,ausgewertet,3.0,share,0.7034883720930233,0.5011738372093023,0.1373320465075254,0.8857035674303734,0.2492,1.473177892769804,True,unter Schwelle
+B,GSE151315,hMSC ChIP H3K27ac/H3K4me1 naiv vs AC vs OB,ChIP-seq,2,ausgewertet_deskriptiv,,,,,,,,,,nicht konfirmatorisch wegen n
+B,GSE151311,hMSC ATAC AC vs OB,ATAC-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+B,GSE108301,OA Knieknorpel oLT/iMT,ATAC-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+B,GSE318537,hFOB Zelllinie ATAC D0/D2/D4/D10,ATAC-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+C,GSE220162,12 ASC-Donoren high/low osteogen,RNA-seq,12,ausgewertet,12.0,abs_rho,0.3379631847096873,0.245095729596961,0.1806543908652353,0.7509280240196201,0.3122,0.5140614333697735,True,unter Schwelle
+D,GSE286540,SCAP Simvastatin vs Kontrolle,RNA-seq,3,ausgewertet,3.0,share,0.5780346820809249,0.4882468208092484,0.0829762891843175,0.7205804305253376,0.4973,1.08209058460337,True,unter Schwelle
+D,GSE266257,SHED Pi vs Kontrolle,RNA-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+D,GSE226406,Osteoblasten WT vs LFS + U2OS p53,RNA-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+D,GSE318199,hBMSC Kontrolle vs H2O2,RNA-seq,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+Ref,GSE241130,-,-,-,ausgeschlossen,,,,,,,,,,ausgeschlossen
+Ref,GSE288316,-,-,-,ausgeschlossen,,,,,,,,,,ausgeschlossen

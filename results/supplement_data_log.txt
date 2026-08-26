@@ -1,0 +1,40 @@
+==============================================================================
+51_supplement_data.py -- supplement panels and tables
+==============================================================================
+
+S1 -- scale critique
+  S1A_baseline_expression                  105 rows x  7 cols  median z vs median baseline shift per GO set
+  S1B_sensitivity                          920 rows x  7 cols  which additive offset the statistic recovers
+  S1C_neutral_contrast                     520 rows x  8 cols  null rate of the statistic, self test
+  S1D_convergence_curve                     10 rows x  8 cols  convergent genes vs noise floor -- the step function
+
+S4 -- patient vs control (downgraded)
+  S4A_patient_calibration                    7 rows x 11 cols  gate B is withdrawn -- two cohorts were calibrated against NAIVE
+  S4B_patient_concordance                    7 rows x 12 cols  0 of 7 cohorts above their own limit
+
+S5 -- robustness (supplement)
+  S5B_self_test                              8 rows x  7 cols  null rate of the metric in the donor set-up
+
+S7 / S8 -- screening and day zero
+  S7B_screen_diagnoses_full                127 rows x 12 cols  all 127 hand checks
+  S7C_screen_by_design                      29 rows x  5 cols  screening along the design
+  S8B_cells_day_zero                        14 rows x 16 cols  module value at day 0 per cell
+
+Supplementary tables TS1..TS13
+  TS1_eighteen_datasets                     18 rows x  8 cols  accessions and design
+  TS2_screen_exclusion_codes                75 rows x  5 cols  all screened series
+  TS3_calibrations                          32 rows x 13 cols  study level 2/18, donor level 7/14 passed
+  TS4_module_genes                         173 rows x  6 cols  173 genes, 129 up and 44 down
+  TS5_in_vivo_per_zone_and_specimen         66 rows x 12 cols  cell count, module value and positive control per (zone, sample)
+  TS6_panels_and_classes                    42 rows x  5 cols  mapping of panel genes to classes
+  TS7_all_statistics                       159 rows x 22 cols  every test statistic with its detection limit
+  TS8_preregistrations                      35 rows x  3 cols  35 documents in preregistrations/
+  TS9_gene_sets_v2                          14 rows x 16 cols  6 categories x up to 3 sets, decision rule code/24_gene_sets_v2.R
+  TS9b_gene_sets_v2_module_genes            68 rows x  4 cols  module genes per category and set
+  TS10_decomposition_eighteen               36 rows x 28 cols  18 datasets x 2 gene maps, with rule application per point
+  TS11_in_vivo_gene_decomposition            5 rows x 15 cols  trend after removing the largest |Delta|, 0/5/10/20/30 %
+  TS11b_in_vivo_gene_ranking               173 rows x  7 cols  173 module genes by |Delta| hyper minus mesCond
+  TS13_in_vivo_hypertrophic_sensitivity      6 rows x 14 cols  trend without HyperChon (rule) and without Hyper+Prehyper (descriptive)
+  TS12_primary_publications                 30 rows x 13 cols  28 series, 28 publication rows, 2 unpublished (cited via the accession)
+
+numpy 2.4.4 | pandas 3.0.1 | python 3.12.10

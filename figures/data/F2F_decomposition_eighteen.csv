@@ -1,0 +1,73 @@
+dataset_id,dataset,arm,quantity,z,calibration,verdict,decomposable
+1,"LAMA5-KO, chondrogenic (E-MTAB-16566)",chondrogenic,undifferentiated markers,-2.518237642622107,passed,"decoupling, the other case (lineage reached)",True
+1,"LAMA5-KO, chondrogenic (E-MTAB-16566)",chondrogenic,own-lineage markers,2.674449558579953,passed,"decoupling, the other case (lineage reached)",True
+1,"LAMA5-KO, chondrogenic (E-MTAB-16566)",chondrogenic,adipogenic markers,-1.1042255960480485,passed,"decoupling, the other case (lineage reached)",True
+1,"LAMA5-KO, chondrogenic (E-MTAB-16566)",chondrogenic,the module,11.004848100488973,passed,"decoupling, the other case (lineage reached)",True
+2,"LAMA5-KO, osteogenic (E-MTAB-16566)",osteogenic,undifferentiated markers,-2.5004920937305117,failed,decomposition confirmed,True
+2,"LAMA5-KO, osteogenic (E-MTAB-16566)",osteogenic,own-lineage markers,-0.2064745913203871,failed,decomposition confirmed,True
+2,"LAMA5-KO, osteogenic (E-MTAB-16566)",osteogenic,adipogenic markers,1.3153286852080723,failed,decomposition confirmed,True
+2,"LAMA5-KO, osteogenic (E-MTAB-16566)",osteogenic,the module,11.400013440877425,failed,decomposition confirmed,True
+3,FN1 C123R (GSE251698),chondrogenic,undifferentiated markers,0.2818963460303331,failed,not decomposable,False
+3,FN1 C123R (GSE251698),chondrogenic,own-lineage markers,0.7110591257456714,failed,not decomposable,False
+3,FN1 C123R (GSE251698),chondrogenic,adipogenic markers,-1.7529068530301757,failed,not decomposable,False
+3,FN1 C123R (GSE251698),chondrogenic,the module,12.798465683606894,failed,not decomposable,False
+4,FN1 C231W (GSE251698),chondrogenic,undifferentiated markers,0.4443685780031741,failed,not decomposable,False
+4,FN1 C231W (GSE251698),chondrogenic,own-lineage markers,0.4201054207211432,failed,not decomposable,False
+4,FN1 C231W (GSE251698),chondrogenic,adipogenic markers,-2.0122723447626862,failed,not decomposable,False
+4,FN1 C231W (GSE251698),chondrogenic,the module,12.798465683606894,failed,not decomposable,False
+5,"SERPINA3-KD, chondrogenic (GSE247491)",chondrogenic,undifferentiated markers,,not calibratable,not decomposable,False
+5,"SERPINA3-KD, chondrogenic (GSE247491)",chondrogenic,own-lineage markers,,not calibratable,not decomposable,False
+5,"SERPINA3-KD, chondrogenic (GSE247491)",chondrogenic,adipogenic markers,-0.3426332583269901,not calibratable,not decomposable,False
+5,"SERPINA3-KD, chondrogenic (GSE247491)",chondrogenic,the module,5.252155437733982,not calibratable,not decomposable,False
+6,MIR181A1HG-KD (GSE184087),osteogenic,undifferentiated markers,-3.66721780017829,failed,decomposition confirmed,True
+6,MIR181A1HG-KD (GSE184087),osteogenic,own-lineage markers,-0.6948337415253439,failed,decomposition confirmed,True
+6,MIR181A1HG-KD (GSE184087),osteogenic,adipogenic markers,3.1831597802036757,failed,decomposition confirmed,True
+6,MIR181A1HG-KD (GSE184087),osteogenic,the module,12.158090992881238,failed,decomposition confirmed,True
+7,LINC01638-KD (GSE227512),osteogenic,undifferentiated markers,-3.172568979043915,failed,decomposition confirmed,True
+7,LINC01638-KD (GSE227512),osteogenic,own-lineage markers,-0.3189921901136188,failed,decomposition confirmed,True
+7,LINC01638-KD (GSE227512),osteogenic,adipogenic markers,2.9238418239318187,failed,decomposition confirmed,True
+7,LINC01638-KD (GSE227512),osteogenic,the module,11.351203054026596,failed,decomposition confirmed,True
+8,ARSB / MPS VI (GSE218101),chondrogenic,undifferentiated markers,0.0962678956632851,failed,not decomposable,False
+8,ARSB / MPS VI (GSE218101),chondrogenic,own-lineage markers,0.8263015012108242,failed,not decomposable,False
+8,ARSB / MPS VI (GSE218101),chondrogenic,adipogenic markers,-0.4016510310921204,failed,not decomposable,False
+8,ARSB / MPS VI (GSE218101),chondrogenic,the module,8.084964153597172,failed,not decomposable,False
+9,ACVR1 / FOP (GSE221128),chondrogenic,undifferentiated markers,-2.4997054795400837,failed,decomposition confirmed,True
+9,ACVR1 / FOP (GSE221128),chondrogenic,own-lineage markers,1.9012222217326216,failed,decomposition confirmed,True
+9,ACVR1 / FOP (GSE221128),chondrogenic,adipogenic markers,-0.3974774171951686,failed,decomposition confirmed,True
+9,ACVR1 / FOP (GSE221128),chondrogenic,the module,10.239901742897224,failed,decomposition confirmed,True
+10,RNF4-KD (GSE205432),osteogenic,undifferentiated markers,0.6673120192132309,failed,not decomposable,False
+10,RNF4-KD (GSE205432),osteogenic,own-lineage markers,-0.8324970528892498,failed,not decomposable,False
+10,RNF4-KD (GSE205432),osteogenic,adipogenic markers,1.3255035001986455,failed,not decomposable,False
+10,RNF4-KD (GSE205432),osteogenic,the module,11.30119727741911,failed,not decomposable,False
+11,RB1 +/- (GSE245585),osteogenic,undifferentiated markers,-0.7063607406193453,failed,not decomposable,False
+11,RB1 +/- (GSE245585),osteogenic,own-lineage markers,-1.0295292584886364,failed,not decomposable,False
+11,RB1 +/- (GSE245585),osteogenic,adipogenic markers,4.097072549279878,failed,not decomposable,False
+11,RB1 +/- (GSE245585),osteogenic,the module,8.128288023682671,failed,not decomposable,False
+12,Nonunion (GSE226565),osteogenic,undifferentiated markers,-2.409380534905304,failed,decomposition confirmed,True
+12,Nonunion (GSE226565),osteogenic,own-lineage markers,-0.5743634065761964,failed,decomposition confirmed,True
+12,Nonunion (GSE226565),osteogenic,adipogenic markers,3.837177528150961,failed,decomposition confirmed,True
+12,Nonunion (GSE226565),osteogenic,the module,13.097688169352676,failed,decomposition confirmed,True
+13,"SERPINA3-KD, osteogenic (GSE247528)",osteogenic,undifferentiated markers,,failed,not decomposable,False
+13,"SERPINA3-KD, osteogenic (GSE247528)",osteogenic,own-lineage markers,-0.7738569627300452,failed,not decomposable,False
+13,"SERPINA3-KD, osteogenic (GSE247528)",osteogenic,adipogenic markers,2.707079205901183,failed,not decomposable,False
+13,"SERPINA3-KD, osteogenic (GSE247528)",osteogenic,the module,5.476338378976463,failed,not decomposable,False
+14,ERCC6L2-KD (GSE190542),osteogenic,undifferentiated markers,-2.3710203486524266,passed,"decoupling, the other case (lineage reached)",True
+14,ERCC6L2-KD (GSE190542),osteogenic,own-lineage markers,2.129879164564556,passed,"decoupling, the other case (lineage reached)",True
+14,ERCC6L2-KD (GSE190542),osteogenic,adipogenic markers,0.5228729635288606,passed,"decoupling, the other case (lineage reached)",True
+14,ERCC6L2-KD (GSE190542),osteogenic,the module,12.544193394496698,passed,"decoupling, the other case (lineage reached)",True
+15,TP53 LFS (GSE102732),osteogenic,undifferentiated markers,-3.2594423963851846,failed,decomposition confirmed,True
+15,TP53 LFS (GSE102732),osteogenic,own-lineage markers,-0.3309129858872808,failed,decomposition confirmed,True
+15,TP53 LFS (GSE102732),osteogenic,adipogenic markers,-0.1649139073511749,failed,decomposition confirmed,True
+15,TP53 LFS (GSE102732),osteogenic,the module,11.271600665020266,failed,decomposition confirmed,True
+16,YAP/TAZ-KD (GSE137035),osteogenic,undifferentiated markers,0.3189371189356945,failed,not decomposable,False
+16,YAP/TAZ-KD (GSE137035),osteogenic,own-lineage markers,0.2552859191395392,failed,not decomposable,False
+16,YAP/TAZ-KD (GSE137035),osteogenic,adipogenic markers,-0.0128025563109515,failed,not decomposable,False
+16,YAP/TAZ-KD (GSE137035),osteogenic,the module,5.522098118694484,failed,not decomposable,False
+17,RB1-mut isogenic (GSE145235),osteogenic,undifferentiated markers,-3.7398916129638287,failed,decomposition confirmed,True
+17,RB1-mut isogenic (GSE145235),osteogenic,own-lineage markers,1.926869163048835,failed,decomposition confirmed,True
+17,RB1-mut isogenic (GSE145235),osteogenic,adipogenic markers,1.4421357801109622,failed,decomposition confirmed,True
+17,RB1-mut isogenic (GSE145235),osteogenic,the module,12.44596321965514,failed,decomposition confirmed,True
+18,RB1-del isogenic (GSE145235),osteogenic,undifferentiated markers,-3.5059875316495868,failed,decomposition confirmed,True
+18,RB1-del isogenic (GSE145235),osteogenic,own-lineage markers,1.3940276069622757,failed,decomposition confirmed,True
+18,RB1-del isogenic (GSE145235),osteogenic,adipogenic markers,0.5809658025110578,failed,decomposition confirmed,True
+18,RB1-del isogenic (GSE145235),osteogenic,the module,12.29737474124009,failed,decomposition confirmed,True

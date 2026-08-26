@@ -1,0 +1,5 @@
+genset,groesse,n_gene,konvergent,null_mittel,null_p97_5
+Programmsatz (173),dWT,115,96,0.006,0.0
+Programmsatz (173),iv,115,0,0.03,1.0
+Laesionssatz (173),dWT,162,1,0.08,1.0
+Laesionssatz (173),iv,162,4,0.054,1.0

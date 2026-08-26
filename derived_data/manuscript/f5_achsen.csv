@@ -1,0 +1,5 @@
+achse,k,n,p,p_exakt
+distal secretion (S4),7,11,0.5488,0.548828125
+stress response vs. output (H1),8,16,1.0,1.0
+degradation vs. output (H2),10,18,0.8145,0.8145294189453125
+matrix vs. soluble cargo (H3),5,18,0.0963,0.09625244140625

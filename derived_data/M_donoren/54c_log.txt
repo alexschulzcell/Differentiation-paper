@@ -1,0 +1,74 @@
+==============================================================================
+Phase M-D  --  die vorregistrierte Statistikleiter
+PRAEREG_M_D.md §7-§9, Seed 20260822, 20000 Ziehungen
+==============================================================================
+
+Geeichte Zellen: 7 von 14 (4 Studien)
+   GSE218101_Line4_chondr   chondrogen  Spender GSE218101_Line4  E2 ja   (Punkt der achtzehn)
+   SERPINA3_D1_chondr       chondrogen  Spender SERPINA3_D1      E2 nein  (Abb. S3C, studienweise)
+   SERPINA3_D2_chondr       chondrogen  Spender SERPINA3_D2      E2 nein  (Abb. S3C, studienweise)
+   SERPINA3_D3_chondr       chondrogen  Spender SERPINA3_D3      E2 nein  (Abb. S3C, studienweise)
+   SERPINA3_D1_osteog       osteogen    Spender SERPINA3_D1      E2 nein  (Abb. S3C, studienweise)
+   SERPINA3_D2_osteog       osteogen    Spender SERPINA3_D2      E2 nein  (Abb. S3C, studienweise)
+   LAMA5_USC_chondr         chondrogen  Spender LAMA5_USC        E2 nein  (zwei Punkte der achtzehn)
+
+------------------------------------------------------------------------------
+Programm  --  7 geeichte Zelle(n)
+   Programm               7 Zellen, 19 Spenderpaare, 159 Gene
+      S1   +0.3489 | Null +0.2731 +- 0.0252 | z  +3.00 | p   0.0028 | MDE80 +0.3438 UEBER MDE80
+      S2   +0.4596 | Null +0.3843 +- 0.0203 | z  +3.72 | p   0.0001 | MDE80 +0.4410 UEBER MDE80
+      S3a  +0.7350 | Null +0.5151 +- 0.0207 | z +10.61 | p   0.0001 | MDE80 +0.5731 UEBER MDE80
+      S3b  +0.5723 | Null +0.4850 +- 0.0209 | z  +4.19 | p   0.0001 | MDE80 +0.5434 UEBER MDE80
+
+------------------------------------------------------------------------------
+Laesionsantwort  --  1 geeichte Zelle(n)
+   weniger als zwei Zellen -- keine Zwischen-Spender-Kennzahl moeglich. Es wird KEINE Zahl berichtet (Vorregistrierung §9).
+
+------------------------------------------------------------------------------
+Engineering-Antwort  --  6 geeichte Zelle(n)
+   Engineering-Antwort    6 Zellen, 13 Spenderpaare, 172 Gene
+      S1   +0.0887 | Null +0.0536 +- 0.0243 | z  +1.44 | p   0.1533 | MDE80 +0.1218 
+      S2   +0.3198 | Null +0.2639 +- 0.0175 | z  +3.20 | p   0.0041 | MDE80 +0.3129 UEBER MDE80
+      S3a  +0.6163 | Null +0.4889 +- 0.0172 | z  +7.42 | p   0.0001 | MDE80 +0.5370 UEBER MDE80
+      S3b  +0.3808 | Null +0.3484 +- 0.0210 | z  +1.54 | p   0.1304 | MDE80 +0.4073 
+
+------------------------------------------------------------------------------
+Je Zelle -- S1 gegen das eigene MDE80 (primaere Statistik):
+   GSE218101_Line4_chondr   S1 +0.150 | Null +0.173 +- 0.041 | z  -0.56 | MDE80 +0.288 -> darunter
+   SERPINA3_D1_chondr       S1 +0.335 | Null +0.269 +- 0.040 | z  +1.66 | MDE80 +0.381 -> darunter
+   SERPINA3_D2_chondr       S1 +0.434 | Null +0.355 +- 0.036 | z  +2.23 | MDE80 +0.455 -> darunter
+   SERPINA3_D3_chondr       S1 +0.384 | Null +0.264 +- 0.040 | z  +2.98 | MDE80 +0.377 -> UEBER
+   SERPINA3_D1_osteog       S1 +0.457 | Null +0.340 +- 0.035 | z  +3.29 | MDE80 +0.439 -> UEBER
+   SERPINA3_D2_osteog       S1 +0.375 | Null +0.279 +- 0.038 | z  +2.55 | MDE80 +0.384 -> darunter
+   LAMA5_USC_chondr         S1 +0.340 | Null +0.257 +- 0.036 | z  +2.33 | MDE80 +0.357 -> darunter
+
+------------------------------------------------------------------------------
+Studien-Synthese Programm (Spender-Flip-Null, nie ein Mittelwert)
+   S1   beobachtet +0.6830 | Null -0.0028 +- 0.4119 | z  +1.66 | p   0.2494 | MDE80 +1.1506 | Studien ueber MDE80: 0/4 | Studien mit definierter Kennzahl: 2
+   S2   beobachtet +0.8035 | Null ENTARTET (Streuung 0) -- die Kennzahl ist gegen Spender-Flips invariant. KEINE Zahl berichtet.
+   S3a  beobachtet +0.7686 | Null +0.5008 +- 0.1337 | z  +2.00 | p    0.017 | MDE80 +0.8751 | Studien ueber MDE80: 0/4 | Studien mit definierter Kennzahl: 4
+   S3b  beobachtet +0.9020 | Null +0.7486 +- 0.0919 | z  +1.67 | p   0.2494 | MDE80 +1.0061 | Studien ueber MDE80: 0/4 | Studien mit definierter Kennzahl: 4
+
+------------------------------------------------------------------------------
+Studien-Synthese Engineering-Antwort (Spender-Flip-Null, nie ein Mittelwert)
+   S1   beobachtet +0.1238 | Null +0.0006 +- 0.0854 | z  +1.44 | p   0.2542 | MDE80 +0.2397 | Studien ueber MDE80: 0/3 | Studien mit definierter Kennzahl: 2
+   S2   beobachtet +0.5339 | Null ENTARTET (Streuung 0) -- die Kennzahl ist gegen Spender-Flips invariant. KEINE Zahl berichtet.
+   S3a  beobachtet +0.6835 | Null +0.5017 +- 0.1481 | z  +1.23 | p    0.158 | MDE80 +0.9164 | Studien ueber MDE80: 0/3 | Studien mit definierter Kennzahl: 3
+   S3b  beobachtet +0.7064 | Null +0.6669 +- 0.0300 | z  +1.32 | p   0.2542 | MDE80 +0.7510 | Studien ueber MDE80: 0/3 | Studien mit definierter Kennzahl: 3
+
+------------------------------------------------------------------------------
+Auslassungsrechnung -- jede Zelle einmal weg (S1, Programm)
+   ohne -- (alle)                n  7 | S1 +0.349 | z  +2.98 | p 0.003998
+   ohne GSE218101_Line4_chondr   n  6 | S1 +0.441 | z  +3.82 | p 0.0009995
+   ohne SERPINA3_D1_chondr       n  6 | S1 +0.354 | z  +2.95 | p 0.002999
+   ohne SERPINA3_D2_chondr       n  6 | S1 +0.318 | z  +2.87 | p 0.006997
+   ohne SERPINA3_D3_chondr       n  6 | S1 +0.333 | z  +2.14 | p  0.03598
+   ohne SERPINA3_D1_osteog       n  6 | S1 +0.310 | z  +2.18 | p  0.02899
+   ohne SERPINA3_D2_osteog       n  6 | S1 +0.339 | z  +2.47 | p 0.007996
+   ohne LAMA5_USC_chondr         n  6 | S1 +0.353 | z  +2.43 | p  0.01499
+
+------------------------------------------------------------------------------
+Getrennte Auswertung: Zellen mit weniger als 3 Kontrollproben
+   Zellen mit < 3 Kontrollproben (< 6 Proben im 2x2): keine
+
+==============================================================================

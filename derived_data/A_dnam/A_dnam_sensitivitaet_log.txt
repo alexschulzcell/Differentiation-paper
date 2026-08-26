@@ -1,0 +1,48 @@
+==============================================================================
+Ebene A -- Sensitivitaet und Positivkontrolle (GSE33896)
+==============================================================================
+
+Sondenbilanz (promotornah, |d(TSS)| <= 1500 bp): 26929
+  mit Dynamik (0.10 <= beta <= 0.90 irgendwo): 13383 (49.7 %)
+  auf CpG-Insel: 19379 (72.0 %)
+
+--- Positivkontrolle: kennt die Ebene die Differenzierung? --------
+Gen          Sonden    d_osteo      d_myo
+RUNX2             2    +0.0050    -0.0176
+SP7               -      n. a.      n. a.
+ALPL              2    +0.0156    -0.0021
+BGLAP             2    +0.0221    +0.0124
+IBSP              1    +0.0193    +0.0465
+COL1A1            2    +0.0055    +0.0069
+SPP1              1    +0.0642    +0.0467
+DLX5              5    +0.0012    +0.0012
+MYOD1             4    +0.0068    -0.0016
+MYOG              2    +0.0200    +0.0095
+DES               2    +0.0014    -0.0457
+MYF5              2    +0.0332    +0.0079
+MYH3              2    +0.0159    -0.0608
+TNNT1             2    +0.0013    +0.0206
+
+Erwartung: osteogene Marker in der osteogenen Achse hypomethyliert,
+myogene Marker in der myogenen Achse hypomethyliert.
+  osteogen  Marker (n 7): eigene Achse +0.0190, fremde Achse +0.0134
+  myogen    Marker (n 6): eigene Achse -0.0117, fremde Achse +0.0131
+
+--- Sensitivitaeten, Achse osteo ---------------------------------
+  alle promotornahen Sonden              n 126  C 0.349 (Null 0.367+-0.040)  z -0.46  p 1
+  S1 nur Sonden mit Dynamik              n  87  C 0.402 (Null 0.373+-0.048)  z +0.60  p 0.626
+  S2a nur CpG-Insel                      n  97  C 0.309 (Null 0.370+-0.044)  z -1.40  p 1
+  S2b nur ausserhalb der Insel           n  43  C 0.488 (Null 0.392+-0.071)  z +1.36  p 0.235
+
+--- Sensitivitaeten, Achse myo ---------------------------------
+  alle promotornahen Sonden              n 126  C 0.532 (Null 0.604+-0.041)  z -1.76  p 1
+  S1 nur Sonden mit Dynamik              n  87  C 0.529 (Null 0.648+-0.046)  z -2.61  p 1
+  S2a nur CpG-Insel                      n  97  C 0.495 (Null 0.568+-0.049)  z -1.51  p 1
+  S2b nur ausserhalb der Insel           n  43  C 0.558 (Null 0.656+-0.064)  z -1.53  p 1
+
+--- S3 driftkontrolliert: osteogene minus myogene Achse -----------
+Frage: bewegt sich das Modul in der osteogenen Achse staerker in die
+erwartete Richtung als in der myogenen, ueber den globalen Drift hinaus?
+n 126 | Konkordanz 0.357 gegen Null 0.330 +- 0.036 | z +0.77 | p 0.5061
+stetig: +0.0452, z +1.76, p 0.0768
+MDE80-Schwelle 0.430 -- erreicht: nein

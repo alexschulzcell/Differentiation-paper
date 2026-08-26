@@ -1,0 +1,42 @@
+==============================================================================
+Ebene A (450K) -- GSE129266, MSC-Chondrogenese Tag 0 gegen Tag 14
+==============================================================================
+
+Proben laut Serienmatrix:
+  GSM3703751 SAMPLE 1               Donor 1  undifferentiated
+  GSM3703752 SAMPLE 2               Donor 1  undifferentiated
+  GSM3703753 SAMPLE 3               Donor 1  undifferentiated
+  GSM3703754 SAMPLE 4               Donor 1  chondrogenic
+  GSM3703755 SAMPLE 5               Donor 1  chondrogenic
+  GSM3703756 SAMPLE 6               Donor 1  chondrogenic
+  GSM3703757 SAMPLE 7               Donor 2  undifferentiated
+  GSM3703758 SAMPLE 8               Donor 1  undifferentiated
+  GSM3703759 SAMPLE 9               Donor 3  undifferentiated
+  GSM3703760 SAMPLE 10              Donor 4  chondrogenic
+  GSM3703761 SAMPLE 11              Donor 2  undifferentiated
+  GSM3703762 SAMPLE 12              Donor 2  chondrogenic
+
+Donoren mit beiden Armen: 1, 2 -- nur diese werden ausgewertet.
+ausgeschlossen: Donoren 3, 4 (nur ein Arm)
+
+Signaltabelle: 485512 Sonden x 36 Spalten
+Beta-Matrix: 485512 Sonden x 10 Proben | Median 0.519
+  Donor 1: 4 Tag-0-Proben, 3 Tag-14-Proben
+  Donor 2: 2 Tag-0-Proben, 1 Tag-14-Proben
+
+Sonden mit gleichem Vorzeichen in beiden Donoren: 376275 von 485512 (77.5 %)
+globaler Drift (Median delta beta): +0.0246
+
+promotornahe Sonde-Gen-Zuordnungen: 218931 auf 20960 Symbolen
+Gene mit promotornaher Messung: 20960
+
+--- Eichung: chondrogene minus naive Marker ----------------------
+Erwartung: chondrogene Marker verlieren Promotormethylierung,
+also NEGATIVES delta beta -- der Kontrast muss negativ ausfallen.
+Kontrast -0.0288 | Null -0.0001 +- 0.0073 | z -3.91 | p 1 | BESTANDEN
+
+--- Modultest: die festen 173 Gene, erwartetes Vorzeichen -ri -----
+Modulgene auf 450K messbar: 161 von 173 (93.1 %)
+konkordant 48 -> C 0.298 [0.233-0.373] | Null 0.272+-0.014 | MDE80 0.312
+z +1.85 | p 0.1105 | stetig +0.0415 (z +1.82, p 0.0678)
+Schwelle erreicht: nein

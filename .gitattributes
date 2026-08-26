@@ -1,0 +1,14 @@
+# Line endings: LF in the tree, in the working directory whatever the system wants.
+* text=auto
+
+# Do not treat binary artefacts as text
+*.pdf   binary
+*.png   binary
+*.tif   binary
+*.tiff  binary
+*.docx  binary
+*.xlsx  binary
+*.pptx  binary
+*.rds   binary
+*.pkl   binary
+*.h5ad  binary

@@ -1,0 +1,4 @@
+variable,status,n_passed,n_failed,median_passed,median_failed,mann_whitney_u,p_value
+undifferentiated module value (z),ok,7,7,-0.5736413616938802,-0.4617902816095663,23.5,0.9490036864430584
+undifferentiated module value (raw),ok,7,7,2.916255221097509,3.095939058134685,11.5,0.109831831474472
+undifferentiated marker axis difference,ok,7,7,-0.4555904861167111,0.1463163469260564,7.0,0.0262237762237762

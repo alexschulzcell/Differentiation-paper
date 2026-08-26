@@ -1,0 +1,4 @@
+panel,n_panel,n_gene_set,observed,odds_ratio_raw,p_raw_fisher,part
+Nosology (core),1616,416,15,3.740648379052369,0.0004269842983052,distal vs biosynthetic secretion
+Nosology (broad),1616,416,44,3.704516129032258,3.957626653642889e-09,distal vs biosynthetic secretion
+PanelApp 309,1616,416,37,5.745431447278413,2.8736641493481457e-11,distal vs biosynthetic secretion

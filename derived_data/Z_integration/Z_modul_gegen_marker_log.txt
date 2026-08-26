@@ -1,0 +1,49 @@
+==============================================================================
+Modul gegen Markerpanel -- gleiche Ebene, gleiche Null, gleiche Statistik
+==============================================================================
+
+Ebene                              Gensatz                  n Statistik        z         p
+ATAC GSE224251 osteogen (n=3)      173 konvergente Gene   160   +0.0706    +3.08    0.0031
+ATAC GSE224251 osteogen (n=3)      osteogene Marker        15   -0.0829    -1.11         1
+                                   -> Groessenkontrolle Modulteilmengen der Groesse 15 schlagen den Markersatz in 98.2 % der Faelle (Median +0.0736 gegen -0.0829)
+
+ATAC GSE332758 osteogen (n=1)      173 konvergente Gene   173   +0.1293    +5.89    0.0001
+ATAC GSE332758 osteogen (n=1)      osteogene Marker        18   +0.0980    +1.44    0.1514
+                                   -> Groessenkontrolle Modulteilmengen der Groesse 18 schlagen den Markersatz in 68.6 % der Faelle (Median +0.1273 gegen +0.0980)
+
+ATAC GSE332758 adipogen (n=1)      173 konvergente Gene   173   +0.1075    +4.89    0.0001
+ATAC GSE332758 adipogen (n=1)      adipogene Marker        18   +0.2881    +4.22    0.0001
+                                   -> Groessenkontrolle Modulteilmengen der Groesse 18 schlagen den Markersatz in 0.1 % der Faelle (Median +0.1073 gegen +0.2881)
+
+H3K27ac GSE129031 chondrogen (n=2) 173 konvergente Gene   173   +0.1070    +4.88    0.0001
+H3K27ac GSE129031 chondrogen (n=2) chondrogene Marker      12   +0.3285    +3.94    0.0002
+                                   -> Groessenkontrolle Modulteilmengen der Groesse 12 schlagen den Markersatz in 0.1 % der Faelle (Median +0.1081 gegen +0.3285)
+
+DNAm GSE33896 osteogen (n=3)       173 konvergente Gene   126   +0.0142    +0.54    0.5896
+DNAm GSE33896 osteogen (n=3)       osteogene Marker        16   -0.1146    -1.58         1
+                                   -> Groessenkontrolle Modulteilmengen der Groesse 16 schlagen den Markersatz in 96.5 % der Faelle (Median +0.0158 gegen -0.1146)
+
+DNAm GSE33896 myogen (n=3)         173 konvergente Gene   126   -0.0390    -1.51         1
+DNAm GSE33896 myogen (n=3)         myogene Marker          16   -0.0149    -0.21         1
+                                   -> Groessenkontrolle Modulteilmengen der Groesse 16 schlagen den Markersatz in 36.0 % der Faelle (Median -0.0396 gegen -0.0149)
+
+DNAm GSE129266 chondrogen (n=2)    173 konvergente Gene   161   +0.0415    +1.84     0.066
+DNAm GSE129266 chondrogen (n=2)    chondrogene Marker      12   +0.2437    +2.94    0.0029
+                                   -> Groessenkontrolle Modulteilmengen der Groesse 12 schlagen den Markersatz in 0.6 % der Faelle (Median +0.0408 gegen +0.2437)
+
+==============================================================================
+ZUSAMMENFASSUNG
+==============================================================================
+Ebene                                z(Modul)  z(Marker)    Differenz
+ATAC GSE224251 osteogen (n=3)           +3.08      -1.11        +4.19
+ATAC GSE332758 osteogen (n=1)           +5.89      +1.44        +4.45
+ATAC GSE332758 adipogen (n=1)           +4.89      +4.22        +0.67
+H3K27ac GSE129031 chondrogen (n=2)      +4.88      +3.94        +0.93
+DNAm GSE33896 osteogen (n=3)            +0.54      -1.58        +2.11
+DNAm GSE33896 myogen (n=3)              -1.51      -0.21        -1.30
+DNAm GSE129266 chondrogen (n=2)         +1.84      +2.94        -1.09
+
+Ein Modul, das auf einer fremden Ebene traegt, wo der kanonische
+Markersatz derselben Linie das nicht tut, sagt etwas ueber die
+Organisation der Differenzierung: sie liegt verteilt und nicht in
+den wenigen Genen, an denen das Feld sie abliest.

@@ -1,0 +1,60 @@
+=== Zweitkohorte: Fenstermatrizen (hg19) ===
+GENCODE v46: 20036 proteinkodierende Gene
+nach hg19 gehoben: TSS 20012, Genstart 20014, Genende 20018
+Genkoerper hg19 plausibel: 19967 von 20014
+Fenster P   : 20012 Regionen, Medianbreite 2501 bp
+Fenster T10 : 20012 Regionen, Medianbreite 20001 bp
+Fenster T50 : 20012 Regionen, Medianbreite 100001 bp
+Fenster GB  : 19967 Regionen, Medianbreite 27456 bp
+
+--- GSE151311: 4 BigWigs (ATAC_AC_rep1, ATAC_AC_rep2, ATAC_OB_rep1, ATAC_OB_rep2)
+  [P] ATAC_AC_rep1     Median 90.8744
+  [P] ATAC_AC_rep2     Median 94.5401
+  [P] ATAC_OB_rep1     Median 222.9021
+  [P] ATAC_OB_rep2     Median 77.3618
+  -> GSE151311_matrix_P.csv: 20012 Gene
+  [T10] ATAC_AC_rep1     Median 65.6796
+  [T10] ATAC_AC_rep2     Median 65.1728
+  [T10] ATAC_OB_rep1     Median 142.7176
+  [T10] ATAC_OB_rep2     Median 52.7193
+  -> GSE151311_matrix_T10.csv: 20012 Gene
+  [T50] ATAC_AC_rep1     Median 58.7435
+  [T50] ATAC_AC_rep2     Median 57.1609
+  [T50] ATAC_OB_rep1     Median 118.5720
+  [T50] ATAC_OB_rep2     Median 46.4764
+  -> GSE151311_matrix_T50.csv: 20012 Gene
+  [GB] ATAC_AC_rep1     Median 60.1332
+  [GB] ATAC_AC_rep2     Median 58.8819
+  [GB] ATAC_OB_rep1     Median 105.9882
+  [GB] ATAC_OB_rep2     Median 47.1330
+  -> GSE151311_matrix_GB.csv: 19967 Gene
+
+--- GSE151315: 6 BigWigs (K27_AC_rep1, K27_AC_rep2, K27_hMSC_rep1, K27_hMSC_rep2, K27_OB_rep1, K27_OB_rep2)
+  [P] K27_AC_rep1      Median 1.9433
+  [P] K27_AC_rep2      Median 2.2759
+  [P] K27_hMSC_rep1    Median 2.3734
+  [P] K27_hMSC_rep2    Median 2.0597
+  [P] K27_OB_rep1      Median 2.5723
+  [P] K27_OB_rep2      Median 2.7273
+  -> GSE151315_matrix_P.csv: 20012 Gene
+  [T10] K27_AC_rep1      Median 1.7322
+  [T10] K27_AC_rep2      Median 2.0444
+  [T10] K27_hMSC_rep1    Median 2.0251
+  [T10] K27_hMSC_rep2    Median 1.8755
+  [T10] K27_OB_rep1      Median 2.1756
+  [T10] K27_OB_rep2      Median 2.3756
+  -> GSE151315_matrix_T10.csv: 20012 Gene
+  [T50] K27_AC_rep1      Median 1.6442
+  [T50] K27_AC_rep2      Median 1.9660
+  [T50] K27_hMSC_rep1    Median 1.8636
+  [T50] K27_hMSC_rep2    Median 1.7766
+  [T50] K27_OB_rep1      Median 1.9663
+  [T50] K27_OB_rep2      Median 2.2043
+  -> GSE151315_matrix_T50.csv: 20012 Gene
+  [GB] K27_AC_rep1      Median 1.6506
+  [GB] K27_AC_rep2      Median 1.9444
+  [GB] K27_hMSC_rep1    Median 1.9168
+  [GB] K27_hMSC_rep2    Median 1.7854
+  [GB] K27_OB_rep1      Median 1.9950
+  [GB] K27_OB_rep2      Median 2.2064
+  -> GSE151315_matrix_GB.csv: 19967 Gene

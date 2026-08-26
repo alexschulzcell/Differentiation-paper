@@ -1,0 +1,2 @@
+n_studies,n_observations,n_matching,pooled_share,null_mean,null_sd,z,p_perm_two_sided,p_perm_upper,mde80,seed,perm_rounds
+6,1038,708,0.6820809248554913,0.45477947976878613,0.08015880349536492,2.835639195885061,0.0015,0.0005,0.6792241295558079,20260830,10000

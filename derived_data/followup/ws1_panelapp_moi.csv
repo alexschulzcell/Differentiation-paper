@@ -1,0 +1,814 @@
+panel,symbol,ensembl,mode_of_inheritance,confidence_level
+PA309,ABCC9,ENSG00000069431,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,ACAN,ENSG00000157766,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,ACP5,ENSG00000102575,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ACVR1,ENSG00000115170,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ADAMTS10,ENSG00000142303,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ADAMTS17,ENSG00000140470,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ADAMTSL2,ENSG00000197859,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,AFF3,ENSG00000144218,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,AGA,ENSG00000038002,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,AGPS,ENSG00000018510,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ALG12,ENSG00000182858,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ALG3,ENSG00000214160,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ALG9,ENSG00000086848,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ALPL,ENSG00000162551,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",3
+PA309,ALX1,ENSG00000180318,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ALX3,ENSG00000156150,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ALX4,ENSG00000052850,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,AMER1,ENSG00000184675,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,ANAPC1,ENSG00000153107,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ANKH,ENSG00000154122,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ANKRD11,ENSG00000167522,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ANO5,ENSG00000171714,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ANTXR2,ENSG00000163297,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ARCN1,ENSG00000095139,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,ARHGAP31,ENSG00000031081,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ARL6,ENSG00000113966,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ARSB,ENSG00000113273,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ARSE,ENSG00000157399,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",3
+PA309,ARSK,ENSG00000164291,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ASXL1,ENSG00000171456,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ASXL2,ENSG00000143970,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,ATP6V0A2,ENSG00000185344,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ATP7A,ENSG00000165240,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",3
+PA309,AXIN1,ENSG00000103126,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,B3GALT6,ENSG00000176022,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,B3GAT3,ENSG00000149541,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,B3GLCT,ENSG00000187676,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,B4GALT7,ENSG00000027847,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BBS1,ENSG00000174483,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BBS10,ENSG00000179941,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BBS12,ENSG00000181004,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BBS2,ENSG00000125124,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BBS4,ENSG00000140463,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BBS5,ENSG00000163093,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BBS7,ENSG00000138686,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BBS9,ENSG00000122507,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BGN,ENSG00000182492,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",3
+PA309,BHLHA9,ENSG00000205899,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BMP1,ENSG00000168487,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BMP2,ENSG00000125845,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,BMPER,ENSG00000164619,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,BMPR1B,ENSG00000138696,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,C21orf2,ENSG00000160226,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,C2CD3,ENSG00000168014,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CA2,ENSG00000104267,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CANT1,ENSG00000171302,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CASR,ENSG00000036828,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,CBFB,ENSG00000067955,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,CC2D2A,ENSG00000048342,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CCDC8,ENSG00000169515,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CDC45,ENSG00000093009,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CDH3,ENSG00000062038,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CDKN1C,ENSG00000129757,"MONOALLELIC, autosomal or pseudoautosomal, paternally imprinted (maternal allele expressed)",3
+PA309,CDT1,ENSG00000167513,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CEP120,ENSG00000168944,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CEP290,ENSG00000198707,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CHST14,ENSG00000169105,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CHST3,ENSG00000122863,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CHSY1,ENSG00000131873,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CLCN5,ENSG00000171365,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",3
+PA309,CLCN7,ENSG00000103249,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,COG1,ENSG00000166685,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,COG4,ENSG00000103051,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,COL10A1,ENSG00000123500,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,COL11A1,ENSG00000060718,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,COL11A2,ENSG00000204248,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,COL1A1,ENSG00000108821,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,COL1A2,ENSG00000164692,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,COL27A1,ENSG00000196739,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,COL2A1,ENSG00000139219,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,COL9A1,ENSG00000112280,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,COL9A2,ENSG00000049089,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,COL9A3,ENSG00000092758,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,COLEC11,ENSG00000118004,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,COMP,ENSG00000105664,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,COPB2,ENSG00000184432,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,CREB3L1,ENSG00000157613,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CREBBP,ENSG00000005339,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,CRTAP,ENSG00000170275,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CSGALNACT1,ENSG00000147408,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CSPP1,ENSG00000104218,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CTGF,ENSG00000118523,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CTSA,ENSG00000064601,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CTSC,ENSG00000109861,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CTSK,ENSG00000143387,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CUL7,ENSG00000044090,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CYP27B1,ENSG00000111012,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,CYP2R1,ENSG00000186104,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DCC,ENSG00000187323,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DDR2,ENSG00000162733,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DDRGK1,ENSG00000198171,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DHCR24,ENSG00000116133,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DHCR7,ENSG00000172893,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DHODH,ENSG00000102967,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DIS3L2,ENSG00000144535,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DLL3,ENSG00000090932,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DLL4,ENSG00000128917,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,DLX3,ENSG00000064195,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,DLX5,ENSG00000105880,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,DMP1,ENSG00000152592,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DNMT3A,ENSG00000119772,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,DOCK6,ENSG00000130158,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DPAGT1,ENSG00000172269,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DPM1,ENSG00000000419,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DVL1,ENSG00000107404,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,DVL2,ENSG00000004975,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,DVL3,ENSG00000161202,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,DYM,ENSG00000141627,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DYNC2H1,ENSG00000187240,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,DYNC2LI1,ENSG00000138036,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,EBP,ENSG00000147155,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,EED,ENSG00000074266,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,EFTUD2,ENSG00000108883,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,EIF2AK3,ENSG00000172071,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ENPP1,ENSG00000197594,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,EOGT,ENSG00000163378,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ERF,ENSG00000105722,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ERI1,ENSG00000104626,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ESCO2,ENSG00000171320,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,EVC,ENSG00000072840,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,EVC2,ENSG00000173040,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,EXOC6B,ENSG00000144036,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,EXT1,ENSG00000182197,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,EXT2,ENSG00000151348,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,EXTL3,ENSG00000012232,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,EZH2,ENSG00000106462,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,FAM111A,ENSG00000166801,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,FAM20C,ENSG00000177706,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,FAM46A,ENSG00000112773,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,FAM58A,ENSG00000262919,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,FBN1,ENSG00000166147,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,FBN2,ENSG00000138829,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,FBXW11,ENSG00000072803,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,FERMT3,ENSG00000149781,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,FGF10,ENSG00000070193,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,FGF16,ENSG00000196468,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",3
+PA309,FGF23,ENSG00000118972,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,FGF4,ENSG00000075388,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,FGF9,ENSG00000102678,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,FGFR1,ENSG00000077782,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,FGFR2,ENSG00000066468,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,FGFR3,ENSG00000068078,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,FIG4,ENSG00000112367,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,FKBP10,ENSG00000141756,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,FLNA,ENSG00000196924,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,FLNB,ENSG00000136068,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,FN1,ENSG00000115414,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,FUCA1,ENSG00000179163,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,FZD2,ENSG00000180340,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,GALNS,ENSG00000141012,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GALNT3,ENSG00000115339,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GDF5,ENSG00000125965,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,GDF6,ENSG00000156466,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,GHR,ENSG00000112964,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,GJA1,ENSG00000152661,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,GLB1,ENSG00000170266,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GLI3,ENSG00000106571,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,GNAS,ENSG00000087460,Unknown,3
+PA309,GNPAT,ENSG00000116906,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GNPTAB,ENSG00000111670,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GNPTG,ENSG00000090581,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GNS,ENSG00000135677,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GORAB,ENSG00000120370,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GPC6,ENSG00000183098,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GPX4,ENSG00000167468,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GSC,ENSG00000133937,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GUSB,ENSG00000169919,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,GZF1,ENSG00000125812,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,HDAC8,ENSG00000147099,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,HES7,ENSG00000179111,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,HGSNAT,ENSG00000165102,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,HHAT,ENSG00000054392,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,HOXA13,ENSG00000106031,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,HOXD13,ENSG00000128714,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,HPGD,ENSG00000164120,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,HS2ST1,ENSG00000153936,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,HSPG2,ENSG00000142798,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ICK,ENSG00000112144,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IDS,ENSG00000010404,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",3
+PA309,IDUA,ENSG00000127415,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IFIH1,ENSG00000115267,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,IFITM5,ENSG00000206013,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,IFT122,ENSG00000163913,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IFT140,ENSG00000187535,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IFT172,ENSG00000138002,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IFT43,ENSG00000119650,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IFT52,ENSG00000101052,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IFT80,ENSG00000068885,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IFT81,ENSG00000122970,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IHH,ENSG00000163501,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,IKBKG,ENSG00000269335,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,IL11RA,ENSG00000137070,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IL1RN,ENSG00000136689,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,IMPAD1,ENSG00000104331,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,INPPL1,ENSG00000165458,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,KAT6B,ENSG00000156650,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,KDELR2,ENSG00000136240,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,KIAA0753,ENSG00000198920,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,KIF22,ENSG00000079616,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,KIF24,ENSG00000186638,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,KIF5B,ENSG00000170759,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,KIF7,ENSG00000166813,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,KMT2D,ENSG00000167548,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,LBR,ENSG00000143815,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,LEMD3,ENSG00000174106,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,LFNG,ENSG00000106003,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,LIFR,ENSG00000113594,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,LMBR1,ENSG00000105983,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,LMNA,ENSG00000160789,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,LMX1B,ENSG00000136944,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,LONP1,ENSG00000196365,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,LPIN2,ENSG00000101577,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,LRP4,ENSG00000134569,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,LRP5,ENSG00000162337,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",3
+PA309,LRRK1,ENSG00000154237,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,LTBP1,ENSG00000049323,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,LTBP3,ENSG00000168056,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,MAFB,ENSG00000204103,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,MAN2B1,ENSG00000104774,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MAP3K7,ENSG00000135341,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,MASP1,ENSG00000127241,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MATN3,ENSG00000132031,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,MBTPS1,ENSG00000140943,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MEGF8,ENSG00000105429,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MEOX1,ENSG00000005102,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MESD,ENSG00000117899,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MESP2,ENSG00000188095,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MGP,ENSG00000111341,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,MKKS,ENSG00000125863,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MKS1,ENSG00000011143,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MMP13,ENSG00000137745,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,MMP2,ENSG00000087245,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MNX1,ENSG00000130675,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,MPDU1,ENSG00000129255,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MSX2,ENSG00000120149,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,MTX2,ENSG00000128654,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,MYCN,ENSG00000134323,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,MYH3,ENSG00000109063,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,MYO18B,ENSG00000133454,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NAGLU,ENSG00000108784,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NANS,ENSG00000095380,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NBAS,ENSG00000151779,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NEK1,ENSG00000137601,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NEPRO,ENSG00000163608,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NEU1,ENSG00000204386,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NF1,ENSG00000196712,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,NFIX,ENSG00000008441,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,NIPBL,ENSG00000164190,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,NKX3-2,ENSG00000109705,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NLRP3,ENSG00000162711,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,NOG,ENSG00000183691,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,NOTCH1,ENSG00000148400,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,NOTCH2,ENSG00000134250,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,NPR2,ENSG00000159899,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,NPR3,ENSG00000113389,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NSD1,ENSG00000165671,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,NSDHL,ENSG00000147383,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,NT5E,ENSG00000135318,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,NXN,ENSG00000167693,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,OBSL1,ENSG00000124006,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,OFD1,ENSG00000046651,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,ORC1,ENSG00000085840,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ORC4,ENSG00000115947,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ORC6,ENSG00000091651,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,OSTM1,ENSG00000081087,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,P3H1,ENSG00000117385,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,P4HB,ENSG00000185624,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PAPSS2,ENSG00000198682,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PAX3,ENSG00000135903,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,PCNT,ENSG00000160299,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PCYT1A,ENSG00000161217,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PDE3A,ENSG00000172572,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PDE4D,ENSG00000113448,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PEX5,ENSG00000139197,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PEX7,ENSG00000112357,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PGM3,ENSG00000013375,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PHEX,ENSG00000102174,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,PHGDH,ENSG00000092621,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PIGT,ENSG00000124155,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PIGV,ENSG00000060642,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PIK3C2A,ENSG00000011405,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PIK3R1,ENSG00000145675,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PISD,ENSG00000241878,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PITX1,ENSG00000069011,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PKDCC,ENSG00000162878,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PLOD2,ENSG00000152952,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PLS3,ENSG00000102024,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,POC1A,ENSG00000164087,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,POLR1A,ENSG00000068654,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,POLR1B,ENSG00000125630,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,POLR1C,ENSG00000171453,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,POLR1D,ENSG00000186184,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,POP1,ENSG00000104356,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,POR,ENSG00000127948,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PPIB,ENSG00000166794,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PRKAR1A,ENSG00000108946,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PRKG2,ENSG00000138669,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PRMT7,ENSG00000132600,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PSAT1,ENSG00000135069,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PSMC3,ENSG00000165916,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PSPH,ENSG00000146733,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,PTBP1,ENSG00000011304,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PTDSS1,ENSG00000156471,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PTH1R,ENSG00000160801,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,PTHLH,ENSG00000087494,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PTPN11,ENSG00000179295,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PUF60,ENSG00000179950,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,PYCR1,ENSG00000183010,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RAB23,ENSG00000112210,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RAB33B,ENSG00000172007,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RASGRP2,ENSG00000068831,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RBM8A,ENSG00000265241,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RBPJ,ENSG00000168214,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,RECQL4,ENSG00000160957,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RFT1,ENSG00000163933,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RINT1,ENSG00000135249,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RIPPLY2,ENSG00000203877,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RMRP,ENSG00000269900,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RNU4ATAC,ENSG00000264229,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ROR2,ENSG00000169071,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,RPGRIP1L,ENSG00000103494,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RPL13,ENSG00000167526,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,RSPRY1,ENSG00000159579,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,RUNX2,ENSG00000124813,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SALL1,ENSG00000103449,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SALL4,ENSG00000101115,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SBDS,ENSG00000126524,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SCARF2,ENSG00000244486,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SCUBE3,ENSG00000146197,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SEC24D,ENSG00000150961,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SERPINF1,ENSG00000132386,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SERPINH1,ENSG00000149257,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SETD2,ENSG00000181555,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SETD5,ENSG00000168137,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SF3B4,ENSG00000143368,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SFRP4,ENSG00000106483,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SGMS2,ENSG00000164023,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SGSH,ENSG00000181523,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SH3BP2,ENSG00000087266,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SH3PXD2B,ENSG00000174705,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SHOX,ENSG00000185960,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",3
+PA309,SKI,ENSG00000157933,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SLC10A7,ENSG00000120519,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SLC13A1,ENSG00000081800,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SLC17A5,ENSG00000119899,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SLC26A2,ENSG00000155850,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SLC29A3,ENSG00000198246,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SLC34A1,ENSG00000131183,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,SLC34A3,ENSG00000198569,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SLC35C1,ENSG00000181830,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SLC35D1,ENSG00000116704,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SLC39A13,ENSG00000165915,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SLCO2A1,ENSG00000174640,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,SMAD3,ENSG00000166949,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SMAD4,ENSG00000141646,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SMAD6,ENSG00000137834,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SMARCAL1,ENSG00000138375,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SMC1A,ENSG00000072501,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA309,SMC3,ENSG00000108055,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SMOC1,ENSG00000198732,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SNRPB,ENSG00000125835,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,SNX10,ENSG00000086300,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SOST,ENSG00000167941,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,SOX9,ENSG00000125398,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SP7,ENSG00000170374,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,SPARC,ENSG00000113140,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,STT3A,ENSG00000134910,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,SUMF1,ENSG00000144455,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TALDO1,ENSG00000177156,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TAPT1,ENSG00000169762,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TBCE,ENSG00000116957,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TBX15,ENSG00000092607,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TBX3,ENSG00000135111,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TBX4,ENSG00000121075,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TBX5,ENSG00000089225,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TBX6,ENSG00000149922,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TBXAS1,ENSG00000059377,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TCIRG1,ENSG00000110719,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TCOF1,ENSG00000070814,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TCTEX1D2,ENSG00000213123,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TCTN2,ENSG00000168778,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TCTN3,ENSG00000119977,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TERT,ENSG00000164362,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,TGFB1,ENSG00000105329,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TGFB2,ENSG00000092969,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TGFBR2,ENSG00000163513,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TMCO1,ENSG00000143183,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TMEM165,ENSG00000134851,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TMEM216,ENSG00000187049,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TMEM231,ENSG00000205084,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TMEM38B,ENSG00000095209,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TNFRSF11A,ENSG00000141655,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA309,TNFRSF11B,ENSG00000164761,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TNFSF11,ENSG00000120659,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TOMM7,ENSG00000196683,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TONSL,ENSG00000160949,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TP63,ENSG00000073282,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TRAPPC2,ENSG00000196459,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",3
+PA309,TREM2,ENSG00000095970,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TRIP11,ENSG00000100815,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TRPS1,ENSG00000104447,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TRPV4,ENSG00000111199,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TRPV6,ENSG00000165125,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TTC21B,ENSG00000123607,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TTC8,ENSG00000165533,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,TWIST1,ENSG00000122691,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,TYROBP,ENSG00000011600,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,UBA2,ENSG00000126261,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,UFSP2,ENSG00000109775,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,UNC45A,ENSG00000140553,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,VDR,ENSG00000111424,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,VPS33A,ENSG00000139719,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,WBP11,ENSG00000084463,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA309,WDPCP,ENSG00000143951,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,WDR19,ENSG00000157796,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,WDR34,ENSG00000119333,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,WDR35,ENSG00000118965,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,WDR60,ENSG00000126870,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,WISP3,ENSG00000112761,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,WNT1,ENSG00000125084,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",3
+PA309,WNT10B,ENSG00000169884,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,WNT5A,ENSG00000114251,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,WNT7A,ENSG00000154764,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,XRCC4,ENSG00000152422,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,XYLT1,ENSG00000103489,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,XYLT2,ENSG00000015532,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,YY1,ENSG00000100811,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ZMPSTE24,ENSG00000084073,"BIALLELIC, autosomal or pseudoautosomal",3
+PA309,ZNF687,ENSG00000143373,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ZSWIM6,ENSG00000130449,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA309,ABL1,ENSG00000097007,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA309,B9D1,ENSG00000108641,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,BTRC,ENSG00000166167,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA309,C16orf62,ENSG00000103544,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,CSNK1G1,ENSG00000169118,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA309,DROSHA,ENSG00000113360,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA309,EN1,ENSG00000163064,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,FAM210A,ENSG00000177150,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,FBLN1,ENSG00000077942,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",2
+PA309,FBXW4,ENSG00000107829,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA309,GNPNAT1,ENSG00000100522,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,H2AFY,ENSG00000113648,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,HDAC4,ENSG00000068024,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,HEATR3,ENSG00000155393,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,HMGCS1,ENSG00000112972,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,HNRNPK,ENSG00000165119,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,IDH1,ENSG00000138413,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,JPH1,ENSG00000104369,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,LOXL3,ENSG00000115318,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,LRRC8C,ENSG00000171488,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,MANBA,ENSG00000109323,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,MBTPS2,ENSG00000012174,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",2
+PA309,MIA3,ENSG00000154305,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,MIR17HG,ENSG00000215417,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,MMP9,ENSG00000100985,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,NMNAT1,ENSG00000173614,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,NRCAM,ENSG00000091129,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,PAM16,ENSG00000217930,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,PDIA6,ENSG00000143870,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,PFN1,ENSG00000108518,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,PLEKHM1,ENSG00000225190,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",2
+PA309,RAD21,ENSG00000164754,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,SCNM1,ENSG00000163156,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,SIK3,ENSG00000160584,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,SLC35B2,ENSG00000157593,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,SUCO,ENSG00000094975,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,TBX2,ENSG00000121068,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,TMEM251,ENSG00000153485,"BIALLELIC, autosomal or pseudoautosomal",2
+PA309,VCP,ENSG00000165280,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,ZBTB20,ENSG00000181722,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA309,ACVR2B,ENSG00000114739,Unknown,1
+PA309,ADGRV1,ENSG00000164199,,1
+PA309,ADI1,ENSG00000182551,Unknown,1
+PA309,AHI1,ENSG00000135541,,1
+PA309,AIPL1,ENSG00000129221,,1
+PA309,AKT1,ENSG00000142208,Unknown,1
+PA309,ARID1A,ENSG00000117713,,1
+PA309,ARID1B,ENSG00000049618,,1
+PA309,ARL13B,ENSG00000169379,,1
+PA309,ATXN10,ENSG00000130638,Other,1
+PA309,B9D2,ENSG00000123810,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,BANF1,ENSG00000175334,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,C2orf71,ENSG00000179270,,1
+PA309,C5orf42,ENSG00000197603,,1
+PA309,CCDC28B,ENSG00000160050,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,CCDC39,ENSG00000145075,,1
+PA309,CCDC40,ENSG00000141519,,1
+PA309,CD96,ENSG00000153283,,1
+PA309,CDC6,ENSG00000094804,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,CDH23,ENSG00000107736,,1
+PA309,CEP164,ENSG00000110274,,1
+PA309,CEP41,ENSG00000106477,,1
+PA309,CFTR,ENSG00000001626,,1
+PA309,CKAP2L,ENSG00000169607,,1
+PA309,CLRN1,ENSG00000163646,,1
+PA309,COL12A1,ENSG00000111799,,1
+PA309,COL5A1,ENSG00000130635,,1
+PA309,COLEC10,ENSG00000184374,,1
+PA309,CRB1,ENSG00000134376,,1
+PA309,CRELD1,ENSG00000163703,,1
+PA309,CRX,ENSG00000105392,,1
+PA309,CYP26B1,ENSG00000003137,,1
+PA309,DACT1,ENSG00000165617,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",1
+PA309,DLX6,ENSG00000006377,Unknown,1
+PA309,DNAAF1,ENSG00000154099,,1
+PA309,DNAAF2,ENSG00000165506,,1
+PA309,DNAAF3,ENSG00000167646,,1
+PA309,DNAH11,ENSG00000105877,,1
+PA309,DNAH5,ENSG00000039139,,1
+PA309,DNAI1,ENSG00000122735,,1
+PA309,DNAI2,ENSG00000171595,,1
+PA309,DNAL1,ENSG00000119661,,1
+PA309,DOLPP1,ENSG00000167130,Unknown,1
+PA309,DPM2,ENSG00000136908,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,DPM3,ENSG00000179085,Unknown,1
+PA309,DSPP,ENSG00000152591,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,EP300,ENSG00000100393,,1
+PA309,ESR1,ENSG00000091831,,1
+PA309,ETF1,ENSG00000120705,Unknown,1
+PA309,FBLIM1,ENSG00000162458,,1
+PA309,FGF8,ENSG00000107831,Unknown,1
+PA309,FMN1,ENSG00000248905,Unknown,1
+PA309,FOXC1,ENSG00000054598,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,FOXH1,ENSG00000160973,,1
+PA309,GDF1,ENSG00000130283,,1
+PA309,GDF3,ENSG00000184344,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,GLIS2,ENSG00000126603,,1
+PA309,GREM1,ENSG00000166923,Unknown,1
+PA309,GUCY2D,ENSG00000132518,,1
+PA309,HDAC5,ENSG00000108840,Unknown,1
+PA309,HOXA11,ENSG00000005073,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,HOXD11,ENSG00000128713,,1
+PA309,HYLS1,ENSG00000198331,,1
+PA309,IDH2,ENSG00000182054,Other,1
+PA309,IFT88,ENSG00000032742,Unknown,1
+PA309,IMPDH1,ENSG00000106348,,1
+PA309,INVS,ENSG00000119509,,1
+PA309,IQCB1,ENSG00000173226,,1
+PA309,KCNJ13,ENSG00000115474,,1
+PA309,KIAA1217,ENSG00000120549,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",1
+PA309,LCA5,ENSG00000135338,,1
+PA309,LEFTY2,ENSG00000143768,,1
+PA309,LRAT,ENSG00000121207,,1
+PA309,LRP6,ENSG00000070018,,1
+PA309,LTBP2,ENSG00000119681,,1
+PA309,MAN2C1,ENSG00000140400,Unknown,1
+PA309,MCM5,ENSG00000100297,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,MMP14,ENSG00000157227,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,MTAP,ENSG00000099810,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,MYO1H,ENSG00000174527,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,MYO7A,ENSG00000137474,,1
+PA309,NEK8,ENSG00000160602,,1
+PA309,NIN,ENSG00000100503,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,NKX2-5,ENSG00000183072,,1
+PA309,NME8,ENSG00000086288,,1
+PA309,NODAL,ENSG00000156574,,1
+PA309,NPHP1,ENSG00000144061,,1
+PA309,NPHP3,ENSG00000113971,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,NPHP4,ENSG00000131697,,1
+PA309,NPPC,ENSG00000163273,Unknown,1
+PA309,OAT,ENSG00000065154,,1
+PA309,PCDH15,ENSG00000150275,,1
+PA309,PHF6,ENSG00000156531,,1
+PA309,PIK3CA,ENSG00000121879,,1
+PA309,PIN1,ENSG00000127445,Unknown,1
+PA309,PIR,ENSG00000087842,Unknown,1
+PA309,PKD2,ENSG00000118762,,1
+PA309,PKHD1,ENSG00000170927,,1
+PA309,PLCB3,ENSG00000149782,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,PLK4,ENSG00000142731,,1
+PA309,PLOD1,ENSG00000083444,,1
+PA309,PTPRQ,ENSG00000139304,,1
+PA309,RAB3GAP2,ENSG00000118873,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,RD3,ENSG00000198570,,1
+PA309,RDH12,ENSG00000139988,,1
+PA309,RPE65,ENSG00000116745,,1
+PA309,RPGR,ENSG00000156313,,1
+PA309,RPGRIP1,ENSG00000092200,,1
+PA309,RSPH4A,ENSG00000111834,,1
+PA309,RSPH9,ENSG00000172426,,1
+PA309,SCNN1A,ENSG00000111319,,1
+PA309,SCNN1B,ENSG00000168447,,1
+PA309,SCNN1G,ENSG00000166828,,1
+PA309,SDCCAG8,ENSG00000054282,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,SEM1,ENSG00000127922,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,SHH,ENSG00000164690,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,SLCO5A1,ENSG00000137571,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,SMARCA2,ENSG00000080503,,1
+PA309,SMARCA4,ENSG00000127616,,1
+PA309,SMARCB1,ENSG00000099956,,1
+PA309,SMARCE1,ENSG00000073584,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",1
+PA309,SOX11,ENSG00000176887,,1
+PA309,SPATA7,ENSG00000042317,,1
+PA309,SPECC1L,ENSG00000100014,Other - please specifiy in evaluation comments,1
+PA309,SULF1,ENSG00000137573,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,TCTN1,ENSG00000204852,,1
+PA309,TDP2,ENSG00000111802,,1
+PA309,TGDS,ENSG00000088451,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,THPO,ENSG00000090534,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA309,TMEM138,ENSG00000149483,,1
+PA309,TMEM237,ENSG00000155755,,1
+PA309,TMEM67,ENSG00000164953,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,TNXB,ENSG00000168477,,1
+PA309,TOPORS,ENSG00000197579,,1
+PA309,TP53,ENSG00000141510,Other,1
+PA309,TRIM32,ENSG00000119401,,1
+PA309,TRMT10A,ENSG00000145331,,1
+PA309,TSC1,ENSG00000165699,,1
+PA309,TSC2,ENSG00000103197,,1
+PA309,TULP1,ENSG00000112041,,1
+PA309,UMOD,ENSG00000169344,,1
+PA309,USH1C,ENSG00000006611,,1
+PA309,USH1G,ENSG00000182040,,1
+PA309,USH2A,ENSG00000042781,,1
+PA309,USP9X,ENSG00000124486,,1
+PA309,VAC14,ENSG00000103043,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,VHL,ENSG00000134086,,1
+PA309,WHRN,ENSG00000095397,,1
+PA309,WNT3,ENSG00000108379,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,WRN,ENSG00000165392,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,XPNPEP3,ENSG00000196236,,1
+PA309,ZBTB16,ENSG00000109906,"BIALLELIC, autosomal or pseudoautosomal",1
+PA309,ZIC3,ENSG00000156925,,1
+PA309,ZNF423,ENSG00000102935,,1
+PA309,EFNB1,ENSG00000090776,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",0
+PA309,IGF1R,ENSG00000140443,,0
+PA309,KAT6A,ENSG00000083168,,0
+PA309,TCF12,ENSG00000140262,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",0
+PA309,TGFBR1,ENSG00000106799,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",0
+PA309,TWIST2,ENSG00000233608,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",0
+PA309,ZIC1,ENSG00000152977,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",0
+PA1471,ACAN,ENSG00000157766,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA1471,ANAPC1,ENSG00000153107,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,ANKRD11,ENSG00000167522,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,BLM,ENSG00000197299,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,BRAF,ENSG00000157764,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,BRCA2,ENSG00000139618,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,BRIP1,ENSG00000136492,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,CBL,ENSG00000110395,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,CCDC8,ENSG00000169515,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,CDKN1C,ENSG00000129757,"MONOALLELIC, autosomal or pseudoautosomal, paternally imprinted (maternal allele expressed)",3
+PA1471,CEP57,ENSG00000166037,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,COG4,ENSG00000103051,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA1471,CUL7,ENSG00000044090,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,ERCC4,ENSG00000175595,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FANCA,ENSG00000187741,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FANCB,ENSG00000181544,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",3
+PA1471,FANCC,ENSG00000158169,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FANCD2,ENSG00000144554,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FANCE,ENSG00000112039,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FANCF,ENSG00000183161,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FANCG,ENSG00000221829,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FANCI,ENSG00000140525,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FANCL,ENSG00000115392,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FBXO22,ENSG00000167196,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,FGFR3,ENSG00000068078,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA1471,GH1,ENSG00000259384,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA1471,GHR,ENSG00000112964,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,HMGA2,ENSG00000149948,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,HRAS,ENSG00000174775,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,IGF1,ENSG00000017427,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,IGF1R,ENSG00000140443,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA1471,IGF2,ENSG00000167244,"MONOALLELIC, autosomal or pseudoautosomal, maternally imprinted (paternal allele expressed)",3
+PA1471,IGFALS,ENSG00000099769,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,INTS1,ENSG00000164880,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,KRAS,ENSG00000133703,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,LZTR1,ENSG00000099949,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",3
+PA1471,MAP2K1,ENSG00000169032,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,MAP2K2,ENSG00000126934,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,MSTO1,ENSG00000125459,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,MTX2,ENSG00000128654,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,NBAS,ENSG00000151779,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,NBN,ENSG00000104320,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,NHLRC2,ENSG00000196865,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,NPR2,ENSG00000159899,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,NRAS,ENSG00000213281,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,OBSL1,ENSG00000124006,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,PALB2,ENSG00000083093,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,PIK3R1,ENSG00000145675,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,PLAG1,ENSG00000181690,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,PLK4,ENSG00000142731,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,PPP1CB,ENSG00000213639,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA1471,PTPN11,ENSG00000179295,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,RAF1,ENSG00000132155,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,RECQL4,ENSG00000160957,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,RIT1,ENSG00000143622,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,RRAS2,ENSG00000133818,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,RSPRY1,ENSG00000159579,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,SHOC2,ENSG00000108061,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,SHOX,ENSG00000185960,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",3
+PA1471,SLC13A1,ENSG00000081800,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,SLF2,ENSG00000119906,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,SLX4,ENSG00000188827,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,SMC5,ENSG00000198887,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,SOS1,ENSG00000115904,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,SOS2,ENSG00000100485,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",3
+PA1471,SPOUT1,ENSG00000198917,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,SPRED2,ENSG00000198369,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,SRCAP,ENSG00000080603,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",3
+PA1471,STAT5B,ENSG00000173757,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",3
+PA1471,TOP3A,ENSG00000177302,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,TRIM37,ENSG00000108395,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,UBE2T,ENSG00000077152,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,ZFP57,ENSG00000204644,"BIALLELIC, autosomal or pseudoautosomal",3
+PA1471,CCDC186,ENSG00000165813,"BIALLELIC, autosomal or pseudoautosomal",2
+PA1471,FOXP4,ENSG00000137166,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA1471,GGPS1,ENSG00000152904,"BIALLELIC, autosomal or pseudoautosomal",2
+PA1471,KDM3B,ENSG00000120733,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA1471,LRRC8C,ENSG00000171488,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA1471,MAPK1,ENSG00000100030,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA1471,MRAS,ENSG00000158186,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA1471,NF1,ENSG00000196712,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA1471,NLRP2,ENSG00000022556,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",2
+PA1471,NLRP5,ENSG00000171487,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",2
+PA1471,NLRP7,ENSG00000167634,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",2
+PA1471,PADI6,ENSG00000276747,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",2
+PA1471,QSOX2,ENSG00000165661,"BIALLELIC, autosomal or pseudoautosomal",2
+PA1471,RAD51,ENSG00000051180,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA1471,RAP1B,ENSG00000127314,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA1471,RASA2,ENSG00000155903,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",2
+PA1471,SETD5,ENSG00000168137,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",2
+PA1471,ZNF668,ENSG00000167394,"BIALLELIC, autosomal or pseudoautosomal",2
+PA1471,A2ML1,ENSG00000166535,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",1
+PA1471,ATRIP,ENSG00000164053,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,ATRX,ENSG00000085224,Unknown,1
+PA1471,BTK,ENSG00000010671,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",1
+PA1471,CDC6,ENSG00000094804,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,CDT1,ENSG00000167513,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,CENPJ,ENSG00000151849,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,CHD7,ENSG00000171316,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,COL1A1,ENSG00000108821,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",1
+PA1471,CREBBP,ENSG00000005339,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,CRIPT,ENSG00000119878,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,DHCR7,ENSG00000172893,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,DNA2,ENSG00000138346,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,DOK7,ENSG00000175920,Unknown,1
+PA1471,EP300,ENSG00000100393,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,EPHX1,ENSG00000143819,Unknown,1
+PA1471,ERCC6,ENSG00000225830,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,ERCC8,ENSG00000049167,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,FANCM,ENSG00000187790,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,FGD1,ENSG00000102302,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",1
+PA1471,FGF8,ENSG00000107831,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,FGFR1,ENSG00000077782,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,GAP43,ENSG00000172020,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,GHRHR,ENSG00000106128,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,GHSR,ENSG00000121853,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",1
+PA1471,GINS2,ENSG00000131153,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,GINS3,ENSG00000181938,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,GLI2,ENSG00000074047,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,GLI3,ENSG00000106571,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,GPR161,ENSG00000143147,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,H19,ENSG00000130600,Other,1
+PA1471,HDAC8,ENSG00000147099,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",1
+PA1471,HESX1,ENSG00000163666,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",1
+PA1471,IFT172,ENSG00000138002,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,IGFBP1,ENSG00000146678,Unknown,1
+PA1471,IGFBP3,ENSG00000146674,Unknown,1
+PA1471,INSR,ENSG00000171105,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,INTS8,ENSG00000164941,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,KDM6A,ENSG00000147050,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",1
+PA1471,KHDC3L,ENSG00000203908,"BOTH monoallelic and biallelic (but BIALLELIC mutations cause a more SEVERE disease form), autosomal or pseudoautosomal",1
+PA1471,KMT2D,ENSG00000167548,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,LHX3,ENSG00000107187,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,LHX4,ENSG00000121454,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,LIG1,ENSG00000105486,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,LIG4,ENSG00000174405,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,MCM5,ENSG00000100297,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,NIPBL,ENSG00000164190,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,ORC1,ENSG00000085840,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,ORC4,ENSG00000115947,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,ORC6,ENSG00000091651,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,OTX2,ENSG00000165588,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,PAPPA2,ENSG00000116183,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,PCNT,ENSG00000160299,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,PITX2,ENSG00000164093,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,PNPLA6,ENSG00000032444,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,POU1F1,ENSG00000064835,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",1
+PA1471,PROKR2,ENSG00000101292,"BOTH monoallelic and biallelic, autosomal or pseudoautosomal",1
+PA1471,PROP1,ENSG00000175325,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,RAD21,ENSG00000164754,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,RAPSN,ENSG00000165917,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,RBBP8,ENSG00000101773,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,RNPC3,ENSG00000185946,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,RNU4ATAC,ENSG00000264229,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,ROR2,ENSG00000169071,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,RPL10,ENSG00000147403,"X-LINKED: hemizygous mutation in males, biallelic mutations in females",1
+PA1471,RPS6KA3,ENSG00000177189,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",1
+PA1471,RREB1,ENSG00000124782,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,SAMD9,ENSG00000205413,"MONOALLELIC, autosomal or pseudoautosomal, imprinted status unknown",1
+PA1471,SHOX2,ENSG00000168779,Unknown,1
+PA1471,SMARCAL1,ENSG00000138375,Unknown,1
+PA1471,SMC1A,ENSG00000072501,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",1
+PA1471,SMC3,ENSG00000108055,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,SOX2,ENSG00000181449,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,SOX3,ENSG00000134595,"X-LINKED: hemizygous mutation in males, monoallelic mutations in females may cause disease (may be less severe, later onset than males)",1
+PA1471,SPRED1,ENSG00000166068,"MONOALLELIC, autosomal or pseudoautosomal, NOT imprinted",1
+PA1471,TBCE,ENSG00000116957,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,THRB,ENSG00000151090,Unknown,1
+PA1471,WRN,ENSG00000165392,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,XRCC4,ENSG00000152422,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,ZPR1,ENSG00000109917,"BIALLELIC, autosomal or pseudoautosomal",1
+PA1471,VPS50,ENSG00000004766,"BIALLELIC, autosomal or pseudoautosomal",0

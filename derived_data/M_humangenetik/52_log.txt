@@ -1,0 +1,50 @@
+==============================================================================
+Phase M-A  --  humangenetischer Anker
+PRAEREG_M_A.md (2026-08-21) + Nachtrag 1 | Seed 20260821 | 20000 Ziehungen
+==============================================================================
+
+Hintergrund: 11581 Gene mit Expression UND Laenge, 10 x 10 Raster
+Panels: GWAS 5654, KLEIN 1130, KLEIN_BREIT 1144, NOSO 154, NOSO_BREIT 539, PA1471 62, PA309 355
+
+------------------------------------------------------------------------------
+POSITIVKONTROLLE (a) -- Linienmarker im Dysplasiepanel
+   NOSO         4 von 17 Markergenen im Panel (Null 0.30) | OR 17.05 | z +6.84 | p 0.0004
+   NOSO_BREIT  11 von 17 Markergenen im Panel (Null 0.85) | OR 34.77 | z +11.33 | p 0.0001
+   PA309       11 von 17 Markergenen im Panel (Null 0.58) | OR 51.61 | z +13.91 | p 0.0001
+   -> Teil (a) BESTANDEN
+
+POSITIVKONTROLLE (b) -- der Anker: distale gegen biosynthetische Sekretion
+   S_DISTAL 416 | S_BIOSYN 1616 Gene im Hintergrund
+   NOSO        distal  15/ 416 gegen biosyn  16/1616 | OR  3.74 | p 0.000427
+   NOSO_BREIT  distal  44/ 416 gegen biosyn  50/1616 | OR  3.70 | p 3.96e-09
+   PA309       distal  37/ 416 gegen biosyn  27/1616 | OR  5.75 | p 2.87e-11
+   -> Teil (b) BESTANDEN
+
+TOR A: BESTANDEN -- die Zahlen dieser Phase tragen
+
+------------------------------------------------------------------------------
+HAUPTRECHNUNG -- Anreicherung gegen die gematchte Null
+Bonferroni ueber 14 Vergleiche: Schwelle p < 0.0036
+
+Satz             Panel            n  beob   Null      OR      z        p OR_MDE80   OR_roh
+Programm         GWAS           147    80   80.0    1.00  +0.00   0.9227     1.59     1.26
+Programm         KLEIN          147    11   13.7    0.79  -0.78   0.3635     1.85     0.75
+Programm         KLEIN_BREIT    147    12   13.8    0.86  -0.52   0.5258     1.85     0.81
+Programm         NOSO           147     2    2.4    0.82  -0.27   0.6051     2.86     1.02
+Programm         NOSO_BREIT     147     8    7.1    1.13  +0.35   0.8376     2.13     1.18
+Programm         PA1471         147     1    0.9    1.09  +0.09   0.7995     3.98     1.28
+Programm         PA309          147     4    4.7    0.85  -0.31   0.6198     2.37     0.88
+Laesionsantwort  GWAS           173    94   84.1    1.26  +1.53   0.1494     1.52     1.25
+Laesionsantwort  KLEIN          173    18   16.9    1.07  +0.28   0.8602     1.76     1.08
+Laesionsantwort  KLEIN_BREIT    173    18   17.1    1.06  +0.23   0.8992     1.76     1.06
+Laesionsantwort  NOSO           173     4    2.4    1.66  +1.02   0.4507     2.84     1.78
+Laesionsantwort  NOSO_BREIT     173     5    8.5    0.57  -1.26   0.1302     2.02     0.61
+Laesionsantwort  PA1471         173     2    0.9    2.36  +1.24   0.4211     4.09     2.21
+Laesionsantwort  PA309          173     2    5.5    0.36  -1.52   0.0507     2.25     0.37
+
+Nachweisgrenze (OR bei 80 %% Power, gematchte Null):
+   Programm:        GWAS 1.59, KLEIN 1.85, KLEIN_BREIT 1.85, NOSO 2.86, NOSO_BREIT 2.13, PA1471 3.98, PA309 2.37
+   Altfassung zum Vergleich: grob OR 1.6 bei 357 bzw. 50 Panelgenen.
+
+Ueber der Bonferroni-Schwelle: 0 von 14 Vergleichen.
+==============================================================================

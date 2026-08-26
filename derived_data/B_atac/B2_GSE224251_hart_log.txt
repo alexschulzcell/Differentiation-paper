@@ -1,0 +1,80 @@
+==============================================================================
+Ebene B (Haupt, gehaertet) -- ATAC GSE224251, hMSC naiv gegen osteogen
+==============================================================================
+Peaks mit Genzuordnung: 215975
+davon mit Gesamtabdeckung >= 20: 175931 (81.5 %)
+Bibliotheksgroessen: 312279 bis 2509594 (Faktor 8.0)
+
+--- alle Peaks | ungefiltert | CPM ---
+  Gene 23430 | Uebereinstimmung der Oberflaechen r = 0.629
+  Eichung 1 (osteo minus naiv):      -0.128 | z -0.65 | p 1 | durchgefallen
+  Eichung 2 (osteo gegen Hintergr.): -0.092 | z -0.78 | p 1 | durchgefallen
+  MODUL  n 168 | C 0.577 [0.502-0.650] | Null 0.493+-0.038 | z +2.23 | p 0.0327
+         stetig +0.0442 | z +3.13 | p 0.0016
+
+--- alle Peaks | ungefiltert | CPM+Quantil ---
+  Gene 23430 | Uebereinstimmung der Oberflaechen r = 0.639
+  Eichung 1 (osteo minus naiv):      -0.177 | z -0.92 | p 1 | durchgefallen
+  Eichung 2 (osteo gegen Hintergr.): -0.128 | z -1.11 | p 1 | durchgefallen
+  MODUL  n 168 | C 0.571 [0.496-0.644] | Null 0.487+-0.038 | z +2.21 | p 0.0319
+         stetig +0.0606 | z +3.72 | p 0.0003
+
+--- alle Peaks | Peakfilter | CPM ---
+  Gene 22671 | Uebereinstimmung der Oberflaechen r = 0.643
+  Eichung 1 (osteo minus naiv):      -0.116 | z -0.60 | p 1 | durchgefallen
+  Eichung 2 (osteo gegen Hintergr.): -0.075 | z -0.64 | p 1 | durchgefallen
+  MODUL  n 168 | C 0.577 [0.502-0.650] | Null 0.498+-0.038 | z +2.09 | p 0.0417
+         stetig +0.0474 | z +3.15 | p 0.0012
+
+--- alle Peaks | Peakfilter | CPM+Quantil ---
+  Gene 22671 | Uebereinstimmung der Oberflaechen r = 0.655
+  Eichung 1 (osteo minus naiv):      -0.161 | z -0.85 | p 1 | durchgefallen
+  Eichung 2 (osteo gegen Hintergr.): -0.113 | z -0.99 | p 1 | durchgefallen
+  MODUL  n 168 | C 0.565 [0.490-0.638] | Null 0.489+-0.039 | z +1.96 | p 0.0621
+         stetig +0.0613 | z +3.62 | p 0.0003
+
+--- nur Promotorpeaks | ungefiltert | CPM ---
+  Gene 19214 | Uebereinstimmung der Oberflaechen r = 0.560
+  Eichung 1 (osteo minus naiv):      -0.372 | z -1.78 | p 1 | durchgefallen
+  Eichung 2 (osteo gegen Hintergr.): -0.104 | z -0.81 | p 1 | durchgefallen
+  MODUL  n 162 | C 0.704 [0.629-0.769] | Null 0.626+-0.033 | z +2.34 | p 0.0219
+         stetig +0.0735 | z +3.33 | p 0.0009
+
+--- nur Promotorpeaks | ungefiltert | CPM+Quantil ---
+  Gene 19214 | Uebereinstimmung der Oberflaechen r = 0.568
+  Eichung 1 (osteo minus naiv):      -0.344 | z -1.73 | p 1 | durchgefallen
+  Eichung 2 (osteo gegen Hintergr.): -0.121 | z -0.99 | p 1 | durchgefallen
+  MODUL  n 162 | C 0.599 [0.522-0.671] | Null 0.498+-0.039 | z +2.57 | p 0.0124
+         stetig +0.0637 | z +3.46 | p 0.001
+
+--- nur Promotorpeaks | Peakfilter | CPM ---
+  Gene 18361 | Uebereinstimmung der Oberflaechen r = 0.572
+  Eichung 1 (osteo minus naiv):      -0.415 | z -2.00 | p 1 | durchgefallen
+  Eichung 2 (osteo gegen Hintergr.): -0.148 | z -1.14 | p 1 | durchgefallen
+  MODUL  n 160 | C 0.706 [0.632-0.771] | Null 0.626+-0.033 | z +2.41 | p 0.0157
+         stetig +0.0805 | z +3.67 | p 0.0003
+
+--- nur Promotorpeaks | Peakfilter | CPM+Quantil ---
+  Gene 18361 | Uebereinstimmung der Oberflaechen r = 0.580
+  Eichung 1 (osteo minus naiv):      -0.398 | z -2.02 | p 1 | durchgefallen
+  Eichung 2 (osteo gegen Hintergr.): -0.160 | z -1.29 | p 1 | durchgefallen
+  MODUL  n 160 | C 0.600 [0.523-0.673] | Null 0.501+-0.040 | z +2.51 | p 0.0166
+         stetig +0.0706 | z +3.67 | p 0.0004
+
+==============================================================================
+UEBERSICHT ueber alle acht Aufbereitungen
+==============================================================================
+Aufbereitung                                     C   z_kon z_stetig p_stetig
+alle Peaks | ungefiltert | CPM               0.577   +2.23    +3.13  0.0016
+alle Peaks | ungefiltert | CPM+Quantil       0.571   +2.21    +3.72  0.0003
+alle Peaks | Peakfilter | CPM                0.577   +2.09    +3.15  0.0012
+alle Peaks | Peakfilter | CPM+Quantil        0.565   +1.96    +3.62  0.0003
+nur Promotorpeaks | ungefiltert | CPM        0.704   +2.34    +3.33  0.0009
+nur Promotorpeaks | ungefiltert | CPM+Quantil   0.599   +2.57    +3.46   0.001
+nur Promotorpeaks | Peakfilter | CPM         0.706   +2.41    +3.67  0.0003
+nur Promotorpeaks | Peakfilter | CPM+Quantil   0.600   +2.51    +3.67  0.0004
+
+Spanne des stetigen z ueber alle Aufbereitungen: +3.13 bis +3.72
+Alle acht Aufbereitungen zeigen dasselbe Vorzeichen: ja
+
+Genwerte der Referenzaufbereitung geschrieben: nur Promotorpeaks | Peakfilter | CPM+Quantil

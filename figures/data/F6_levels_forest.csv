@@ -1,0 +1,15 @@
+level,unit,estimate_min,estimate_max,detection_limit_min,detection_limit_max,verdict_class,null_min,null_max
+"Perturbation datasets, transcriptome (18 series)",z (contrasts),5.252155437733982,13.097688169352676,,,carries,,
+Donors within one experiment,unit-free statistic,0.3488606447112863,0.3488606447112863,0.3437854157155092,0.3437854157155092,carries,0.2479132333602609,0.2983722767051283
+"Human fetal growth plate, in vivo (E-MTAB-8813)",unit-free statistic,0.4560664594753882,0.4560664594753882,0.2743259327997822,0.2743259327997822,carries,,
+Chromatin H3K27ac (GSE129031),unit-free statistic,0.5895953757225434,0.6358381502890174,0.5778146822068695,0.6196182559922151,carries,,
+"Adipogenic axis, ATAC (GSE332758)",unit-free statistic,0.6416184971098265,0.6994219653179191,0.6210816830948216,0.674216962645286,carries,,
+"Osteogenic axis, ATAC (GSE332758)",unit-free statistic,0.653179190751445,0.686046511627907,0.6174983690417846,0.6353724015315236,observation only,,
+"Lineage contrast, ATAC (GSE332758)",unit-free statistic,0.436046511627907,0.5549132947976878,0.5225834165206654,0.6054583126435473,not measurable,,
+Promoter methylome 27K (GSE33896),z (contrasts),-1.7598246101111443,-0.4581971467101263,,,carries nothing,,
+Promoter methylome 450K (GSE129266),unit-free statistic,0.2981366459627329,0.2981366459627329,0.3118217698525156,0.3118217698525156,carries nothing,,
+"External cohorts, fixed 173-gene set (Table S12)",unit-free statistic,0.6820809248554913,0.6820809248554913,0.6792241295558079,0.6792241295558079,observation only,,
+"Human genetics, 7 gene panels",odds ratio,0.9995407211615066,0.9995407211615066,1.5928519784213884,1.5928519784213884,good negative,,
+Disease genes on the dynamics axis,z (contrasts),-0.7073168437738062,-0.7073168437738062,,,good negative,,
+"Gene constraint, publication-matched",z (contrasts),1.8250761920242355,1.8250761920242355,,,good negative,,
+Undifferentiated state as a predictor (day zero),z (contrasts),-1.6779766748987668,-1.6779766748987668,,,fails,,

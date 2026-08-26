@@ -1,0 +1,116 @@
+==============================================================================
+23_lineage_contrast.py -- zweiter Anlauf an einer unabhaengigen Kohorte
+==============================================================================
+Entscheidungsregel siehe Kopfkommentar; sie stand vor dem Lauf fest.
+
+========================================================================
+Kohorte GSE151311
+========================================================================
+    GSE151311: naiv 0, AC 2, OB 2 Spalten
+    GSE151311: naiv 0, AC 2, OB 2 Spalten
+    GSE151311: naiv 0, AC 2, OB 2 Spalten
+    GSE151311: naiv 0, AC 2, OB 2 Spalten
+
+--- Eichung D: nicht pruefbar, kein naiver Arm in GSE151311
+
+--- Eichung L: haelt die Ebene die beiden Linien auseinander?
+  P    differenz n 18/18  Kontrast  +0.086  MDE80  0.682  z  +0.36  p   0.6611  durchgefallen
+  T10  differenz n 18/18  Kontrast  -0.012  MDE80  0.407  z  -0.08  p        1  durchgefallen
+  T50  differenz n 18/18  Kontrast  +0.045  MDE80  0.254  z  +0.49  p   0.5404  durchgefallen
+  GB   differenz n 18/18  Kontrast  -0.010  MDE80  0.468  z  -0.07  p        1  durchgefallen
+
+  Eichung L bestanden in 0 von 4 Fenstern -> Linienkontrast bleibt nicht messbar
+
+--- Diagnose: Lage der Markersaetze auf der Differenzachse
+  P    OSTEO n18 -0.273 (z -1.80) | ADIPO n18 -0.358 (z -2.35) | NAIV n10 -0.143 (z -0.85)
+  T10  OSTEO n18 -0.234 (z -2.29) | ADIPO n18 -0.222 (z -2.34) | NAIV n10 -0.155 (z -1.14)
+  T50  OSTEO n18 -0.136 (z -1.39) | ADIPO n18 -0.181 (z -2.27) | NAIV n10 -0.126 (z -0.94)
+  GB   OSTEO n18 -0.132 (z -1.39) | ADIPO n18 -0.121 (z -1.38) | NAIV n10 +0.039 (z +0.02)
+
+--- Modultest
+  P    differenz Hintergrund          n 172  C 0.581 [0.507-0.653]  MDE80 0.637  z  +1.32  p   0.2089  unter  [Achse nicht geeicht]
+  P    differenz H1 basisgeschichtet  n 172  C 0.581 [0.507-0.653]  MDE80 0.646  z  +1.00  p   0.3553  unter  [Achse nicht geeicht]
+  T10  differenz Hintergrund          n 172  C 0.599 [0.524-0.669]  MDE80 0.616  z  +2.36  p   0.0201  unter  [Achse nicht geeicht]
+  T10  differenz H1 basisgeschichtet  n 172  C 0.599 [0.524-0.669]  MDE80 0.616  z  +2.36  p   0.0213  unter  [Achse nicht geeicht]
+  T50  differenz Hintergrund          n 172  C 0.477 [0.403-0.551]  MDE80 0.586  z  -0.07  p        1  unter  [Achse nicht geeicht]
+  T50  differenz H1 basisgeschichtet  n 172  C 0.477 [0.403-0.551]  MDE80 0.588  z  -0.17  p        1  unter  [Achse nicht geeicht]
+  GB   differenz Hintergrund          n 171  C 0.561 [0.486-0.634]  MDE80 0.644  z  +0.63  p   0.5742  unter  [Achse nicht geeicht]
+  GB   differenz H1 basisgeschichtet  n 171  C 0.561 [0.486-0.634]  MDE80 0.639  z  +0.73  p    0.507  unter  [Achse nicht geeicht]
+
+========================================================================
+Kohorte GSE151315
+========================================================================
+    GSE151315: naiv 2, AC 2, OB 2 Spalten
+    GSE151315: naiv 2, AC 2, OB 2 Spalten
+    GSE151315: naiv 2, AC 2, OB 2 Spalten
+    GSE151315: naiv 2, AC 2, OB 2 Spalten
+
+--- Eichung D: loest die Ebene die Differenzierung auf?
+  P    osteogen  n 18/10  Kontrast  +0.211  MDE80  0.485  z  +1.22  p   0.2064  durchgefallen
+  P    adipogen  n 18/10  Kontrast  +0.533  MDE80  0.552  z  +2.71  p   0.0122  durchgefallen
+  T10  osteogen  n 18/10  Kontrast  +0.201  MDE80  0.360  z  +1.57  p   0.1105  durchgefallen
+  T10  adipogen  n 18/10  Kontrast  +0.367  MDE80  0.433  z  +2.37  p   0.0247  durchgefallen
+  T50  osteogen  n 18/10  Kontrast  +0.088  MDE80  0.286  z  +0.87  p   0.3374  durchgefallen
+  T50  adipogen  n 18/10  Kontrast  +0.136  MDE80  0.334  z  +1.15  p   0.2444  durchgefallen
+  GB   osteogen  n 18/10  Kontrast  +0.066  MDE80  0.395  z  +0.47  p   0.5917  durchgefallen
+  GB   adipogen  n 18/10  Kontrast  +0.179  MDE80  0.505  z  +0.99  p   0.2965  durchgefallen
+
+--- Eichung L: haelt die Ebene die beiden Linien auseinander?
+  P    differenz n 18/18  Kontrast  -0.186  MDE80  0.502  z  -1.04  p        1  durchgefallen
+  T10  differenz n 18/18  Kontrast  -0.184  MDE80  0.399  z  -1.29  p        1  durchgefallen
+  T50  differenz n 18/18  Kontrast  -0.271  MDE80  0.331  z  -2.28  p        1  durchgefallen
+  GB   differenz n 18/18  Kontrast  -0.247  MDE80  0.466  z  -1.48  p        1  durchgefallen
+
+  Eichung L bestanden in 0 von 4 Fenstern -> Linienkontrast bleibt nicht messbar
+
+--- Diagnose: Lage der Markersaetze auf der Differenzachse
+  P    OSTEO n18 -0.241 (z -0.83) | ADIPO n18 -0.055 (z +0.66) | NAIV n10 -0.045 (z +0.55)
+  T10  OSTEO n18 -0.161 (z -0.69) | ADIPO n18 +0.023 (z +1.18) | NAIV n10 -0.068 (z +0.21)
+  T50  OSTEO n18 -0.135 (z -0.99) | ADIPO n18 +0.136 (z +2.29) | NAIV n10 -0.044 (z +0.10)
+  GB   OSTEO n18 -0.113 (z -0.56) | ADIPO n18 +0.135 (z +1.53) | NAIV n10 -0.049 (z -0.01)
+
+--- Diagnose: Lage der Markersaetze auf den Einzelachsen
+  P    osteogen  OSTEO -0.237 (z -1.30) | ADIPO +0.075 (z +1.70) | NAIV -0.448 (z -2.42)
+  P    adipogen  OSTEO +0.004 (z -0.27) | ADIPO +0.130 (z +0.78) | NAIV -0.403 (z -2.77)
+  T10  osteogen  OSTEO -0.168 (z -1.24) | ADIPO +0.089 (z +2.15) | NAIV -0.370 (z -2.80)
+  T10  adipogen  OSTEO -0.008 (z -0.27) | ADIPO +0.066 (z +0.49) | NAIV -0.302 (z -2.53)
+  T50  osteogen  OSTEO -0.131 (z -1.18) | ADIPO +0.097 (z +2.51) | NAIV -0.219 (z -2.01)
+  T50  adipogen  OSTEO +0.004 (z +0.13) | ADIPO -0.039 (z -0.50) | NAIV -0.175 (z -1.80)
+  GB   osteogen  OSTEO -0.158 (z -1.16) | ADIPO +0.139 (z +2.34) | NAIV -0.223 (z -1.46)
+  GB   adipogen  OSTEO -0.045 (z -0.32) | ADIPO +0.004 (z +0.16) | NAIV -0.174 (z -1.11)
+
+--- Modultest
+  P    osteogen  Hintergrund          n 172  C 0.564 [0.489-0.636]  MDE80 0.550  z  +3.18  p   0.0025  UEBER  [Achse nicht geeicht]
+  P    osteogen  H1 basisgeschichtet  n 172  C 0.564 [0.489-0.636]  MDE80 0.553  z  +3.10  p   0.0036  UEBER  [Achse nicht geeicht]
+  P    adipogen  Hintergrund          n 172  C 0.715 [0.644-0.777]  MDE80 0.632  z  +5.00  p   0.0001  UEBER  [Achse nicht geeicht]
+  P    adipogen  H1 basisgeschichtet  n 172  C 0.715 [0.644-0.777]  MDE80 0.627  z  +5.11  p   0.0001  UEBER  [Achse nicht geeicht]
+  P    differenz Hintergrund          n 172  C 0.337 [0.271-0.411]  MDE80 0.545  z  -2.83  p        1  unter  [Achse nicht geeicht]
+  P    differenz H1 basisgeschichtet  n 172  C 0.337 [0.271-0.411]  MDE80 0.553  z  -3.02  p        1  unter  [Achse nicht geeicht]
+  T10  osteogen  Hintergrund          n 172  C 0.709 [0.637-0.772]  MDE80 0.551  z  +7.10  p   0.0001  UEBER  [Achse nicht geeicht]
+  T10  osteogen  H1 basisgeschichtet  n 172  C 0.709 [0.637-0.772]  MDE80 0.554  z  +7.00  p   0.0001  UEBER  [Achse nicht geeicht]
+  T10  adipogen  Hintergrund          n 172  C 0.767 [0.699-0.824]  MDE80 0.631  z  +6.38  p   0.0001  UEBER  [Achse nicht geeicht]
+  T10  adipogen  H1 basisgeschichtet  n 172  C 0.767 [0.699-0.824]  MDE80 0.620  z  +6.69  p   0.0001  UEBER  [Achse nicht geeicht]
+  T10  differenz Hintergrund          n 172  C 0.395 [0.325-0.470]  MDE80 0.550  z  -1.35  p        1  unter  [Achse nicht geeicht]
+  T10  differenz H1 basisgeschichtet  n 172  C 0.395 [0.325-0.470]  MDE80 0.563  z  -1.72  p        1  unter  [Achse nicht geeicht]
+  T50  osteogen  Hintergrund          n 172  C 0.663 [0.589-0.729]  MDE80 0.558  z  +5.58  p   0.0001  UEBER  [Achse nicht geeicht]
+  T50  osteogen  H1 basisgeschichtet  n 172  C 0.663 [0.589-0.729]  MDE80 0.568  z  +5.32  p   0.0001  UEBER  [Achse nicht geeicht]
+  T50  adipogen  Hintergrund          n 172  C 0.715 [0.644-0.777]  MDE80 0.617  z  +5.36  p   0.0001  UEBER  [Achse nicht geeicht]
+  T50  adipogen  H1 basisgeschichtet  n 172  C 0.715 [0.644-0.777]  MDE80 0.604  z  +5.74  p   0.0001  UEBER  [Achse nicht geeicht]
+  T50  differenz Hintergrund          n 172  C 0.413 [0.342-0.487]  MDE80 0.567  z  -1.29  p        1  unter  [Achse nicht geeicht]
+  T50  differenz H1 basisgeschichtet  n 172  C 0.413 [0.342-0.487]  MDE80 0.584  z  -1.78  p        1  unter  [Achse nicht geeicht]
+  GB   osteogen  Hintergrund          n 171  C 0.690 [0.617-0.755]  MDE80 0.566  z  +6.10  p   0.0001  UEBER  [Achse nicht geeicht]
+  GB   osteogen  H1 basisgeschichtet  n 171  C 0.690 [0.617-0.755]  MDE80 0.574  z  +5.90  p   0.0001  UEBER  [Achse nicht geeicht]
+  GB   adipogen  Hintergrund          n 171  C 0.772 [0.703-0.828]  MDE80 0.621  z  +6.75  p   0.0001  UEBER  [Achse nicht geeicht]
+  GB   adipogen  H1 basisgeschichtet  n 171  C 0.772 [0.703-0.828]  MDE80 0.611  z  +7.02  p   0.0001  UEBER  [Achse nicht geeicht]
+  GB   differenz Hintergrund          n 171  C 0.374 [0.305-0.449]  MDE80 0.572  z  -2.43  p        1  unter  [Achse nicht geeicht]
+  GB   differenz H1 basisgeschichtet  n 171  C 0.374 [0.305-0.449]  MDE80 0.589  z  -2.84  p        1  unter  [Achse nicht geeicht]
+
+==============================================================================
+URTEIL nach der vorab festgelegten Regel
+==============================================================================
+GSE151311    Eichung L 0/4 bestanden -> Linienkontrast nicht messbar
+GSE151315    Eichung L 0/4 bestanden -> Linienkontrast nicht messbar
+
+Platzierung: Linienkontrast bleibt im SUPPLEMENT (S6)
+
+numpy 2.4.4 | pandas 3.0.1 | python 3.12.10

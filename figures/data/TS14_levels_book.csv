@@ -1,0 +1,22 @@
+level,calibration,detection_limit,finding,value,verdict,type
+"Perturbation datasets, transcriptome (18 series)",2/18 passed (z>=2),per dataset,"18/18 above own limit, z +5.25..+13.10",z +5.25..+13.10,carries,explorativ
+Donors within one experiment,7/14 cells passed,S1 0.344,"S1 0.349, z +3.00 (+4.51 without
+module-forming cells)",z +3.00,carries,vorregistriertes Follow-up
+"Human fetal growth plate, in vivo (E-MTAB-8813)","64/66 samples above own limit,
+median z +10.92",rho 0.274,"rho 0.456, z +4.80",z +4.80,carries,explorativ
+Chromatin H3K27ac (GSE129031),passed,C 0.578..0.620,"above own limit 9/9,
+z +2.97..+3.63",z +2.97..+3.63,carries,explorativ
+"Adipogenic axis, ATAC (GSE332758)",4/4 windows (z +3.73..+5.01),per window,"above limit in 3/4 windows (H1 null),
+2/4 (background), z +2.38..+4.76",z +2.38..+4.76,carries,explorativ
+"Osteogenic axis, ATAC (GSE332758)",0/4 windows (z -0.54..+1.66),per window,"above limit in 4/4, z +3.50..+4.51",z +3.50..+4.51,"decoupling observation, not a calibrated module result",explorativ
+"Lineage contrast, ATAC (GSE332758)","0/4 (calibration L,
+z +0.93..+2.26)",per window,"0/4 above limit, z +0.85..+1.65",z +0.85..+1.65,NOT MEASURABLE - no calibrated axis,explorativ
+Promoter methylome 27K (GSE33896),markers weak,not reachable,"null on both axes, z -0.46 / -1.76",z -0.46 / -1.76,carries nothing,explorativ
+Promoter methylome 450K (GSE129266),passed,K 0.312,"K 0.298, below own limit",below own limit,carries nothing,explorativ
+"External cohorts, fixed 173-gene set (Table S12)",no per-study control,0.679,"pooled share 0.682, z +2.84, p 0.0015","z +2.84, p 0.0015",carries as synthesis only (0/11 studies reach own limit),vorregistriertes Follow-up
+"Human genetics, 7 gene panels","OR 16.8-50.9 (lineage markers),
+3.70-5.75 (secretion anchor)",OR 1.59 (GWAS),"pooled OR 1.00 (GWAS), 0/40 tests
+over Bonferroni",0/40 over Bonferroni,good negative result,konfirmatorisch
+Disease genes on the dynamics axis,programme z +18.10 in the same run,0.016-0.113 |dWT|,"PA309 z -0.71, n.s.",n.s.,good negative result,explorativ
+"Gene constraint, publication-matched",GWAS z -4.67,0.024-0.139 LOEUF,"PA309 z +1.83, n.s.",n.s.,good negative result,explorativ
+Undifferentiated state as a predictor (day zero),n = 7 calibrated cells,not reachable,"z -1.68, p 0.084",p 0.084,fails,explorativ

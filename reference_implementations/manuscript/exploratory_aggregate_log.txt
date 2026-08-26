@@ -1,0 +1,17 @@
+analysis=explorativ_aggregierte_richtungsreplikation
+n_datasets=6
+n_observations=977
+n_matching=708
+pooled_share=0.7246673490276356
+perm_rounds=10000
+null_mean=0.4842726714431934
+null_sd=0.08555323505493416
+z=2.8098841315595324
+p_perm_two_sided=0.0027
+wilson_lo=0.6958194075218309
+wilson_hi=0.7517554742820314
+mde80=0.7238217295970091
+above_mde80=True
+loo_min=0.6940298507462687
+loo_max=0.7972972972972973
+seed=20260824

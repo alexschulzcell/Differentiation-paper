@@ -1,0 +1,106 @@
+go,name,v,richtung,median_z,median_d_basis,artefakt
+GO:0003002,regionalization,7,-1,-1.78849520372155,0.125029223875391,True
+GO:0007517,muscle organ development,7,-1,-1.61429308961531,0.106990057890034,False
+GO:0030900,forebrain development,7,-1,-1.61240740211353,0.0991660485622622,False
+GO:0048562,embryonic organ morphogenesis,7,-1,-1.43159039467081,0.0889270318039743,False
+GO:0050767,regulation of neurogenesis,7,-1,-1.39497151613838,0.128172731193996,True
+GO:0034765,regulation of monoatomic ion transmembrane transport,7,-1,-1.29258318110149,0.15537754512889,True
+GO:0051090,regulation of DNA-binding transcription factor activity,7,-1,-1.28592006430106,0.096641273647989,False
+GO:0010959,regulation of metal ion transport,7,-1,-1.25471482072891,0.133370594880868,True
+GO:0060537,muscle tissue development,7,-1,-0.950997681884175,0.0776850217382744,False
+GO:0045859,regulation of protein kinase activity,7,-1,-0.883163455901595,0.0654882384673161,False
+GO:0014706,striated muscle tissue development,7,-1,-0.870201927846983,0.0739692666956207,False
+GO:0001763,morphogenesis of a branching structure,7,-1,-0.853330773438013,0.0863979170810095,False
+GO:0051146,striated muscle cell differentiation,7,-1,-0.817299619293393,0.0684552709753945,False
+GO:0045936,negative regulation of phosphate metabolic process,7,-1,-0.797555065084446,0.0623420199703129,False
+GO:0010563,negative regulation of phosphorus metabolic process,7,-1,-0.784113731575942,0.0623420199703129,False
+GO:0042692,muscle cell differentiation,7,-1,-0.734756877283983,0.0800295169223491,False
+GO:0061138,morphogenesis of a branching epithelium,7,-1,-0.704977084771129,0.0902029315308123,False
+GO:0090596,sensory organ morphogenesis,7,-1,-0.643260991646819,0.0540585494091544,False
+GO:0050920,regulation of chemotaxis,7,-1,-0.564847642442774,0.170828891130084,True
+GO:0043062,extracellular structure organization,7,-1,-0.509704466614288,0.0807041754162754,False
+GO:0070482,response to oxygen levels,7,1,0.506666778541259,0.0571286623924936,False
+GO:0030198,extracellular matrix organization,7,-1,-0.502344972780062,0.0785656009363744,False
+GO:0030111,regulation of Wnt signaling pathway,7,-1,-0.465752808459576,0.0629126904410101,False
+GO:0048511,rhythmic process,7,-1,-0.376069708354045,0.0565116617685325,False
+GO:0001822,kidney development,7,-1,-0.33962156879381,0.0795198943558661,False
+GO:0061458,reproductive system development,6,-1,-1.47965438678899,0.0916913937890889,False
+GO:0048608,reproductive structure development,6,-1,-1.42358451768948,0.0916913937890889,False
+GO:0003012,muscle system process,6,-1,-1.42322100065267,0.0687025137667987,False
+GO:0009952,anterior/posterior pattern specification,6,-1,-1.38553051169238,0.0632290975537433,False
+GO:0006163,purine nucleotide metabolic process,6,1,1.37180264593864,0.0818616957774945,False
+GO:0015980,energy derivation by oxidation of organic compounds,6,1,1.342109112088,0.015658202385509,False
+GO:0009636,response to toxic substance,6,1,1.24037066120029,0.078291563707628,False
+GO:0062012,regulation of small molecule metabolic process,6,1,1.22982161921667,0.058663026879396,False
+GO:0030098,lymphocyte differentiation,6,-1,-1.06106747312274,0.111236543047424,False
+GO:0060562,epithelial tube morphogenesis,6,-1,-1.01435039256289,0.0875677463986539,False
+GO:0009150,purine ribonucleotide metabolic process,6,1,0.97179580463704,0.0791727774809037,False
+GO:0048732,gland development,6,-1,-0.958799493081592,0.0675460115443318,False
+GO:0046651,lymphocyte proliferation,6,-1,-0.876048695146492,0.163911494115735,True
+GO:0050670,regulation of lymphocyte proliferation,6,-1,-0.858289685351268,0.164301122966504,True
+GO:0070661,leukocyte proliferation,6,-1,-0.841088668574067,0.181082297806752,True
+GO:0006631,fatty acid metabolic process,6,1,0.832925848400717,0.0394146299851473,False
+GO:0032944,regulation of mononuclear cell proliferation,6,-1,-0.742598663047408,0.166338338491858,True
+GO:0050678,regulation of epithelial cell proliferation,6,-1,-0.737818163240697,0.0907991740162503,False
+GO:0019693,ribose phosphate metabolic process,6,1,0.722366864958707,0.0774634932237068,False
+GO:0031400,negative regulation of protein modification process,6,-1,-0.720423808774888,0.0813320605134293,False
+GO:0003018,vascular process in circulatory system,6,-1,-0.712968410906592,0.107382073968342,False
+GO:0009259,ribonucleotide metabolic process,6,1,0.695617962548275,0.0774634932237068,False
+GO:0060326,cell chemotaxis,6,-1,-0.69355970058937,0.16271226803333,True
+GO:0070663,regulation of leukocyte proliferation,6,-1,-0.677205306044265,0.181147610049544,True
+GO:0030217,T cell differentiation,6,-1,-0.668319621840542,0.141643837395489,True
+GO:0010975,regulation of neuron projection development,6,-1,-0.593861106681913,0.120840084326078,True
+GO:0044282,small molecule catabolic process,6,1,0.503887474963098,0.0583006937818477,False
+GO:0032943,mononuclear cell proliferation,6,-1,-0.494773178001058,0.164776261871031,True
+GO:0045229,external encapsulating structure organization,6,-1,-0.481958520614792,0.0785656009363744,False
+GO:0006790,sulfur compound metabolic process,6,1,0.447949793130737,0.0379391556780523,False
+GO:0001701,in utero embryonic development,6,-1,-0.347885520361272,-0.0177431926104776,False
+GO:0072001,renal system development,6,-1,-0.343294130159056,0.0795198943558661,False
+GO:0001818,negative regulation of cytokine production,6,-1,-0.325446262661125,0.0830497039065711,False
+GO:0016236,macroautophagy,6,1,0.293457608463415,0.068806220714309,False
+GO:0001654,eye development,6,-1,-0.287743182245632,0.0460047742111722,False
+GO:0048880,sensory system development,6,-1,-0.27743750179875,0.0431869233049191,False
+GO:0040013,negative regulation of locomotion,6,-1,-0.269302376519993,0.0477079918875362,False
+GO:0150063,visual system development,6,-1,-0.268125152811028,0.045778548717884,False
+GO:0072073,kidney epithelium development,6,-1,-0.232882704621598,0.122529183381967,True
+GO:0030336,negative regulation of cell migration,6,-1,-0.207968641764326,0.0558782737229724,False
+GO:0072006,nephron development,6,-1,-0.185309725491191,0.0877049234336111,False
+GO:0072594,establishment of protein localization to organelle,6,1,0.182926119239338,0.0487055214411802,False
+GO:0071674,mononuclear cell migration,6,-1,-0.173414361150366,0.172793114423537,True
+GO:2000146,negative regulation of cell motility,6,-1,-0.147142984784679,0.0606680474377598,False
+GO:0043434,response to peptide hormone,6,1,0.110521525934945,0.0450627183790246,False
+GO:0006959,humoral immune response,6,1,0.110486644475135,0.177175710602995,True
+GO:0032868,response to insulin,6,-1,-0.0476998581305259,0.0190977599440312,False
+GO:1902105,regulation of leukocyte differentiation,5,-1,-0.768864571574546,0.148772308859477,True
+GO:2001233,regulation of apoptotic signaling pathway,5,-1,-0.580502815044027,0.0882808272210087,False
+GO:0016042,lipid catabolic process,5,1,0.558332390203355,0.115902797552995,True
+GO:0070098,chemokine-mediated signaling pathway,5,1,0.549354085148978,0.166539932211731,True
+GO:1990868,response to chemokine,5,1,0.535707561043674,0.153209734313997,True
+GO:0045861,negative regulation of proteolysis,5,-1,-0.533967734470269,0.105177567458665,False
+GO:1901342,regulation of vasculature development,5,-1,-0.501959109827503,0.0822152945900707,False
+GO:1990869,cellular response to chemokine,5,1,0.500963094181655,0.153209734313997,True
+GO:0002685,regulation of leukocyte migration,5,1,0.464173760248989,0.190269162705049,True
+GO:0045765,regulation of angiogenesis,5,-1,-0.441516285164576,0.0722274339283445,False
+GO:0097530,granulocyte migration,5,1,0.426159635327975,0.205657320541011,True
+GO:0006066,alcohol metabolic process,5,1,0.382084674350966,0.0846710027886246,False
+GO:0030595,leukocyte chemotaxis,5,-1,-0.356368159101975,0.16467869543362,True
+GO:0044403,biological process involved in symbiotic interaction,5,1,0.338798513847747,0.0895290455744377,False
+GO:0052547,regulation of peptidase activity,5,-1,-0.338752103311,0.13814396549503,True
+GO:0070371,ERK1 and ERK2 cascade,5,-1,-0.301883036569104,0.131586665613221,True
+GO:0042742,defense response to bacterium,5,-1,-0.285519437505137,0.153670538390234,True
+GO:0043010,camera-type eye development,5,-1,-0.283869160694091,0.0309837282018626,False
+GO:0022412,cellular process involved in reproduction in multicellular organism,5,-1,-0.281873834906016,0.0997317551446409,False
+GO:0097529,myeloid leukocyte migration,5,1,0.24963983181462,0.157674174726115,True
+GO:0090287,regulation of cellular response to growth factor stimulus,5,-1,-0.23811010423317,0.0397647266498961,False
+GO:0071621,granulocyte chemotaxis,5,-1,-0.188587750119519,0.227479925796555,True
+GO:0009410,response to xenobiotic stimulus,5,1,0.172923083335761,0.120501645228955,True
+GO:0043491,phosphatidylinositol 3-kinase/protein kinase B signal transduction,5,-1,-0.162853021076882,0.086815246787872,False
+GO:0010038,response to metal ion,5,-1,-0.122391871557971,0.097212954715637,False
+GO:0007178,cell surface receptor protein serine/threonine kinase signaling pathway,5,-1,-0.115742913955707,0.0534823211880807,False
+GO:0010506,regulation of autophagy,5,-1,-0.104016876197772,0.0740443456807507,False
+GO:0141091,transforming growth factor beta receptor superfamily signaling pathway,5,-1,-0.0935806554222655,0.0685215779798345,False
+GO:0002237,response to molecule of bacterial origin,5,1,0.082580785400049,0.116851605268161,True
+GO:0050900,leukocyte migration,5,-1,-0.0614132187378764,0.153773616070693,True
+GO:0019730,antimicrobial humoral response,5,-1,-0.0446398300036207,0.156239307731984,True
+GO:0001649,osteoblast differentiation,5,1,0.0132647309957971,0.0896737046054954,False
+GO:0032496,response to lipopolysaccharide,5,1,0.0102580905449082,0.111992042942675,True

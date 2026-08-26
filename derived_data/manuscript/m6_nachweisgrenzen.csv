@@ -1,0 +1,10 @@
+kurz,ebene,z,hinweis,erreichbar
+models,perturbation models,,convergence 22x expected,True
+external,external triangulation,1.21,"synthesis p 0.0002, no single cell",True
+donors,"donors, programme (S1)",3.0,2 of 7 cells over own MDE80,True
+donors_iv,"donors, lesion response",,1 calibrated cell - not measurable,False
+donors_syn,"donors, study synthesis (S1)",1.66,MDE80 1.15 on a scale whose maximum is 1.0,False
+chromatin,chromatin (H3K27ac),4.88,only value over MDE80 in the whole study,True
+methylome,promoter methylome,1.84,"same differentiation, other layer",True
+patients,patient vs control,0.0,no cohort over its own MDE80,True
+genetics,human genetics,0.0,OR 1.00 at a limit of OR 1.59,True

@@ -1,0 +1,11 @@
+achse,datum,datenbank,suchstring,n_treffer,retmax
+OI,2026-08-21,GEO gds,"(((""osteogenesis imperfecta"") OR (COL1A1) OR (COL1A2))) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",144,1000
+MPS,2026-08-21,GEO gds,"(((""mucopolysaccharidosis"") OR (""mucopolysaccharidoses"") OR (ARSB) OR (IDUA) OR (IDS))) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",621,1000
+PSACH_MED,2026-08-21,GEO gds,"(((""pseudoachondroplasia"") OR (""multiple epiphyseal dysplasia"") OR (COMP) OR (MATN3))) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",79,1000
+FGFR3,2026-08-21,GEO gds,"(((""achondroplasia"") OR (""hypochondroplasia"") OR (""thanatophoric"") OR (FGFR3))) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",95,1000
+SHOX,2026-08-21,GEO gds,"(((""SHOX"") OR (""Leri-Weill"") OR (""dyschondrosteosis""))) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",17,1000
+CCD_CMPD,2026-08-21,GEO gds,"(((""cleidocranial dysplasia"") OR (""campomelic dysplasia"") OR (RUNX2) OR (SOX9))) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",381,1000
+FOP,2026-08-21,GEO gds,"(((""fibrodysplasia ossificans progressiva"") OR (ACVR1))) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",33,1000
+FREITEXT_DYSPLASIE,2026-08-21,GEO gds,"((""skeletal dysplasia"" OR ""chondrodysplasia"" OR ""osteochondrodysplasia"")) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",9,1000
+FREITEXT_KLEINWUCHS,2026-08-21,GEO gds,"((""short stature"" OR ""growth failure"" OR ""dwarfism"")) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",54,1000
+FREITEXT_WACHSTUMSFUGE,2026-08-21,GEO gds,"((""growth plate"" OR ""epiphyseal"" OR ""physis cartilage"")) AND ""Homo sapiens""[Organism] AND ""gse""[Filter]",43,1000

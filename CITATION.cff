@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or these derived data, please cite the paper."
+title: "What skeletal differentiation models actually measure: a lineage-independent matrix programme, and why the disease genes lie orthogonal to it"
+abstract: >-
+  Code and derived data for a reanalysis of eighteen published skeletal
+  differentiation experiments, in which every level of evidence carries its
+  own positive control and its own measured detection limit.
+type: dataset
+authors:
+  - family-names: "Schulz"
+    given-names: "Alexander"
+    orcid: "https://orcid.org/0009-0009-2605-4350"
+    affiliation: "Institute of Human Genetics, Universitaetsklinikum Erlangen, FAU Erlangen-Nuernberg, Germany"
+  - family-names: "Thiel"
+    given-names: "Christian T."
+    orcid: "https://orcid.org/0000-0003-3817-7277"
+    affiliation: "Institute of Human Genetics, Universitaetsklinikum Erlangen, FAU Erlangen-Nuernberg, Germany"
+keywords:
+  - skeletal dysplasia
+  - mesenchymal differentiation
+  - detection limit
+  - calibration
+  - reanalysis
+license: CC-BY-4.0

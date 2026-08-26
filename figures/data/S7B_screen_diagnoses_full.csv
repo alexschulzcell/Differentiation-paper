@@ -1,0 +1,128 @@
+accession,n_samples,undifferentiated_arm,differentiated_arm,diagnosis,intervention,verdict,code,reason,title,n_samples_gds,axis
+GSE215307,375,False,False,True,False,AUS,A1,no undifferentiated arm,Cancer-Associated Fibroblasts are the Main Source of Epithelial-to-Mesenchymal Signaling in the Tumor Microenvironment,375.0,OI
+GSE211729,126,False,False,True,False,AUS,A1,no undifferentiated arm,"Adipose-enriched peri-tumoral stroma, in contrast to myofibroblast-enriched stroma, prognosticates poorer survival in breast cancers.",126.0,MPS
+GSE18732,118,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,mRNA expression data from skeletal muscle of type 2 diabetes,118.0,MPS
+GSE233504,102,False,False,True,False,AUS,A1,no undifferentiated arm,Adipocyte associated glucocorticoid signaling regulates normal fibroblast function which is lost in inflammatory arthritis,102.0,MPS
+GSE58250,102,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Multi-Omic Integrated networks connect DNA methylation and miRNA with skeletal muscle plasticity to chronic exercise in type 2 diabetic obesity,102.0,MPS
+GSE190042,93,False,False,True,False,AUS,A1,no undifferentiated arm,Integration between MCL1 gene co-expression module and the Revised International Staging System enables precise prognostication and prediction of response to proteasome inhibitor-based therapy in individual multiple myeloma,93.0,FGFR3
+GSE176307,90,False,True,True,False,AUS,A1,no undifferentiated arm,Fibroblast Growth Factor Receptor 3 Alterations and Response to Immune Checkpoint Inhibition in Metastatic Urothelial Cancer: A Real World Experience,90.0,FGFR3
+GSE244375,78,False,True,True,False,AUS,A1,no undifferentiated arm,Chondrodysplasia-inducing COL2A1 p.Gly1170Ser causes an ER storage defect without associated unfolded protein response in chondronoids,78.0,free text: dysplasia
+GSE120558,66,False,True,True,False,AUS,A1,no undifferentiated arm,Gain of function DNMT3A mutations cause microcephalic dwarfism and hypermethylation of Polycomb-regulated regions,66.0,free text: short stature
+GSE125168,62,True,False,False,True,AUS,A2,no diagnosis as the lesion axis,PLZF targets developmental enhancers for activation during osteogenic differentiation of human mesenchymal stem cells,62.0,PSACH / MED
+GSE34074,60,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Genome-wide microarray analysis of normal human fibroblasts in response to genistein,60.0,MPS
+GSE43515,54,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Effect of MWCNT on Lung Fibroblast gene expression,54.0,OI
+GSE75234,49,False,False,True,False,AUS,A1,no undifferentiated arm,The histone H3.3K36M mutation reprograms the epigenome of chondroblastomas,49.0,CCD / CMPD
+GSE43692,48,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,"Genome-wide microarray analysis of normal human fibroblasts in response to kaemferol, daidzein, kaemferol/genistein, and daidzein/genistein",48.0,MPS
+GSE333317,48,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Adrenal-derived factors drive progression of sclerotic prostate cancer  in bone,48.0,OI
+GSE44147,48,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Transcriptomic effects of caloric restriction reflected in primate difference,48.0,free text: short stature
+GSE98460,46,False,False,True,False,AUS,A1,no undifferentiated arm,Transcriptional Analysis of Articular Cartilage in Knee Osteoarthritis: Relationship with Obesity,46.0,PSACH / MED
+GSE195688,46,True,False,False,False,AUS,A2,no diagnosis as the lesion axis,Lineage-Specific Differences and Inference of Regulatory Networks Governing Human Chondrocyte Development,46.0,free text: growth plate
+GSE219215,42,False,True,True,False,AUS,A1,no undifferentiated arm,Human iPSC can be differentiated in vitro to articular cartilage or to osteogenic organoids via the endochondral ossification transdifferentiation pathway,42.0,free text: growth plate
+GSE246236,41,False,False,True,False,AUS,A1,no undifferentiated arm,Reprograming human fibroblasts into Sertoli cells:  a tool for personalized medicine,41.0,CCD / CMPD
+GSE690,40,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,HMF3A_RNAi,40.0,MPS
+GSE286565,40,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Recurrent FGFR-alterations are frequent oncogenic drivers and therapeutic targets in pediatric low-grade gliomas [RNA-Seq 2],40.0,FGFR3
+GSE237512,39,False,False,True,False,AUS,A1,no undifferentiated arm,PI3Kα inhibition blocks osteochondroprogenitor specification and the hyper-inflammatory response to prevent heterotopic ossification,39.0,FOP
+GSE41177,38,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Region-specific gene expression profiles in left atria of patients with valvular atrial fibrillation,38.0,free text: short stature
+GSE140782,36,True,True,False,False,AUS,A2,no diagnosis as the lesion axis,Highly connected enhancer communities control lineage-determining genes in human mesenchymal stem cells,36.0,CCD / CMPD
+GSE238013,36,True,False,True,False,AUS,A1,no differentiated arm,Cell-type-specific regulation of APOE and CLU levels in human neurons by the Alzheimer’s disease risk gene SORL1,36.0,CCD / CMPD
+GSE63239,36,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Genome-wide microarray analysis of human fibroblasts in response to indomethacin and nimesulide.,36.0,MPS
+GSE218101,34,True,True,True,True,BEREITS,-,"MPS VI, day 0/14, four patient lines vs isogenic correction -- a complete 2x2, but ALREADY one of the eighteen datasets (ARSB / MPS VI)",Isogenic pairs of MPS VI gene corrected iPSC and Chondrogenic cells,34.0,MPS
+GSE159676,33,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Portal fibroblasts with mesenchymal stem cell features form a reservoir of proliferative myofibroblasts in liver fibrosis,33.0,OI
+GSE213912,32,False,False,True,False,AUS,A1,no undifferentiated arm,Cancer-Associated Fibroblasts are the Main Source of Epithelial-to-Mesenchymal Signaling in the Tumor Microenvironment,32.0,OI
+GSE32531,31,False,True,False,False,AUS,A2,no diagnosis as the lesion axis,"Patient-derived tumor grafts authentically reflect tumor pathology, growth, metastasis, and disease outcomes (expression)",31.0,MPS
+GSE274709,30,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,PIEZO2 mechanoreceptor-expressing fibroblasts in keloids cause short-term recurrence after surgical resection,30.0,OI
+GSE324491,30,False,True,True,False,AUS,A1,no undifferentiated arm,MicroRNA Network Regulation of Developmental Bone Toxicity in a Human Embryonic Stem Cell Osteogenic Model [RNA-Seq],30.0,CCD / CMPD
+GSE62589,30,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Integrative Analysis of Transcriptomic and Epigenomic Data to Reveal Regulation Patterns for Osteoporosis Risk,30.0,MPS
+GSE206214,29,True,True,True,False,AUS,A2,"same study, ChIP arm; WRN knockdown in hESC. The day 0/14 arm of the companion dataset is MC3T3-E1",WRN promotes bone development and growth by unwinding SHOX-G-quadruplexes via its helicase activity in Werner Syndrome,29.0,SHOX
+GSE148728,27,False,True,True,False,AUS,A1,no undifferentiated arm,Gene expression profiling of chondrodysplasia mutants and isogenic controls during hypertrophic induction from iPSCs,27.0,PSACH / MED | free text: dysplasia
+GSE279954,26,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,mRNA/sRNA Co-Sequencing Reveals Multiple New Targeted Therapy Candidates in Rhabdomyosarcoma,26.0,CCD / CMPD
+GSE69111,25,False,True,False,True,AUS,A2,no diagnosis as the lesion axis,Distinct regulatory programs for Sox9 in transcriptional regulation of the developing mammalian chondrocyte,25.0,CCD / CMPD
+GSE188531,25,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Sex-biased and random monoallelic expression of SHOX: implications for sex difference in height,25.0,SHOX
+GSE206213,24,True,True,True,False,AUS,A2,"Werner syndrome modelled as WRN knockdown in hESC -- an engineered lesion, not a diagnosis; a line, not a patient",WRN promotes bone development and growth by unwinding SHOX-G-quadruplexes via its helicase activity in Werner Syndrome [RNA-seq],24.0,SHOX | free text: short stature
+GSE248009,24,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Eicosatetraynoic Acid Regulates Pro-Fibrotic Pathways in an Induced Pluripotent Stem Cell Derived Macrophage:Human Intestinal Organoid Model of Crohn’s Disease,24.0,OI
+GSE35659,24,True,False,False,False,AUS,A2,no diagnosis as the lesion axis,A transcriptional map of the impact of endurance exercise training on skeletal muscle phenotype (resting muscle after endurance training),24.0,CCD / CMPD
+GSE291355,24,False,True,True,False,AUS,A1,no undifferentiated arm,Implication of bone marrow adipose tissue in bone homeostasis during osteoarthritis,24.0,free text: growth plate
+GSE66723,24,True,False,False,False,AUS,A2,no diagnosis as the lesion axis,Highly efficient in vivo delivery of functional RNAs using new versatile MS2-chimeric retrovirus-like particles,24.0,CCD / CMPD
+GSE228522,24,False,False,True,False,AUS,A1,no undifferentiated arm,Transcriptomic differences underlying the Activin-A induced large osteoclast formation in both healthy control and Fibrodysplasia Ossificans Progressiva osteoclasts,24.0,FOP
+GSE27864,23,False,False,True,False,AUS,A1,no undifferentiated arm,Homeostatic tissue responses in skin biopsies from NOMID patients with constitutive overproduction of IL-1b.,23.0,free text: growth plate
+GSE241507,22,True,True,True,False,AUS,A7+M2,"human OPLL arm without a differentiation axis; the day 0/14 axis is in MC3T3-E1 -- mouse, immortalised",Type I IFN signaling pathway promotes osteoblast differentiation through targeting Sox9.,22.0,CCD / CMPD
+GSE77758,22,False,False,True,False,AUS,A1,no undifferentiated arm,Microarray and miRNA expression data from five Ehlers-Danlos Syndrome Hypermobility type/Joint Hypermobility Syndrome (EDS-HT/JHS) patients' skin fibroblasts,22.0,MPS
+GSE134386,21,False,False,True,False,AUS,A1,no undifferentiated arm,Molecular Fingerprints of Borderline Changes of Kidney Allografts is Influenced by Donor Category,21.0,OI
+GSE159778,21,False,True,False,False,AUS,A2,no diagnosis as the lesion axis,A comprehensive library of human transcription factors for cell fate engineering (Bulk RNA-Seq),21.0,CCD / CMPD
+GSE309060,21,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Impact of hyaluronic acid coating of collagen membranes: RNAseq of gingival fibroblasts,21.0,OI
+GSE210826,21,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,HU308 Mitigates Osteoarthritis by Stimulating Sox9-Related Networks of Carbohydrate Metabolism,21.0,CCD / CMPD
+GSE290015,21,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Amniotic Fluid Reduces Liver Fibrosis By Attenuating Hepatic Stellate Cell Activation,21.0,OI
+GSE64264,20,False,True,False,False,AUS,A2,no diagnosis as the lesion axis,Functional Retinal Pigment Epithelium-like Cells from Human Fibroblasts,20.0,CCD / CMPD
+GSE157587,20,False,False,True,False,AUS,A1,no undifferentiated arm,Reiterative infusions of MSCs improve pediatric Osteogenesis Imperfecta eliciting a pro-osteogenic paracrine response: TERCELOI clinical trial,20.0,OI
+GSE246390,19,False,False,True,False,AUS,A1,no undifferentiated arm,Molecular Response to Biomechanical Loading in Human Growth Plate Cartilage,19.0,free text: growth plate
+GSE266974,18,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Eicosatetraynoic Acid Regulates Pro-Fibrotic Pathways in an Induced Pluripotent Stem Cell Derived Macrophage:Human Intestinal Organoid Model of Crohn’s Disease II,18.0,OI
+GSE251698,18,True,False,True,False,AUS,A1,no differentiated arm,MUTATIONS IN FIBRONECTIN IMPAIR CHONDROGENESIS IN CORNER FRACTURE TYPE SPONDYLOMETAPHYSEAL DYSPLASIA,18.0,free text: dysplasia | free text: short stature
+GSE256243,18,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Cyclic compressive loading induces a mature meniscal cell phenotype in mesenchymal stem cells with an atelocollagen-based scaffold,18.0,CCD / CMPD
+GSE162892,18,False,True,False,True,AUS,A2,no diagnosis as the lesion axis,RNA sequencing on iPSC-derived iSOX9-astrocytes,18.0,CCD / CMPD
+GSE324067,18,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,mTOR signalling mediates the spinal osteoblast pathotype at the curve apex in adolescent idiopathic scoliosis,18.0,OI | CCD / CMPD
+GSE689,18,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,GSEp53_v_Con,18.0,MPS
+GSE62721,18,False,True,True,False,AUS,A1,no undifferentiated arm,Molecular Mechanisms Regulating the Defects in Fragile X Syndrome Neurons Derived from Human Pluripotent Stem Cells,18.0,MPS
+GSE182833,17,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,"Transcriptomic analysis of Nintedanib, Alpelisib and Nintedanib;Alpelisib treated  bladder tumors",17.0,FGFR3
+GSE44167,17,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Geometric control of the coronary artery endothelial cell transcriptome following serum starvation,17.0,free text: growth plate
+GSE24261,16,False,True,False,False,AUS,A2,no diagnosis as the lesion axis,Runx2 Transcriptome of Prostate Cancer Cells: Insights into Invasiveness and Bone Metastasis,16.0,CCD / CMPD
+GSE163812,16,False,True,True,False,AUS,A1,no undifferentiated arm,XBP1s-Mediated Endoplasmic Reticulum Proteostasis Network Enhancement Can Selectively Improve Folding and Secretion of an Osteogenesis Imperfecta-Causing Collagen-I Variant,16.0,OI
+GSE201100,16,False,True,False,False,AUS,A2,no diagnosis as the lesion axis,GIP acts on multiple signaling pathways to uncouple bone resorption and formation,16.0,CCD / CMPD
+GSE286316,16,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Unveiling a Novel in-vitro Model of Skin Inflamm-Aging: Validation of Terminalia chebula Extract and Supermolecular Bakuchiol for Reversal of Inflamm-Aging,16.0,OI
+GSE687,16,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Prim_Fibs,16.0,MPS
+GSE302248,16,False,False,True,True,AUS,A1,no undifferentiated arm,BCAT1 as a critical regulator of human chondrosarcoma progression and differentiation through enzymatic and non-enzymatic mechanisms,16.0,CCD / CMPD
+GSE314190,16,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,RAB3GAP2 is a Regulator of Skeletal Muscle Endothelial Cell Proliferation and Associated with Capillary Density,16.0,OI
+GSE218575,16,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,"Transcriptomic analysis of Nintedanib, Alpelisib and Nintedanib;Alpelisib treated bladder tumors",16.0,FGFR3
+GSE189146,16,False,False,True,False,AUS,A1,no undifferentiated arm,AAV-delivered suppressor tRNA overcomes a nonsense mutation in mice (mRNA-seq),16.0,MPS
+GSE121384,15,False,True,True,False,AUS,A1,no undifferentiated arm,Verification and rectification of cell type-specific splicing of a Seckel syndrome-associated ATR mutation using iPS cell model,15.0,free text: short stature
+GSE188698,15,True,True,True,False,AUS,M4,"retina organoids, Mueller glia -- not a skeletal entity",Spatial and temporal development of Müller glial cells in hiPSC-derived retinal organoids facilitating the cell enrichment and transcriptome analysis,15.0,CCD / CMPD
+GSE242523,15,True,True,False,False,AUS,A2,no diagnosis as the lesion axis,Gene expression profiling of human induced pluripotent stem cell (hiPSC)-derived chondrospheroids,15.0,CCD / CMPD
+GSE208574,15,True,False,True,False,AUS,A1,no differentiated arm,Modeling 16p13.11 deletions in patient stem cell derived neurons,15.0,MPS
+GSE6565,14,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Fetal cartilage selective genes identified in a genome-scale analysis,14.0,free text: growth plate
+GSE69668,14,False,False,False,True,AUS,A2,no diagnosis as the lesion axis,Cartilage Oligomeric Matrix Protein (COMP) contributes to the development and metastasis of breast cancer,14.0,PSACH / MED
+GSE133757,14,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Induction of Sertoli-like cells from human fibroblasts by NR5A1 and GATA4,14.0,CCD / CMPD
+GSE141100,14,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Primary alcohol-activated human and mouse Hepatic Stellate Cells (HSCs) share similarities in gene expression profiles,14.0,OI
+GSE32398,13,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Expression data from hyaline cartilages,13.0,free text: growth plate
+GSE22855,13,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Comparison of enchondromas with controls (growth plate and cartilage),13.0,free text: growth plate
+GSE144557,12,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Cockayne syndrome proteins CSA and CSB maintain mitochondrial homeostasis through NAD+ signaling [HumanHT-12 V4.0],12.0,free text: short stature
+GSE122736,12,False,False,True,False,AUS,A1,no undifferentiated arm,Convergence of Cockayne Syndrome Group A and B Proteins at rRNA Transcription through Nucleolin Regulation,12.0,free text: short stature
+GSE214886,12,False,False,True,False,AUS,A1,no undifferentiated arm,Downregulation of CBX7 induced by EZH2 upregulates FGFR3 expression to reduce sensitivity to cisplatin in bladder cancer,12.0,FGFR3
+GSE16464,12,True,False,False,False,AUS,A2,no diagnosis as the lesion axis,Chondrogenic differentiation potential of OA chondrocytes and their use in autologous chondrocyte transplantation,12.0,OI | PSACH / MED | CCD / CMPD
+GSE111906,12,False,False,True,False,AUS,A1,no undifferentiated arm,Patient iPSC-derived neural stem cells display progressive enlargement of lysosomes and disruptions of glycosaminoglycan pathway and autophagy in concordance with clinical severity of Mucopolysaccharidosis I,12.0,MPS
+GSE185333,12,False,False,True,False,AUS,A1,no undifferentiated arm,Gene Expression of Fibroblasts Derived from Knee Tissue of Patients Undergoing Primary Total Knee Arthroplasty for Osteoarthritis,12.0,OI
+GSE160207,12,False,True,True,False,AUS,A1,no undifferentiated arm,RNA Sequencing Analysis of a Whole Blood Transcriptome in Estonian Families with Osteogenesis Imperfecta,12.0,OI
+GSE284526,12,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,"Replication stress, microcephalic primordial dwarfism, and compromised immunity in ATRIP deficient patients.",12.0,free text: short stature
+GSE78853,12,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Tricyclic Antidepressants Induce Inactivation of Hepatic Stellate Cell (HSC) Myofibroblasts,12.0,OI
+GSE43349,12,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Geometric control of the coronary artery endothelial cell transcriptome following standard growth condition,12.0,free text: growth plate
+GSE338020,12,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Sturgeon Cartilage–Derived Peptides Promote Cartilage Repair-Associated Responses in Osteoarthritis via Integrin αvβ3–PI3K/Akt Signaling,12.0,CCD / CMPD
+GSE239343,12,True,False,False,False,AUS,A2,no diagnosis as the lesion axis,The Therapeutic Potential of Adipose-Derived Mesenchymal Stem Cell Secretome in Osteoarthritis: A Comprehensive Study,12.0,CCD / CMPD
+GSE74163,12,True,False,True,False,AUS,A1,no differentiated arm,Functional tissue specific MSC in lung-transplanted patients with and without bronchiolitis obliterans syndrome (BOS) - a potential source for cell-therapy?,12.0,CCD / CMPD
+GSE35491,12,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,miR-206 integrates multiple components of differentiation pathways to control the transition from growth to differentiation in rhabdomyosarcoma cells (Illumina),12.0,CCD / CMPD
+GSE156466,11,False,False,True,False,AUS,A1,no undifferentiated arm,RNA-Seq of peripheral blood in FOP patients,11.0,FOP
+GSE292600,11,False,False,True,False,AUS,A1,no undifferentiated arm,Dysregulation of cell migration by matrix metalloproteinases in geleophysic dysplasia,11.0,free text: short stature
+GSE221128,11,True,True,True,False,BEREITS,-,"FOP, iMSC day 0/6, FOP vs resFOP -- a complete 2x2, but ALREADY one of the eighteen datasets (ACVR1 / FOP)",Oxidative phosphorylation is a pivotal therapeutic target of fibrodysplasia ossificans progressiva,11.0,FOP
+GSE35095,10,False,False,False,True,AUS,A2,no diagnosis as the lesion axis,Gene expression profiling of PC3 cells stably expressing ERbeta1 and ERbeta2,10.0,CCD / CMPD
+GSE9160,10,False,True,False,False,AUS,A2,no diagnosis as the lesion axis,Gene Expression Across the Human Growth Plate,10.0,free text: growth plate
+GSE40942,10,True,True,False,False,AUS,A2,no diagnosis as the lesion axis,Fetal mesenchymal stromal cells differentiating towards chondrocytes acquire a gene expression profile resembling human growth plate cartilage.,10.0,free text: growth plate
+GSE146904,10,False,False,True,False,AUS,A1,no undifferentiated arm,Lumbar intervertebral disc mRNA sequencing identifies the regulatory pathway in patients with disc herniation and spondylolisthesis,10.0,free text: growth plate
+GSE58435,10,False,False,True,False,AUS,A1,no undifferentiated arm,Amniotic fluid RNA gene expression profiling provides insights into the phenotype of Turner syndrome,10.0,SHOX
+GSE62914,10,True,True,False,False,AUS,A2,no diagnosis as the lesion axis,Efficient generation of stable chondrocytes from human iPSC through early induction of a pre-chondrogenic population,10.0,CCD / CMPD
+GSE147791,9,True,False,False,False,AUS,A2,no diagnosis as the lesion axis,Glutamine addicted myeloma cells inhibits osteoblastic differentiation of bone marrow mesenchymal stromal cells limiting asparagine availability.,9.0,OI | CCD / CMPD
+GSE190193,9,False,True,False,False,AUS,A2,no diagnosis as the lesion axis,Next Generation Sequencing of SARS-CoV-2 infected lung epithelial cells derived from iPSC,9.0,CCD / CMPD
+GSE17368,9,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Epiphyseal cartilage,9.0,free text: growth plate
+GSE121238,9,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Transciptomic profiling of human fetal lung samples,9.0,FGFR3 | CCD / CMPD
+GSE222109,9,True,True,True,False,AUS,A2,"iPSC vs sclerotome, wild type only -- no diagnosis as the lesion axis",Recapitulation of endochondral ossification by human pluripotent stem cell-derived SOX9+ sclerotomal progenitors,9.0,CCD / CMPD
+GSE69206,9,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Comparing effects of perfusion and hydrostatic pressure on human chondrocytes using gene profiles,9.0,OI
+GSE64752,9,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Long-term expandable SOX9+ chondrogenic ectomesenchymal cells from human pluripotent stem cells,9.0,OI | CCD / CMPD
+GSE61113,9,True,False,False,False,AUS,A2,no diagnosis as the lesion axis,Surface Topography Enhances Differentiation of Mesenchymal Stem Cells Towards Osteogenic and Adipogenic Lineages,9.0,MPS
+GSE283407,9,True,False,True,False,AUS,A1,no differentiated arm,Paracrine regulation of pancreatic cancer cell response to chemotherapy by GLI2-Collagen I signaling,9.0,OI
+GSE224139,9,True,True,False,False,AUS,A2,no diagnosis as the lesion axis,"Single, off-the-shelf treatment of Neuropathic Mucopolysaccharidoses with iPSC-derived microglia",9.0,MPS
+GSE227119,9,False,False,True,False,AUS,A1,no undifferentiated arm,Identification of key genes and signaling pathways in microtia by the analysis of transcriptomics,9.0,PSACH / MED
+GSE145048,8,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,"GDF5+ chondroprogenitors derived from human pluripotent stem cells, which  resemble embryonic teno/ligamento-genic cells, preferentially form permanent chondrocytes",8.0,CCD / CMPD | free text: growth plate
+GSE188354,8,False,False,True,True,AUS,A1,no undifferentiated arm,gp130/STAT3 signaling is required for homeostatic proliferation and anabolism in postnatal growth plate and articular chondrocytes,8.0,free text: growth plate
+GSE193510,8,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,A miR-125 / Sirtuin-7 pathway drives pro-calcific potential of myeloid cells in diabetic vascular disease,8.0,CCD / CMPD
+GSE113343,8,False,False,True,False,AUS,A1,no undifferentiated arm,"RNA-seq reported in ""Phosphorylated Lamin A/C in the nuclear interior binds active enhancers associated with abnormal transcription in progeria""",8.0,MPS
+GSE186141,8,False,False,True,False,AUS,A1,no undifferentiated arm,Phenotypic spectrum and molecular basis in a Chinese cohort of osteogenesis imperfecta with mutations in type I collagen,8.0,OI
+GSE273436,8,False,False,True,True,AUS,A1,no undifferentiated arm,Voluntary exercise sensitizes cancer immunotherapy via collagen degradation-orchestrated inflammatory tumor immune microenvironment,8.0,OI
+GSE77764,8,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Fibroblast growth factor receptor 3 overexpression mediates ALK inhibitor resistance in ALK-rearranged non-small cell lung cancer,8.0,FGFR3
+GSE463,8,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Profiling of human bone marrow stromal cell lines HS-5 and HS-27a,8.0,MPS
+GSE329742,7,False,False,False,False,AUS,A2,no diagnosis as the lesion axis,Mechano-Hypoxia Programs a Coordinated Chondrogenic–Osteochondral Transcriptome in Co-Cultures of Human Nasal Chondrocytes and Bone Marrow–Derived Mesenchymal Stromal Cells,7.0,CCD / CMPD

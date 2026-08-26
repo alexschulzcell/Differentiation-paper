@@ -1,0 +1,34 @@
+==============================================================================
+Empfindlichkeit der Eichungsbilanz -- NACHTRAEGLICH, nicht vorregistriert
+==============================================================================
+Weggelassen in der In-vitro-Fassung: SOST, DMP1, PHEX, MEPE, PTH1R
+
+   1 LAMA5-KO (chondr)            chondrogen  | vorreg n 6 bestanden      z  +2.67 | invitro n 6 bestanden      z  +2.60
+   2 LAMA5-KO (osteo)             osteogen    | vorreg n12 durchgefallen  z  -0.21 | invitro n10 durchgefallen  z  -0.68
+   3 FN1 FNC123R                  chondrogen  | vorreg n12 durchgefallen  z  +0.71 | invitro n12 durchgefallen  z  +0.71
+   4 FN1 FNC231W                  chondrogen  | vorreg n12 durchgefallen  z  +0.42 | invitro n12 durchgefallen  z  +0.41
+   5 SERPINA3-KD                  chondrogen  | vorreg n 1 nicht eichbar  z   +nan | invitro n 1 nicht eichbar  z   +nan
+   6 MIR181A1HG-KD                osteogen    | vorreg n16 durchgefallen  z  -0.69 | invitro n13 durchgefallen  z  -1.39
+   7 LINC01638-KD (GSE227512)     osteogen    | vorreg n11 durchgefallen  z  -0.32 | invitro n10 durchgefallen  z  -0.90
+   8 ARSB / MPS VI (GSE218101)    chondrogen  | vorreg n12 durchgefallen  z  +0.83 | invitro n12 durchgefallen  z  +0.90
+   9 ACVR1 / FOP (GSE221128)      chondrogen  | vorreg n12 durchgefallen  z  +1.90 | invitro n12 durchgefallen  z  +1.85
+  10 RNF4-KD (GSE205432)          osteogen    | vorreg n17 durchgefallen  z  -0.83 | invitro n13 durchgefallen  z  -0.71
+  11 RB1 +/- (GSE245585)          osteogen    | vorreg n11 durchgefallen  z  -1.03 | invitro n 9 durchgefallen  z  -1.20
+  12 Nonunion (GSE226565)         osteogen    | vorreg n17 durchgefallen  z  -0.57 | invitro n13 durchgefallen  z  -0.35
+  13 SERPINA3-KD osteo (GSE247528 osteogen    | vorreg n 4 durchgefallen  z  -0.77 | invitro n 4 durchgefallen  z  -0.77
+  14 ERCC6L2-KD (GSE190542)       osteogen    | vorreg n14 bestanden      z  +2.13 | invitro n12 durchgefallen  z  +1.63
+  15 TP53 LFS (GSE102732)         osteogen    | vorreg n18 durchgefallen  z  -0.33 | invitro n13 durchgefallen  z  +0.67
+  16 YAP/TAZ-KD (GSE137035)       osteogen    | vorreg n11 durchgefallen  z  +0.26 | invitro n 9 durchgefallen  z  +0.75
+  17 RB1-mut isogen (GSE145235)   osteogen    | vorreg n16 durchgefallen  z  +1.93 | invitro n11 bestanden      z  +2.53
+  18 RB1-del isogen (GSE145235)   osteogen    | vorreg n16 durchgefallen  z  +1.39 | invitro n13 durchgefallen  z  +1.39
+
+------------------------------------------------------------------------------
+vorregistrierte Markersaetze:
+   eichbar 17 von 18 | bestanden  2 | durchgefallen 15 (88 % der eichbaren)
+      chondrogen  1 von 5 bestanden
+      osteogen    1 von 12 bestanden
+nur in vitro erreichbare Marker:
+   eichbar 17 von 18 | bestanden  2 | durchgefallen 15 (88 % der eichbaren)
+      chondrogen  1 von 5 bestanden
+      osteogen    1 von 12 bestanden
+------------------------------------------------------------------------------

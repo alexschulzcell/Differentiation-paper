@@ -1,0 +1,7 @@
+zone,zone_rank,n_samples,n_cells,n_cells_min
+MesCond,1,9,1843,6
+ChondroProg,2,18,4293,5
+RestingChon,3,12,3874,6
+ProlifChon,4,18,2310,5
+PrehyperChon,5,8,235,9
+HyperChon,6,1,8,8

@@ -1,0 +1,69 @@
+==============================================================================
+Ebene B3 -- H3K27ac, GSE129031, MSC gegen Chondrozyt (2 Donorlinien)
+==============================================================================
+Zweck: derselbe Ebenenvergleich INNERHALB der chondrogenen Achse,
+gegen das Methylom derselben Differenzierung (GSE129266).
+Donorbezeichnungen der beiden Serien stimmen NICHT ueberein -- es ist
+dasselbe System und Labor, aber nicht nachweislich dieselben Donoren.
+
+==============================================================================
+Fenster P (Promotor, TSS -2000/+500) -- 20036 Gene
+Uebereinstimmung der beiden Donorlinien: r = 0.347
+linienkonsistente Gene: 12221 (61.0 %)
+
+EICHUNG (chondrogene minus naive Marker, 12 gegen 10 Gene):
+  Kontrast +0.759 | Null -0.001 +- 0.131 | MDE80 +0.365 | z +5.82 | p 0.0001 | BESTANDEN
+
+MODULTEST (erwartetes Vorzeichen +ri), 173 von 173 Genen messbar:
+  Hintergrund        C 0.607 [0.533-0.677] | Null 0.482+-0.038 | MDE80 0.588 | z +3.29 | p 0.0015 | SCHWELLE ERREICHT
+                     stetig +0.0847 | z +3.84 | p 0.0001
+  basisgeschichtet   C 0.607 [0.533-0.677] | Null 0.475+-0.037 | MDE80 0.578 | z +3.59 | p 0.0011 | SCHWELLE ERREICHT
+                     stetig +0.0847 | z +4.27 | p 0.0001
+  [Input-Kontrolle, Marke/Input] Eichung z +5.79 | Modul C 0.590 | Null 0.480 | z +2.97 | p 0.004 | stetig z +3.73
+  [Linie 8A    ] C 0.561 | Null 0.456 | z +2.83 | p 0.0067
+  [Linie 2454e ] C 0.601 | Null 0.520 | z +2.14 | p 0.0379
+
+==============================================================================
+Fenster T10 (TSS +- 10 kb) -- 20036 Gene
+Uebereinstimmung der beiden Donorlinien: r = 0.387
+linienkonsistente Gene: 12442 (62.1 %)
+
+EICHUNG (chondrogene minus naive Marker, 12 gegen 10 Gene):
+  Kontrast +0.662 | Null +0.000 +- 0.085 | MDE80 +0.237 | z +7.82 | p 0.0001 | BESTANDEN
+
+MODULTEST (erwartetes Vorzeichen +ri), 173 von 173 Genen messbar:
+  Hintergrund        C 0.613 [0.538-0.682] | Null 0.489+-0.038 | MDE80 0.596 | z +3.25 | p 0.0015 | SCHWELLE ERREICHT
+                     stetig +0.1070 | z +4.86 | p 0.0001
+  basisgeschichtet   C 0.613 [0.538-0.682] | Null 0.484+-0.037 | MDE80 0.588 | z +3.46 | p 0.0006 | SCHWELLE ERREICHT
+                     stetig +0.1070 | z +5.08 | p 0.0001
+  [Input-Kontrolle, Marke/Input] Eichung z +7.30 | Modul C 0.636 | Null 0.501 | z +3.63 | p 0.0004 | stetig z +4.69
+  [Linie 8A    ] C 0.555 | Null 0.468 | z +2.31 | p 0.0263
+  [Linie 2454e ] C 0.584 | Null 0.530 | z +1.42 | p 0.1823
+
+==============================================================================
+Fenster T50 (TSS +- 50 kb) -- 20036 Gene
+Uebereinstimmung der beiden Donorlinien: r = 0.461
+linienkonsistente Gene: 13639 (68.1 %)
+
+EICHUNG (chondrogene minus naive Marker, 12 gegen 10 Gene):
+  Kontrast +0.567 | Null +0.001 +- 0.068 | MDE80 +0.190 | z +8.34 | p 0.0001 | BESTANDEN
+
+MODULTEST (erwartetes Vorzeichen +ri), 173 von 173 Genen messbar:
+  Hintergrund        C 0.613 [0.538-0.682] | Null 0.495+-0.038 | MDE80 0.601 | z +3.10 | p 0.0027 | SCHWELLE ERREICHT
+                     stetig +0.1021 | z +4.65 | p 0.0001
+  basisgeschichtet   C 0.613 [0.538-0.682] | Null 0.496+-0.037 | MDE80 0.600 | z +3.15 | p 0.0022 | SCHWELLE ERREICHT
+                     stetig +0.1021 | z +4.70 | p 0.0001
+  [Input-Kontrolle, Marke/Input] Eichung z +7.34 | Modul C 0.636 | Null 0.517 | z +3.24 | p 0.0018 | stetig z +4.59
+  [Linie 8A    ] C 0.590 | Null 0.483 | z +2.79 | p 0.007
+  [Linie 2454e ] C 0.624 | Null 0.516 | z +2.86 | p 0.0054
+
+==============================================================================
+UEBERSICHT
+==============================================================================
+Fen          C     z_kon  z_stetig   p_stetig
+P        0.607     +3.59     +4.27     0.0001
+P        0.590     +2.97     +3.73     0.0004
+T10      0.613     +3.46     +5.08     0.0001
+T10      0.636     +3.63     +4.69     0.0001
+T50      0.613     +3.15     +4.70     0.0001
+T50      0.636     +3.24     +4.59     0.0001

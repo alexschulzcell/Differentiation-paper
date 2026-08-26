@@ -1,0 +1,169 @@
+OK   calibration 18: passed                       got     2.0000  want 2
+OK   calibration 18: not calibratable             got     1.0000  want 1
+OK   calibration 18: above own MDE80              got     0.0000  want 0
+OK   calibration cells: passed                    got     7.0000  want 7
+OK   screening: candidates                        got    50.0000  want 50
+OK   screening: without undifferentiated arm      got    46.0000  want 46
+OK   module above own limit                       got    18.0000  want 18
+OK   module z min                                 got     5.2522  want 5.25
+OK   module z max                                 got    13.0977  want 13.1
+OK   cross-concordance rho                        got     0.6223  want 0.622
+OK   cross-concordance z                          got     7.0342  want 7.03
+OK   pooled n failed                              got    16.0000  want 16
+OK   pooled n passed                              got     2.0000  want 2
+OK   pooled failed z                              got    13.1302  want 13.13
+OK   pooled passed z                              got    12.7857  want 12.79
+OK   GO OR matrix remodelling                     got     7.9153  want 7.92
+OK   GO OR matrix components                      got     4.0305  want 4.03
+OK   GO OR cell-cycle exit                        got     2.1124  want 2.11
+OK   GO OR secretory machinery                    got     0.3236  want 0.32
+OK   GO n_module (not 173!)                       got   147.0000  want 147
+OK   v2 broad OR matrix remodelling               got     3.6244  want 3.62
+OK   v2 broad OR matrix components                got     3.3832  want 3.38
+OK   v2 broad OR secretory machinery              got     0.3236  want 0.32
+OK   v2 broad OR cell-cycle exit                  got     1.7958  want 1.8
+OK   v2 broad CI low matrix remodelling           got     1.1365  want 1.137
+OK   v2 broad CI high matrix remodelling          got     8.9130  want 8.913
+OK   v2 broad CI low matrix components            got     1.2008  want 1.201
+OK   v2 broad CI high matrix components           got     7.7327  want 7.733
+OK   v2 cell-cycle CI includes 1                  got     1.0000  want 1.0
+OK   v2 n_module equal in both sets               got     1.0000  want 1.0
+OK   v2 n_module                                  got   147.0000  want 147
+OK   v2 categories under Bonferroni alpha         got     0.0000  want 0.0
+OK   GO categories under Bonferroni alpha         got     0.0000  want 0.0
+OK   v2 sensitivity OR matrix components          got     1.5476  want 1.55
+OK   v2 sensitivity OR matrix remodelling         got     1.4458  want 1.45
+OK   v2 sensitivity never reaches criterion       got     0.0000  want 0.0
+OK   ATAC H1 above limit adipogenic               got     3.0000  want 3
+OK   ATAC H1 above limit osteogenic               got     4.0000  want 4
+OK   ATAC H1 above limit lineage contrast         got     0.0000  want 0
+OK   ATAC background adipogenic                   got     2.0000  want 2
+OK   ATAC calibration adipogenic                  got     4.0000  want 4
+OK   ATAC calibration osteogenic                  got     0.0000  want 0
+OK   ATAC calibration L (difference)              got     0.0000  want 0
+OK   S9 undifferentiated markers, osteo axis, max z got    -1.4566  want -1.46
+OK   S9 undifferentiated markers, osteo axis, min z got    -2.7993  want -2.8
+OK   S9 osteogenic markers, max z                 got    -1.1589  want -1.16
+OK   S9 adipogenic markers on osteo axis, min z   got     1.6988  want 1.7
+OK   S9 module on osteo axis, min z               got     3.1000  want 3.1
+OK   S9 module on osteo axis, max z               got     6.9965  want 7.0
+OK   S9 module on adipo axis, max z               got     7.0201  want 7.02
+OK   S9 module above own limit                    got     8.0000  want 8
+OK   S9 calibrations passing                      got     0.0000  want 0
+OK   F2F decomposable (naive markers drop)        got    10.0000  want 10
+OK   F2F decomposition confirmed                  got     8.0000  want 8
+OK   F2F other case (lineage reached)             got     2.0000  want 2
+OK   F2F decomposition refuted                    got     0.0000  want 0
+OK   F2F module above own limit                   got    18.0000  want 18
+OK   F2F filtered confirmed                       got     7.0000  want 7
+OK   F2F filtered refuted                         got     0.0000  want 0
+OK   F2F lineage reached with failed calibration (tautological) got     0.0000  want 0.0
+OK   F2F lineage reached with passed calibration (tautological) got     2.0000  want 2.0
+OK   F2F passed                                   got     2.0000  want 2.0
+OK   F2F failed                                   got    15.0000  want 15.0
+OK   F2F not calibratable                         got     1.0000  want 1.0
+OK   calibration L passing, 3 cohorts             got     0.0000  want 0
+OK   calibration L attempts                       got    12.0000  want 12
+OK   in vivo module rho                           got     0.4561  want 0.456
+OK   in vivo module z                             got     4.7978  want 4.8
+OK   in vivo module MDE80                         got     0.2743  want 0.274
+OK   in vivo n specimens                          got    16.0000  want 16
+OK   gene decomposition 10 %: rho                 got     0.1444  want 0.144
+OK   gene decomposition 10 %: z                   got     2.7362  want 2.74
+OK   gene decomposition 10 %: own limit           got     0.1248  want 0.125
+OK   gene decomposition 10 %: removed genes       got    18.0000  want 18
+OK   gene decomposition 10 %: above own limit     got     1.0000  want 1.0
+OK   gene decomposition 20 %: below own limit     got     1.0000  want 1.0
+OK   HZ test: module rho without HyperChon        got     0.4299  want 0.43
+OK   HZ test: module z without HyperChon          got     4.6526  want 4.65
+OK   HZ test: module new own limit                got     0.2505  want 0.25
+OK   HZ test: module above new limit              got     1.0000  want 1.0
+OK   HZ test: PC above new limit                  got     1.0000  want 1.0
+OK   HZ test: points without HyperChon            got    65.0000  want 65
+OK   caption 3C contains HZ-sensitivity value +0.430 got     1.0000  want 1.0
+OK   caption 3C contains HZ-sensitivity value 0.250 got     1.0000  want 1.0
+OK   caption 3C contains HZ-sensitivity value +4.65 got     1.0000  want 1.0
+OK   caption 3C contains HZ-sensitivity value +0.880 got     1.0000  want 1.0
+OK   caption 3C contains HZ-sensitivity value 0.615 got     1.0000  want 1.0
+OK   caption F2F counter passed 2                 got     1.0000  want 1.0
+OK   caption F2F counter not calibratable 1       got     1.0000  want 1.0
+OK   caption F6 refers to Supplementary Table 7   got     1.0000  want 1.0
+OK   caption F6 refers to Supplementary Table 14  got     1.0000  want 1.0
+OK   supplement legends carry table S14           got     1.0000  want 1.0
+OK   gene ranking rows                            got   173.0000  want 173.0
+OK   PC above own limit                           got    64.0000  want 64
+OK   PC z > 2                                     got    65.0000  want 65
+OK   PC median z                                  got    10.9238  want 10.92
+OK   HyperChon samples                            got     1.0000  want 1
+OK   HyperChon cells                              got     8.0000  want 8
+OK   postnatal plate: PC rho                      got    -0.0329  want -0.033
+OK   postnatal plate: PC limit                    got     0.3710  want 0.371
+OK   postnatal plate: PC NOT above limit          got     1.0000  want 1.0
+OK   postnatal plate: module NOT above limit      got     1.0000  want 1.0
+OK   postnatal plate: decline NOT significant     got     1.0000  want 1.0
+OK   postnatal plate: donors                      got     4.0000  want 4
+OK   postnatal plate: points                      got    12.0000  want 12
+OK   postnatal plate all samples: PC NOT above limit got     1.0000  want 1.0
+OK   postnatal plate all samples: points          got    13.0000  want 13
+OK   PA309 distal OR                              got     2.8424  want 2.84
+OK   PA309 distal z                               got     6.3049  want 6.3
+OK   PA309 distal limit                           got     1.7865  want 1.79
+OK   programme distal OR                          got     0.8147  want 0.81
+OK   programme distal limit                       got     2.3373  want 2.34
+OK   LOEUF mono                                   got     0.2830  want 0.283
+OK   LOEUF bi                                     got     0.8260  want 0.826
+OK   n mono                                       got   120.0000  want 120
+OK   n bi (LOEUF)                                 got   247.0000  want 247
+OK   n bi (|dWT|)                                 got   249.0000  want 249
+OK   dWT P mono/bi                                got     0.8574  want 0.86
+OK   programme dWT z                              got    18.1029  want 18.1
+OK   PA309 dWT z                                  got    -0.7073  want -0.71
+OK   PA309 dWT limit                              got     0.0725  want 0.073
+OK   GWAS dWT limit                               got     0.0161  want 0.016
+OK   cell cycle dWT z                             got     3.7161  want 3.72
+OK   GWAS LOEUF z                                 got    -4.6679  want -4.67
+OK   GWAS LOEUF limit                             got     0.0239  want 0.024
+OK   PA309 LOEUF z                                got     1.8251  want 1.83
+OK   class tests created                          got    49.0000  want 49
+OK   of which computable                          got    40.0000  want 40
+OK   above Bonferroni                             got     0.0000  want 0
+OK   above own limit                              got     4.0000  want 4
+OK   GWAS pooled OR                               got     0.9995  want 1.0
+OK   GWAS pooled limit                            got     1.5929  want 1.59
+OK   no panel above own limit                     got     0.0000  want 0
+OK   prehyper contrast                            got     0.1681  want 0.168
+OK   prehyper z                                   got     4.9787  want 4.98
+OK   F6: 15 levels, forest and table identical    got     1.0000  want 1.0
+OK   F6 fetal anchor estimate                     got     0.4561  want 0.456
+OK   F6 fetal anchor limit                        got     0.2743  want 0.274
+OK   F6 donors S1                                 got     0.3489  want 0.3489
+OK   F6 donors limit                              got     0.3438  want 0.3438
+OK   F6 H3K27ac min                               got     0.5896  want 0.5896
+OK   F6 H3K27ac max                               got     0.6358  want 0.6358
+OK   F6 H3K27ac limit min                         got     0.5778  want 0.5778
+OK   F6 ATAC adipo range                          got     0.0578  want 0.058
+OK   F6 ATAC difference BELOW own limit           got     1.0000  want 1.0
+OK   F6 450K below own limit                      got     1.0000  want 1.0
+OK   F6 S12 share                                 got     0.6821  want 0.6821
+OK   F6 S12 share above limit                     got     1.0000  want 1.0
+OK   F6 GWAS pooled OR                            got     0.9995  want 1.0
+OK   F6 GWAS limit                                got     1.5929  want 1.59
+OK   F6 dynamics-axis PA309 z                     got    -0.7073  want -0.71
+OK   F6 constraint PA309 z                        got     1.8251  want 1.83
+OK   F6 day-zero z                                got    -1.6780  want -1.68
+OK   F6 module z min                              got     5.2522  want 5.25
+OK   F6 module z max                              got    13.0977  want 13.1
+OK   TS14 row 1 calibration 2/18                  got     1.0000  want 1.0
+OK   TS14 H3K27ac contains 9/9                    got     1.0000  want 1.0
+OK   TS14 H3K27ac contains +2.97..+3.63           got     1.0000  want 1.0
+OK   S3 primary z                                 got     2.8356  want 2.84
+OK   S3 primary MDE80                             got     0.6792  want 0.679
+OK   S3 studies above own limit                   got     0.0000  want 0
+OK   S4 cohorts above own limit                   got     0.0000  want 0
+OK   module genes total                           got   173.0000  want 173
+OK   of which ri = +1                             got   129.0000  want 129
+OK   of which ri = -1                             got    44.0000  want 44
+OK   preregistration documents (34 + PRAEREG_F2F) got    35.0000  want 35
+
+=== 166 of 166 checks passed ===
+numpy 2.4.4 | pandas 3.0.1 | python 3.12.10

@@ -1,0 +1,65 @@
+==============================================================================
+Ebene B -- Chromatin, GSE332758: Eichung je Achse, dann Modultest
+==============================================================================
+
+--- EICHUNG D: loest die Ebene die Differenzierung auf? -----------
+Kontrast: Linienmarker minus Naiv-/Proliferationsmarker, je Achse.
+Fen   Achse     n_lin n_naiv   Kontr.     Null    MDE80       z         p  Urteil
+P     osteogen     18    10   -0.058   -0.000   +0.298   -0.54         1  durchgefallen
+P     adipogen     18    10   +0.560   -0.000   +0.329   +4.76    0.0001  BESTANDEN
+T10   osteogen     18    10   +0.104   +0.000   +0.239   +1.22    0.2172  durchgefallen
+T10   adipogen     18    10   +0.453   -0.000   +0.253   +5.01    0.0001  BESTANDEN
+T50   osteogen     18    10   +0.101   +0.001   +0.171   +1.66    0.0977  durchgefallen
+T50   adipogen     18    10   +0.268   +0.001   +0.182   +4.13    0.0001  BESTANDEN
+GB    osteogen     18    10   +0.118   -0.001   +0.276   +1.20    0.2238  durchgefallen
+GB    adipogen     18    10   +0.393   -0.000   +0.295   +3.73    0.0004  BESTANDEN
+
+--- EICHUNG L: haelt die Ebene die beiden Linien auseinander? -----
+Kontrast: osteogene minus adipogene Marker auf der Differenzachse.
+P     differenz    18    18   +0.138   -0.000   +0.171   +2.26    0.0233  durchgefallen
+T10   differenz    18    18   +0.080   +0.000   +0.124   +1.80    0.0723  durchgefallen
+T50   differenz    18    18   +0.046   +0.000   +0.115   +1.12    0.2652  durchgefallen
+GB    differenz    18    18   +0.058   -0.000   +0.175   +0.93    0.3475  durchgefallen
+
+--- MODULTEST -----------------------------------------------------
+Erwartetes Vorzeichen +ri (offenes Chromatin und Transkription
+laufen gleichsinnig). Null: Hintergrundziehung; H1 zusaetzlich
+dezilgeschichtet nach Ausgangszugaenglichkeit im naiven Zustand.
+
+Fenster P (Promotor, TSS -2000/+500)
+  osteogen   Hintergrund          n 172 | C 0.686 [0.609-0.747] | Null 0.538+-0.038 | z +3.94 | p 0.0001 | Ebene fuer diese Achse nicht geeicht
+  osteogen   H1 basisgeschichtet  n 172 | C 0.686 [0.609-0.747] | Null 0.530+-0.038 | z +4.15 | p 0.0001 | Ebene fuer diese Achse nicht geeicht
+  adipogen   Hintergrund          n 172 | C 0.680 [0.603-0.742] | Null 0.594+-0.035 | z +2.46 | p 0.0178 | unter Schwelle
+  adipogen   H1 basisgeschichtet  n 172 | C 0.680 [0.603-0.742] | Null 0.573+-0.036 | z +2.97 | p 0.0019 | SCHWELLE ERREICHT
+  differenz  Hintergrund          n 172 | C 0.436 [0.362-0.508] | Null 0.406+-0.035 | z +0.85 | p 0.4428 | Ebene fuer diese Achse nicht geeicht
+  differenz  H1 basisgeschichtet  n 172 | C 0.436 [0.362-0.508] | Null 0.423+-0.035 | z +0.36 | p 0.7732 | Ebene fuer diese Achse nicht geeicht
+
+Fenster T10 (TSS +- 10 kb)
+  osteogen   Hintergrund          n 173 | C 0.653 [0.580-0.720] | Null 0.522+-0.038 | z +3.50 | p 0.0009 | Ebene fuer diese Achse nicht geeicht
+  osteogen   H1 basisgeschichtet  n 173 | C 0.653 [0.580-0.720] | Null 0.520+-0.038 | z +3.50 | p 0.0005 | Ebene fuer diese Achse nicht geeicht
+  adipogen   Hintergrund          n 173 | C 0.642 [0.568-0.709] | Null 0.565+-0.037 | z +2.09 | p 0.0411 | unter Schwelle
+  adipogen   H1 basisgeschichtet  n 173 | C 0.642 [0.568-0.709] | Null 0.553+-0.037 | z +2.38 | p 0.0222 | unter Schwelle
+  differenz  Hintergrund          n 173 | C 0.509 [0.435-0.582] | Null 0.454+-0.037 | z +1.47 | p 0.1634 | Ebene fuer diese Achse nicht geeicht
+  differenz  H1 basisgeschichtet  n 173 | C 0.509 [0.435-0.582] | Null 0.467+-0.036 | z +1.15 | p 0.2895 | Ebene fuer diese Achse nicht geeicht
+
+Fenster T50 (TSS +- 50 kb)
+  osteogen   Hintergrund          n 173 | C 0.671 [0.597-0.736] | Null 0.527+-0.038 | z +3.79 | p 0.0004 | Ebene fuer diese Achse nicht geeicht
+  osteogen   H1 basisgeschichtet  n 173 | C 0.671 [0.597-0.736] | Null 0.520+-0.038 | z +3.98 | p 0.0003 | Ebene fuer diese Achse nicht geeicht
+  adipogen   Hintergrund          n 173 | C 0.699 [0.627-0.763] | Null 0.541+-0.037 | z +4.25 | p 0.0001 | SCHWELLE ERREICHT
+  adipogen   H1 basisgeschichtet  n 173 | C 0.699 [0.627-0.763] | Null 0.540+-0.037 | z +4.30 | p 0.0001 | SCHWELLE ERREICHT
+  differenz  Hintergrund          n 173 | C 0.555 [0.480-0.627] | Null 0.492+-0.038 | z +1.65 | p 0.1153 | Ebene fuer diese Achse nicht geeicht
+  differenz  H1 basisgeschichtet  n 173 | C 0.555 [0.480-0.627] | Null 0.489+-0.036 | z +1.82 | p 0.0814 | Ebene fuer diese Achse nicht geeicht
+
+Fenster GB (Genkoerper)
+  osteogen   Hintergrund          n 173 | C 0.682 [0.609-0.747] | Null 0.520+-0.038 | z +4.31 | p 0.0001 | Ebene fuer diese Achse nicht geeicht
+  osteogen   H1 basisgeschichtet  n 173 | C 0.682 [0.609-0.747] | Null 0.512+-0.038 | z +4.51 | p 0.0001 | Ebene fuer diese Achse nicht geeicht
+  adipogen   Hintergrund          n 173 | C 0.694 [0.621-0.758] | Null 0.534+-0.038 | z +4.23 | p 0.0001 | SCHWELLE ERREICHT
+  adipogen   H1 basisgeschichtet  n 173 | C 0.694 [0.621-0.758] | Null 0.518+-0.037 | z +4.76 | p 0.0001 | SCHWELLE ERREICHT
+  differenz  Hintergrund          n 173 | C 0.549 [0.475-0.621] | Null 0.487+-0.038 | z +1.64 | p 0.1156 | Ebene fuer diese Achse nicht geeicht
+  differenz  H1 basisgeschichtet  n 173 | C 0.549 [0.475-0.621] | Null 0.501+-0.037 | z +1.29 | p 0.2277 | Ebene fuer diese Achse nicht geeicht
+
+--- Zusammenfassung der Ebene B -----------------------------------
+  P    adipogen   C 0.680 (Null 0.573) z +2.97 p 0.0019 -> SCHWELLE ERREICHT
+  T10  adipogen   C 0.642 (Null 0.553) z +2.38 p 0.0222 -> unter Schwelle
+  T50  adipogen   C 0.699 (Null 0.540) z +4.30 p 0.0001 -> SCHWELLE ERREICHT
+  GB   adipogen   C 0.694 (Null 0.518) z +4.76 p 0.0001 -> SCHWELLE ERREICHT

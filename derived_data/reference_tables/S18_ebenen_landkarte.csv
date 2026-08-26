@@ -1,0 +1,8 @@
+ebene,kurz,einheit,eichung,mde,programm,laesion,prog_ueber,laes_ueber,status,quelle
+perturbation models (18),models,genes vs expected,passed,0.35 z,21.89873417721519,0.875,True,False,exploratory,f6_internal_summary.csv
+external triangulation (11),external,synthesis z,per cell,no single threshold reached,1.21,0.0,False,False,follow-up,f6_s12_fixed173_summary.csv
+donors within one experiment (7 cells),donors,S1 (mean rho),"dWT itself, 7/14 passed",0.344,0.349,,True,,exploratory,Ergebnisse/M_donoren/statistik.csv
+"chromatin (H3K27ac, ATAC)",chromatin,concordance z,lineage markers,0.588,4.88,,True,,exploratory,f7_ebenen.csv
+promoter methylome (450K),methylome,concordance z,lineage markers (z +2.94),not reached,1.84,,False,,exploratory,f7_ebenen.csv
+patient vs control (7 cohorts),patients,concordance C,withdrawn (NAIV unsuitable),0.576-0.689,0.0,0.0,False,False,exploratory,m3_patienten.csv
+human genetics (7 panels),genetics,odds ratio,OR 17-52 / OR 3.7-5.8,OR 1.59,1.0,1.0,False,False,confirmatory,m4_anker.csv

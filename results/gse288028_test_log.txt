@@ -1,0 +1,18 @@
+Disjunktionspruefung: Annotation 11 Gene, Eichunion 22, Schnittmenge ['MKI67']
+Eichsaetze nach Reduktion: CHONDROGEN 12 | NAIV 10 -> 9
+
+Positivkontrolle chondrogen-naiv: 12/12 Satz-a-Gene, 9/9 Satz-b-Gene im Block
+  rho -0.0329 | Null 0.0378 +- 0.1326 | z -0.533 | Grenze rho 0.3710| ueber Grenze False
+
+Modul (173 Gene): 129/129 Satz-a-Gene, 44/44 Satz-b-Gene im Block
+  rho 0.5114 | Null -0.0174 +- 0.3404 | z +1.553 | Grenze rho 0.8308| ueber Grenze False
+
+Gespiegelte Kontraste (--kontrast), fuer die Widerspruchsklausel:
+  rho -0.5114 | z -1.553 | Grenze 0.8710 | ueber Grenze False
+
+Spender: 4 | Punkte: 12 (P30453:RZ, P31011:RZ, P25452:RZ, P22202:RZ, P30453:PZ, P31011:PZ, P25452:PZ, P25452:PHZ, P30453:HZ, P31011:HZ, P25452:HZ, P22202:HZ)
+
+==============================================================================
+URTEIL nach der Regel im Skriptkopf: NICHT EICHBAR -- die Positivkontrolle liegt unter ihrer eigenen Nachweisgrenze (rho -0.0329 <= 0.3710).
+(Zum Massstab: erster Atlas rho 0.456, Grenze 0.274.)
+==============================================================================

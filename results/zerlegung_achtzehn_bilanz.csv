@@ -1,0 +1,3 @@
+genkarte,n_punkte,n_zerlegbar_i,n_bestaetigt,n_anderer_fall,n_widerlegt,anteil_bestaetigt,wilson_lo,wilson_hi,n_modul_ueber_grenze,repliziert
+voll,18,10,8,2,0,0.8,0.49015684672072335,0.9433190520193067,18,True
+gefiltert,18,10,7,3,0,0.7,0.39677321997956516,0.892210712513788,18,True

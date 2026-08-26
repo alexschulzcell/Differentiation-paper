@@ -1,0 +1,19 @@
+==============================================================================
+Interne RNA-Ebene als stetige Genkarte (18 Datensaetze)
+==============================================================================
+Teildateien: 18
+Zeilen: 352718 | Punkte: 18 | Gene: 47453
+
+Gene mit >= 15 auswertbaren Datensaetzen: 11581 von 47453
+Symbolzuordnung ueber Gencode v46: 11581 von 11581 (100.0 %)
+
+--- Kontrolle: findet die Karte das Modul wieder? -----------------
+Modulgene in der Karte: 147 von 173
+dWT_kons im Modul  : Median +0.875 (Spanne -1.000 bis +1.000)
+dWT_kons sonst     : Median |0.250|
+Richtung `ri` stimmt mit dWT_vz ueberein: 100.0 % -- muss 100 % sein
+
+--- Der zentrale Kontrast, jetzt stetig ---------------------------
+Differenzierung dWT    |kons| Median 0.250 | Anteil >= 0.8: 0.0129 | >= 0.9: 0.0017
+Laesionsantwort iv     |kons| Median 0.125 | Anteil >= 0.8: 0.0005 | >= 0.9: 0.0001
+Dieselbe Asymmetrie wie in Abbildung 4, hier ohne jede Schwelle.

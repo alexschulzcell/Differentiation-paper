@@ -1,0 +1,8 @@
+,Glykosylierung,Lysosom,Signal_FGF_WNT_BMP_IHH,Struktur_ECM,TF_DNAbindend,Vesikel_Sekretion,Ziliopathie
+Glykosylierung,235.0,27.0,13.0,4.0,3.0,20.0,4.0
+Lysosom,27.0,569.0,27.0,35.0,4.0,215.0,33.0
+Signal_FGF_WNT_BMP_IHH,13.0,27.0,562.0,32.0,69.0,73.0,99.0
+Struktur_ECM,4.0,35.0,32.0,307.0,4.0,35.0,8.0
+TF_DNAbindend,3.0,4.0,69.0,4.0,960.0,10.0,14.0
+Vesikel_Sekretion,20.0,215.0,73.0,35.0,10.0,1127.0,85.0
+Ziliopathie,4.0,33.0,99.0,8.0,14.0,85.0,504.0

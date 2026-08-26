@@ -1,0 +1,78 @@
+==============================================================================
+Die Dreifachzerlegung auf den 18 Perturbationsdatensaetzen
+Vorregistriert: preregistrations/PRAEREG_F2F.md, 2026-08-24
+==============================================================================
+
+### Genkarte: voll
+   1  LAMA5-KO (chondr)              naiv z  -2.52 | chondrogen z  +2.67 | adipo z  -1.10 | Modul z +11.00
+   2  LAMA5-KO (osteo)               naiv z  -2.50 | osteogen   z  -0.21 | adipo z  +1.32 | Modul z +11.40
+   3  FN1 FNC123R                    naiv z  +0.28 | chondrogen z  +0.71 | adipo z  -1.75 | Modul z +12.80
+   4  FN1 FNC231W                    naiv z  +0.44 | chondrogen z  +0.42 | adipo z  -2.01 | Modul z +12.80
+   5  SERPINA3-KD                    naiv z   +nan | chondrogen z   +nan | adipo z  -0.34 | Modul z  +5.25
+   6  MIR181A1HG-KD                  naiv z  -3.67 | osteogen   z  -0.69 | adipo z  +3.18 | Modul z +12.16
+   7  LINC01638-KD (GSE227512)       naiv z  -3.17 | osteogen   z  -0.32 | adipo z  +2.92 | Modul z +11.35
+   8  ARSB / MPS VI (GSE218101)      naiv z  +0.10 | chondrogen z  +0.83 | adipo z  -0.40 | Modul z  +8.08
+   9  ACVR1 / FOP (GSE221128)        naiv z  -2.50 | chondrogen z  +1.90 | adipo z  -0.40 | Modul z +10.24
+  10  RNF4-KD (GSE205432)            naiv z  +0.67 | osteogen   z  -0.83 | adipo z  +1.33 | Modul z +11.30
+  11  RB1 +/- (GSE245585)            naiv z  -0.71 | osteogen   z  -1.03 | adipo z  +4.10 | Modul z  +8.13
+  12  Nonunion (GSE226565)           naiv z  -2.41 | osteogen   z  -0.57 | adipo z  +3.84 | Modul z +13.10
+  13  SERPINA3-KD osteo (GSE247528)  naiv z   +nan | osteogen   z  -0.77 | adipo z  +2.71 | Modul z  +5.48
+  14  ERCC6L2-KD (GSE190542)         naiv z  -2.37 | osteogen   z  +2.13 | adipo z  +0.52 | Modul z +12.54
+  15  TP53 LFS (GSE102732)           naiv z  -3.26 | osteogen   z  -0.33 | adipo z  -0.16 | Modul z +11.27
+  16  YAP/TAZ-KD (GSE137035)         naiv z  +0.32 | osteogen   z  +0.26 | adipo z  -0.01 | Modul z  +5.52
+  17  RB1-mut isogen (GSE145235)     naiv z  -3.74 | osteogen   z  +1.93 | adipo z  +1.44 | Modul z +12.45
+  18  RB1-del isogen (GSE145235)     naiv z  -3.51 | osteogen   z  +1.39 | adipo z  +0.58 | Modul z +12.30
+  Selbsttest gegen eichung_achtzehn.csv: max |Delta z| = 4.44e-16
+
+------------------------------------------------------------------------------
+GENKARTE: voll
+(i) Naivmarker fallen (z <= -2): 10 von 18 Punkten -- die uebrigen 8
+    heissen 'nicht zerlegbar' und tragen keinen Befund.
+Unter den 10 zerlegbaren Punkten:
+    Zerlegung bestaetigt         8  (Wilson 0.490-0.943)
+    Entkopplung, anderer Fall    2
+    Zerlegung widerlegt          0
+    -> REPLIZIERT
+Modul ueber eigener Grenze, alle 18: 18
+Aufschluesselung nach abgelegtem Eichungsstatus:
+    Eichung durchgefallen n 16 | naiv faellt  8 | Linie erreicht  0 | Modul ueber Grenze 16
+    Eichung bestanden     n  2 | naiv faellt  2 | Linie erreicht  2 | Modul ueber Grenze  2
+------------------------------------------------------------------------------
+
+### Genkarte: gefiltert
+   1  LAMA5-KO (chondr)              naiv z  -2.15 | chondrogen z  +2.65 | adipo z  -1.52 | Modul z +11.00
+   2  LAMA5-KO (osteo)               naiv z  -2.33 | osteogen   z  +0.16 | adipo z  +1.18 | Modul z +11.40
+   3  FN1 FNC123R                    naiv z  +0.07 | chondrogen z  +0.25 | adipo z  -1.62 | Modul z +12.80
+   4  FN1 FNC231W                    naiv z  +0.21 | chondrogen z  +0.12 | adipo z  -1.75 | Modul z +12.80
+   5  SERPINA3-KD                    naiv z   +nan | chondrogen z   +nan | adipo z   +nan | Modul z  +5.25
+   6  MIR181A1HG-KD                  naiv z  -2.41 | osteogen   z  -0.11 | adipo z  +2.43 | Modul z +12.16
+   7  LINC01638-KD (GSE227512)       naiv z  -2.88 | osteogen   z  +0.09 | adipo z  +2.88 | Modul z +11.35
+   8  ARSB / MPS VI (GSE218101)      naiv z  -0.93 | chondrogen z  +0.08 | adipo z  -0.62 | Modul z  +8.08
+   9  ACVR1 / FOP (GSE221128)        naiv z  -2.62 | chondrogen z  +1.96 | adipo z  +0.65 | Modul z +10.24
+  10  RNF4-KD (GSE205432)            naiv z  +0.62 | osteogen   z  -0.90 | adipo z  +1.37 | Modul z +11.30
+  11  RB1 +/- (GSE245585)            naiv z  -0.95 | osteogen   z  -1.31 | adipo z  +3.16 | Modul z  +8.13
+  12  Nonunion (GSE226565)           naiv z  -2.65 | osteogen   z  +0.74 | adipo z  +1.44 | Modul z +13.10
+  13  SERPINA3-KD osteo (GSE247528)  naiv z   +nan | osteogen   z   +nan | adipo z   +nan | Modul z  +5.48
+  14  ERCC6L2-KD (GSE190542)         naiv z  -2.09 | osteogen   z  +2.44 | adipo z  +0.16 | Modul z +12.54
+  15  TP53 LFS (GSE102732)           naiv z  -3.16 | osteogen   z  +1.92 | adipo z  +0.98 | Modul z +11.27
+  16  YAP/TAZ-KD (GSE137035)         naiv z  +0.25 | osteogen   z  +0.18 | adipo z  -0.08 | Modul z  +5.52
+  17  RB1-mut isogen (GSE145235)     naiv z  -3.87 | osteogen   z  +2.77 | adipo z  +1.05 | Modul z +12.45
+  18  RB1-del isogen (GSE145235)     naiv z  -3.09 | osteogen   z  +1.79 | adipo z  +0.75 | Modul z +12.30
+
+------------------------------------------------------------------------------
+GENKARTE: gefiltert
+(i) Naivmarker fallen (z <= -2): 10 von 18 Punkten -- die uebrigen 8
+    heissen 'nicht zerlegbar' und tragen keinen Befund.
+Unter den 10 zerlegbaren Punkten:
+    Zerlegung bestaetigt         7  (Wilson 0.397-0.892)
+    Entkopplung, anderer Fall    3
+    Zerlegung widerlegt          0
+    -> REPLIZIERT
+Modul ueber eigener Grenze, alle 18: 18
+Aufschluesselung nach abgelegtem Eichungsstatus:
+    Eichung durchgefallen n 16 | naiv faellt  8 | Linie erreicht  1 | Modul ueber Grenze 16
+    Eichung bestanden     n  2 | naiv faellt  2 | Linie erreicht  2 | Modul ueber Grenze  2
+------------------------------------------------------------------------------
+
+Urteil unter beiden Karten gleich: JA
+-> C:\Users\Alexa\Documents\alex projects\DFG Antrag\Paper v2\results\zerlegung_achtzehn.csv

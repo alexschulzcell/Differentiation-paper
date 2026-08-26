@@ -1,0 +1,48 @@
+==============================================================================
+Phase M-D  --  Zellenbau, LiCl-Pruefung, eingebaute Eichung
+Vorregistrierung PRAEREG_M_D.md (2026-08-22) + Nachtrag 1
+==============================================================================
+
+------------------------------------------------------------------------------
+GSE218101  --  MPS VI (ARSB), iPSC-Chondrogenese
+   LiCl-Pruefung: keine LiCl-Probe (34 Proben geprueft)
+   GSE218101_Line1_chondr       169/173 Modulgene | Eichung CHONDROGEN: Kontrast -0.539, z -1.27, p        1 -> DURCHGEFALLEN
+   GSE218101_Line2_chondr       169/173 Modulgene | Eichung CHONDROGEN: Kontrast +0.484, z +1.03, p   0.3019 -> DURCHGEFALLEN
+   GSE218101_Line3_chondr       169/173 Modulgene | Eichung CHONDROGEN: Kontrast +0.160, z +0.37, p   0.7206 -> DURCHGEFALLEN
+   GSE218101_Line4_chondr       169/173 Modulgene | Eichung CHONDROGEN: Kontrast +1.264, z +2.33, p   0.0156 -> BESTANDEN
+
+------------------------------------------------------------------------------
+GSE221128  --  FOP (ACVR1), iMSC-Chondrogenese
+   LiCl-Pruefung: keine LiCl-Probe (11 Proben geprueft)
+   GSE221128_FOP_chondr         169/173 Modulgene | Eichung CHONDROGEN: Kontrast +0.606, z +1.90, p   0.0574 -> DURCHGEFALLEN
+
+------------------------------------------------------------------------------
+GSE245585  --  RB1, patienteneigene MSC, Osteogenese
+   LiCl-Pruefung: keine LiCl-Probe (16 Proben geprueft)
+   GSE245585_WT1_osteog         166/173 Modulgene | Eichung OSTEOGEN: Kontrast -0.408, z -1.03, p        1 -> DURCHGEFALLEN
+
+------------------------------------------------------------------------------
+GSE247491  --  SERPINA3-KD, MSC-Chondrogenese
+   LiCl-Pruefung: keine LiCl-Probe (18 Proben geprueft)
+   SERPINA3_D1_chondr           173/173 Modulgene | Eichung CHONDROGEN: Kontrast +1.412, z +3.57, p   0.0003 -> BESTANDEN
+   SERPINA3_D2_chondr           173/173 Modulgene | Eichung CHONDROGEN: Kontrast +2.234, z +5.60, p   0.0001 -> BESTANDEN
+   SERPINA3_D3_chondr           173/173 Modulgene | Eichung CHONDROGEN: Kontrast +1.711, z +4.19, p   0.0001 -> BESTANDEN
+
+------------------------------------------------------------------------------
+GSE247528  --  SERPINA3-KD, MSC-Osteogenese
+   LiCl-Pruefung: keine LiCl-Probe (18 Proben geprueft)
+   SERPINA3_D1_osteog           173/173 Modulgene | Eichung OSTEOGEN: Kontrast +0.787, z +2.12, p   0.0349 -> BESTANDEN
+   SERPINA3_D2_osteog           173/173 Modulgene | Eichung OSTEOGEN: Kontrast +0.683, z +2.01, p   0.0402 -> BESTANDEN
+   SERPINA3_D3_osteog           173/173 Modulgene | Eichung OSTEOGEN: Kontrast -0.125, z -0.37, p        1 -> DURCHGEFALLEN
+
+------------------------------------------------------------------------------
+LAMA5_USC  --  LAMA5-KO, eigene USC-Linie
+   LiCl-Pruefung: keine LiCl-Probe (18 Proben geprueft)
+   LAMA5_USC_chondr             163/173 Modulgene | Eichung CHONDROGEN: Kontrast +1.765, z +2.67, p   0.0051 -> BESTANDEN
+   LAMA5_USC_osteog             163/173 Modulgene | Eichung OSTEOGEN: Kontrast -0.100, z -0.21, p        1 -> DURCHGEFALLEN
+
+==============================================================================
+Zellen gebaut: 14 | Eichung bestanden: 7 | Studien mit bestandener Eichung: 4
+Davon E2 erfuellt (echte Laesion): 1 Zellen aus 1 Studien
+Mindestzahl der Vorregistrierung (>= 6 Zellen aus >= 3 Studien): NICHT erreicht -- Abbruchkriterium §9 greift
+==============================================================================

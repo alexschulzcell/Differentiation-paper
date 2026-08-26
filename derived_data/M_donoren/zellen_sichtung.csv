@@ -1,0 +1,15 @@
+studie,zelle,urteil,code,begruendung
+GSE218101,GSE218101_Line1_chondr,AUS,M6,Eichung nicht bestanden
+GSE218101,GSE218101_Line2_chondr,AUS,M6,Eichung nicht bestanden
+GSE218101,GSE218101_Line3_chondr,AUS,M6,Eichung nicht bestanden
+GSE218101,GSE218101_Line4_chondr,EIN,-,"ARSB-Patientenmutation, isogen korrigiert, chondrogen, 169/173 Modulgene"
+GSE221128,GSE221128_FOP_chondr,AUS,M6,Eichung nicht bestanden
+GSE245585,GSE245585_WT1_osteog,AUS,M6,Eichung nicht bestanden
+GSE247491,SERPINA3_D1_chondr,EIN,-,"SERPINA3-siRNA (Engineering, kein Patientendefekt), chondrogen, 173/173 Modulgene"
+GSE247491,SERPINA3_D2_chondr,EIN,-,"SERPINA3-siRNA (Engineering, kein Patientendefekt), chondrogen, 173/173 Modulgene"
+GSE247491,SERPINA3_D3_chondr,EIN,-,"SERPINA3-siRNA (Engineering, kein Patientendefekt), chondrogen, 173/173 Modulgene"
+GSE247528,SERPINA3_D1_osteog,EIN,-,"SERPINA3-siRNA (Engineering, kein Patientendefekt), osteogen, 173/173 Modulgene"
+GSE247528,SERPINA3_D2_osteog,EIN,-,"SERPINA3-siRNA (Engineering, kein Patientendefekt), osteogen, 173/173 Modulgene"
+GSE247528,SERPINA3_D3_osteog,AUS,M6,Eichung nicht bestanden
+LAMA5_USC,LAMA5_USC_chondr,EIN,-,"LAMA5-KO in gesunder Linie (Engineering), chondrogen, 163/173 Modulgene"
+LAMA5_USC,LAMA5_USC_osteog,AUS,M6,Eichung nicht bestanden

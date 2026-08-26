@@ -1,0 +1,67 @@
+==============================================================================
+50_panel_data.py -- one CSV per panel to figures/data/
+==============================================================================
+
+Fig. 1 -- material, screens, calibration
+  F1B_screen_perturbation                    4 rows x  3 cols  waterfall 89 -> 18
+  F1C_screen_diagnoses                       6 rows x  3 cols  127 hand-checked, 50 candidates, 46 without an undifferentiated arm = 92 %
+  S7A_exclusion_codes                        4 rows x  3 cols  exclusion codes of the diagnosis screen
+  F1D_calibration_per_dataset               18 rows x 11 cols  passed 2/18, not calibratable 1
+  F1E_calibration_per_cell                  14 rows x 12 cols  passed 7/14
+
+Fig. 2 -- line independence and decoupling
+  F2A_cross_arm_concordance                  1 rows x  9 cols  rho +0.622, z +7.03
+  F2B_module_per_dataset                    18 rows x 14 cols  above own limit 18/18, z +5.25..+13.10
+  F2C_pooled_by_calibration                  2 rows x  8 cols  failed n16 vs passed n2
+  F2D_go_composition                         6 rows x 10 cols  n_modul = 147 of the 173 genes lie in the GO background
+  F2D_gene_sets_v2                          14 rows x 15 cols  narrow | broad | sensitivity, n_modul = 147 of the 173
+  F2E_atac_per_axis                         24 rows x 17 cols  GSE332758, 4 windows x 3 axes x 2 nulls
+     cross-check against the ws8 orphan file: sign-identical
+  F2F_decomposition_eighteen                72 rows x  8 cols  18 datasets x 4 quantities, full gene space
+  F2F_decomposition_balance                  2 rows x 11 cols  tally per gene map, preregistered rule
+
+Fig. 3 -- in-vivo anchor
+  F3A_atlas_zones                           66 rows x  6 cols  6 zones, 24 samples, 16 specimens, 12563 cells
+  F3B_positive_control_per_sample           66 rows x 10 cols  above own limit 64/66, z>2 in 65/66, median z +10.92
+  F3C_module_per_sample                     66 rows x  9 cols  one line per specimen
+  F3C_trend_test_donor                       3 rows x 12 cols  zone permutation within the specimen
+  F3D_cells_per_zone                         6 rows x  5 cols  HyperChon carries only one evaluable sample
+
+Fig. 4 -- the other layer
+  F4A_positive_control_lineage_markers       3 rows x 10 cols  OR 17.0-51.6
+  F4A_positive_control_anchor                3 rows x  7 cols  OR 3.70-5.75
+  F4B_complementarity                        8 rows x 14 cols  8 Tests, Bonferroni alpha 0.00625
+  F4C_mode_of_inheritance                    3 rows x  7 cols  PanelApp 309, mono vs bi
+  F4D_constraint_publication_matched         7 rows x 11 cols  LOEUF after matching expression, length and publication count
+  F4E_dynamics_axis                          7 rows x 11 cols  |dWT| at matched expression, length and publication count
+  F4F_mechanism_classes                     49 rows x 13 cols  49 tests, 40 computable, alpha 0.00125, above Bonferroni 0, above own limit 4
+  F4F_pooled_per_panel                       7 rows x 10 cols  pooled enrichment, 7 panels
+
+Fig. 5 -- the prehypertrophic transition
+  F5A_panel_vs_module_per_zone               6 rows x  8 cols  median and quartiles per zone
+  F5A_panel_vs_module_per_sample            66 rows x  8 cols  raw points for F5A
+  F5B_both_curves                           12 rows x  7 cols  shared prehypertrophic maximum
+
+Supplement
+  S2A_all_calibrations                      44 rows x  9 cols  every calibration in the project, one row
+  S3A_external_triangulation                 3 rows x  8 cols  three versions; only the first has a detection limit
+  S3B_triangulation_per_study                6 rows x 13 cols  none of the 6 studies reaches its own MDE80
+  S5A_leave_one_out                          8 rows x 10 cols  leave-one-out over the 7 calibrated cells
+  S5A_circularity                            3 rows x 32 cols  without the module-forming cells
+  S5C_calibration_sensitivity               18 rows x 14 cols  preregistered vs markers reachable only in vitro
+  S6A_atac_complete                         24 rows x 23 cols  ATAC, all windows, axes, nulls
+  S6B_h3k27ac                               15 rows x 22 cols  H3K27ac GSE129031
+  S6C_methylome_27k                          2 rows x 19 cols  GSE33896 -- null finding with a limit
+  S6D_methylome_450k                         1 rows x 19 cols  GSE129266 -- below its own limit
+  S8A_day_zero_falls                         2 rows x 13 cols  naive state as predictor
+  S8A_day_zero_calibration                   3 rows x  8 cols  the 7 failed cells at day 0
+  S8C_study_intensity                        7 rows x  5 cols  gene2pubmed, retrieved 2026-08-22
+  S8D_publication_matching                  35 rows x 13 cols  P1, P2, P3 each without and with publications
+
+Fig. 6 -- levels and detection-limit book (table + forest)
+  TS14_levels_book                          14 rows x  7 cols  one row per level, including the levels without a finding (supplement table to forest panel F6)
+  F6_levels_forest                          14 rows x  9 cols  one row per level with estimate range and own limit (basis of the forest panel F6)
+
+75 panel CSVs in C:\Users\Alexa\Documents\alex projects\DFG Antrag\Paper v2\figures\data
+
+numpy 2.4.4 | pandas 3.0.1 | python 3.12.10

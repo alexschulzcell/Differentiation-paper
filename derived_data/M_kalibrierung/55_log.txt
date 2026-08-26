@@ -1,0 +1,32 @@
+Phase M-E -- PRAEREG_M_E.md, Seed 20260823
+==============================================================================
+TEST 1 (primaer) -- der Rausch-Nullboden fuer iv-foermige Groessen
+==============================================================================
+Universum: 10177 Gene in >= 16 von 18 Datensaetzen
+  iv_1x1         Mittel      6.0  SD    5.9  [2.5 %    0.0 .. 97.5 %    22.1]
+  pseudo_iv_1x1  Mittel      4.3  SD    4.4  [2.5 %    0.0 .. 97.5 %    15.0]
+  dWT_1x1        Mittel     66.8  SD   30.1  [2.5 %   26.0 .. 97.5 %   143.0]
+
+  Entscheidungsregel: Mittel(iv_1x1) 6.0 gegen 97.5-Perzentil(pseudo_iv_1x1) 15.0
+  -> iv liegt AM RAUSCHBODEN seiner eigenen Konstruktion.  FADEN B.
+  (Verhaeltnis iv/pseudo im Mittel: 1.40)
+
+==============================================================================
+TEST 2 -- die SNR-Angleichung
+==============================================================================
+Universum: 10177 Gene in >= 16 von 18 Datensaetzen
+  SNR(dWT) 0.3002 | SNR(iv) 0.1941 | Stauchungsfaktor k = 0.6464
+  dWT (beobachtet)         konvergent   120 | Flip-Null     4.8 +-  11.0 (97.5 %   27.0) | ueber der Null
+  iv (beobachtet)          konvergent     4 | Flip-Null     4.8 +-   6.4 (97.5 %   23.0) | auf der Null
+  dWT* (SNR-angeglichen)   konvergent    11 | Flip-Null     4.7 +-   9.6 (97.5 %   28.0) | auf der Null
+
+  Entscheidungsregel: dWT* 11 gegen Null-97.5 % 28.0 und gegen 2 x iv = 8
+  -> die Asymmetrie ist von Groesse und Rauschen nicht zu trennen.  FADEN B.
+
+==============================================================================
+TEST 3 -- Kreuzkontrolle Satz gegen Groesse (beschreibend)
+==============================================================================
+  Programmsatz (173)   dWT   n 115 | konvergent  96 | Null   0.0 (97.5 %   0.0)
+  Programmsatz (173)   iv    n 115 | konvergent   0 | Null   0.0 (97.5 %   1.0)
+  Laesionssatz (173)   dWT   n 162 | konvergent   1 | Null   0.1 (97.5 %   1.0)
+  Laesionssatz (173)   iv    n 162 | konvergent   4 | Null   0.1 (97.5 %   1.0)

@@ -1,0 +1,43 @@
+panel,class,n_panel_in_background,n_class_genome,n_intersection
+PanelApp 309,glycosylation / linker,355,342,38
+PanelApp 309,lysosome,355,934,34
+PanelApp 309,signalling FGF/WNT/BMP/IHH,355,845,78
+PanelApp 309,ECM structure,355,636,30
+PanelApp 309,transcription factors,355,1568,30
+PanelApp 309,vesicle / secretion,355,1766,35
+PanelApp 309,cilium,355,961,56
+Nosology (core),glycosylation / linker,154,342,15
+Nosology (core),lysosome,154,934,13
+Nosology (core),signalling FGF/WNT/BMP/IHH,154,845,26
+Nosology (core),ECM structure,154,636,14
+Nosology (core),transcription factors,154,1568,4
+Nosology (core),vesicle / secretion,154,1766,17
+Nosology (core),cilium,154,961,23
+Nosology (broad),glycosylation / linker,539,342,45
+Nosology (broad),lysosome,539,934,41
+Nosology (broad),signalling FGF/WNT/BMP/IHH,539,845,112
+Nosology (broad),ECM structure,539,636,44
+Nosology (broad),transcription factors,539,1568,41
+Nosology (broad),vesicle / secretion,539,1766,53
+Nosology (broad),cilium,539,961,100
+short stature,glycosylation / linker,1130,342,50
+short stature,lysosome,1130,934,71
+short stature,signalling FGF/WNT/BMP/IHH,1130,845,115
+short stature,ECM structure,1130,636,38
+short stature,transcription factors,1130,1568,66
+short stature,vesicle / secretion,1130,1766,126
+short stature,cilium,1130,961,98
+short stature (broad),glycosylation / linker,1144,342,50
+short stature (broad),lysosome,1144,934,71
+short stature (broad),signalling FGF/WNT/BMP/IHH,1144,845,116
+short stature (broad),ECM structure,1144,636,38
+short stature (broad),transcription factors,1144,1568,70
+short stature (broad),vesicle / secretion,1144,1766,126
+short stature (broad),cilium,1144,961,99
+PanelApp 1471,glycosylation / linker,62,342,0
+PanelApp 1471,lysosome,62,934,0
+PanelApp 1471,signalling FGF/WNT/BMP/IHH,62,845,4
+PanelApp 1471,ECM structure,62,636,0
+PanelApp 1471,transcription factors,62,1568,2
+PanelApp 1471,vesicle / secretion,62,1766,9
+PanelApp 1471,cilium,62,961,3

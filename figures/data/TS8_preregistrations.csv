@@ -1,0 +1,36 @@
+file,type,title
+FOLLOWUP_CORRECTION_AMENDMENT_2026-08-20.md,document,Follow-up correction and extension amendment
+FOLLOWUP_donor_atlas_2x2.md,document,Preregistration FOLLOW-UP — a donor-resolved differentiation atlas and an independent isogenic 2 x 2 lesion study
+FOLLOWUP_SEARCH_EXTENSION_2026-08-20.md,document,Follow-up search extension: independent donor cohort
+PREREG_F2F.md,document,PREREG_F2F — the three-way decomposition as a hypothesis
+PREREG_M_A.md,document,"Preregistration M-A — the human-genetics anchor, at full power"
+PREREG_M_B.md,document,Preregistration M-B — measuring individuality patient by patient
+PREREG_M_D.md,document,Preregistration M-D — the donor-resolved scissors
+PREREG_M_E.md,document,Preregistration M-E — are the scissors a finding or a difference in size?
+PREREG_S10.md,document,Preregistration S10 — R2 with a pinned primary reference (the C8 collapse as an exclusion)
+PREREG_S12_orthogonal_triangulation.md,document,Preregistration S12 — orthogonal data-set triangulation
+PREREG_S1_FN1_induction_null.md,document,Preregistration S1 — an induction-matched null for `FN1`
+PREREG_S2_positive_control.md,document,Preregistration S2 — plasma-cell differentiation as a positive control
+PREREG_S4.md,document,Preregistration S4 — the distal axis and the secretory transcription-factor arm
+PREREG_S5.md,document,Preregistration S5 — axes of convergence
+PREREG_S6.md,document,"Preregistration S6 — discovery and validation, in separated halves"
+PREREG_S7.md,document,Preregistration S7 — the cell-type question and a possible nineteenth data set
+PREREG_S8.md,document,Preregistration S8 — an orthogonal single-cell test of the claims of the paper
+PREREG_S9.md,document,Preregistration S9 — a new R2 candidate for a cell-type-specific lesion response
+PREREG_whole_study.md,document,Preregistration of the whole study — a typology of matrix production failure
+PROTOCOL_M_A.md,document,"Protocol M-A — the human-genetics anchor, at full power"
+PROTOCOL_M_B.md,document,Protocol M-B — individuality measured patient by patient
+PROTOCOL_M_C.md,document,Protocol M-C — the scissors against real diagnoses
+PROTOCOL_M_D.md,document,Protocol M-D — the scissors sought donor-resolved
+PROTOCOL_M_E.md,document,Protocol M-E — the scissors are a difference in size
+PROTOCOL_M_overall.md,document,Protocol M-OVERALL — the decision gate
+PROTOCOL_M_overall_v2.md,document,Protocol M-OVERALL v2 — the decision gate after phase D
+PROTOCOL_orthogonal_layers_2026-08-20.md,document,"Protocol — orthogonal measurement levels (chromatin, methylome)"
+PROTOCOL_S10_A.md,document,S10 step A — the release of the R2 computation with a pinned reference
+PROTOCOL_S7.md,document,S7 step A — the release before the computation
+PROTOCOL_S7_A1.md,document,S7 addendum 1 — the release of the new scRNA GEO screen
+PROTOCOL_S7_A2.md,document,S7 addendum 2 — the context analysis of `GSE337700`
+PROTOCOL_S8_A.md,document,S8 step A — the release of the orthogonal single-cell test
+PROTOCOL_S8_E.md,document,S8 step E — the report and the decision
+PROTOCOL_S9_A.md,document,S9 step A — the release of the R2 impact scan
+PROTOCOL_S9_E.md,document,S9 step E — the report and the halt after S9-AB3

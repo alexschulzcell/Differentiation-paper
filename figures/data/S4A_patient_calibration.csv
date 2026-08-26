@@ -1,0 +1,8 @@
+accession,entity,tissue,marker_set,n_patients,n_controls,contrast,detection_limit,z,p_value,passed
+GSE186141,osteogenesis imperfecta,primary osteoblasts,Osteogenic,6,2,1.4060607780997527,1.6565964951387386,2.378009638415503,0.0271986400679966,True
+GSE22855,enchondromatosis (Ollier),cartilage / enchondroma,Chondrogenic,7,6,1.7217561093032856,1.009504803845228,4.767981787496725,0.0002999850007499,True
+GSE292600,acromelic dysplasia (ADAMTSL2 / FBN1),dermal fibroblasts,Undifferentiated,8,3,3.95584535605588,2.402189213643156,4.623165511037749,0.0001999900004999,True
+GSE77758,EDS-HT / JHS,dermal fibroblasts,Undifferentiated,5,6,1.9649755156249995,2.017354858514173,2.7271755770174093,0.007499625018749,True
+GSE160207,osteogenesis imperfecta,whole blood,,7,5,,,,,False
+GSE228522,FOP (ACVR1),CD14+ monocytes,,6,6,,,,,False
+GSE58435,Turner syndrome,"Fruchtwasser, zellfreie mRNA",,5,5,,,,,False

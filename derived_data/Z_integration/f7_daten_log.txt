@@ -1,0 +1,19 @@
+==============================================================================
+Abbildung 7 -- Daten sammeln
+==============================================================================
+
+f7_ebenen.csv -- 7 Ebenen
+Ebene                                  n   Eich z   zb(dWT)    zb(iv) rho_p(dWT)
+ATAC GSE224251 osteogen (n=3)          3    -1.29     +3.16     +2.10    +0.0531
+ATAC GSE332758 osteogen (n=1)          1    +1.66     +2.22     +4.61    +0.0327
+ATAC GSE332758 adipogen (n=1)          1    +4.13     +2.28     +3.25    +0.0220
+H3K27ac GSE129031 chondrogen (n=2)     2        -     +1.55     +2.12    +0.0087
+DNAm GSE129266 chondrogen (n=2)        2    +3.91     -1.19     +1.22    -0.0078
+DNAm GSE33896 osteogen (n=3)           3        -     -1.46     +0.32    -0.0214
+DNAm GSE33896 myogen (n=3)             3        -     +0.16     +1.39    -0.0173
+
+Dezilkurve aus 30_: 140 Zeilen, 7 Ebenen (bleibt in derived_data/)
+
+f7_module_gegen_marker.csv -- 21 Zeilen
+
+f7_streu_atac.csv -- 10919 Gene, davon 139 im Modul

@@ -1,0 +1,15 @@
+studie,zelle,spender,achse,e2,laesion,herkunft,bestanden
+GSE218101,GSE218101_Line1_chondr,GSE218101_Line1,chondrogen,True,"ARSB-Patientenmutation, isogen korrigiert",Punkt der achtzehn,False
+GSE218101,GSE218101_Line2_chondr,GSE218101_Line2,chondrogen,True,"ARSB-Patientenmutation, isogen korrigiert",Punkt der achtzehn,False
+GSE218101,GSE218101_Line3_chondr,GSE218101_Line3,chondrogen,True,"ARSB-Patientenmutation, isogen korrigiert",Punkt der achtzehn,False
+GSE218101,GSE218101_Line4_chondr,GSE218101_Line4,chondrogen,True,"ARSB-Patientenmutation, isogen korrigiert",Punkt der achtzehn,True
+GSE221128,GSE221128_FOP_chondr,GSE221128_FOP,chondrogen,True,"ACVR1 R206H, isogen korrigiert (resFOP)",Punkt der achtzehn,False
+GSE245585,GSE245585_WT1_osteog,GSE245585_WT1,osteogen,True,RB1 +/- (Retinoblastom-Patientenlinie),Punkt der achtzehn,False
+GSE247491,SERPINA3_D1_chondr,SERPINA3_D1,chondrogen,False,"SERPINA3-siRNA (Engineering, kein Patientendefekt)","Abb. S3C, studienweise",True
+GSE247491,SERPINA3_D2_chondr,SERPINA3_D2,chondrogen,False,"SERPINA3-siRNA (Engineering, kein Patientendefekt)","Abb. S3C, studienweise",True
+GSE247491,SERPINA3_D3_chondr,SERPINA3_D3,chondrogen,False,"SERPINA3-siRNA (Engineering, kein Patientendefekt)","Abb. S3C, studienweise",True
+GSE247528,SERPINA3_D1_osteog,SERPINA3_D1,osteogen,False,"SERPINA3-siRNA (Engineering, kein Patientendefekt)","Abb. S3C, studienweise",True
+GSE247528,SERPINA3_D2_osteog,SERPINA3_D2,osteogen,False,"SERPINA3-siRNA (Engineering, kein Patientendefekt)","Abb. S3C, studienweise",True
+GSE247528,SERPINA3_D3_osteog,SERPINA3_D3,osteogen,False,"SERPINA3-siRNA (Engineering, kein Patientendefekt)","Abb. S3C, studienweise",False
+LAMA5_USC,LAMA5_USC_chondr,LAMA5_USC,chondrogen,False,LAMA5-KO in gesunder Linie (Engineering),zwei Punkte der achtzehn,True
+LAMA5_USC,LAMA5_USC_osteog,LAMA5_USC,osteogen,False,LAMA5-KO in gesunder Linie (Engineering),zwei Punkte der achtzehn,False

@@ -1,0 +1,33 @@
+window,axis,quantity,n,z,axis_label,type
+P,osteogenic,Osteogenic,18,-1.299132870495262,osteogenic axis,marker set
+P,osteogenic,Adipogenic,18,1.69880415706555,osteogenic axis,marker set
+P,osteogenic,Undifferentiated,10,-2.41649478563087,osteogenic axis,marker set
+P,adipogenic,Osteogenic,18,-0.2714392757406362,adipogenic axis,marker set
+P,adipogenic,Adipogenic,18,0.7801353029629094,adipogenic axis,marker set
+P,adipogenic,Undifferentiated,10,-2.771077152016463,adipogenic axis,marker set
+T10,osteogenic,Osteogenic,18,-1.2418867765336232,osteogenic axis,marker set
+T10,osteogenic,Adipogenic,18,2.1481417807505188,osteogenic axis,marker set
+T10,osteogenic,Undifferentiated,10,-2.799256368694224,osteogenic axis,marker set
+T10,adipogenic,Osteogenic,18,-0.2689823898133472,adipogenic axis,marker set
+T10,adipogenic,Adipogenic,18,0.4935179766317121,adipogenic axis,marker set
+T10,adipogenic,Undifferentiated,10,-2.530490438950951,adipogenic axis,marker set
+T50,osteogenic,Osteogenic,18,-1.1829541401293855,osteogenic axis,marker set
+T50,osteogenic,Adipogenic,18,2.514926528740265,osteogenic axis,marker set
+T50,osteogenic,Undifferentiated,10,-2.008140602257724,osteogenic axis,marker set
+T50,adipogenic,Osteogenic,18,0.1310716041203569,adipogenic axis,marker set
+T50,adipogenic,Adipogenic,18,-0.5042751236738738,adipogenic axis,marker set
+T50,adipogenic,Undifferentiated,10,-1.7985284036535183,adipogenic axis,marker set
+GB,osteogenic,Osteogenic,18,-1.1588561536289947,osteogenic axis,marker set
+GB,osteogenic,Adipogenic,18,2.3377426882264656,osteogenic axis,marker set
+GB,osteogenic,Undifferentiated,10,-1.456624907577933,osteogenic axis,marker set
+GB,adipogenic,Osteogenic,18,-0.316112955545242,adipogenic axis,marker set
+GB,adipogenic,Adipogenic,18,0.1581026527094951,adipogenic axis,marker set
+GB,adipogenic,Undifferentiated,10,-1.108409420779098,adipogenic axis,marker set
+P,osteogenic,module,172,3.1000439194555,osteogenic axis,module
+P,adipogenic,module,172,5.108598629240914,adipogenic axis,module
+T10,osteogenic,module,172,6.996457409518211,osteogenic axis,module
+T10,adipogenic,module,172,6.686983332105254,adipogenic axis,module
+T50,osteogenic,module,172,5.31678880375431,osteogenic axis,module
+T50,adipogenic,module,172,5.7364350591833855,adipogenic axis,module
+GB,osteogenic,module,171,5.895746958173198,osteogenic axis,module
+GB,adipogenic,module,171,7.020091171697956,adipogenic axis,module

@@ -1,0 +1,9 @@
+schluessel,peaks,filter,normierung,eichung1_kontrast,eichung1_z,eichung1_p,eichung1_ok,eichung2_diff,eichung2_z,eichung2_p,eichung2_ok
+alle Peaks | ungefiltert | CPM,alle Peaks,ungefiltert,CPM,-0.12810709546601123,-0.6531470883958739,1.0,False,-0.09231743951379393,-0.7786001412556007,1.0,False
+alle Peaks | ungefiltert | CPM+Quantil,alle Peaks,ungefiltert,CPM+Quantil,-0.176896184561923,-0.9201323547593158,1.0,False,-0.12808368811766047,-1.1105595520134481,1.0,False
+alle Peaks | Peakfilter | CPM,alle Peaks,Peakfilter,CPM,-0.11638253401806173,-0.5963922900228494,1.0,False,-0.07465861565972687,-0.6355027423068259,1.0,False
+alle Peaks | Peakfilter | CPM+Quantil,alle Peaks,Peakfilter,CPM+Quantil,-0.16057531020654822,-0.8458862007502074,1.0,False,-0.1129944288779735,-0.9889627406994828,1.0,False
+nur Promotorpeaks | ungefiltert | CPM,nur Promotorpeaks,ungefiltert,CPM,-0.3715109211729143,-1.784599196973159,1.0,False,-0.1043450042265864,-0.8108210791839535,1.0,False
+nur Promotorpeaks | ungefiltert | CPM+Quantil,nur Promotorpeaks,ungefiltert,CPM+Quantil,-0.3436514165547767,-1.7279881072399295,1.0,False,-0.12080488423648447,-0.9899863766814586,1.0,False
+nur Promotorpeaks | Peakfilter | CPM,nur Promotorpeaks,Peakfilter,CPM,-0.41500646959147053,-2.000064787536138,1.0,False,-0.1483819977101406,-1.142641898940845,1.0,False
+nur Promotorpeaks | Peakfilter | CPM+Quantil,nur Promotorpeaks,Peakfilter,CPM+Quantil,-0.39811325422252414,-2.0169600412606052,1.0,False,-0.15960969771500588,-1.2928257530097247,1.0,False

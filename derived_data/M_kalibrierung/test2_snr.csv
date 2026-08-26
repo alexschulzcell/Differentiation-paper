@@ -1,0 +1,4 @@
+groesse,konvergent,null_mittel,null_sd,null_p97_5,ueber_null
+dWT (beobachtet),120,4.7875,10.965238801822352,27.0,True
+iv (beobachtet),4,4.7805,6.4292291329226865,23.0,False
+dWT* (SNR-angeglichen),11,4.732,9.588594608871867,28.0,False

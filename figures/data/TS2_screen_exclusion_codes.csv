@@ -1,0 +1,76 @@
+accession,source,verdict,code,reason
+GSE339419,preregistered search,AUS,A9,single-cell multiome (GEX + ATAC)
+GSE336319,preregistered search,AUS,A1,intestinal organoids; no undifferentiated vs differentiated arm
+GSE335315,preregistered search,AUS,A1,NAT10-KD without an undifferentiated arm
+GSE311799,preregistered search,AUS,A1,miRNA overexpression without an undifferentiated arm
+GSE302248,preregistered search,AUS,A1,"chondrosarcoma lines, shBCAT1, without differentiation"
+GSE331389,priority list + preregistered search,AUS,A1,"day 3 vs day 7, both already induced"
+GSE296850,preregistered search,AUS,A1,siUHRF1 without an undifferentiated arm
+GSE309849,preregistered search,AUS,A1,PDK4-siRNA without an undifferentiated arm
+GSE309520,preregistered search,AUS,A2,valve tissue without a perturbation arm
+GSE284183,preregistered search,AUS,A4,CALD1-siRNA in basal medium missing; the 2x2 cell is empty
+GSE324998,preregistered search,AUS,A2,donor tissue without a perturbation arm
+GSE317531,secondary list + preregistered search,AUS,A1,all samples undifferentiated
+GSE319266,priority list + preregistered search,AUS,A9,single-cell CRISPRi (STING-seq)
+GSE299759,preregistered search,AUS,A2,tumour cohort without a perturbation or differentiation arm
+GSE282962,preregistered search,AUS,A1,shVAPB without an undifferentiated arm
+GSE272246,preregistered search,AUS,A1,STAT5A-KO without an osteogenic or chondrogenic differentiation arm
+GSE295765,preregistered search,AUS,A1,CAVD tissue without an undifferentiated arm
+GSE309462,preregistered search,AUS,A1,plaque tissue without an undifferentiated arm
+GSE293677,preregistered search,AUS,A1,siRUNX2 without an undifferentiated arm
+GSE306722,preregistered search,AUS,A4,n = 1 per group
+GSE273784,preregistered search,AUS,A4,knockout without differentiation and MSC time course without knockout; the 2x2 cell is empty
+GSE236009,preregistered search,AUS,A1,shCald1 without an undifferentiated arm
+GSE286069,preregistered search,AUS,A2,intervertebral disc cells without a perturbation arm
+GSE275764,preregistered search,AUS,A4,n = 1 per group
+GSE253431,preregistered search,AUS,A1,induced chondrocytes only; no undifferentiated arm
+GSE288189,preregistered search,AUS,A4,n = 1 per 2x2 cell
+GSE262978,preregistered search,AUS,A1,day 7 only; no undifferentiated arm
+GSE272495,secondary list + preregistered search,AUS,A2,reporter sorting without a perturbation arm
+GSE272041,preregistered search,AUS,A1,lncRNA-MRF-KD without an undifferentiated arm
+GSE251698,preregistered search,BEREITS,-,already included (FN1 C123R / C231W)
+GSE245585,preregistered search,BEREITS,-,already included (RB1 +/-)
+GSE247528,preregistered search,EIN,-,"SERPINA3-KD, osteogenic; day 0 vs day 3/7; n 3/3"
+GSE247491,preregistered search,BEREITS,-,"already included (SERPINA3-KD, chondrogenic)"
+GSE261806,preregistered search,AUS,A2,reprogramming time course without a perturbation arm
+GSE194287,preregistered search,AUS,A1,LGMN knockdown / overexpression without a differentiation arm
+GSE249471,preregistered search,AUS,A1,"siCPM, day 7 only; no undifferentiated arm"
+GSE227512,preregistered search,BEREITS,-,already included (LINC01638-KD)
+GSE218830,preregistered search,AUS,A1,"COL10A1-KO, day 42 only; no undifferentiated arm"
+GSE235930,preregistered search,AUS,A1,knockdown without an undifferentiated arm
+GSE230195,preregistered search,AUS,A9,single-cell data
+GSE231852,preregistered search,AUS,A7,mouse
+GSE202147,secondary list + preregistered search,AUS,A1,perturbation in the differentiated arm only; also n = 1
+GSE202080,preregistered search,AUS,A1,SubSeries of GSE202147; same reason
+GSE226406,preregistered search,AUS,A1,osteoblasts without an undifferentiated arm
+GSE226407,preregistered search,AUS,A1,as GSE226406; predominantly ChIP
+GSE224588,preregistered search,AUS,A2,hFOB differentiation without a perturbation arm
+GSE225446,secondary list + preregistered search,AUS,A1,"TRPV4; day 28 and day 56, both already induced"
+GSE218101,preregistered search,BEREITS,-,already included (ARSB / MPS VI)
+GSE213277,preregistered search,AUS,A1,"shCTR9, day 7 only; no undifferentiated arm"
+GSE199718,preregistered search,AUS,A1,valve tissue without an undifferentiated arm
+GSE205432,preregistered search,BEREITS,-,already included (RNF4-KD)
+GSE190542,preregistered search,EIN,-,ERCC6L2-KD; expansion vs osteogenic medium; n 2/2
+GSE213579,preregistered search,AUS,A1,iPSC only; no differentiation arm
+GSE184087,preregistered search,BEREITS,-,already included (MIR181A1HG-KD)
+GSE145235,preregistered search,EIN,-,"RB1-mut and RB1-del, each against the gene-corrected line; two datasets; n 3/3"
+GSE193510,preregistered search,AUS,A2,myeloid cells without a perturbation arm
+GSE174477,preregistered search,AUS,A2,scaffold experiment without a perturbation arm; n = 1
+GSE166824,secondary list + preregistered search,AUS,A4,the wild-type differentiated cell is missing entirely
+GSE137035,preregistered search,EIN,-,YAP/TAZ-siRNA in hFOB; 0 nM vs 5 nM BMP2; n 3/3
+GSE152404,preregistered search,AUS,A3,MPRA; no gene-level matrix
+GSE148519,preregistered search,AUS,A2,cell sorting without a perturbation arm
+GSE149209,preregistered search,AUS,A1,giant cell tumour lines without a differentiation arm
+GSE149201,preregistered search,AUS,A9,sc/snRNA-seq
+GSE154822,preregistered search,AUS,A1,siCHD7 without an undifferentiated arm
+GSE116173,preregistered search,AUS,A2,transplantation without a perturbation arm
+GSE130858,preregistered search,AUS,A1,chondroblastoma without a differentiation arm
+GSE112318,priority list + preregistered search,AUS,A2+A7,already screened; the human arm carries no perturbation
+GSE125167,priority list + preregistered search,AUS,A3,already screened; differential-expression tables only; confirmed against the file list on 2026-08-18
+GSE102732,preregistered search,EIN,-,TP53 (Li-Fraumeni) vs wild type; day 0 MSC vs day 7/14/17; n 2/2
+GSE113253,priority list + preregistered search,AUS,A2,already screened; tissue source is not a perturbation
+GSE115789,preregistered search,AUS,A1,siUSP34 without an undifferentiated arm
+GSE109108,preregistered search,AUS,A1,"day 2 and day 7, both already induced"
+GSE75234,preregistered search,AUS,A1,chondroblastoma without a differentiation arm
+GSE73602,preregistered search,AUS,A1,hMSC knockdowns differentiated only; no undifferentiated arm
+GSE58123,secondary list + preregistered search,AUS,A4,wild-type line has n = 1 only

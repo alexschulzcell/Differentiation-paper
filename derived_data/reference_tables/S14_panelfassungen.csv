@@ -1,0 +1,8 @@
+panel,quelle,abruf,n_gene
+GWAS,"GWAS-Katalog MAPPED_TRAIT=body height, MAPPED_GENE",2026-08-21,12435
+KLEIN,HPO HP:0004322 + Subterme (25 Terme),2026-08-21,1483
+KLEIN_BREIT,PanelApp 1471 alle Stufen + HPO HP:0004322 Teilbaum,2026-08-21,1187
+NOSO,HPO HP:0002652 + Subterme (11 Terme),2026-08-21,188
+NOSO_BREIT,PanelApp 309 alle Stufen + HPO HP:0002652 Teilbaum,2026-08-21,689
+PA1471,PanelApp 1471 Stufe 3,2026-08-20 (bestehend),73
+PA309,PanelApp 309 Stufe 3,2026-08-20 (bestehend),440

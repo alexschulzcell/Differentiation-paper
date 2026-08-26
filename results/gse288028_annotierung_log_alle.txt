@@ -1,0 +1,123 @@
+Annotationssaetze aus saetze.csv (Symbole via HGNC-Alias aufgeloest):
+  RZ  (3 Gene): APOE, PTHLH, CLU
+  PZ  (2 Gene): C1QTNF3, MKI67
+  PHZ (2 Gene): IHH, PTH1R
+  HZ  (4 Gene): COL10A1, MMP13, VEGFA, RUNX2
+
+Disjunktionspruefung (blockierend):
+  Annotationsgene: 11 | Eichunion (CHONDROGEN u. NAIV): 22
+  Schnittmenge: ['MKI67']
+  Eichsatz nach Kollisionsreduktion: CHONDROGEN 12 Gene (unveraendert)| NAIV 10 -> 9 Gene
+GSM9328218 (Human growth plate, rep1, Spender P30453): 5295 Zellen x 36601 Gene [GSM9328218_P30453_1001.h5]
+GSM9328219 (Human growth plate, cultured vehicle, rep1, Spender P30453): 5133 Zellen x 36601 Gene [GSM9328219_P30453_1002.h5]
+GSM9328220 (Human growth plate, cultured gh, rep1, Spender P30453): 1005 Zellen x 36601 Gene [GSM9328220_P30453_1003.h5]
+GSM9328221 (Human growth plate, rep2, Spender P31011): 12911 Zellen x 36601 Gene [GSM9328221_P31011_1001.h5]
+GSM9328222 (Human growth plate, cultured vehicle, rep2, Spender P31011): 3332 Zellen x 36601 Gene [GSM9328222_P31011_1002.h5]
+GSM9328223 (Human growth plate, cultured gh, rep2, Spender P31011): 3840 Zellen x 36601 Gene [GSM9328223_P31011_1003.h5]
+GSM9328224 (Human growth plate, rep3, Spender P25452): 9115 Zellen x 36601 Gene [GSM9328224_P25452_001.h5]
+GSM9328225 (Human growth plate, cultured vehicle, rep3 (file1), Spender P25452): 10968 Zellen x 36601 Gene [GSM9328225_P25452_004.h5]
+GSM9328226 (Human growth plate, cultured vehicle, rep3 (file2), Spender P25452): 5611 Zellen x 36601 Gene [GSM9328226_P25452_005.h5]
+GSM9328227 (Human growth plate, cultured gh, rep3 (file1), Spender P25452): 7604 Zellen x 36601 Gene [GSM9328227_P25452_007.h5]
+GSM9328228 (Human growth plate, cultured gh, rep3 (file2), Spender P25452): 2868 Zellen x 36601 Gene [GSM9328228_P25452_008.h5]
+GSM9328229 (Human growth plate, rep4, Spender P22202): 383 Zellen x 36601 Gene [GSM9328229_P22202_1015.h5]
+gesamt: 68065 Zellen x 36601 Gene
+QC: 68065 -> 67555 Zellen | 32755 Gene bleiben (min 3 Zellen)
+Leiden (1.0): 33 Cluster, Groessen {'0': np.int64(1420), '1': np.int64(876), '10': np.int64(1782), '11': np.int64(1560), '12': np.int64(1923), '13': np.int64(99), '14': np.int64(989), '15': np.int64(1041), '16': np.int64(1152), '17': np.int64(1651), '18': np.int64(1920), '19': np.int64(6825), '2': np.int64(1750), '20': np.int64(7158), '21': np.int64(3708), '22': np.int64(93), '23': np.int64(338), '24': np.int64(1761), '25': np.int64(508), '26': np.int64(2522), '27': np.int64(2040), '28': np.int64(468), '29': np.int64(6722), '3': np.int64(2502), '30': np.int64(1005), '31': np.int64(437), '32': np.int64(425), '4': np.int64(6592), '5': np.int64(1193), '6': np.int64(2933), '7': np.int64(420), '8': np.int64(2520), '9': np.int64(1222)}
+
+Markerpraesenz im vollen Datensatz:
+  RZ : 3 von 3 Genen vorhanden
+  PZ : 2 von 2 Genen vorhanden
+  PHZ: 2 von 2 Genen vorhanden
+  HZ : 4 von 4 Genen vorhanden
+Cluster-Scores (z-skalierte Einheit):
+             RZ      PZ     PHZ      HZ
+cluster                                
+0        0.2668 -0.1761  0.0192  0.2901
+1        0.7419 -0.1740 -0.4049 -0.2297
+2        0.0398 -0.2294 -0.3846  0.2015
+3       -0.2978 -0.1798 -0.5217 -0.5975
+4       -0.2683 -0.1968 -0.5227 -0.5179
+5       -0.3145 -0.2192 -0.5328 -0.5676
+6       -0.2778 -0.1749 -0.5244 -0.4441
+7       -0.2770 -0.1776 -0.5113 -0.1965
+8        0.0146  0.0040  0.1428 -0.2028
+9       -0.0631  1.9369 -0.0328  0.1466
+10      -0.2935 -0.2090 -0.5227 -0.5608
+11       0.0563 -0.2008 -0.2228 -0.0442
+12      -0.1878 -0.1778 -0.4984 -0.4818
+13       1.3570 -0.2524 -0.5392 -0.6486
+14       0.3432 -0.1727 -0.5173 -0.5666
+15      -0.1582 -0.2012 -0.4583 -0.4396
+16      -0.0724 -0.1996 -0.5044 -0.6149
+17      -0.1630 -0.1358 -0.3770 -0.2434
+18      -0.0510 -0.0363  0.1249  0.5741
+19      -0.0966  0.0594  0.4135  0.7274
+20       0.3871 -0.0810 -0.3177 -0.0592
+21      -0.1937  0.3595  1.4634  1.5585
+22      -0.2479 -0.2158 -0.5348 -0.3065
+23      -0.3238  1.5415 -0.5297 -0.5700
+24       0.1958 -0.1819 -0.4721 -0.2112
+25      -0.3176 -0.2350 -0.5238  0.0959
+26       0.7701 -0.1346 -0.0764  0.5093
+27       0.6148 -0.0836 -0.3291 -0.1570
+28       0.3879 -0.1877 -0.4286 -0.0620
+29      -0.2429  0.2226  1.0507 -0.1389
+30       0.7329 -0.1434  0.1138 -0.1913
+31      -0.2867  0.2659  2.5783  0.7863
+32      -0.2385  2.0914  0.4139 -0.2441
+
+Zuordnung bei DELTA=0.25: {'0': 'nicht zuordenbar', '1': 'RZ', '2': 'nicht zuordenbar', '3': 'nicht zuordenbar', '4': 'nicht zuordenbar', '5': 'nicht zuordenbar', '6': 'nicht zuordenbar', '7': 'nicht zuordenbar', '8': 'nicht zuordenbar', '9': 'PZ', '10': 'nicht zuordenbar', '11': 'nicht zuordenbar', '12': 'nicht zuordenbar', '13': 'RZ', '14': 'RZ', '15': 'nicht zuordenbar', '16': 'nicht zuordenbar', '17': 'nicht zuordenbar', '18': 'HZ', '19': 'HZ', '20': 'RZ', '21': 'nicht zuordenbar', '22': 'nicht zuordenbar', '23': 'PZ', '24': 'RZ', '25': 'HZ', '26': 'RZ', '27': 'RZ', '28': 'RZ', '29': 'PHZ', '30': 'RZ', '31': 'PHZ', '32': 'PZ'}
+Empfindlichkeit DELTA=0.15: {'0': 'nicht zuordenbar', '1': 'RZ', '2': 'HZ', '3': 'nicht zuordenbar', '4': 'nicht zuordenbar', '5': 'nicht zuordenbar', '6': 'nicht zuordenbar', '7': 'nicht zuordenbar', '8': 'nicht zuordenbar', '9': 'PZ', '10': 'nicht zuordenbar', '11': 'nicht zuordenbar', '12': 'nicht zuordenbar', '13': 'RZ', '14': 'RZ', '15': 'nicht zuordenbar', '16': 'nicht zuordenbar', '17': 'nicht zuordenbar', '18': 'HZ', '19': 'HZ', '20': 'RZ', '21': 'nicht zuordenbar', '22': 'nicht zuordenbar', '23': 'PZ', '24': 'RZ', '25': 'HZ', '26': 'RZ', '27': 'RZ', '28': 'RZ', '29': 'PHZ', '30': 'RZ', '31': 'PHZ', '32': 'PZ'}
+Empfindlichkeit DELTA=0.50: {'0': 'nicht zuordenbar', '1': 'RZ', '2': 'nicht zuordenbar', '3': 'nicht zuordenbar', '4': 'nicht zuordenbar', '5': 'nicht zuordenbar', '6': 'nicht zuordenbar', '7': 'nicht zuordenbar', '8': 'nicht zuordenbar', '9': 'PZ', '10': 'nicht zuordenbar', '11': 'nicht zuordenbar', '12': 'nicht zuordenbar', '13': 'RZ', '14': 'RZ', '15': 'nicht zuordenbar', '16': 'nicht zuordenbar', '17': 'nicht zuordenbar', '18': 'nicht zuordenbar', '19': 'nicht zuordenbar', '20': 'nicht zuordenbar', '21': 'nicht zuordenbar', '22': 'nicht zuordenbar', '23': 'PZ', '24': 'nicht zuordenbar', '25': 'nicht zuordenbar', '26': 'nicht zuordenbar', '27': 'RZ', '28': 'nicht zuordenbar', '29': 'PHZ', '30': 'RZ', '31': 'PHZ', '32': 'PZ'}
+
+Cluster x Spender (Diagnostik, keine Batchkorrektur):
+spender  P22202  P25452  P30453  P31011
+leiden                                 
+0            75      28     462     855
+1            31      59     159     627
+10            3      36     388    1355
+11            0       0     329    1231
+12           12      21     485    1405
+13            0       1       1      97
+14            0       0     185     804
+15           42      71     447     481
+16           27      35     383     707
+17           28    1086     127     410
+18            5    1820      79      16
+19            2    6796      24       3
+2             0       0     327    1423
+20            4    7149       3       2
+21            4    3699       5       0
+22            0       0      93       0
+23            3       2     298      35
+24            3     334     675     749
+25            0      15     420      73
+26            3    2508       7       4
+27            0    2024       2      14
+28            1     466       0       1
+29            1    6710       3       8
+3             8       3    1259    1232
+30           57     941       0       7
+31            0     437       0       0
+32            0     425       0       0
+4            51      11    2657    3873
+5             0       0       5    1188
+6            12       2     926    1993
+7             1       5     158     256
+8             0       0    1370    1150
+9             1    1148      23      50
+
+Zone x Spender (Zellen):
+spender           P22202  P25452  P30453  P31011
+zone                                            
+HZ                     7    8631     523      92
+PHZ                    1    7147       3       8
+PZ                     4    1575     321      85
+RZ                    99   13482    1032    2305
+nicht zuordenbar     263    4997    9421   17559
+
+Benoetigte Gene im Datensatz: 193 von 193
+Zone PZ, Spender P22202: nur 4 Zellen (<5) -- entfaellt.
+Zone PHZ, Spender P30453: nur 3 Zellen (<5) -- entfaellt.
+Zone PHZ, Spender P22202: nur 1 Zellen (<5) -- entfaellt.
+Pseudobulk: 13 Punkte x 4168 Gene -> gse288028_pseudobulk_alle.csv.gz

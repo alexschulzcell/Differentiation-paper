@@ -1,0 +1,76 @@
+gse,quelle,urteil,code,begruendung
+GSE339419,suche,AUS,A9,Einzelzell-Multiom (GEX+ATAC)
+GSE336319,suche,AUS,A1,Darmorganoide; kein naiver gegen differenzierten Arm
+GSE335315,suche,AUS,A1,NAT10-KD ohne naiven Arm
+GSE311799,suche,AUS,A1,miRNA-Ueberexpression ohne naiven Arm
+GSE302248,suche,AUS,A1,Chondrosarkomlinien shBCAT1 ohne Differenzierung
+GSE331389,vorrangig+suche,AUS,A1,Tag 3 gegen Tag 7 beide bereits induziert
+GSE296850,suche,AUS,A1,siUHRF1 ohne naiven Arm
+GSE309849,suche,AUS,A1,PDK4-siRNA ohne naiven Arm
+GSE309520,suche,AUS,A2,Klappengewebe ohne Perturbationsarm
+GSE284183,suche,AUS,A4,CALD1-siRNA im Basalmedium fehlt; Zelle leer
+GSE324998,suche,AUS,A2,Spendergewebe ohne Perturbationsarm
+GSE317531,nachrangig+suche,AUS,A1,alle Proben undifferenziert
+GSE319266,vorrangig+suche,AUS,A9,Einzelzell-CRISPRi (STING-seq)
+GSE299759,suche,AUS,A2,Tumorkohorte ohne Perturbations- und Differenzierungsarm
+GSE282962,suche,AUS,A1,shVAPB ohne naiven Arm
+GSE272246,suche,AUS,A1,STAT5A-KO ohne osteogenen/chondrogenen Differenzierungsarm
+GSE295765,suche,AUS,A1,CAVD-Gewebe ohne naiven Arm
+GSE309462,suche,AUS,A1,Plaquegewebe ohne naiven Arm
+GSE293677,suche,AUS,A1,siRUNX2 ohne naiven Arm
+GSE306722,suche,AUS,A4,n = 1 je Gruppe
+GSE273784,suche,AUS,A4,KO nur ohne Differenzierung; MSC-Verlauf ohne KO; Zelle leer
+GSE236009,suche,AUS,A1,shCald1 ohne naiven Arm
+GSE286069,suche,AUS,A2,Bandscheibenzellen ohne Perturbationsarm
+GSE275764,suche,AUS,A4,n = 1 je Gruppe
+GSE253431,suche,AUS,A1,nur induzierte Chondrozyten; kein naiver Arm
+GSE288189,suche,AUS,A4,n = 1 je Zelle
+GSE262978,suche,AUS,A1,nur Tag 7; kein naiver Arm
+GSE272495,nachrangig+suche,AUS,A2,Reporter-Sortierung ohne Perturbationsarm
+GSE272041,suche,AUS,A1,lncRNA-MRF-KD ohne naiven Arm
+GSE251698,suche,BEREITS,-,bereits eingeschlossen (FN1 C123R / C231W)
+GSE245585,suche,BEREITS,-,bereits eingeschlossen (RB1 +/-)
+GSE247528,suche,EIN,-,SERPINA3-KD osteogen; Tag 0 gegen Tag 3/7; n 3/3
+GSE247491,suche,BEREITS,-,bereits eingeschlossen (SERPINA3-KD chondrogen)
+GSE261806,suche,AUS,A2,Reprogrammierungsverlauf ohne Perturbationsarm
+GSE194287,suche,AUS,A1,LGMN-KD/OE ohne Differenzierungsarm
+GSE249471,suche,AUS,A1,siCPM nur Tag 7; kein naiver Arm
+GSE227512,suche,BEREITS,-,bereits eingeschlossen (LINC01638-KD)
+GSE218830,suche,AUS,A1,COL10A1-KO nur Tag 42; kein naiver Arm
+GSE235930,suche,AUS,A1,Knockdown ohne naiven Arm
+GSE230195,suche,AUS,A9,Einzelzelldaten
+GSE231852,suche,AUS,A7,Maus
+GSE202147,nachrangig+suche,AUS,A1,Perturbation nur im differenzierten Arm; zudem n = 1
+GSE202080,suche,AUS,A1,SubSeries von GSE202147; derselbe Grund
+GSE226406,suche,AUS,A1,Osteoblasten ohne naiven Arm
+GSE226407,suche,AUS,A1,wie GSE226406; ueberwiegend ChIP
+GSE224588,suche,AUS,A2,hFOB-Differenzierung ohne Perturbationsarm
+GSE225446,nachrangig+suche,AUS,A1,TRPV4; Tag 28 und Tag 56 beide bereits induziert
+GSE218101,suche,BEREITS,-,bereits eingeschlossen (ARSB MPS VI)
+GSE213277,suche,AUS,A1,shCTR9 nur Tag 7; kein naiver Arm
+GSE199718,suche,AUS,A1,Klappengewebe ohne naiven Arm
+GSE205432,suche,BEREITS,-,bereits eingeschlossen (RNF4-KD)
+GSE190542,suche,EIN,-,ERCC6L2-KD; Expansion gegen Osteogenmedium; n 2/2
+GSE213579,suche,AUS,A1,nur iPSC; kein Differenzierungsarm
+GSE184087,suche,BEREITS,-,bereits eingeschlossen (MIR181A1HG-KD)
+GSE145235,suche,EIN,-,RB1-mut und RB1-del je gegen die genkorrigierte Linie; zwei Punkte; n 3/3
+GSE193510,suche,AUS,A2,myeloide Zellen ohne Perturbationsarm
+GSE174477,suche,AUS,A2,Geruest ohne Perturbationsarm; n = 1
+GSE166824,nachrangig+suche,AUS,A4,Zelle WT-differenziert fehlt vollstaendig
+GSE137035,suche,EIN,-,YAP/TAZ-siRNA in hFOB; 0 nM gegen 5 nM BMP2; n 3/3
+GSE152404,suche,AUS,A3,MPRA; keine Matrix auf Genebene
+GSE148519,suche,AUS,A2,Sortierung ohne Perturbationsarm
+GSE149209,suche,AUS,A1,GCT-Linien ohne Differenzierungsarm
+GSE149201,suche,AUS,A9,sc/snRNA-seq
+GSE154822,suche,AUS,A1,siCHD7 ohne naiven Arm
+GSE116173,suche,AUS,A2,Transplantation ohne Perturbationsarm
+GSE130858,suche,AUS,A1,Chondroblastom ohne Differenzierungsarm
+GSE112318,vorrangig+suche,AUS,A2+A7,bereits gesichtet; humaner Teil ohne Perturbation
+GSE125167,vorrangig+suche,AUS,A3,bereits gesichtet; nur DE-Tabellen; am 2026-08-18 an der Dateiliste bestaetigt
+GSE102732,suche,EIN,-,TP53 (Li-Fraumeni) gegen WT; D0 MSC gegen D7/14/17; n 2/2
+GSE113253,vorrangig+suche,AUS,A2,bereits gesichtet; Gewebequelle ist keine Perturbation
+GSE115789,suche,AUS,A1,siUSP34 ohne naiven Arm
+GSE109108,suche,AUS,A1,Tag 2 und Tag 7 beide bereits induziert
+GSE75234,suche,AUS,A1,Chondroblastom ohne Differenzierungsarm
+GSE73602,suche,AUS,A1,hMSC-Knockdowns nur differenziert; kein naiver Arm
+GSE58123,nachrangig+suche,AUS,A4,WT-Linie nur n = 1

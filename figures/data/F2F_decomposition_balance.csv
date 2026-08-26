@@ -1,0 +1,3 @@
+gene_map,n_datasets,n_decomposable,n_confirmed,n_other_case,n_refuted,fraction_confirmed,wilson_ci_low,wilson_ci_high,n_module_above_limit,replicated
+full,18,10,8,2,0,0.8,0.4901568467207233,0.9433190520193068,18,True
+filtered,18,10,7,3,0,0.7,0.3967732199795651,0.892210712513788,18,True

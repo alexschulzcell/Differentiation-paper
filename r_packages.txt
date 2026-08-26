@@ -1,0 +1,10 @@
+# R packages of the figure chain (R 4.4.3, as of 2026-08-24)
+# Versions taken from results/*_sessionInfo.txt.
+ggplot2_4.0.3
+patchwork_1.3.2
+ragg_1.5.2
+systemfonts_1.3.2
+DESeq2_1.46.0
+matrixStats_1.5.0
+rtracklayer_1.66.0
+GenomicRanges_1.58.0

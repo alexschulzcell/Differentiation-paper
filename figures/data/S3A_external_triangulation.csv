@@ -1,0 +1,4 @@
+version,level,n,statistic,z,p_value,detection_limit,has_detection_limit
+"S12, fixed 173-gene set (primary)",observations,6,0.6820809248554913,2.835639195885061,0.0015,0.6792241295558079,True
+pooled directional replication,observations,6,0.7246673490276356,2.8098841315595324,0.0027,0.7238217295970091,True
+study-level synthesis (mean of per-study z),studies,8,1.2059599108623238,3.182350597000075,0.0002,,False

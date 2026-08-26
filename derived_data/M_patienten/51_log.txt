@@ -1,0 +1,69 @@
+==============================================================================
+Phase M-B  --  Patientenkohorten, Programm gegen Laesionsantwort
+Vorregistrierung PRAEREG_M_B.md (2026-08-21), Seed 20260821
+==============================================================================
+
+Programm  173 Gene (129 auf, 44 ab)
+Laesion   173 Gene (78 auf, 95 ab)
+Ueberschneidung der beiden Saetze: 1 Gene
+
+------------------------------------------------------------------------------
+GSE186141  --  Osteogenesis imperfecta, primaere Osteoblasten
+   22874 Gene, 6 Patienten, 2 Kontrollen, 167/173 Modulgene messbar
+   EICHUNG OSTEOGEN gegen uebrige: Kontrast +1.4061, z +2.38, p 0.0272 -> BESTANDEN
+   Programm         n 147 | U 0.429 | C 0.429 (Null 0.581) | z -3.95 | p        1 | MDE80 0.689 | Kontrast z -3.95
+   Laesionsantwort  n 156 | U 0.384 | C 0.327 (Null 0.484) | z -4.14 | p        1 | MDE80 0.590 | Kontrast z -4.49
+
+------------------------------------------------------------------------------
+GSE22855  --  Enchondromatose (Ollier), Knorpel / Enchondrom
+   25440 Gene, 7 Patienten, 6 Kontrollen, 142/173 Modulgene messbar
+   EICHUNG CHONDROGEN gegen uebrige: Kontrast +1.7218, z +4.77, p 0.0003 -> BESTANDEN
+   Programm         n 142 | U 0.459 | C 0.437 (Null 0.490) | z -1.27 | p        1 | MDE80 0.606 | Kontrast z -1.08
+   Laesionsantwort  n 129 | U 0.540 | C 0.543 (Null 0.503) | z +0.90 | p   0.4231 | MDE80 0.626 | Kontrast z +1.71
+
+------------------------------------------------------------------------------
+GSE292600  --  akromele Dysplasie (ADAMTSL2/FBN1), dermale Fibroblasten
+   32107 Gene, 8 Patienten, 3 Kontrollen, 171/173 Modulgene messbar
+   EICHUNG NAIV gegen uebrige: Kontrast +3.9558, z +4.62, p 0.0002 -> BESTANDEN
+   Programm         n 159 | U 0.570 | C 0.560 (Null 0.466) | z +2.38 | p   0.0224 | MDE80 0.576 | Kontrast z +4.56
+   Laesionsantwort  n 160 | U 0.498 | C 0.500 (Null 0.512) | z -0.30 | p        1 | MDE80 0.620 | Kontrast z -0.22
+
+------------------------------------------------------------------------------
+GSE77758  --  EDS-HT / JHS, dermale Fibroblasten
+   23307 Gene, 5 Patienten, 6 Kontrollen, 171/173 Modulgene messbar
+   EICHUNG NAIV gegen uebrige: Kontrast +1.9650, z +2.73, p 0.0075 -> BESTANDEN
+   Programm         n 171 | U 0.506 | C 0.497 (Null 0.494) | z +0.07 | p        1 | MDE80 0.601 | Kontrast z +0.97
+   Laesionsantwort  n 170 | U 0.518 | C 0.494 (Null 0.502) | z -0.21 | p        1 | MDE80 0.610 | Kontrast z +0.71
+
+------------------------------------------------------------------------------
+GSE160207  --  Osteogenesis imperfecta, Vollblut
+   17542 Gene, 7 Patienten, 5 Kontrollen, 153/173 Modulgene messbar
+   EICHUNG: nicht eichbar -- kein Markersatz dieser Gewebeart
+   -> traegt keinen Befund; Hauptrechnung wird nicht berichtet
+   Programm         n 150 | U 0.496 | C 0.493 (Null 0.507) | z -0.34 | p        1 | MDE80 0.620 | Kontrast z +0.80
+   Laesionsantwort  n 145 | U 0.528 | C 0.572 (Null 0.504) | z +1.64 | p   0.1222 | MDE80 0.621 | Kontrast z +1.48
+
+------------------------------------------------------------------------------
+GSE228522  --  FOP (ACVR1), CD14+-Monozyten
+   59096 Gene, 6 Patienten, 6 Kontrollen, 173/173 Modulgene messbar
+   EICHUNG: nicht eichbar -- kein Markersatz dieser Gewebeart
+   -> traegt keinen Befund; Hauptrechnung wird nicht berichtet
+   Programm         n 130 | U 0.494 | C 0.500 (Null 0.504) | z -0.09 | p        1 | MDE80 0.625 | Kontrast z -0.25
+   Laesionsantwort  n 133 | U 0.543 | C 0.579 (Null 0.503) | z +1.77 | p   0.0914 | MDE80 0.623 | Kontrast z +3.07
+
+------------------------------------------------------------------------------
+GSE58435  --  Turner-Syndrom, Fruchtwasser, zellfreie mRNA
+   21755 Gene, 5 Patienten, 5 Kontrollen, 166/173 Modulgene messbar
+   EICHUNG: nicht eichbar -- kein Markersatz dieser Gewebeart
+   -> traegt keinen Befund; Hauptrechnung wird nicht berichtet
+   Programm         n 166 | U 0.529 | C 0.560 (Null 0.505) | z +1.42 | p    0.184 | MDE80 0.614 | Kontrast z +0.20
+   Laesionsantwort  n 167 | U 0.486 | C 0.467 (Null 0.499) | z -0.83 | p        1 | MDE80 0.609 | Kontrast z -0.40
+
+Studien-Synthese ueber die geeichten Kohorten (deskriptiv):
+   Laesionsantwort  4 Kohorten | mittlerer z -0.94 (-4.14 .. 0.90) | mittleres U 0.485 | ueber eigenem MDE80: 0
+   Programm         4 Kohorten | mittlerer z -0.69 (-3.95 .. 2.38) | mittleres U 0.491 | ueber eigenem MDE80: 0
+
+==============================================================================
+TOR B: 4 Kohorte(n) mit bestandener Eichung.
+Zwei oder mehr Kohorten -- Tor B bestanden.
+==============================================================================
