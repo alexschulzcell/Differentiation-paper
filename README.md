@@ -8,9 +8,11 @@ axis the field searches on. Every level carries its own internal positive
 control ("calibration") and its own measured detection limit (MDE80), and every
 negative result is reported together with the effect size it would have found.
 
-The manuscript source is [`manuscript/MANUSCRIPT.md`](manuscript/MANUSCRIPT.md);
-the target journal is *iScience* (Cell Press). The submission package is built
-from the sources by `code/64_build_submission.py`.
+This repository is the submission companion: it holds the analysis code, the
+derived data behind every figure and table, the figures themselves and the
+preregistrations — everything needed to check every number in the manuscript,
+which is under submission to *iScience* (Cell Press) and therefore not part
+of this repository.
 
 ---
 
@@ -61,22 +63,15 @@ python code/52_s9_data.py                                    # the panels of sup
 Rscript code/60_figures_main.R                               # F1 to F6, PDF and PNG
 Rscript code/61_figures_supplement.R                         # S1 to S9, PDF and PNG
 python code/62_graphical_abstract.py                         # graphical abstract, PDF and PNG
-python code/63_key_resources_table.py                        # the Key Resources Table
-python code/64_build_submission.py                           # the whole submission package
 python code/70_check_numbers.py                              # every number against its panel file
-python code/71_check_references.py                           # references, both directions
-python code/72_check_language.py                             # language rules of the material
 ```
 
 `70_check_numbers.py` is the self-test: every load-bearing number of the text
 and of the legends stands in it as a required value against
-`figures/data/*.csv`. If it exits 0, the repository is consistent with itself.
-Two further checks guard the manuscript rather than the numbers:
-`71_check_references.py` verifies in both directions that every reference is
-cited and every citation has an entry, and `72_check_language.py` enforces the
-language rules of the material — English throughout, `undifferentiated` rather
-than `naive`, the accession always in parentheses after the information it
-belongs to, and no abbreviated identifiers.
+`figures/data/*.csv`. If it exits 0, the repository is consistent with the
+numbers quoted in the manuscript. (The manuscript-side checks — references
+cited in both directions, language rules — live with the manuscript sources
+and are not part of this repository.)
 
 The panel and figure steps (`50_` upward) read only stored outputs under
 `derived_data/` and `results/`; they recompute nothing and take seconds to
@@ -99,8 +94,7 @@ The exact versions used are recorded in the session-information files under
 
 ```
 code/                       the pipeline: 00_setup, 20-34 analyses,
-                            50-52 panel data, 60-62 figures, 63-64 packaging,
-                            70-73 checks
+                            50-52 panel data, 60-62 figures, 70 numbers check
 reference_implementations/  one implementation per metric; nothing is
                             computed twice. manuscript/methods holds the
                             reference implementation of the metric itself
@@ -115,10 +109,7 @@ derived_data/               stored analysis outputs that the pipeline reads
 results/                    logs, session information and the self-tests
 preregistrations/           every preregistration and protocol, dated and
                             unchanged, including the ones that fell
-manuscript/                 MANUSCRIPT.md, the figure legends, the cover
-                            letter, the bibliography and the citation styles
 data_raw/                   raw data, about 98 GB, not in this repository
-submission/                 build output, not in this repository
 ```
 
 Raw data are not part of the repository; they are public at GEO, ArrayExpress
@@ -171,7 +162,7 @@ main result is exploratory and says so in every legend.
 | **F5** | both layers meet at the prehypertrophic transition | exploratory |
 | **F6** | levels, estimates and each level's own detection limit, including the levels that carry nothing | confirmatory as bookkeeping |
 | **GA** | graphical abstract: the growth-plate curves with both layers peaking at the prehypertrophic transition, the 2/18 against 18/18 decoupling, and the orthogonality of the disease-gene definitions | — |
-| **S1-S9** | scale critique · every calibration · external triangulation · patient cohorts · robustness · orthogonal levels · screen detail · day zero and publication matching · the lineage contrast in three cohorts | see `manuscript/CAPTIONS_SUPPLEMENT.md` |
+| **S1-S9** | scale critique · every calibration · external triangulation · patient cohorts · robustness · orthogonal levels · screen detail · day zero and publication matching · the lineage contrast in three cohorts | legends in the manuscript's supplemental information |
 
 ---
 
@@ -188,13 +179,10 @@ axis.
 
 ## Citation and licence
 
-The manuscript is under preparation for *iScience* (Cell Press). The reference
-apparatus is format-agnostic: `manuscript/references.bib` plus a CSL switch
-(`manuscript/csl/cell.csl` for iScience, `manuscript/csl/springer-vancouver.csl`
-for BMC Genomics), selected with
-`python code/64_build_submission.py --style {cell,vancouver}`. Citation
-information will be added on acceptance; `CITATION.cff` carries the
-machine-readable form.
+This repository accompanies a manuscript under preparation for *iScience*
+(Cell Press). Citation information will be added on acceptance;
+[`CITATION.cff`](CITATION.cff) already carries the machine-readable form for
+the repository itself.
 
 Text, figures and derived data are under CC BY 4.0 ([`LICENSE`](LICENSE)); the
 code is under the MIT licence ([`LICENSE-CODE`](LICENSE-CODE)). The primary
