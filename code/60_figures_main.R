@@ -610,14 +610,14 @@ bau_f3 <- function() {
 f4a <- function() {
   lin <- lies("F4A_positive_control_lineage_markers")
   ank <- lies("F4A_positive_control_anchor")
-  plab <- c(NOSO = "Nosology (core)", NOSO_BREIT = "Nosology (broad)",
-            PA309 = "PanelApp 309")
+  plab <- c("Nosology (core)", "Nosology (broad)", "PanelApp 309")
   d <- rbind(
-    data.frame(panel = plab[lin$panel], odds_ratio = lin$odds_ratio_matched,
+    data.frame(panel = lin$panel, odds_ratio = lin$odds_ratio_matched,
                detection_limit = lin$odds_ratio_detection_limit, part = "lineage\nmarkers"),
-    data.frame(panel = plab[ank$panel], odds_ratio = ank$odds_ratio_raw, detection_limit = NA,
+    data.frame(panel = ank$panel, odds_ratio = ank$odds_ratio_raw, detection_limit = NA,
                part = "secretion\nanchor"))
-  d$panel <- factor(d$panel, levels = unname(plab))
+  d$panel <- factor(d$panel, levels = plab)
+  d$label_x <- d$odds_ratio * 1.25
   ggplot(d, aes(odds_ratio, panel)) +
     geom_vline(xintercept = 1, colour = LINE, linewidth = LW) +
     geom_segment(aes(x = 1, xend = odds_ratio, yend = panel), colour = "#12946B",
@@ -625,18 +625,18 @@ f4a <- function() {
     geom_point(aes(x = detection_limit), shape = 124, size = 2.2, colour = INK,
                na.rm = TRUE) +
     geom_point(colour = "#12946B", size = 1.7) +
-    geom_text(aes(x = odds_ratio * 1.25, label = sprintf("%.1f", odds_ratio)), hjust = 0,
+    geom_text(aes(x = label_x, label = sprintf("%.1f", odds_ratio)), hjust = 0,
               family = FONT, size = gs(PTS), colour = INK) +
     facet_grid(part ~ ., scales = "free_y", space = "free_y", switch = "y") +
     scale_x_continuous(transform = "log10", breaks = c(1, 3, 10, 30)) +
     labs(x = "odds ratio (positive controls)", y = NULL) +
     coord_cartesian(xlim = c(0.9, 130), clip = "off") +
     theme_pub() +
-    # The strip titles used to sit flush left at the top (hjust = 0 from
-    # theme_pub) instead of centred beside their rows.
-    theme(strip.placement = "outside",
+    # Keep the group labels beside their rows; an outer strip is pushed far
+    # left by the wider y-axis labels in the composed sheet.
+    theme(strip.placement = "inside",
           strip.text.y.left = element_text(angle = 90, hjust = 0.5,
-                                           margin = margin(r = 3)),
+                                           margin = margin(r = 1)),
           panel.spacing.y = unit(2.2, "mm"),
           plot.margin = margin(2, 8, 1.5, 2))
 }
