@@ -805,7 +805,7 @@ series, and the remaining two are the chondrogenic and osteogenic arms of the
 authors' own urine-derived stem cell series, deposited at ArrayExpress under
 E-MTAB-16566.
 All original code is publicly available as of the date of publication in the
-GitHub repository ([GitHub URL - to be added]). The archive holds `code/`, the analysis
+GitHub repository (https://github.com/alexschulzcell/Differentiation-paper). The archive holds `code/`, the analysis
 and figure pipeline, with a per-script header stating purpose, inputs, outputs
 and runtime; `reference_implementations/`, one implementation of each metric;
 `figure_style/`, the publication style of the figures; `figures/data/`, one

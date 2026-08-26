@@ -102,7 +102,7 @@ def _pakete() -> list[tuple[str, str, str]]:
     zeilen: list[tuple[str, str, str]] = []
     zeilen.append(("Original code (Python and R analysis scripts)",
                    "This paper",
-                   "GitHub: [repository URL]"))
+                   "GitHub: https://github.com/alexschulzcell/Differentiation-paper"))
     zeilen.append(("Python", "Python Software Foundation",
                    "v3.12.10; " + RRID["python"]))
     for roh in (WURZEL / "requirements.txt").read_text(
@@ -154,7 +154,7 @@ def _tabelle() -> dict[str, list[tuple[str, str, str]]]:
     t["Software and algorithms"] = _pakete()
     t["Other"] = [
         ("Panel-level source data for every figure (CSV)", "This paper",
-         "GitHub: [repository URL]; figures/data/"),
+         "GitHub: https://github.com/alexschulzcell/Differentiation-paper; figures/data/"),
         ("Self-test reproducing every number in the manuscript",
          "This paper", "code/70_check_numbers.py"),
         ("Preregistrations, unchanged, including the ones that fell",

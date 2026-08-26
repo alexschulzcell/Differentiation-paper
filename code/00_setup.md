@@ -42,9 +42,8 @@ Reference data with retrieval dates:
 | NCBI `gene2pubmed` and `gene2ensembl` | publications per gene, tax_id 9606 | **2026-08-22** |
 | Human fetal limb atlas | post-conception weeks 5.1–9.3, 136 311 cells | — |
 
-Processed matrices are deposited at Zenodo; the DOI goes here on submission.
-**DOI placeholder: `10.5281/zenodo.XXXXXXX`** (a snapshot of this
-repository).
+The repository itself is the archive for the code and the derived
+tables: **https://github.com/alexschulzcell/Differentiation-paper**.
 
 ## 4 · Order of execution
 

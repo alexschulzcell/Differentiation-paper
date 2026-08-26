@@ -652,9 +652,6 @@ something a script can do.
       `Graphical abstract.tif`. After the last visual change re-run
       `python code/64_build_submission.py` so the TIFF carries the final
       version.
-- [ ] **GitHub repository.** Initialised locally with no remote. Create the
-      remote, push, and paste the URL into the Key Resources Table and into
-      Data and Code Availability (placeholder: `[GitHub URL - to be added]`).
 - [x] **Deposit route.** GitHub only -- a Zenodo deposit was considered
       and dropped. The repository URL (see the GitHub item above) goes
       into the Key Resources Table and into Data and Code Availability.
@@ -679,6 +676,8 @@ optionally suggested reviewers.
       sex or gender limitation of the single-donor series is stated.
 - [x] **Licence.** CC BY 4.0 for text, figures and derived data; MIT for code.
       `LICENSE` and `LICENSE-CODE` are in force in the repository.
+- [x] **GitHub repository.** Public at https://github.com/alexschulzcell/Differentiation-paper ; the URL
+      is in the Key Resources Table and in Data and Code Availability.
 - [x] **Accessions.** All eighteen perturbation datasets carry a real
       accession, and the figures carry the accessions in their row labels.
 - [x] **Primary publications of every reanalysed series are cited.**
