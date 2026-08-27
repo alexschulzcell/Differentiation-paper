@@ -3,8 +3,9 @@
 01_internal_gene_map.py -- the internal RNA layer as a CONTINUOUS quantity
 per gene.
 
-So far the paper carries a yes/no list: 173 genes are convergent, all
-others are not. For comparison with orthogonal measurement layers this is
+The paper carries a frozen yes/no list: 173 genes were identified in the
+explicitly exploratory dWT convergence analysis and all downstream layers use
+that list unchanged. For comparison with orthogonal measurement layers this is
 the weakest possible form. The underlying matrix
 (`_archiv/Sitzungen/20_Exploration/derived_data/20d_gene_*.csv`, 18 points)
 holds per gene and dataset `dWT` (differentiation response), `iv` (lesion
@@ -107,6 +108,8 @@ def main() -> None:
     K["basis_med"] = G.pivot(index="gen", columns="punkt", values="basis").median(axis=1)
     K["pool_anteil"] = G.pivot(index="gen", columns="punkt", values="im_pool").mean(axis=1)
 
+    # This stricter filter belongs to the continuous map, not to S5 module
+    # formation (which uses the separately documented 14-of-18 universe).
     MIN_N = 15
     log("\nGenes with >= %d evaluable datasets: %d of %d"
         % (MIN_N, int((K.dWT_n >= MIN_N).sum()), len(K)))

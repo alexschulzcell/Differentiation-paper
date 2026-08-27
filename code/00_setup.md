@@ -49,6 +49,7 @@ tables: **https://github.com/alexschulzcell/Differentiation-paper**.
 
 ```bash
 python reference_implementations/56_calibration_eighteen.py  # the per-data-set calibration, 2 of 18
+python reference_implementations/manuscript/methods/20f_convergence_dwt.py  # reproduce the exploratory 173-gene module
 python code/29_calibration_gene_space.py                     # which gene space belongs under it
 python code/20_in_vivo_donor_test.py                         # the donor-stratified in vivo test
 Rscript code/24a_gene_sets_v2_build.R                        # fix the broad gene sets (writes once)

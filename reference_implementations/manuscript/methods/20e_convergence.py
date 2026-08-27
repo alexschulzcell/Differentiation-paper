@@ -1,15 +1,16 @@
 # -*- coding: utf-8 -*-
 # =============================================================================
-# 20e_convergence.py -- EXPLORATORY. Convergence at GENE LEVEL over 18 data
-#                       sets, and its relation to skeletal dysplasia and short
-#                       stature.
+# 20e_convergence.py -- EXPLORATORY. Convergence of the lesion response `iv` at
+#                       GENE LEVEL over 18 data sets, and its relation to
+#                       skeletal dysplasia and short stature.
 # =============================================================================
 # *** EXPRESSLY EXPLORATORY. *** No confirmatory claim. Every number here is a
 # hypothesis for future data, not evidence from these.
 #
-# The question: are there GENES whose interaction term iv points consistently
+# The question: are there GENES whose interaction term `iv` points consistently
 # in the same direction across the eighteen data sets -- and are those
 # preferentially skeletal dysplasia or short stature genes?
+# The 173-gene `dWT` module is formed in the separate 20i/20f analysis.
 #
 # That is the question this work has never asked: everything since S1 runs at
 # set level, and the clustering step showed that only about eleven degrees of

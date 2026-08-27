@@ -3,8 +3,10 @@
 _module.py -- shared foundation of all orthogonal layers.
 
 Provides:
-  * MODUL   : the fixed 173 convergent genes with their direction `ri`
-              (from derived_data/reference_tables/S5_konvergente_gene.csv; not recomputed)
+  * MODUL   : the 173 convergent genes identified in the exploratory
+              20_Exploration analysis, with their direction `ri`; the frozen
+              table is read from derived_data/reference_tables/S5_konvergente_gene.csv
+              and is not reselected by downstream analyses
   * konkordanz(...) : the direction test of a module on any orthogonal
               measurement layer, against a background-drawn null.
 

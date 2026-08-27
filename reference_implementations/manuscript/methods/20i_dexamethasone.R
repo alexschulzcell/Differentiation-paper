@@ -17,6 +17,12 @@
 #  (3) Does the convergence itself survive the removal of the GC genes -- that
 #      is, is the count of 173 against 7.9 carried by them?
 #
+# The convergence count in step (3) is also the archived formation check for
+# the frozen S5 module. It uses the 20d matrix, filters to genes measurable in
+# at least 14 of 18 data sets, median-centres within that universe, and counts
+# genes with at least 90% concordant non-zero signs. The public Python script
+# 20f_convergence_dwt.py reproduces this step without the GC analysis.
+#
 # THE SOURCE, external and version-fixed: MSigDB 2026.1.Hs through msigdbr
 # 26.1.0, retrieved 2026-08-19. No fresh GEO download -- a curated, versioned
 # signature is more traceable than a data set analysed by ourselves, and it

@@ -20,9 +20,33 @@ repository root gives the English meaning of every column name that appears in
 
 | file | content |
 |---|---|
-| `_module.py` | the fixed 173 genes with their direction `ri`; **the only** implementation of the directional concordance (`konkordanz`), of the two-set contrast (`kontrast`) and of the baseline-stratified null |
+| `_module.py` | the 173 genes identified in the exploratory formation analysis, frozen thereafter with direction `ri`; **the only** implementation of the directional concordance (`konkordanz`), of the two-set contrast (`kontrast`) and of the baseline-stratified null |
 | `_marker.py` | the canonical lineage marker sets (osteogenic, adipogenic, myogenic, chondrogenic, undifferentiated). Textbook knowledge, fixed before any computation and checked for disjointness. They serve **only** to calibrate a measurement level |
 | `_enrichment.R` | the one implementation of the enrichment test used for the gene-set analyses |
+
+## Formation of the 173-gene module
+
+The 173-gene module is an internal, data-derived result. It was identified in
+the explicitly exploratory `20_Exploration` analysis of the 18 perturbation
+data sets, not supplied by an external catalogue or defined before the paper.
+`20d_genes.R` produces the per-gene `dWT` matrix. The selection rule is
+preserved in section (3) of
+`manuscript/methods/20i_dexamethasone.R` and is independently re-run by:
+
+```bash
+python reference_implementations/manuscript/methods/20f_convergence_dwt.py
+```
+
+The rule first retains genes measurable in at least 14 of 18 data sets, then
+median-centres each data-set column within that 12,563-gene universe and keeps
+genes with at least 90% concordant non-zero signs. It yields 173 genes, with
+129 `ri = +1` and 44 `ri = -1`, exactly matching
+`derived_data/reference_tables/S5_konvergente_gene.csv`. The module is frozen
+only after this exploratory formation step; downstream analyses never
+reselect it. The 15-of-18 filter in `01_internal_gene_map.py` belongs to that
+script's separate continuous gene-map analysis and does not form S5.
+
+---
 
 ## Order
 

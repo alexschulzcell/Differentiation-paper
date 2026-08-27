@@ -14,16 +14,18 @@
 # This script produces the GENE-WISE matrix for the first time: the interaction
 # term iv per gene and per data set. The question "do the data sets converge"
 # can thereby be put at the level where the resolution sits -- about 10 000
-# genes instead of 11 effective sets. The enrichment (skeletal dysplasia, short
-# stature, matrisome, GO) comes AFTERWARDS, in 20e, and then against the right
-# null.
+# genes instead of 11 effective sets. The exploratory dWT convergence count
+# comes afterwards, in 20i (and is exposed independently as
+# 20f_convergence_dwt.py). The enrichment analyses then use the frozen module
+# against their respective external sets.
 #
 # Only kern() is computed per data set -- NO bootstrap, no NB. That is cheap;
 # the expensive part of this work was always the null per gene set, and it is
 # not needed yet here.
 #
 # Written per point: gene, iv, dWT, basis, im_pool. Everything is thereby
-# reconstructible in 20e, including the control on the baseline expression.
+# reconstructible in the gene-level analyses, including the control on the
+# baseline expression.
 #
 # DECISIONS:
 #  (1) ALL genes with a valid iv are written out, not only the pool. Pool

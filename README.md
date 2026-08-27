@@ -20,8 +20,9 @@ of this repository.
 
 Across 18 published perturbation data sets, only **2 pass a calibration on the
 textbook lineage markers of the axis they claim to model** (7 of 14 when
-resolved to individual donor cells) — yet a fixed 173-gene matrix programme
-runs above its own detection limit in **18 of 18** of them (z +5.25 to +13.10),
+resolved to individual donor cells) — yet an exploratory, data-derived
+173-gene matrix programme, subsequently frozen for downstream use, runs above
+its own detection limit in **18 of 18** of them (z +5.25 to +13.10),
 as strongly where the calibration fails (z +13.13, n = 16) as where it passes
 (z +12.79, n = 2). Under a rule fixed in advance, 10 of the 18 data sets are
 decomposable into their separate steps — undifferentiated state left, lineage
@@ -47,6 +48,7 @@ Every script derives the repository root from its own location; set
 
 ```bash
 python reference_implementations/56_calibration_eighteen.py  # the per-data-set calibration (2 of 18)
+python reference_implementations/manuscript/methods/20f_convergence_dwt.py  # reproduce the exploratory 173-gene module
 python code/29_calibration_gene_space.py                     # which gene space belongs under it
 python code/20_in_vivo_donor_test.py                         # donor-stratified in vivo test
 Rscript code/24a_gene_sets_v2_build.R                        # fix the broad gene sets (writes once)
@@ -87,6 +89,37 @@ repository; every accession is listed in
 Environments: Python 3.12 (`requirements.txt`) and R 4.4 (`r_packages.txt`).
 The exact versions used are recorded in the session-information files under
 `results/`.
+
+---
+
+## Provenance of the 173-gene module
+
+The module is an internal, data-derived result; it was not an external gene
+set and was not predefined before this paper. It was identified in the
+explicitly exploratory `20_Exploration` analysis of the same 18 perturbation
+data sets and then frozen for every downstream analysis.
+
+`20d_genes.R` produces the per-gene, per-data-set `dWT` values. The archived
+selection step is preserved in section (3) of
+`reference_implementations/manuscript/methods/20i_dexamethasone.R`:
+
+1. retain genes with a valid `dWT` in at least 14 of 18 data sets (12,563 genes);
+2. centre each data-set column on its median within that universe;
+3. count the positive and negative centred signs per gene; and
+4. retain genes with `v / n >= 0.90`, where `v` is the larger sign count.
+
+This gives 173 genes, with 129 expected to increase and 44 to decrease. The
+public snapshot of the `dWT` matrix is
+`derived_data/reference_tables/20d_dWT_matrix.csv.gz`. The standalone
+`20f_convergence_dwt.py` script applies the same rule and verifies gene
+identity, `n`, `v` and `ri` against the frozen
+`S5_konvergente_gene.csv` table. The selection is exploratory because the
+same 18 data sets define it; the subsequent uses treat the resulting table as
+fixed and do not reselect genes.
+
+This formation step is distinct from `01_internal_gene_map.py`, whose
+15-of-18 filter belongs to its separate continuous gene-map analysis and does
+not define the 173-gene module.
 
 ---
 
@@ -168,12 +201,14 @@ main result is exploratory and says so in every legend.
 
 ## What is deliberately not in here
 
-Reporting what fell is part of the argument. All of it is preregistered and
-reproduced unchanged in `preregistrations/`: convergence counts as evidence
-(they track signal-to-noise, not biology), donor-resolved lesion-response
-numbers, day-zero competence, disease genes as constitutive rather than
-dynamic, absolute expression as a finding, and any new search for a convergence
-axis.
+Reporting what fell is part of the argument. The preregistered analyses and
+protocols are reproduced unchanged in `preregistrations/`. The 173-gene module
+formation described above is explicitly exploratory and is included as
+provenance, not as a preregistered claim. No downstream analysis searches for a
+new axis or changes the frozen module: convergence counts track
+signal-to-noise, donor-resolved lesion-response numbers, day-zero competence,
+disease genes as constitutive rather than dynamic, and absolute expression are
+reported under their stated analysis status.
 
 ---
 
