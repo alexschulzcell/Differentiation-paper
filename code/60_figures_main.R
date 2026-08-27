@@ -632,9 +632,9 @@ f4a <- function() {
     labs(x = "odds ratio (positive controls)", y = NULL) +
     coord_cartesian(xlim = c(0.9, 130), clip = "off") +
     theme_pub() +
-    # Keep the group labels beside their rows; an outer strip is pushed far
-    # left by the wider y-axis labels in the composed sheet.
-    theme(strip.placement = "inside",
+    # Keep the group labels outside the data field so the y axis stays attached
+    # to the plot; bau_f4() frees this panel's left-side alignment below.
+    theme(strip.placement = "outside",
           strip.text.y.left = element_text(angle = 90, hjust = 0.5,
                                            margin = margin(r = 1)),
           panel.spacing.y = unit(2.2, "mm"),
@@ -798,7 +798,9 @@ bau_f4 <- function() {
   # leerstreifen(): F4A and F4B are facetted and carry an outer strip column
   # on the left. Without compensation patchwork pushes the y axis of the other
   # panels into that strip column -- that was the detached y axis in F4D.
-  p <- (f4a() | f4b()) /
+  # F4A additionally frees its left-side alignment so its strip stays beside
+  # its own y labels without inserting a gap between the axis and the field.
+  p <- (patchwork::free(f4a(), side = "l") | f4b()) /
     (f4c_plot() | leerstreifen(achsenpanel(
         "F4D_constraint_publication_matched",
         "LOEUF, publication-matched (z)", c(-6.2, 3.2), "LOEUF"))) /
