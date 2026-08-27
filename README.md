@@ -1,4 +1,6 @@
-# What skeletal differentiation models actually measure
+# What skeletal differentiation models measure: a shared matrix programme, separate from skeletal dysplasia genes
+
+*Companion repository for Schulz & Thiel, iScience (under submission). The manuscript itself is not part of this repository.*
 
 A lineage-independent matrix programme runs in every published mesenchymal
 differentiation model we could reach — including where the model fails its own
