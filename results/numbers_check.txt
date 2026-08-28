@@ -64,6 +64,25 @@ OK   F2F failed                                   got    15.0000  want 15.0
 OK   F2F not calibratable                         got     1.0000  want 1.0
 OK   calibration L passing, 3 cohorts             got     0.0000  want 0
 OK   calibration L attempts                       got    12.0000  want 12
+OK   F2G held-out above own limit (study)         got    14.0000  want 14.0
+OK   F2G held-out datasets                        got    18.0000  want 18.0
+OK   F2G held-out median z (study)                got     4.6574  want 4.66
+OK   F2A matched null observed rho                got     0.6351  want 0.635
+OK   F2A matched null z                           got     6.1927  want 6.19
+OK   F2A matched null mean                        got     0.1359  want 0.136
+OK   F2A matched genes                            got   147.0000  want 147
+OK   F2A unmatched null z                         got     6.9590  want 6.96
+OK   F2H full cross-arm rho                       got     0.6223  want 0.622
+OK   F2H strongest 20% removed rho                got     0.5727  want 0.573
+OK   F2H most-expressed 20% removed rho           got     0.6708  want 0.671
+OK   F2H jackknife min rho                        got     0.6158  want 0.616
+OK   F2H jackknife max rho                        got     0.6326  want 0.633
+OK   F2I external datasets                        got     4.0000  want 4.0
+OK   F2I external above own limit                 got     3.0000  want 3.0
+OK   F2I osteogenic z                             got    10.1002  want 10.1
+OK   F2I adipogenic z                             got     8.2222  want 8.22
+OK   F2I vascular z                               got     8.9866  want 8.99
+OK   F2I chondrogenic z (below limit)             got     1.6905  want 1.69
 OK   in vivo module rho                           got     0.4561  want 0.456
 OK   in vivo module z                             got     4.7978  want 4.8
 OK   in vivo module MDE80                         got     0.2743  want 0.274
@@ -111,6 +130,8 @@ OK   PA309 dWT z                                  got    -0.7073  want -0.71
 OK   PA309 dWT limit                              got     0.0725  want 0.073
 OK   GWAS dWT limit                               got     0.0161  want 0.016
 OK   cell cycle dWT z                             got     3.7161  want 3.72
+OK   F4G disease sets with CI upper < MDE80       got     4.0000  want 4.0
+OK   F4G cell-cycle control above its limit       got     1.0000  want 1.0
 OK   GWAS LOEUF z                                 got    -4.6679  want -4.67
 OK   GWAS LOEUF limit                             got     0.0239  want 0.024
 OK   PA309 LOEUF z                                got     1.8251  want 1.83
@@ -155,5 +176,5 @@ OK   of which ri = +1                             got   129.0000  want 129
 OK   of which ri = -1                             got    44.0000  want 44
 OK   preregistration documents (34 + PRAEREG_F2F) got    35.0000  want 35
 
-=== 156 of 156 checks passed ===
+=== 177 of 177 checks passed ===
 numpy 2.4.4 | pandas 3.0.1 | python 3.12.10

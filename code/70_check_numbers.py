@@ -205,6 +205,43 @@ def main() -> None:
     pruefe("calibration L passing, 3 cohorts", s9a.passed.sum(), 0)
     pruefe("calibration L attempts", len(s9a), 12)
 
+    # --- F2G/H/I: held-out validation and robustness of the programme,
+    # code/35_module_validation.py.
+    g = L("F2G_leave_one_study_out")
+    above = g.above_mde80.astype(str).isin(["True", "TRUE"])
+    pruefe("F2G held-out above own limit (study)", float(above.sum()), 14.0)
+    pruefe("F2G held-out datasets", float(len(g)), 18.0)
+    pruefe("F2G held-out median z (study)", float(g.z.median()), 4.66)
+    # F2A also carries the matched-null control (same panel as the unmatched null)
+    h = L("F2A_matched_nulls_summary")
+    hm = h[h.null_type == "matched"]
+    pruefe("F2A matched null observed rho", one(hm.rho_observed), 0.635)
+    pruefe("F2A matched null z", one(hm.z_sd_units), 6.19)
+    pruefe("F2A matched null mean", one(hm.null_mean), 0.136)
+    pruefe("F2A matched genes", one(hm.n_genes), 147)
+    hu = h[h.null_type == "unmatched"]
+    pruefe("F2A unmatched null z", one(hu.z_sd_units), 6.96)
+    dr = L("F2H_dropout")
+    full_rho = one(dr[dr.scheme == "full"].rho)
+    pruefe("F2H full cross-arm rho", full_rho, 0.622)
+    pruefe("F2H strongest 20% removed rho",
+           one(dr[(dr.scheme == "drop_top_abs_dwt") & (dr.removed_frac == 0.20)].rho), 0.573)
+    pruefe("F2H most-expressed 20% removed rho",
+           one(dr[(dr.scheme == "drop_top_expression") & (dr.removed_frac == 0.20)].rho), 0.671)
+    jk = L("F2H_jackknife")
+    pruefe("F2H jackknife min rho", float(jk.rho_without_gene.min()), 0.616)
+    pruefe("F2H jackknife max rho", float(jk.rho_without_gene.max()), 0.633)
+    # F2I external validation on independent differentiation datasets
+    ex = L("F2I_external_validation")
+    above = ex.above_mde80.astype(str).isin(["True", "TRUE"])
+    pruefe("F2I external datasets", float(len(ex)), 4.0)
+    pruefe("F2I external above own limit", float(above.sum()), 3.0)
+    zby = ex.set_index("lineage").z
+    pruefe("F2I osteogenic z", float(zby.get("osteogenic")), 10.10)
+    pruefe("F2I adipogenic z", float(zby.get("adipogenic")), 8.22)
+    pruefe("F2I vascular z", float(zby.get("vascular calcification")), 8.99)
+    pruefe("F2I chondrogenic z (below limit)", float(zby.get("chondrogenic")), 1.69)
+
     # ------------------------------------------------------------- FIGURE 3
     t = L("F3C_trend_test_donor")
     m = t[t.quantity == "module (173 genes)"]
@@ -349,6 +386,17 @@ def main() -> None:
     pruefe("PA309 dWT limit", one(dd[dd.gene_set == "PanelApp 309"].detection_limit_delta), 0.073)
     pruefe("GWAS dWT limit", one(dd[dd.gene_set == "height GWAS"].detection_limit_delta), 0.016)
     pruefe("cell cycle dWT z", one(dd[dd.gene_set == "cell cycle (neg. control)"].z), 3.72)
+    # F4G equivalence: for every disease/height set the 95% CI upper bound of the
+    # observed effect lies BELOW the MDE80, i.e. a detectable effect is excluded;
+    # the cell-cycle positive control clears its limit.
+    neg = dd[dd.gene_set.isin(["PanelApp 309", "Nosology (core)", "short stature",
+                               "height GWAS"])].copy()
+    neg["ci_hi"] = neg.delta_observed + 1.96 * neg.null_sd
+    pruefe("F4G disease sets with CI upper < MDE80",
+           float((neg.ci_hi < neg.detection_limit_delta).sum()), 4.0)
+    cc = dd[dd.gene_set == "cell cycle (neg. control)"].iloc[0]
+    pruefe("F4G cell-cycle control above its limit",
+           float(cc.delta_observed > cc.detection_limit_delta), 1.0)
     c2 = L("F4D_constraint_publication_matched")
     pruefe("GWAS LOEUF z", one(c2[c2.gene_set == "height GWAS"].z), -4.67)
     pruefe("GWAS LOEUF limit", one(c2[c2.gene_set == "height GWAS"].detection_limit_delta), 0.024)

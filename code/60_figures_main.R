@@ -242,24 +242,37 @@ bau_f1 <- function() {
 # =============================================================================
 # FIGURE 2 -- the main finding
 # =============================================================================
+MATCHED <- "#7B5EA7"   # the matched (confounder-controlled) null
+
 f2a <- function() {
-  d <- lies("F2A_cross_arm_concordance")
-  # the null as a normal density, the observation as a needle
-  x <- seq(-0.25, 0.8, length.out = 400)
-  n <- data.frame(x = x, y = dnorm(x, d$null_mean, d$null_sd))
-  n$y <- n$y / max(n$y)
-  ggplot(n, aes(x, y)) +
-    geom_area(fill = SOFT, colour = GRAU, linewidth = LW) +
+  # Cross-arm concordance against TWO nulls on one axis: random background genes
+  # (grey area) and random genes matched on expression, length and constraint
+  # (purple line). The observation is the same needle for both.
+  d  <- lies("F2A_cross_arm_concordance")             # unmatched null + rho 0.622
+  sm <- lies("F2A_matched_nulls_summary")
+  smm <- sm[sm$null_type == "matched", ]
+  x <- seq(-0.2, 0.8, length.out = 500)
+  yu <- dnorm(x, d$null_mean, d$null_sd)
+  ym <- dnorm(x, smm$null_mean, smm$null_sd)
+  sc <- max(yu, ym)
+  du <- data.frame(x = x, y = yu / sc)
+  dm <- data.frame(x = x, y = ym / sc)
+  ggplot() +
+    geom_area(data = du, aes(x, y), fill = SOFT, colour = GRAU, linewidth = LW) +
+    geom_line(data = dm, aes(x, y), colour = MATCHED, linewidth = LWD) +
     annotate("segment", x = d$rho_module_genes, xend = d$rho_module_genes,
-             y = 0, yend = 0.86, colour = "#1F6FB2", linewidth = LWD) +
-    geom_point(x = d$rho_module_genes, y = 0.86, colour = "#1F6FB2", size = 1.6) +
-    txt(d$rho_module_genes, 0.94,
-        sprintf("rho = %.3f\nz = %+.2f", d$rho_module_genes, d$z),
+             y = 0, yend = 0.80, colour = "#1F6FB2", linewidth = LWD) +
+    geom_point(x = d$rho_module_genes, y = 0.80, colour = "#1F6FB2", size = 1.6) +
+    txt(d$rho_module_genes, 0.87, sprintf("rho = %.3f", d$rho_module_genes),
         size = PTS, hjust = 0.5, vjust = 0) +
-    txt(d$null_mean, 0.30, "null", size = PTS, hjust = 0.5, colour = INK) +
+    txt(0.30, 1.10, sprintf("vs random genes: z %+.2f", d$z),
+        size = PTS, hjust = 0, colour = INK) +
+    txt(0.30, 0.98, sprintf("vs matched set: z %+.2f", smm$z_sd_units),
+        size = PTS, hjust = 0, colour = MATCHED) +
     labs(x = "cross-arm concordance of module genes (Spearman rho)",
          y = "null density") +
-    coord_cartesian(xlim = c(-0.2, 0.78), ylim = c(0, 1.22), clip = "off") +
+    coord_cartesian(xlim = c(0, 0.72), ylim = c(0, 1.20),
+                    expand = FALSE, clip = "off") +
     theme_pub() +
     theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),
           plot.margin = margin(6, 4, 1.5, 2))
@@ -488,18 +501,118 @@ f2f_zerlegung <- function() {
   leerstreifen(links) + leerstreifen(rechts) + plot_layout(widths = c(1.9, 1))
 }
 
+# --- validation and robustness of the programme (new; code/35_module_validation.py)
+HELDOUT <- c("above" = "#12946B", "below" = "#C2472A")
+
+f2g <- function() {
+  # Leave-one-study-out: the programme is re-derived from the remaining studies
+  # and scored on the held-out dataset(s). One point per held-out dataset;
+  # colour = whether it clears its own detection limit (concordance z = 2.8).
+  d <- lies("F2G_leave_one_study_out")
+  d$status <- ifelse(d$above_mde80 %in% c("True", "TRUE", TRUE), "above", "below")
+  n_above <- sum(d$status == "above"); n_tot <- nrow(d)
+  ggplot(d, aes(z, 1, colour = status)) +
+    annotate("segment", x = 2.8, xend = 2.8, y = 0.55, yend = 1.5,
+             colour = DIFF, linewidth = LW, linetype = "22") +
+    annotate("segment", x = 0, xend = 0, y = 0.55, yend = 1.5,
+             colour = LINE, linewidth = LW) +
+    geom_point(size = 1.5, alpha = 0.85,
+               position = position_jitter(width = 0, height = 0.28, seed = 35)) +
+    scale_colour_manual(values = HELDOUT, guide = "none") +
+    txt(2.8, 1.62, "own limit", size = PTS, hjust = 0.5, colour = DIFF) +
+    txt(-2.6, 0.44, sprintf("%d of %d held-out datasets above own limit",
+                            n_above, n_tot), size = PTS, hjust = 0) +
+    labs(x = "held-out concordance (z)", y = NULL) +
+    scale_x_continuous(breaks = c(0, 4, 8)) +
+    coord_cartesian(xlim = c(-2.8, 10), ylim = c(0.4, 1.75), clip = "off") +
+    theme_pub() +
+    theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(),
+          plot.margin = margin(6, 6, 1.5, 2))
+}
+
+f2h <- function() {
+  # Robustness: cross-arm rho after dropping the strongest / most-expressed /
+  # random gene fractions; the leave-one-gene-out range printed as text.
+  d <- lies("F2H_dropout")
+  d$pct <- d$removed_frac * 100
+  full <- d$rho[d$scheme == "full"]
+  jk <- lies("F2H_jackknife")
+  nm <- c(drop_top_abs_dwt = "strongest |dWT|",
+          drop_top_expression = "most expressed", drop_random = "random")
+  d$label <- nm[d$scheme]
+  dd <- d[d$scheme != "full", ]
+  rnd <- dd[dd$scheme == "drop_random", ]
+  COL <- c("strongest |dWT|" = "#C2472A", "most expressed" = "#E07B12",
+           "random" = GRAU)
+  ggplot(dd, aes(pct, rho, colour = label, group = label)) +
+    annotate("segment", x = 0, xend = 20, y = full, yend = full,
+             colour = LINE, linewidth = LW, linetype = "22") +
+    geom_ribbon(data = rnd, inherit.aes = FALSE, fill = SOFT,
+                mapping = aes(x = pct, ymin = rho - rho_sd, ymax = rho + rho_sd)) +
+    geom_line(linewidth = LWD) +
+    geom_point(size = 1.2) +
+    scale_colour_manual(values = COL, name = NULL) +
+    txt(0, full + 0.055, sprintf("full = %.3f", full), size = PTS, hjust = 0) +
+    txt(0, 0.435, sprintf("leave-one-gene-out:\n%.3f–%.3f",
+                          min(jk$rho_without_gene), max(jk$rho_without_gene)),
+        size = PTS, hjust = 0, vjust = 1) +
+    labs(x = "% of module genes removed", y = "cross-arm rho") +
+    coord_cartesian(xlim = c(0, 20), ylim = c(0.25, 0.72), clip = "off") +
+    scale_x_continuous(breaks = c(0, 5, 10, 20)) +
+    theme_pub() +
+    theme(legend.position = c(0.72, 0.20),
+          legend.key.height = unit(3.0, "mm"),
+          legend.text = element_text(size = PTS),
+          legend.background = element_blank(),
+          plot.margin = margin(6, 6, 1.5, 2))
+}
+
+f2i <- function() {
+  # External validation: the locked programme scored on independent GEO
+  # differentiation datasets that took no part in its derivation. One row per
+  # dataset; colour = whether it clears its own detection limit (z = 2.8).
+  d <- lies("F2I_external_validation")
+  lab <- c("osteogenic (MSC → osteoblast, GSE37558)" = "osteogenic",
+           "adipogenic (hMSC, GSE283759)" = "adipogenic",
+           "vascular calcification (VSMC → CVC, GSE37558)" = "vascular calcif.",
+           "chondrogenic (iPSC-derived MSC, GSE214987)" = "chondrogenic")
+  d$short <- lab[d$dataset]
+  d$status <- ifelse(d$above_mde80 %in% c("True", "TRUE", TRUE), "above", "below")
+  d <- d[order(d$z), ]
+  d$short <- factor(d$short, levels = d$short)
+  n_above <- sum(d$status == "above")
+  ggplot(d, aes(z, short, colour = status)) +
+    geom_vline(xintercept = 0, colour = LINE, linewidth = LW) +
+    geom_vline(xintercept = 2.8, colour = DIFF, linewidth = LW, linetype = "22") +
+    geom_segment(aes(x = 0, xend = z, yend = short), colour = GRAU, linewidth = LW) +
+    geom_point(size = 1.8) +
+    scale_colour_manual(values = HELDOUT, guide = "none") +
+    txt(2.8, 4.82, "own limit", size = PTS, hjust = 0.5, colour = DIFF) +
+    txt(3.4, 1.72, sprintf("%d of %d independent\ndatasets above limit",
+                           n_above, nrow(d)), size = PTS, hjust = 0, vjust = 1) +
+    labs(x = "concordance of locked programme (z)", y = NULL) +
+    scale_x_continuous(breaks = c(0, 4, 8)) +
+    coord_cartesian(xlim = c(-0.5, 11.5), ylim = c(0.5, 5.05), clip = "off") +
+    theme_pub() + theme(plot.margin = margin(6, 6, 1.5, 2))
+}
+
 bau_f2 <- function() {
   # leerstreifen(): F2E is facetted and brings an outer strip column with it
   # on the left. Without compensation the axis of the other panels slides into
   # that column and stands beside its field rather than at it.
-  p <- (leerstreifen(f2a()) | leerstreifen(f2b())) /
+  # Rows A-F are the result; G-I are its validation: held-out re-derivation,
+  # gene robustness, and external validation on independent data (the
+  # matched-null control lives inside panel A).
+  p <- (f2a() | f2b()) /
     (leerstreifen(f2c()) | leerstreifen(f2d())) /
-    (f2e() | f2f_zerlegung()) +
-    plot_layout(heights = c(1.25, 0.95, 1.45))
+    (f2e() | f2f_zerlegung()) /
+    (leerstreifen(f2g()) | leerstreifen(f2h()) | leerstreifen(f2i())) +
+    plot_layout(heights = c(1.25, 0.95, 1.45, 1.0))
   tafel(p, m(list("A", 1.5, 1.5), list("B", 89, 1.5),
              list("C", 1.5, 62), list("D", 89, 62),
-             list("E", 1.5, 108), list("F", 89, 108)),
-        "F2", SP2, 180)
+             list("E", 1.5, 108), list("F", 89, 108),
+             list("G", 1.5, 184), list("H", 60, 184), list("I", 119, 184)),
+        "F2", SP2, 230)
 }
 
 # =============================================================================
@@ -610,14 +723,15 @@ bau_f3 <- function() {
 f4a <- function() {
   lin <- lies("F4A_positive_control_lineage_markers")
   ank <- lies("F4A_positive_control_anchor")
-  plab <- c("Nosology (core)", "Nosology (broad)", "PanelApp 309")
+  # The panel files already carry the full panel names (the presentation layer
+  # of 50_panel_data.py renames them); use them directly.
   d <- rbind(
     data.frame(panel = lin$panel, odds_ratio = lin$odds_ratio_matched,
                detection_limit = lin$odds_ratio_detection_limit, part = "lineage\nmarkers"),
     data.frame(panel = ank$panel, odds_ratio = ank$odds_ratio_raw, detection_limit = NA,
                part = "secretion\nanchor"))
-  d$panel <- factor(d$panel, levels = plab)
-  d$label_x <- d$odds_ratio * 1.25
+  d$panel <- factor(d$panel, levels = c("Nosology (core)", "Nosology (broad)",
+                                        "PanelApp 309"))
   ggplot(d, aes(odds_ratio, panel)) +
     geom_vline(xintercept = 1, colour = LINE, linewidth = LW) +
     geom_segment(aes(x = 1, xend = odds_ratio, yend = panel), colour = "#12946B",
@@ -625,18 +739,18 @@ f4a <- function() {
     geom_point(aes(x = detection_limit), shape = 124, size = 2.2, colour = INK,
                na.rm = TRUE) +
     geom_point(colour = "#12946B", size = 1.7) +
-    geom_text(aes(x = label_x, label = sprintf("%.1f", odds_ratio)), hjust = 0,
+    geom_text(aes(x = odds_ratio * 1.25, label = sprintf("%.1f", odds_ratio)), hjust = 0,
               family = FONT, size = gs(PTS), colour = INK) +
     facet_grid(part ~ ., scales = "free_y", space = "free_y", switch = "y") +
     scale_x_continuous(transform = "log10", breaks = c(1, 3, 10, 30)) +
     labs(x = "odds ratio (positive controls)", y = NULL) +
     coord_cartesian(xlim = c(0.9, 130), clip = "off") +
     theme_pub() +
-    # Keep the group labels outside the data field so the y axis stays attached
-    # to the plot; bau_f4() frees this panel's left-side alignment below.
+    # The strip titles used to sit flush left at the top (hjust = 0 from
+    # theme_pub) instead of centred beside their rows.
     theme(strip.placement = "outside",
           strip.text.y.left = element_text(angle = 90, hjust = 0.5,
-                                           margin = margin(r = 1)),
+                                           margin = margin(r = 3)),
           panel.spacing.y = unit(2.2, "mm"),
           plot.margin = margin(2, 8, 1.5, 2))
 }
@@ -794,24 +908,68 @@ f4e <- function() {
     theme_pub() + theme(plot.margin = margin(11, 4, 1.5, 2))
 }
 
+f4g_equivalence <- function() {
+  # Effect-size exclusion for the disease-gene negative. The dynamics-axis
+  # contrast (|dWT|, publication-matched) in its native units: observed effect
+  # with 95% CI against the smallest effect the test would detect at 80% power
+  # (MDE80). Where the whole 95% CI lies below the MDE80, an effect of biological
+  # size is excluded, not merely non-significant. Reuses F4E_dynamics_axis.csv.
+  d <- lies("F4E_dynamics_axis")
+  keep <- c("PanelApp 309", "Nosology (core)", "short stature", "height GWAS",
+            "cell cycle (neg. control)")
+  d <- d[d$gene_set %in% keep, ]
+  nm <- c("PanelApp 309" = "dysplasia (PanelApp 309)",
+          "Nosology (core)" = "dysplasia (Nosology)",
+          "short stature" = "short stature",
+          "height GWAS" = "height GWAS",
+          "cell cycle (neg. control)" = "cell cycle (control)")
+  d$label <- factor(nm[d$gene_set], levels = rev(unname(nm)))
+  d$ci_lo <- d$delta_observed - 1.96 * d$null_sd
+  d$ci_hi <- d$delta_observed + 1.96 * d$null_sd
+  d$excluded <- ifelse(d$above_detection_limit %in% c("True", "TRUE", TRUE),
+                       "detected", "effect excluded")
+  ggplot(d, aes(delta_observed, label)) +
+    geom_vline(xintercept = 0, colour = LINE, linewidth = LW) +
+    geom_point(aes(x = detection_limit_delta), shape = 124, size = 3.0,
+               colour = GRAU) +
+    geom_errorbarh(aes(xmin = ci_lo, xmax = ci_hi, colour = excluded),
+                   height = 0.16, linewidth = LWD) +
+    geom_point(aes(colour = excluded), size = 1.7) +
+    scale_colour_manual(values = c("effect excluded" = "#1F6FB2",
+                                   "detected" = DIFF), guide = "none") +
+    txt(0.175, 5.35, "grey bar = MDE80", size = PTS, hjust = 1, colour = GRAU) +
+    txt(0.175, 0.60, "programme, same run: +0.73 (z +18.1)",
+        size = PTS, hjust = 1, colour = KURVE[["programme"]]) +
+    labs(x = "dynamics-axis effect, publication-matched (|dWT| units)", y = NULL) +
+    coord_cartesian(xlim = c(-0.095, 0.175), ylim = c(0.5, 5.6), clip = "off") +
+    scale_x_continuous(breaks = c(0, 0.05, 0.10, 0.15)) +
+    theme_pub() + theme(plot.margin = margin(4, 4, 1.5, 2))
+}
+
 bau_f4 <- function() {
   # leerstreifen(): F4A and F4B are facetted and carry an outer strip column
   # on the left. Without compensation patchwork pushes the y axis of the other
   # panels into that strip column -- that was the detached y axis in F4D.
-  # F4A additionally frees its left-side alignment so its strip stays beside
-  # its own y labels without inserting a gap between the axis and the field.
-  p <- (patchwork::free(f4a(), side = "l") | f4b()) /
+  # Row 4 (G) is the equivalence panel: the disease-gene negative shown as an
+  # explicit effect-size exclusion, not merely a non-significant result.
+  p <- (f4a() | f4b()) /
     (f4c_plot() | leerstreifen(achsenpanel(
         "F4D_constraint_publication_matched",
         "LOEUF, publication-matched (z)", c(-6.2, 3.2), "LOEUF"))) /
     (leerstreifen(achsenpanel("F4E_dynamics_axis",
                               "|dWT|, publication-matched (z)", c(-2.5, 20),
-                              "|dWT|")) | leerstreifen(f4e())) +
-    plot_layout(heights = c(1.05, 1.05, 1.15))
+                              "|dWT|")) | leerstreifen(f4e())) /
+    ((leerstreifen(f4g_equivalence()) | patchwork::plot_spacer()) +
+       plot_layout(widths = c(2.5, 1))) +
+    plot_layout(heights = c(1.05, 1.05, 1.15, 0.62))
+  # Row boundaries for heights c(1.05,1.05,1.15,0.62) on a 214 mm sheet:
+  # row1 0-58, row2 58-116, row3 116-180, row4 180-214. Letters sit just below
+  # each row's top so they never land on the previous row's axis title.
   tafel(p, m(list("A", 1.5, 1.5), list("B", 89, 1.5),
-             list("C", 1.5, 58), list("D", 89, 58),
-             list("E", 1.5, 115), list("F", 89, 115)),
-        "F4", SP2, 176)
+             list("C", 1.5, 59.5), list("D", 89, 59.5),
+             list("E", 1.5, 117.5), list("F", 89, 117.5),
+             list("G", 1.5, 181)),
+        "F4", SP2, 214)
 }
 
 # =============================================================================
