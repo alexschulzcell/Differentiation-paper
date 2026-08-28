@@ -1,6 +1,6 @@
 # What skeletal differentiation models measure: a shared matrix programme, separate from skeletal dysplasia genes
 
-*Companion repository for Schulz & Thiel, iScience (under submission). The manuscript itself is not part of this repository.*
+*Companion repository for Schulz & Thiel (under submission; iScience / Cell Reports / Genome Biology). The manuscript itself is not part of this repository.*
 
 A lineage-independent matrix programme runs in every published mesenchymal
 differentiation model we could reach — including where the model fails its own
@@ -13,8 +13,8 @@ negative result is reported together with the effect size it would have found.
 This repository is the submission companion: it holds the analysis code, the
 derived data behind every figure and table, the figures themselves and the
 preregistrations — everything needed to check every number in the manuscript,
-which is under submission to *iScience* (Cell Press) and therefore not part
-of this repository.
+which is under submission (iScience, Cell Reports or Genome Biology) and
+therefore not part of this repository.
 
 ---
 
@@ -226,8 +226,9 @@ reported under their stated analysis status.
 
 ## Citation and licence
 
-This repository accompanies a manuscript under preparation for *iScience*
-(Cell Press). Citation information will be added on acceptance;
+This repository accompanies a manuscript under preparation for a multi-journal
+submission (iScience, Cell Reports or Genome Biology). Citation information will
+be added on acceptance;
 [`CITATION.cff`](CITATION.cff) already carries the machine-readable form for
 the repository itself.
 
