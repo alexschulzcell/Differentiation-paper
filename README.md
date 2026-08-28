@@ -30,7 +30,15 @@ as strongly where the calibration fails (z +13.13, n = 16) as where it passes
 decomposable into their separate steps — undifferentiated state left, lineage
 not reached, module running — giving **8 confirmations, 2 instances of the
 other case and 0 refutations**; no data set leaves the undifferentiated state
-without the module running. In chromatin accessibility the module runs on the
+without the module running. Re-derived from the studies it never saw
+(leave-one-study-out), the programme still clears its own detection limit in
+**14 of 18** held-out data sets (16 of 18 leave-one-dataset-out), stands at
+z +6.19 above 10,000 expression-, length- and constraint-matched random
+173-gene sets, and no single gene carries it (leave-one-gene-out rho
+0.616–0.633). Locked and scored on independent data it played no part in
+selecting, it runs above its limit in **3 of 4** external differentiation
+cohorts (osteogenic z +10.1, adipogenic z +8.2, vascular z +9.0; the
+iPSC-derived chondrogenic model does not reach the limit). In chromatin accessibility the module runs on the
 adipogenic lineage, on an axis that passes its own calibration. In the human
 fetal growth plate it tracks maturation to the prehypertrophic zone
 (rho +0.456, z +4.80, limit rho 0.274), and it does not hinge on the single
@@ -61,6 +69,8 @@ python code/27_in_vivo_gene_decomposition.py                 # is the in vivo tr
 python code/32_postnatal_growth_plate_annotation.py          # needs the raw archive and scanpy
 python code/33_postnatal_growth_plate_test.py                # postnatal anchor: not calibratable
 python code/34_hypertrophic_zone_sensitivity.py              # terminal-zone sensitivity
+python code/35_module_validation.py                          # held-out validation and robustness (Figure 2G,H)
+python code/36_external_validation.py                        # external validation on independent data (Figure 2I)
 python code/50_panel_data.py                                 # one CSV per main-figure panel
 python code/51_supplement_data.py                            # supplement panels and Tables S1-S14
 python code/52_s9_data.py                                    # the panels of supplementary Figure S9
@@ -128,7 +138,7 @@ not define the 173-gene module.
 ## Layout
 
 ```
-code/                       the pipeline: 00_setup, 20-34 analyses,
+code/                       the pipeline: 00_setup, 20-36 analyses,
                             50-52 panel data, 60-62 figures, 70 numbers check
 reference_implementations/  one implementation per metric; nothing is
                             computed twice. manuscript/methods holds the
@@ -191,7 +201,7 @@ main result is exploratory and says so in every legend.
 | | content | status |
 |---|---|---|
 | **F1** | material, the screens, and the calibration almost nothing passes (2 of 18; 7 of 14) | confirmatory (screens) |
-| **F2** | the main result: lineage independence and decoupling; E chromatin; F the decomposition over all 18 data sets | exploratory (F a preregistered follow-up) |
+| **F2** | the main result: lineage independence and decoupling (A carries the matched-null control); E chromatin; F the decomposition over all 18 data sets; G held-out re-derivation, H gene-dropout robustness, I external validation on independent data | exploratory (F a preregistered follow-up; G-I exploratory validation) |
 | **F3** | the human fetal growth plate, including the terminal-zone sensitivity | exploratory |
 | **F4** | where the disease genes are: localisation, dosage, constraint, dynamics | mixed, labelled per panel |
 | **F5** | both layers meet at the prehypertrophic transition | exploratory |

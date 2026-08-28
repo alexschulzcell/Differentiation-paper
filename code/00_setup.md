@@ -60,6 +60,8 @@ python code/27_in_vivo_gene_decomposition.py                 # is the in vivo tr
 python code/32_postnatal_growth_plate_annotation.py          # postnatal zones (needs the raw archive)
 python code/33_postnatal_growth_plate_test.py                # postnatal anchor: not calibratable
 python code/34_hypertrophic_zone_sensitivity.py              # does the fetal anchor hang on the terminal zone?
+python code/35_module_validation.py                          # held-out validation and robustness (Figure 2G,H)
+python code/36_external_validation.py                        # external validation on independent data (Figure 2I)
 python code/50_panel_data.py                                 # one CSV per main-figure panel
 python code/51_supplement_data.py                            # supplement panels and Tables S1-S14
 python code/52_s9_data.py                                    # the panels of supplementary Figure S9
@@ -75,7 +77,7 @@ public repository.
 
 The panel and figure steps read only files that already exist under
 `derived_data/` and `results/`; they recompute nothing and take seconds. Steps
-`20_`, `24_`, `25_` and `27_` recompute one analysis each from stored
+`20_`, `24_`, `25_`, `27_`, `35_` and `36_` recompute one analysis each from stored
 per-sample or per-gene values and take seconds to a few minutes.
 
 Two steps are **exceptions to "reads only stored files"** and are marked as
