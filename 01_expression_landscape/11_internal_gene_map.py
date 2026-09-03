@@ -38,6 +38,8 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 from _module import DATEN, ERGEBNISSE, MODUL, WURZEL  # noqa: E402
 
 QUELLE = WURZEL / "_archiv" / "Sitzungen" / "20_Exploration" / "derived_data"

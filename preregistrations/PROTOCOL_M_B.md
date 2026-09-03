@@ -5,8 +5,8 @@
 
 Computed **2026-08-21**, following `PREREG_M_B.md` (dated before the first
 download) and its addendum 1 (dated before the first figure).
-Scripts: `reference_implementations/50_cohort_search.py`, `50b_screening.py`,
-`50c_check_candidates.py`, `51a_fetch.py`, `51_patient_variability.py`.
+Scripts: `data_acquisition/10_cohort_search.py`, `11_cohort_prescreen.py`,
+`12_cohort_sample_metadata.py`, `13_cohort_fetch.py`, `20_patient_variability.py`.
 Seed 20260821, 20 000 draws, all numbers in `derived_data/M_patienten/`.
 
 ---
@@ -401,4 +401,4 @@ the supplement (Figure S4 of the new order) and is marked there as
   addendum 1 stand word for word.
 - It recomputes no number and adjusts no threshold.
 - It does **not** remove GSE292600 and GSE77758 from the result files.
-- It does not change `_module.py`, `_marker.py` or `51_patient_variability.py`.
+- It does not change `_module.py`, `_marker.py` or `20_patient_variability.py`.

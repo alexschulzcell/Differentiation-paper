@@ -1,0 +1,10 @@
+12_check_language.py -- English throughout in everything published
+
+Nothing found. Everything published is English:
+  * no umlaut, no replacement character, no German word
+  * no 'naiv'/'naive' -- 'undifferentiated' throughout
+  * the accession rule holds: information, then the accession
+    in parentheses
+  * no abbreviated identifiers (no 'Osteo', no 'OSTEO')
+
+=== 0 findings ===

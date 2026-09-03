@@ -4,9 +4,9 @@
 # Protocol M-C — the scissors against real diagnoses
 
 Computed **2026-08-21**, following §4 of the medical-extension plan of
-2026-08-21. Script: `reference_implementations/53_diagnosis_screening.py`,
-building on the search from `50_cohort_search.py` (1424 series) and the
-pre-screen from `50b_screening.py` (127 candidates for screening by hand).
+2026-08-21. Script: `08_disease_gene_orthogonality/21_diagnosis_shear.py`,
+building on the search from `10_cohort_search.py` (1424 series) and the
+pre-screen from `11_cohort_prescreen.py` (127 candidates for screening by hand).
 The numbers are in `derived_data/M_diagnosen/`.
 
 ---

@@ -122,7 +122,7 @@ determined".
 
 ## 6. MDE80 and confidence intervals, noise expectation, seeds
 
-- Every quantitative number receives an MDE80 (the formula from `03_metric.R`,
+- Every quantitative number receives an MDE80 (the formula from `12_metric_reference.R`,
   through the project function — **no** test statistic written by hand) **or**
   an explicit justification for reporting confidence intervals only. At
   n = 3 against 3, Wilson intervals are admissible; **no** biological null
@@ -239,7 +239,7 @@ fall expected); missing genes stay in the denominator. The noise expectation
 comes from 500 permutation rounds in which the **condition-wide** sign pattern
 is preserved and the assignment of differentiated and undifferentiated is
 flipped jointly (genes are not permuted individually); MDE80 as in
-`03_metric.R`. R1 "success" requires at least **two independent data sets** with
+`12_metric_reference.R`. R1 "success" requires at least **two independent data sets** with
 this differentiation rise named in advance.
 
 **The structural finding (data preparation, not a direction number):**

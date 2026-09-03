@@ -12,7 +12,7 @@ makes the **replication** confirmatory.
 
 ## 1 · What already stands, and why it needs a rule fixed in advance
 
-Panel **F2F** (from `code/23_lineage_contrast.py`, run of 2026-08-23)
+Panel **F2F** (from `06_orthogonal_layers/51_lineage_contrast.py`, run of 2026-08-23)
 decomposes the failed calibration of the H3K27ac cohort (GSE151315) into two
 steps:
 
@@ -91,15 +91,15 @@ with a Wilson interval, and every data set stands individually in the table.
 ## 4 · The computation, fixed before the run
 
 - **The statistic** is unchanged:
-  `reference_implementations/_module.py::kontrast` — the mean of set A minus
+  `00_shared/_module.py::kontrast` — the mean of set A minus
   the mean of set B, against a null that draws two random sets of the same
   sizes from the same measurable background. Nothing is implemented anew.
 - **The marker sets** come unchanged from
-  `reference_implementations/_marker.py`, fixed and free of overlap. No set is
+  `00_shared/_marker.py`, fixed and free of overlap. No set is
   touched for this run.
 - **The axis** per data set is `dWT` (differentiated minus undifferentiated),
   unchanged from the frozen tables `20d_gene_*.csv`, the same source as in
-  `reference_implementations/56_calibration_eighteen.py`. **Here `dWT` is a
+  `03_lineage_calibration/10_calibration_18_datasets.py`. **Here `dWT` is a
   measurement axis and a tool, not a finding.**
 - **Four quantities per data set**, each against **the same** null:
   1. the undifferentiated markers against all other marker sets,

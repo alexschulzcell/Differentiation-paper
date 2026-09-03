@@ -18,7 +18,7 @@ Tests the frozen programme on measurement layers other than RNA — promoter met
 - `40_collect_layer_numbers.py` — _needs raw data_
 - `50_second_chromatin_cohort_windows.R` — _needs raw data_
 - `51_lineage_contrast.py` — _needs raw data_
-- `60_gene_sets_build.R` — _needs raw data_
-- `61_gene_set_enrichment.R` — _repo-runnable_
+- `60_gene_sets_build.R` — _needs external input_ (MSigDB and `org.Hs.eg.db`, see `00_setup.md`)
+- `61_gene_set_enrichment.R` — _needs external input_ (MSigDB, via `60_gene_sets_build.R`; its outputs are frozen under `results/`)
 
 _“repo-runnable” = reproduces from files in this repository alone. “needs raw data” = archival; requires the ~98 GB public raw data under `data_raw/` (see `00_setup.md`)._

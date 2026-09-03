@@ -31,6 +31,8 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 import _display  # noqa: E402  presentation layer: everything shown is English
 
 _env = os.environ.get("PAPER_V2_ROOT")

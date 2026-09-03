@@ -96,7 +96,7 @@ WURZEL = (pathlib.Path(_env) if _env
           else pathlib.Path(__file__).resolve().parents[1])
 sys.path.insert(0, str(WURZEL / "00_shared"))
 from _marker import ADIPOGEN, CHONDROGEN, MYOGEN, NAIV, OSTEOGEN  # noqa: E402
-from _module import kontrast  # noqa: E402
+from _module import kontrast, lade_dwt_je_punkt  # noqa: E402
 
 SITZUNGEN = pathlib.Path(os.environ.get(
     "SCHERENPAPER_SITZUNGEN",
@@ -134,9 +134,8 @@ def main() -> None:
     name = dict(zip(KO.punkt, KO.datensatz))
 
     zeilen = []
-    for f in sorted(GENE20D.glob("20d_gene_*.csv")):
-        G = pd.read_csv(f)
-        pt = int(G.punkt.iloc[0])
+    for pt, G in lade_dwt_je_punkt(GENE20D):
+        G = G.copy()
         G["ens"] = [str(x).split(".")[0] for x in G.gen]
         G["symbol"] = [karte.get(e) for e in G.ens]
         G = G[G.symbol.notna() & G.dWT.notna()]

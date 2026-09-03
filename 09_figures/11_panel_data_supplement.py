@@ -27,6 +27,8 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 import _display  # noqa: E402  presentation layer: everything shown is English
 
 _env = os.environ.get("PAPER_V2_ROOT")
@@ -284,15 +286,19 @@ def tabellen() -> None:
             "(descriptive)")
 
     # TS12 draws on two sources: what GEO links itself
-    # (geo_primary_publications.csv) and the four series whose publication
-    # GEO does NOT link and which were documented by hand. Two of them are
-    # published and GEO simply does not link them; two are genuinely
-    # unpublished and are cited by their accession, which the Cell Press
-    # reference policy allows.
+    # (geo_primary_publications.csv) and the seven series whose publication
+    # GEO does NOT link and which were documented by hand. Four of them are
+    # published and GEO simply does not link them; three are genuinely
+    # unpublished and are cited by their accession, which the BMC reference
+    # policy allows for records in a public archive.
     pa = pd.read_csv(WURZEL / "derived_data" / "reference_tables" /
                      "geo_primary_publications.csv")
+    # volume and pages stay text: article numbers such as "e202302219" and
+    # "eadw3590" live in the same columns as plain numbers, and reading them
+    # as floats would render page 965 as "965.0".
     hand = pd.read_csv(WURZEL / "derived_data" / "reference_tables" /
-                       "geo_primary_publications_manual.csv")
+                       "geo_primary_publications_manual.csv",
+                       dtype={"band": str, "seiten": str})
     pa = pa[~pa.gse.isin(hand.gse)]
     pa = pd.concat([pa, hand], ignore_index=True).sort_values("gse")
     # Hand corrections where the automatic GEO/PubMed pull stays incomplete:

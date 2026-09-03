@@ -150,8 +150,8 @@ every gene of the set:
 
 with `s_g` = `ri` or `iv_vz`. The set statistic `U` is the mean of `u_g` over
 the genes of the set. `U` is exactly the concordance from
-`reference_implementations/_module.py`, averaged patient-wise; **no second
-implementation is written** — `51_patient_variability.py` calls
+`00_shared/_module.py`, averaged patient-wise; **no second
+implementation is written** — `20_patient_variability.py` calls
 `_module.konkordanz`.
 
 **The null model.** A baseline-stratified background draw as in `_module.py`:
@@ -179,7 +179,7 @@ never count as n and appear in no formula.
 Before every main computation, per cohort, with **the same** statistic and
 **the same** null:
 
-- The canonical lineage markers from `reference_implementations/_marker.py`,
+- The canonical lineage markers from `00_shared/_marker.py`,
   matched to the tissue type of the cohort. What is tested is whether the
   cohort shows the textbook separation of its own tissue type at all.
 - The cohort **passes** if the marker set matching its tissue type reaches

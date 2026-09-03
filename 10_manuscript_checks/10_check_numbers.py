@@ -299,7 +299,10 @@ def main() -> None:
         pruefe("caption F2F counter not calibratable 1",
           float("grey = not calibratable, 1" in cap), 1.0)
         # Legend F6: the forest plot points at its table.
-        for teil in ["Supplementary Table 7", "Supplementary Table 14"]:
+        # BMC Genomics cites supplementary material by additional-file name;
+        # the tables are Additional file 2, sheets S1-S14.
+        for teil in ["Additional file 2: Table S7",
+                     "Additional file 2: Table S14"]:
             pruefe("caption F6 refers to %s" % teil, float(teil in cap), 1.0)
         capsup = (WURZEL / "manuscript" / "CAPTIONS_SUPPLEMENT.md").read_text(
             encoding="utf-8")

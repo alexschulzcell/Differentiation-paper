@@ -1,9 +1,9 @@
 ==============================================================================
-Welcher Genraum gehoert unter die Eichung? Regel im Skriptkopf.
+Which gene space belongs under the calibration? Rule in the script header.
 ==============================================================================
 
-z je Punkt und Variante
-Pt Datensatz                           A        B        C        D
+z per point and variant
+Pt Dataset                             A        B        C        D
  1 LAMA5-KO (chondr)                2.65     2.62     2.67     2.67
  2 LAMA5-KO (osteo)                 0.16    -0.19     0.17    -0.21
  3 FN1 FNC123R                      0.25     0.68     0.26     0.71
@@ -23,12 +23,12 @@ Pt Datensatz                           A        B        C        D
 17 RB1-mut isogen (GSE145235)       2.77     1.82     2.99     1.93
 18 RB1-del isogen (GSE145235)       1.79     1.27     1.98     1.39
 
-Wie weit bewegt jeder Eingriff die z-Werte (Median |Delta z|)?
-  nur Markersatz getauscht (B - A): Median 0.378 | Maximum 2.226
-  nur Hintergrund getauscht (C - A): Median 0.017 | Maximum 0.220
+How far does each intervention move the z values (median |Delta z|)?
+  marker set swapped only (B - A): median 0.378 | maximum 2.226
+  background swapped only (C - A): median 0.017 | maximum 0.220
 
-Kopfzahl je Variante (bestanden von 18):
-  A_marker_gef_hg_gef      3 von 18
-  B_marker_voll_hg_gef     2 von 18
-  C_marker_gef_hg_voll     5 von 18
-  D_marker_voll_hg_voll    2 von 18
+Head count per variant (passing out of 18):
+  A_marker_gef_hg_gef      3 of 18
+  B_marker_voll_hg_gef     2 of 18
+  C_marker_gef_hg_voll     5 of 18
+  D_marker_voll_hg_voll    2 of 18

@@ -83,6 +83,7 @@ WURZEL = (pathlib.Path(_env) if _env
 sys.path.insert(0, str(WURZEL / "00_shared"))
 
 from _marker import ADIPOGEN, CHONDROGEN, MYOGEN, NAIV, OSTEOGEN  # noqa: E402
+from _module import lade_dwt_je_punkt  # noqa: E402
 from _module import kontrast, wilson  # noqa: E402
 
 SITZUNGEN = pathlib.Path(os.environ.get(
@@ -129,9 +130,8 @@ def zerlege(karte: dict, kartenname: str, arm: dict, name: dict,
             eich: pd.DataFrame, mod: pd.DataFrame) -> pd.DataFrame:
     """The three marker contrasts per data set under one symbol map."""
     zeilen = []
-    for f in sorted(GENE20D.glob("20d_gene_*.csv")):
-        G = pd.read_csv(f)
-        pt = int(G.punkt.iloc[0])
+    for pt, G in lade_dwt_je_punkt(GENE20D):
+        G = G.copy()
         G["symbol"] = [karte.get(str(g).split(".")[0]) for g in G.gen]
         G = G[G.symbol.notna() & G.dWT.notna()]
         dwt = G.groupby("symbol").dWT.median()

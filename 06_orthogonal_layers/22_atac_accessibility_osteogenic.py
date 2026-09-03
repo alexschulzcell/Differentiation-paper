@@ -35,6 +35,8 @@ import pandas as pd
 from scipy import stats
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 from _marker import NAIV, OSTEOGEN  # noqa: E402
 from _module import DATEN, ERGEBNISSE, MODUL, konkordanz, kontrast, wilson  # noqa: E402
 

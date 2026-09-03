@@ -28,6 +28,8 @@ import sys
 import pandas as pd
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 from _module import DATEN, ERGEBNISSE  # noqa: E402
 
 import importlib.util  # noqa: E402

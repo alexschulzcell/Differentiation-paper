@@ -71,7 +71,7 @@ together, as §8 says.
 Within **one** study, at symbol level, on a log2 scale (counts: CPM,
 `log2(x+1)`; arrays: the deposited normalised value), z-standardised per gene
 over the included samples of **the same** study — identical to
-`reference_implementations/manuscript/methods/03_metric.R`, function `kern`:
+`02_matrix_programme_derivation/12_metric_reference.R`, function `kern`:
 
     dWT_p = z(control_p, differentiated) − z(control_p, undifferentiated)
     iv_p  = [z(lesion_p, differentiated) − z(lesion_p, undifferentiated)]
@@ -279,7 +279,7 @@ result is **not** confirmatory.
 `auslassung.csv`, `54_log.txt`.
 Protocol: `preregistrations/PROTOCOL_M_D.md`.
 
-New statistics are **added to `reference_implementations/_module.py`** and
+New statistics are **added to `00_shared/_module.py`** and
 documented there, not built beside it. A self-test against the known null rate
 runs before the first real computation.
 

@@ -1,8 +1,9 @@
 """
-21_build_submission.py -- assemble the submission package for iScience
+21_build_submission.py -- assemble the submission package for BMC Genomics
+                          (or Cell Press via --journal cell)
 
 Purpose   Rebuilds submission/ from scratch. File names and structure follow
-          the iScience Final File Requirements:
+          the target journal's file requirements:
 
             Manuscript.docx
             highlights.docx
@@ -22,16 +23,15 @@ Templates The two Word templates are generated here from pandoc's own default
           and has 15 mm margins so that a 174 mm figure fits the text width.
 
 Citations The reference apparatus is format-agnostic: manuscript/references.bib
-          plus a CSL switch. The default is Cell Press (iScience); `--style
-          vancouver` switches to BMC Genomics. One flag, no retypesetting.
+          plus a CSL switch. The default is BMC Genomics (Vancouver); `--style
+          cell` switches to a Cell Press format. One flag, no retypesetting.
           While the manuscript carries its references as a numbered list in
           the text, pandoc runs without --citeproc; the switch takes effect as
           soon as citations are written as @key.
 
 Images    The panels are drawn at 600 dpi (figure_style/publication_style.R).
           They are wrapped into TIFF without resampling, so the resolution is
-          above the 300 dpi the checklist asks for and within what Cell Press
-          allows.
+          above the 300 dpi the checklist asks for.
 
 Inputs    manuscript/MANUSCRIPT.md, CAPTIONS_MAIN.md, CAPTIONS_SUPPLEMENT.md,
           COVER_LETTER.md, figures/F*.png, figures/S*.png, figures/GA.png,
@@ -405,21 +405,31 @@ def png_to_tif(source: pathlib.Path, target: pathlib.Path,
 
 
 # ------------------------------------------------------------ the parts
-def build_manuscript(style: str, template: pathlib.Path) -> None:
+def build_manuscript(style: str, template: pathlib.Path,
+                     journal: str = "cell") -> None:
     md = (PAPER / "MANUSCRIPT.md").read_text(encoding="utf-8")
-    # The highlights are a separate submission item and are not repeated in
-    # the manuscript.
+    # The highlights, when present, are a separate submission item (Cell Press)
+    # and are not repeated in the manuscript. BMC Genomics carries none.
     md = re.sub(r"\n## Highlights\n.*?\n---\n", "\n", md, flags=re.S)
 
-    # Section order from the checklist: the main figure legends as ONE list
-    # between the discussion and the STAR Methods, not scattered through the
-    # text, and the figures themselves not in the document.
     legends = legends_as_list(
         (PAPER / "CAPTIONS_MAIN.md").read_text(encoding="utf-8"))
-    md = md.replace("\n## STAR Methods\n",
-                    "\n## Figure Legends\n\n" + legends + "\n\n## STAR Methods\n", 1)
-    md = md.replace("\n## References\n",
-                    "\n" + supplemental_item_titles() + "\n## References\n", 1)
+    if journal == "bmc":
+        # BMC Genomics: Background/Results/Discussion/Conclusions/Methods/
+        # Declarations/References; the main figure legends as one list after the
+        # main text, just before the Declarations; the supplement is a separate
+        # file, so no "supplemental item titles" block in the manuscript.
+        md = md.replace("\n## Declarations\n",
+                        "\n## Figure legends\n\n" + legends
+                        + "\n\n## Declarations\n", 1)
+    else:
+        # Cell Press: figure legends between the discussion and the STAR
+        # Methods, and the supplemental item titles before the references.
+        md = md.replace("\n## STAR Methods\n",
+                        "\n## Figure Legends\n\n" + legends
+                        + "\n\n## STAR Methods\n", 1)
+        md = md.replace("\n## References\n",
+                        "\n" + supplemental_item_titles() + "\n## References\n", 1)
 
     md = number_references(md, superscript=(style == "cell"))
     md_to_docx(strip_rules(md), OUT / "Manuscript.docx", template, style=style)
@@ -473,9 +483,15 @@ def build_cover_letter(style: str, template: pathlib.Path) -> None:
     print(f"  Cover letter.docx         {len(md.split())} words")
 
 
-def build_figures() -> None:
+def build_figures(journal: str = "cell") -> None:
     for i in range(1, 7):
         png_to_tif(FIG / f"F{i}.png", OUT / f"Figure {i}.tif")
+    size = Image.open(OUT / "Figure 1.tif").size
+    print(f"  Figure 1-6.tif            RGB, LZW, 600 dpi, "
+          f"Figure 1 = {size[0]}x{size[1]} px")
+    if journal == "bmc":
+        # BMC Genomics carries no graphical abstract.
+        return
     # The graphical abstract must be EXACTLY 1200 x 1200 px at 300 dpi, so
     # 09_figures/30_graphical_abstract.py draws it at 300 rather than 600 dpi. Here
     # it is only checked and packed.
@@ -487,9 +503,6 @@ def build_figures() -> None:
             "(iScience Final File Requirements). "
             "Re-run 09_figures/30_graphical_abstract.py.")
     png_to_tif(FIG / "GA.png", OUT / "Graphical abstract.tif", dpi=300)
-    size = Image.open(OUT / "Figure 1.tif").size
-    print(f"  Figure 1-6.tif            RGB, LZW, 600 dpi, "
-          f"Figure 1 = {size[0]}x{size[1]} px")
     print("  Graphical abstract.tif    RGB, LZW, 1200x1200 px at 300 dpi")
 
 
@@ -638,46 +651,38 @@ Written by `10_manuscript_checks/21_build_submission.py`. Everything in `submiss
 from the sources and is complete. The items below remain, and none of them is
 something a script can do.
 
+Target journal: **BMC Genomics** (Research Article). The manuscript was
+reframed and reformatted from an earlier Cell Press Multi-Journal submission
+(CP-MULTI-JOURNAL-D-26-03425), which is cited in the cover letter.
+
 ## Still open
 
-- [ ] **Confirm the CRediT roles.** The Author Contributions section assigns
-      every executing role to A.S. and supervision, project administration and
-      funding to C.T.T., with both authors on review and editing. Cell Press
-      does not change this section after publication.
-- [ ] **Declaration of Interests form.** Download from Cell Press, complete it
-      electronically and upload it as a separate submission item. The
-      statement in the manuscript is not a substitute for the form.
-- [ ] **Graphical abstract, final look.** The graphical abstract was reworked;
-      `figures/GA.png` (1200 x 1200 px) is packed as
-      `Graphical abstract.tif`. After the last visual change re-run
-      `python 10_manuscript_checks/21_build_submission.py` so the TIFF carries the final
-      version.
-- [x] **Deposit route.** GitHub only -- a Zenodo deposit was considered
-      and dropped. The repository URL (see the GitHub item above) goes
-      into the Key Resources Table and into Data and Code Availability.
-
-To be entered in Editorial Manager rather than in a file: the ORCID of both
-authors (they are also on the title page), an alternate contact, and
-optionally suggested reviewers.
+- [ ] **Editorial Manager entries.** ORCID of both authors (also on the title
+      page), the corresponding author's contact, and optionally suggested
+      reviewers. Confirm the Availability-of-data-and-materials, Competing
+      interests, Funding and Authors' contributions statements as they stand in
+      the manuscript's Declarations section.
+- [ ] **Open-access agreement / APC.** BMC Genomics is fully open access.
+      Check institutional / DFG open-access funding and any waiver before the
+      article-processing charge is invoiced.
+- [x] **Deposit route.** GitHub, public at
+      https://github.com/alexschulzcell/Differentiation-paper ; the URL is in
+      the Availability of data and materials declaration.
 
 ## Closed
 
 - [x] **Authors.** Alexander Schulz (ORCID 0009-0009-2605-4350), first author;
-      Christian T. Thiel (ORCID 0000-0003-3817-7277), lead contact and
-      corresponding author. Institute of Human Genetics,
-      Universitaetsklinikum Erlangen, FAU Erlangen-Nuernberg, Germany.
+      Christian T. Thiel (ORCID 0000-0003-3817-7277), corresponding author.
+      Institute of Human Genetics, Universitaetsklinikum Erlangen, FAU
+      Erlangen-Nuernberg, Germany.
 - [x] **Funding.** DFG grant TH896/7-1 (C.T.T.).
-- [x] **Declaration of Interests.** No competing interests.
-- [x] **Declaration of Generative AI.** Claude Opus 5 (Anthropic) as the
-      principal tool; output of other models used occasionally and revised
-      before use.
+- [x] **Competing interests.** None declared (in Declarations).
+- [x] **Generative AI use** disclosed in the Acknowledgements.
 - [x] **Ethics.** No new human material or data; oversight for each reanalysed
       data set is documented in its primary publication, which is cited. The
       sex or gender limitation of the single-donor series is stated.
 - [x] **Licence.** CC BY 4.0 for text, figures and derived data; MIT for code.
       `LICENSE` and `LICENSE-CODE` are in force in the repository.
-- [x] **GitHub repository.** Public at https://github.com/alexschulzcell/Differentiation-paper ; the URL
-      is in the Key Resources Table and in Data and Code Availability.
 - [x] **Accessions.** All eighteen perturbation datasets carry a real
       accession, and the figures carry the accessions in their row labels.
 - [x] **Primary publications of every reanalysed series are cited.**
@@ -685,33 +690,39 @@ optionally suggested reviewers.
 - [x] `python 10_manuscript_checks/10_check_numbers.py` green
 - [x] `python 10_manuscript_checks/11_check_references.py` green
 - [x] `python 10_manuscript_checks/12_check_language.py` green
-- [x] Title within 145 characters; summary within 150 words; four highlights,
-      each within 85 characters; graphical abstract exactly 1200 x 1200 px at
-      300 dpi
-- [x] Section order, figure legend titles and supplemental "Related to"
-      statements follow the iScience Final File Requirements
+- [x] Structured abstract; sections in BMC order (Background, Results,
+      Discussion, Conclusions, Methods, Declarations, References); figures as
+      separate TIFFs; supplement as one Additional file.
 """
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--style", choices=sorted(CSL), default="cell",
-                    help="cell = iScience (default), "
-                         "vancouver = BMC Genomics")
+    ap.add_argument("--journal", choices=["cell", "bmc"], default="bmc",
+                    help="bmc = BMC Genomics (default), cell = Cell Press")
+    ap.add_argument("--style", choices=sorted(CSL), default=None,
+                    help="citation style; defaults from --journal "
+                         "(bmc -> vancouver, cell -> cell)")
     a = ap.parse_args()
+    if a.style is None:
+        a.style = "vancouver" if a.journal == "bmc" else "cell"
 
     OUT.mkdir(parents=True, exist_ok=True)
-    print(f"21_build_submission.py -- package into {OUT} (style: {a.style})")
+    print(f"21_build_submission.py -- package into {OUT} "
+          f"(journal: {a.journal}, style: {a.style})")
     tpl = templates()
-    build_manuscript(a.style, tpl["manuscript"])
-    build_highlights(a.style, tpl["letter"])
+    build_manuscript(a.style, tpl["manuscript"], journal=a.journal)
     build_cover_letter(a.style, tpl["letter"])
-    build_figures()
+    build_figures(journal=a.journal)
     build_tables()
     build_supplement(a.style, tpl["supplement"])
     build_open_items()
-    if not (OUT / "KRT.docx").exists():
-        print("  ! KRT.docx missing -- run 10_manuscript_checks/20_key_resources_table.py first")
+    if a.journal == "cell":
+        # Cell Press only: highlights and the Key Resources Table.
+        build_highlights(a.style, tpl["letter"])
+        if not (OUT / "KRT.docx").exists():
+            print("  ! KRT.docx missing -- run "
+                  "10_manuscript_checks/20_key_resources_table.py first")
     print("\nContents of submission/:")
     for p in sorted(OUT.iterdir()):
         if p.is_file():

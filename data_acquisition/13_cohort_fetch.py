@@ -16,6 +16,8 @@ import sys
 import urllib.request
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 from _module import DATEN  # noqa: E402
 
 FTP = "https://ftp.ncbi.nlm.nih.gov/geo/series"

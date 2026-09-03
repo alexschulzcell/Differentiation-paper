@@ -1,0 +1,11 @@
+self-test: full re-derivation reproduces the frozen 173 genes -- OK
+
+G  leave-one-study-out / leave-one-dataset-out
+  leave-one-study-out: 14/18 held-out datasets above own MDE80; median z +4.66 (range -2.28..+9.76); re-derived genes median 218, Jaccard vs 173 median 0.589
+  leave-one-dataset-out: 16/18 held-out datasets above own MDE80; median z +7.94 (range -2.28..+10.11); re-derived genes median 179, Jaccard vs 173 median 0.714
+
+H  matched random nulls
+  matched nulls: observed rho 0.635 vs matched null 0.136+-0.081  z +6.19  p 0.0001 (unmatched z +6.96)
+
+H  gene robustness
+  robustness: full rho 0.622; top-20% |dWT| removed -> 0.573; jackknife range 0.616..0.633 (largest single-gene drop -0.010)

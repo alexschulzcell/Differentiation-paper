@@ -5,8 +5,8 @@
 
 Computed **2026-08-21**, following `PREREG_M_A.md` including its addendum 1
 (both dated before the first figure). Scripts:
-`reference_implementations/52a_go_sets.R`, `52b_fetch_panels.py`,
-`52_human_genetics_anchor.py`. Seed 20260821, 20 000 draws. The numbers are in
+`08_disease_gene_orthogonality/10_secretion_go_sets.R`, `14_reference_panels_fetch.py`,
+`11_human_genetics_anchor.py`. Seed 20260821, 20 000 draws. The numbers are in
 `derived_data/M_humangenetik/`.
 
 ---
@@ -86,7 +86,7 @@ from `_marker.py`, 17 of the 30 symbols measurable in the background:
 | `PA309` | 11 of 17 | 0.58 | 51.6 | +13.91 | 0.0001 |
 
 **(b) The anchor.** `S_DISTAL` against `S_BIOSYN`, the GO sets taken
-**verbatim** from `03_metric.R` and exported with `52a_go_sets.R` (545 and 2711
+**verbatim** from `12_metric_reference.R` and exported with `10_secretion_go_sets.R` (545 and 2711
 genes; 416 and 1616 in the background):
 
 | panel | distal | biosynthetic | OR | p |
@@ -182,7 +182,7 @@ of differentiation dynamics does not.
 - No change of background once the numbers were known.
 - The module was not readjusted and no new axis was sought.
 - The GO sets of the positive control were taken **verbatim** from
-  `03_metric.R`, not redefined.
+  `12_metric_reference.R`, not redefined.
 - The raw Fisher odds ratio is reported throughout, so that the matching can be
   checked.
 - The word "specific" was not used.

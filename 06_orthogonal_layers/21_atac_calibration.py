@@ -39,6 +39,8 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 from _marker import ADIPOGEN, NAIV, OSTEOGEN  # noqa: E402
 from _module import ERGEBNISSE, MODUL, konkordanz, kontrast, wilson  # noqa: E402
 

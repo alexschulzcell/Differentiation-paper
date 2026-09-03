@@ -37,6 +37,8 @@ import pandas as pd
 from scipy import stats
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 from _module import ERGEBNISSE, SEED  # noqa: E402
 
 AUS = ERGEBNISSE / "Z_integration"

@@ -61,8 +61,10 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 from _marker import ADIPOGEN, CHONDROGEN, MYOGEN, NAIV, OSTEOGEN  # noqa: E402
-from _module import ERGEBNISSE, kontrast  # noqa: E402
+from _module import ERGEBNISSE, kontrast, lade_dwt_je_punkt, gencode_karte  # noqa: E402
 
 WURZEL = pathlib.Path(__file__).resolve().parents[1]
 ANTRAG = WURZEL.parent
@@ -84,33 +86,6 @@ def log(s: str = "") -> None:
 def symbolkarte() -> dict:
     return gencode_karte()
 
-def gencode_karte() -> dict:
-    """Ensembl -> symbol from the Gencode reference -- the same map that
-    `31_donor_cells_build_calibrate.py` uses in phase M-D. The project's internal gene map covers
-    only about 11 500 genes and leaves only 5 of the 12 chondrogenic markers;
-    with it, calibration would be underdetermined on the chondrogenic axis.
-    This choice is a matter of coverage, not of the result, and is therefore
-    recorded here."""
-    import gzip
-    import re
-    from _module import DATEN as _D
-    for p in sorted((_D / "_referenz").glob("*.gtf*")):
-        m = {}
-        op = gzip.open if p.suffix == ".gz" else open
-        with op(p, "rt", encoding="utf-8", errors="replace") as f:
-            for ln in f:
-                if ln[0] == "#" or "	gene	" not in ln:
-                    continue
-                g = re.search(r'gene_id "([^".]+)', ln)
-                s = re.search(r'gene_name "([^"]+)', ln)
-                if g and s:
-                    m[g.group(1)] = s.group(1)
-        if m:
-            return m
-    raise RuntimeError("no Gencode reference found")
-
-
-
 def main() -> None:
     log("=" * 78)
     log("The built-in calibration on the 18 perturbation datasets")
@@ -123,9 +98,8 @@ def main() -> None:
     name = dict(zip(KO.punkt, KO.datensatz))
 
     zeilen = []
-    for f in sorted(GENE20D.glob("20d_gene_*.csv")):
-        G = pd.read_csv(f)
-        p = int(G.punkt.iloc[0])
+    for p, G in lade_dwt_je_punkt(GENE20D):
+        G = G.copy()
         G["symbol"] = [karte.get(str(g).split(".")[0]) for g in G.gen]
         G = G[G.symbol.notna() & G.dWT.notna()]
         dwt = G.groupby("symbol").dWT.median()

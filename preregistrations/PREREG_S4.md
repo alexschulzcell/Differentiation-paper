@@ -77,7 +77,7 @@ it feeds into §3.4 (the scope of B1).
 
 - **No second implementation.** The entry point of every computation is the
   reference loader; the computation uses only `kern()`, `mk_zieh()`,
-  `mk_zieh_L()`, `einzel_f()` and `kontrast_f()` from `03_metric.R`, unchanged.
+  `mk_zieh_L()`, `einzel_f()` and `kontrast_f()` from `12_metric_reference.R`, unchanged.
 - **The main null stays the main null:** `ZIEH[["20"]]`, 20 induction classes.
   The correction rejected in S3 (level x baseline) is **not** used and not
   revived.
@@ -85,7 +85,7 @@ it feeds into §3.4 (the scope of B1).
 - **VIF correction always. MDE80 with every number.**
 - **The arm rule §4:** what is compared are **signs**, never magnitudes across
   arms.
-- **Gene sets unchanged** from `03_metric.R`: `S_DISTAL` 545 genes,
+- **Gene sets unchanged** from `12_metric_reference.R`: `S_DISTAL` 545 genes,
   `S_BIOSYN` 2 711, `S_FRACHT0` 3 621, `S_MASCHINE` 3 205, `S_NEUTRAL` 614,
   `S_ZYKLUS` 1 907. Mutually disjoint, as made there.
 

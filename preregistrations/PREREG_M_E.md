@@ -57,9 +57,9 @@ computed.
 - **No new axis and no new gene set.** The fixed 173-gene module and the
   size-matched lesion set stay unchanged. `PREREG_S6.md` §1 applies.
 - **No second implementation.** Loading uses the reference loader
-  `13_load18.R`; the contrasts have the same algebra as `kern()` in
-  `03_metric.R`; the between-donor statistic comes from
-  `reference_implementations/_module.py` (`leiter`).
+  `11_load_18_datasets.R`; the contrasts have the same algebra as `kern()` in
+  `12_metric_reference.R`; the between-donor statistic comes from
+  `00_shared/_module.py` (`leiter`).
 - **No matching to a covariate of the baseline.** The "not a flat null" guard
   applies unchanged.
 - **No change to phases M-A to M-D.** This phase changes the
@@ -70,11 +70,11 @@ computed.
 ## 3. The objects
 
 **The primary object:** the **eighteen perturbation data sets**, loaded with
-`13_load18.R`, matrix `Z` (per-gene z per data set) and `meta`
+`11_load_18_datasets.R`, matrix `Z` (per-gene z per data set) and `meta`
 (`genotype` in {WT, KO}, `condition` in {undiff, diff}) — unchanged.
 
 **The gene universe**, fixed in advance: the genes measurable in **at least 16
-of 18** data sets (the universe `U1` from `20e_convergence.py`, 10 177 genes
+of 18** data sets (the universe `U1` from `31_derive_matrix_programme.py`, 10 177 genes
 there). No pool filter and no filtering by effect size.
 
 **The convergence rule**, fixed in advance and unchanged from the main part: a

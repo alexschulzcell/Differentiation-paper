@@ -278,7 +278,7 @@ computation on that data set. **No criterion is relaxed in order to raise n.**
 `A9` (single-cell data) stays a ground for exclusion. The reference
 implementation is not extended by an aggregation step.
 
-New data sets go into the **same loading block** in `03_metric.R`, not into a
+New data sets go into the **same loading block** in `12_metric_reference.R`, not into a
 parallel script (§12 of the brief).
 
 ### 4.2 The one permitted search query — recorded in advance
@@ -319,7 +319,7 @@ before anything is computed.
    with seeds keyed to (point, round).
 5. **The neutral contrast** (§5.2).
 
-All through `04_load.R` and the unchanged functions `kontrast_f`, `einzel_f`,
+All through `10_load_reference_metric.R` and the unchanged functions `kontrast_f`, `einzel_f`,
 `kern`, `mk_zieh` and `mk_zieh_L`. **No second implementation.**
 
 ### 5.2 The neutral contrast — the gate from S4 does not carry over automatically

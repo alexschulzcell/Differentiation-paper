@@ -1,0 +1,5 @@
+external validation: 3 of 4 independent differentiation systems run the locked programme above their limit
+  osteogenic (MSC → osteoblast, GSE37558)              conc 0.887  z +10.10  above_MDE80 True  (n=168)
+  adipogenic (hMSC, GSE283759)                         conc 0.827  z +8.22  above_MDE80 True  (n=173)
+  vascular calcification (VSMC → CVC, GSE37558)        conc 0.851  z +8.99  above_MDE80 True  (n=168)
+  chondrogenic (iPSC-derived MSC, GSE214987)           conc 0.515  z +1.69  above_MDE80 False  (n=169)

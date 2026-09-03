@@ -1,12 +1,15 @@
 # Figure rules
 
 The grammar every figure in this repository follows. The style itself lives in
-`publication_style.R`; the figures are drawn by `code/60_figures_main.R` and
-`code/61_figures_supplement.R`, the graphical abstract by
-`code/62_graphical_abstract.py`.
+`publication_style.R`; the figures are drawn by `09_figures/20_figures_main.R` and
+`09_figures/21_figures_supplement.R`, the graphical abstract by
+`09_figures/30_graphical_abstract.py`.
 
-Column widths follow Cell Press: `SP1` 85 mm, `SP15` 114 mm, `SP2` 174 mm.
-Every sheet is written as a vector PDF **and** as a PNG at 600 dpi.
+Column widths: `SP1` 85 mm, `SP15` 114 mm, `SP2` 174 mm. The 85 mm half-page
+and the ~170 mm full-page width are the same at BMC Genomics as at Cell Press,
+so `SP2` sheets carry about 4 mm of trim at BMC's 170 mm. Every sheet is
+written as a vector PDF **and** as a PNG at 600 dpi, above BMC's 300 dpi
+requirement.
 
 ## The rules that are not negotiable
 
@@ -30,7 +33,7 @@ Every sheet is written as a vector PDF **and** as a PNG at 600 dpi.
    margin above the field; `notiz()` and `notiz_oben()` put it there.
 8. **The accession always follows the information, in parentheses:**
    `ATAC (GSE332758)`, never `GSE332758 (ATAC)` and never `ATAC GSE332758`.
-   `mit_gse()` produces that form, and `code/72_check_language.py` enforces it.
+   `mit_gse()` produces that form, and `10_manuscript_checks/12_check_language.py` enforces it.
 
 ## Layout grammar: what makes a figure calm
 
@@ -133,7 +136,7 @@ is the same size across all sheets, with nothing scaled anywhere.
 ## What belongs to a change of a figure
 
 1. the panel itself (PDF and PNG),
-2. the call in `code/60_figures_main.R` or `code/61_figures_supplement.R`
+2. the call in `09_figures/20_figures_main.R` or `09_figures/21_figures_supplement.R`
    with updated dimensions,
 3. the legend in `manuscript/CAPTIONS_MAIN.md` or
    `manuscript/CAPTIONS_SUPPLEMENT.md`, including the changed axis description,
@@ -142,5 +145,5 @@ is the same size across all sheets, with nothing scaled anywhere.
    that fits on its own can collide in the narrower field of a sheet,
 6. if labelling has moved from the image into the legend, the legend must then
    really carry it,
-7. `python code/70_check_numbers.py`, which fails if a number in the text or in
+7. `python 10_manuscript_checks/10_check_numbers.py`, which fails if a number in the text or in
    a legend no longer matches its panel file.

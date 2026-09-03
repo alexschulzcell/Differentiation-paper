@@ -1,5 +1,5 @@
 ==============================================================================
-50_panel_data.py -- one CSV per panel to figures/data/
+10_panel_data_main.py -- one CSV per panel to figures/data/
 ==============================================================================
 
 Fig. 1 -- material, screens, calibration
@@ -62,6 +62,6 @@ Fig. 6 -- levels and detection-limit book (table + forest)
   TS14_levels_book                          14 rows x  7 cols  one row per level, including the levels without a finding (supplement table to forest panel F6)
   F6_levels_forest                          14 rows x  9 cols  one row per level with estimate range and own limit (basis of the forest panel F6)
 
-75 panel CSVs in C:\Users\Alexa\Documents\alex projects\DFG Antrag\Paper v2\figures\data
+81 panel CSVs in C:\Users\Alexa\Documents\alex projects\DFG Antrag\Paper v3\repo\figures\data
 
 numpy 2.4.4 | pandas 3.0.1 | python 3.12.10

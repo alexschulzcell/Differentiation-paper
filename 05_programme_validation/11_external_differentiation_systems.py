@@ -36,6 +36,8 @@ import pandas as pd
 
 import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]
+                       / "00_shared"))
 import _hardening as H  # noqa: E402
 
 _env = os.environ.get("PAPER_V2_ROOT")

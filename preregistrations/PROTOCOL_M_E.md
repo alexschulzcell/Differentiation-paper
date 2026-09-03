@@ -4,8 +4,8 @@
 # Protocol M-E — the scissors are a difference in size
 
 Computed **2026-08-22**, following `PREREG_M_E.md` (dated before the first
-figure of this phase). Scripts: `reference_implementations/55a_contrasts.R`,
-`reference_implementations/55b_analysis.py`. Seed 20260823, B = 200 draws,
+figure of this phase). Scripts: `08_disease_gene_orthogonality/40_noise_floor_contrasts.R`,
+`08_disease_gene_orthogonality/41_noise_floor_tests.py`. Seed 20260823, B = 200 draws,
 2 000 flip rounds. All numbers are in `derived_data/M_kalibrierung/`.
 
 **The result in two sentences:**
@@ -30,7 +30,7 @@ implementation itself stayed literally unchanged, and unmounted again
 afterwards.
 
 **That is a legacy of the layout, not a solution.** The absolute paths in
-`04_load.R`, `03b_data_s5.R` and `13_load18.R` are a trap for anyone who
+`10_load_reference_metric.R`, `14_geo_matrices_s5_format.R` and `11_load_18_datasets.R` are a trap for anyone who
 receives the repository and have to be moved to relative paths before
 submission — together with the Zenodo deposit, not before it, because the
 reference implementation would otherwise differ between two runs.
@@ -39,15 +39,15 @@ reference implementation would otherwise differ between two runs.
 
 ## 2. The data situation
 
-`55a_contrasts.R` loaded all **18** data sets through the reference loader
-`13_load18.R` and formed 200 draws of the three single-sample contrasts per
+`40_noise_floor_contrasts.R` loaded all **18** data sets through the reference loader
+`11_load_18_datasets.R` and formed 200 draws of the three single-sample contrasts per
 data set (`test1_datensaetze.csv`).
 
 **All 18 are usable**: each has at least 2 wild-type samples per condition, as
 the inclusion rule `A4` guarantees. No data set had to be excluded.
 
 The universe, fixed in advance: **10 177 genes** measurable in at least 16 of
-18 data sets (`U1` from `20e_convergence.py`). The convergence rule is
+18 data sets (`U1` from `31_derive_matrix_programme.py`). The convergence rule is
 unchanged: the same sign in at least 90 % of the data sets in which the gene is
 measurable.
 
@@ -196,7 +196,7 @@ that — which is the same statement as test 1, at the level of the gene set.
 ## 7. What was expressly not done
 
 - **No new axis, no new gene set.** Module and lesion set unchanged.
-- **No second implementation.** Loaded with `13_load18.R`, computed with the
+- **No second implementation.** Loaded with `11_load_18_datasets.R`, computed with the
   algebra of `kern()`, with the between-donor statistics from `_module.py`.
 - **No threshold shifted once the numbers were known**, and no test declared
   primary after the fact. Test 1 was and is the primary one.

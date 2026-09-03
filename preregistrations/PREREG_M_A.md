@@ -25,7 +25,7 @@ phase may extend it; a contradiction is reported as a contradiction.
 **0.2 The anchor.** "Distal against biosynthetic secretion" separates skeletal
 dysplasia genes: 39/523 against 35/2 192, **OR 4.97, p 6.7e-11**. The two gene
 sets are the GO sets `S_DISTAL` and `S_BIOSYN` from
-`reference_implementations/manuscript/methods/03_metric.R` and are taken over
+`02_matrix_programme_derivation/12_metric_reference.R` and are taken over
 **unchanged**.
 
 **0.3 The module is fixed** (173 genes) and is not readjusted. The convergence
@@ -129,7 +129,7 @@ the panel or the background is set up wrongly.
 **(b) The anchor.** The contrast `S_DISTAL` against `S_BIOSYN` must reproduce
 on `NOSO`: expected **OR about 5** in the distal direction. It passes at
 OR > 2 and p < 0.001. The two GO sets are exported unchanged from
-`org.Hs.eg.db` by `reference_implementations/52a_go_sets.R`.
+`org.Hs.eg.db` by `08_disease_gene_orthogonality/10_secretion_go_sets.R`.
 
 **If either part fails, no number of this phase is reported** — the phase then
 counts as "the level does not carry".

@@ -109,7 +109,7 @@ Neither rule was turned around afterwards.
 ## 5. The metrics
 
 All levels run through **one** implementation
-(`reference_implementations/_module.py`, functions `konkordanz` and `kontrast`).
+(`00_shared/_module.py`, functions `konkordanz` and `kontrast`).
 
 1. **Directed agreement.** The mean signed rank of the level difference over the
    module genes, against a null that draws gene sets of the same size from the
@@ -122,7 +122,7 @@ All levels run through **one** implementation
    low, and a level that sees only the starting level would produce the same
    finding without any convergence at all.
 3. **Calibration.** The same test, applied to the canonical lineage marker set
-   of the respective axis (`reference_implementations/_marker.py`, textbook
+   of the respective axis (`00_shared/_marker.py`, textbook
    knowledge, fixed before the computation, disjoint). A level that does not
    find its own markers can say nothing about the module.
 4. **Dose-response.** Eighths of the internal convergence **strength** `|kons|`

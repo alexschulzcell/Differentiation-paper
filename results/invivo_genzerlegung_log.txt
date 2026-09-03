@@ -1,25 +1,25 @@
 ==============================================================================
-Wird der In-vivo-Trend breit getragen? Entscheidungsregel im Kopf.
+Is the in vivo trend broadly carried? Decision rule in the header.
 ==============================================================================
-Modulgene im Atlas messbar: 173 von 173
-Selbsttest gegen ws4_modulewert_je_probe.csv: max |Delta| = 2.622e-08 ueber 66 Punkte
-Voller Satz: rho 0.4561 | z +4.798 | Grenze rho 0.2743 | ueber Grenze True
+Module genes measurable in the atlas: 173 of 173
+self-test against ws4_modulwert_je_probe.csv: max |Delta| = 2.622e-08 over 66 points
+Full set: rho 0.4561 | z +4.798 | limit rho 0.2743 | above limit True
 
-Verteilung von |Delta| ueber 173 messbare Modulgene:
-   die 10 groessten tragen  43.4 % der Summe von |Delta|
-   die 17 groessten tragen  56.5 % der Summe von |Delta|
-   die 25 groessten tragen  67.6 % der Summe von |Delta|
-   die 50 groessten tragen  86.5 % der Summe von |Delta|
-   Median |Delta| 0.0311 | 90. Perzentil 0.3493 | Maximum 1.8715
-   einzeln konkordant: 76 von 164 (46.3 %)
-   Median Delta bei ri=+1: -0.0006 (n 129) | bei ri=-1: -0.0015 (n 44)
-ohne die 10 % groessten |Delta| ( 18 Gene raus, 155 bleiben): rho 0.1444 | z +2.736 | Grenze 0.1248 | ueber Grenze True   [Regel]
-ohne die  5 % groessten |Delta| (  9 Gene raus, 164 bleiben): rho 0.1347 | z +2.697 | Grenze 0.1188 | ueber Grenze True   [deskriptiv]
-ohne die 20 % groessten |Delta| ( 35 Gene raus, 138 bleiben): rho -0.0819 | z +0.402 | Grenze 0.0423 | ueber Grenze False   [deskriptiv]
-ohne die 30 % groessten |Delta| ( 52 Gene raus, 121 bleiben): rho 0.2059 | z +2.042 | Grenze 0.2402 | ueber Grenze False   [deskriptiv]
+Distribution of |Delta| over 173 measurable module genes:
+   the 10 largest carry  43.4 % of the sum of |Delta|
+   the 17 largest carry  56.5 % of the sum of |Delta|
+   the 25 largest carry  67.6 % of the sum of |Delta|
+   the 50 largest carry  86.5 % of the sum of |Delta|
+   median |Delta| 0.0311 | 90th percentile 0.3493 | maximum 1.8715
+   individually concordant: 76 of 164 (46.3 %)
+   median Delta at ri=+1: -0.0006 (n 129) | at ri=-1: -0.0015 (n 44)
+without the 10 % largest |Delta| ( 18 genes out, 155 left): rho 0.1444 | z +2.736 | limit 0.1248 | above limit True   [Regel]
+without the  5 % largest |Delta| (  9 genes out, 164 left): rho 0.1347 | z +2.697 | limit 0.1188 | above limit True   [deskriptiv]
+without the 20 % largest |Delta| ( 35 genes out, 138 left): rho -0.0819 | z +0.402 | limit 0.0423 | above limit False   [deskriptiv]
+without the 30 % largest |Delta| ( 52 genes out, 121 left): rho 0.2059 | z +2.042 | limit 0.2402 | above limit False   [deskriptiv]
 
 ------------------------------------------------------------------------------
-ENTSCHEIDUNG nach der Regel im Skriptkopf:
-  Der Trend bleibt ueber seiner eigenen Grenze (rho 0.1444 > 0.1248, z +2.74).
-  -> BREIT GETRAGEN. Die Caption von Abb. 3C sagt das.
+DECISION per the rule in the script header:
+  The trend stays above its own limit (rho 0.1444 > 0.1248, z +2.74).
+  -> BROADLY CARRIED. The caption of Fig. 3C says so.
 ------------------------------------------------------------------------------

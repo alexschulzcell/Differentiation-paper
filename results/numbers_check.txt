@@ -99,6 +99,16 @@ OK   HZ test: module new own limit                got     0.2505  want 0.25
 OK   HZ test: module above new limit              got     1.0000  want 1.0
 OK   HZ test: PC above new limit                  got     1.0000  want 1.0
 OK   HZ test: points without HyperChon            got    65.0000  want 65
+OK   caption 3C contains HZ-sensitivity value +0.430 got     1.0000  want 1.0
+OK   caption 3C contains HZ-sensitivity value 0.250 got     1.0000  want 1.0
+OK   caption 3C contains HZ-sensitivity value +4.65 got     1.0000  want 1.0
+OK   caption 3C contains HZ-sensitivity value +0.880 got     1.0000  want 1.0
+OK   caption 3C contains HZ-sensitivity value 0.615 got     1.0000  want 1.0
+OK   caption F2F counter passed 2                 got     1.0000  want 1.0
+OK   caption F2F counter not calibratable 1       got     1.0000  want 1.0
+OK   caption F6 refers to Additional file 2: Table S7 got     1.0000  want 1.0
+OK   caption F6 refers to Additional file 2: Table S14 got     1.0000  want 1.0
+OK   supplement legends carry table S14           got     1.0000  want 1.0
 OK   gene ranking rows                            got   173.0000  want 173.0
 OK   PC above own limit                           got    64.0000  want 64
 OK   PC z > 2                                     got    65.0000  want 65
@@ -176,5 +186,5 @@ OK   of which ri = +1                             got   129.0000  want 129
 OK   of which ri = -1                             got    44.0000  want 44
 OK   preregistration documents (34 + PRAEREG_F2F) got    35.0000  want 35
 
-=== 177 of 177 checks passed ===
+=== 187 of 187 checks passed ===
 numpy 2.4.4 | pandas 3.0.1 | python 3.12.10

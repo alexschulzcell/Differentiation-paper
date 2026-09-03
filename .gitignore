@@ -1,6 +1,6 @@
 # --- Raw data -------------------------------------------------------------
 # About 98 GB, all of it public at GEO, ArrayExpress and EMBL-EBI. The
-# accessions are listed in Supplementary Table 1 and in 00_setup.md.
+# accessions are listed in Supplementary Table 1 and in code/00_setup.md.
 data_raw/
 
 # --- Working material, not part of the record -----------------------------
@@ -9,7 +9,7 @@ _archive/
 
 # --- Build output ---------------------------------------------------------
 # The submission package is built from the sources by
-# 10_manuscript_checks/21_build_submission.py. The repository holds the sources, not the
+# code/64_build_submission.py. The repository holds the sources, not the
 # product.
 submission/
 

@@ -1,7 +1,7 @@
 ==============================================================================
-Empfindlichkeit der Eichungsbilanz -- NACHTRAEGLICH, nicht vorregistriert
+Sensitivity of the calibration balance -- POST HOC, not preregistered
 ==============================================================================
-Weggelassen in der In-vitro-Fassung: SOST, DMP1, PHEX, MEPE, PTH1R
+Omitted in the in-vitro version: SOST, DMP1, PHEX, MEPE, PTH1R
 
    1 LAMA5-KO (chondr)            chondrogen  | vorreg n 6 bestanden      z  +2.67 | invitro n 6 bestanden      z  +2.60
    2 LAMA5-KO (osteo)             osteogen    | vorreg n12 durchgefallen  z  -0.21 | invitro n10 durchgefallen  z  -0.68
@@ -23,12 +23,12 @@ Weggelassen in der In-vitro-Fassung: SOST, DMP1, PHEX, MEPE, PTH1R
   18 RB1-del isogen (GSE145235)   osteogen    | vorreg n16 durchgefallen  z  +1.39 | invitro n13 durchgefallen  z  +1.39
 
 ------------------------------------------------------------------------------
-vorregistrierte Markersaetze:
-   eichbar 17 von 18 | bestanden  2 | durchgefallen 15 (88 % der eichbaren)
-      chondrogen  1 von 5 bestanden
-      osteogen    1 von 12 bestanden
-nur in vitro erreichbare Marker:
-   eichbar 17 von 18 | bestanden  2 | durchgefallen 15 (88 % der eichbaren)
-      chondrogen  1 von 5 bestanden
-      osteogen    1 von 12 bestanden
+preregistered marker sets:
+   calibratable 17 of 18 | passed  2 | failed 15 (88 % of the calibratable)
+      chondrogen  1 of 5 passed
+      osteogen    1 of 12 passed
+only in-vitro reachable markers:
+   calibratable 17 of 18 | passed  2 | failed 15 (88 % of the calibratable)
+      chondrogen  1 of 5 passed
+      osteogen    1 of 12 passed
 ------------------------------------------------------------------------------

@@ -61,7 +61,7 @@ dir.create(ERG, recursive = TRUE, showWarnings = FALSE)
 
 GK  <- read.csv(file.path(WURZEL, "derived_data", "R_intern",
                           "R_interne_genkarte.csv"), stringsAsFactors = FALSE)
-MOD <- read.csv(file.path(WURZEL, "manuscript", "Tabellen",
+MOD <- read.csv(file.path(WURZEL, "derived_data", "reference_tables",
                           "S5_konvergente_gene.csv"), stringsAsFactors = FALSE)
 stopifnot(nrow(MOD) == 173)
 
@@ -70,6 +70,13 @@ FG <- unique(MOD$gen)
 stopifnot(length(FG) == 173, length(HG) == 11581)
 cat(sprintf("background %d genes | module %d, of which in the background %d\n",
             length(HG), length(FG), length(intersect(FG, HG))))
+
+if (!file.exists(file.path(ABLAGE, "mitglieder.csv")))
+  stop("The frozen MSigDB gene sets are not in this repository. Run ",
+       "06_orthogonal_layers/60_gene_sets_build.R once (needs MSigDB and ",
+       "org.Hs.eg.db, see 00_setup.md). The outputs of this script are ",
+       "committed under results/, and the figure steps read those.",
+       call. = FALSE)
 
 MIT <- read.csv(file.path(ABLAGE, "mitglieder.csv"), stringsAsFactors = FALSE)
 UEB <- read.csv(file.path(ABLAGE, "uebersicht.csv"), stringsAsFactors = FALSE)

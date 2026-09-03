@@ -1,18 +1,18 @@
-Disjunktionspruefung: Annotation 11 Gene, Eichunion 22, Schnittmenge ['MKI67']
-Eichsaetze nach Reduktion: CHONDROGEN 12 | NAIV 10 -> 9
+Disjointness check: annotation 11 genes, calibration union 22, intersection ['MKI67']
+Calibration sets after reduction: CHONDROGEN 12 | NAIV 10 -> 9
 
-Positivkontrolle chondrogen-naiv: 12/12 Satz-a-Gene, 9/9 Satz-b-Gene im Block
-  rho -0.0329 | Null 0.0378 +- 0.1326 | z -0.533 | Grenze rho 0.3710| ueber Grenze False
+Positivkontrolle chondrogen-naiv: 12/12 set-a genes, 9/9 set-b genes in the block
+  rho -0.0329 | null 0.0378 +- 0.1326 | z -0.533 | limit rho 0.3710| above limit False
 
-Modul (173 Gene): 129/129 Satz-a-Gene, 44/44 Satz-b-Gene im Block
-  rho 0.5114 | Null -0.0174 +- 0.3404 | z +1.553 | Grenze rho 0.8308| ueber Grenze False
+Modul (173 Gene): 129/129 set-a genes, 44/44 set-b genes in the block
+  rho 0.5114 | null -0.0174 +- 0.3404 | z +1.553 | limit rho 0.8308| above limit False
 
-Gespiegelte Kontraste (--kontrast), fuer die Widerspruchsklausel:
-  rho -0.5114 | z -1.553 | Grenze 0.8710 | ueber Grenze False
+Mirrored contrasts (--kontrast), for the contradiction clause:
+  rho -0.5114 | z -1.553 | limit 0.8710 | above limit False
 
-Spender: 4 | Punkte: 12 (P30453:RZ, P31011:RZ, P25452:RZ, P22202:RZ, P30453:PZ, P31011:PZ, P25452:PZ, P25452:PHZ, P30453:HZ, P31011:HZ, P25452:HZ, P22202:HZ)
+Donors: 4 | points: 12 (P30453:RZ, P31011:RZ, P25452:RZ, P22202:RZ, P30453:PZ, P31011:PZ, P25452:PZ, P25452:PHZ, P30453:HZ, P31011:HZ, P25452:HZ, P22202:HZ)
 
 ==============================================================================
-URTEIL nach der Regel im Skriptkopf: NICHT EICHBAR -- die Positivkontrolle liegt unter ihrer eigenen Nachweisgrenze (rho -0.0329 <= 0.3710).
-(Zum Massstab: erster Atlas rho 0.456, Grenze 0.274.)
+VERDICT per the rule in the script header: NOT CALIBRATABLE -- the positive control lies below its own detection limit (rho -0.0329 <= 0.3710).
+(For scale: first atlas rho 0.456, limit 0.274.)
 ==============================================================================

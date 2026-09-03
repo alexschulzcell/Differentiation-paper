@@ -5,9 +5,9 @@
 
 Computed **2026-08-22**, following `PREREG_M_D.md` (dated before the first
 download) and its addendum 1 (dated before the first figure).
-Scripts: `reference_implementations/54_donor_search.py`, `54a_self_test.py`,
-`54b_cells.py`, `54c_ladder.py`, `54d_circularity.py`,
-`54e_screening_by_hand.py`. Seed 20260822, 20 000 draws. All numbers in
+Scripts: `data_acquisition/20_donor_search.py`, `30_donor_statistics_self_test.py`,
+`31_donor_cells_build_calibrate.py`, `32_donor_statistic_ladder.py`, `33_donor_circularity_control.py`,
+`21_donor_manual_screen.py`. Seed 20260822, 20 000 draws. All numbers in
 `derived_data/M_donoren/`.
 
 **The result in three sentences, up front:**
@@ -44,7 +44,7 @@ accessions and metadata.
 
 ## 2. A self-test of the new statistics — before the first real computation
 
-`54a_self_test.py`, `selbsttest.csv`. Cell vectors drawn from the background,
+`30_donor_statistics_self_test.py`, `selbsttest.csv`. Cell vectors drawn from the background,
 that is **without** any shared structure:
 
 | metric | mean z | sd | share z > 2 | share \|z\| > 2 |
@@ -66,7 +66,7 @@ before the first real number and is carried along when S2 is read.
 
 ### 3.1 The search by design
 
-`54_donor_search.py`, `suchlauf.csv`, `treffer_roh.csv`. Database GEO `gds`,
+`20_donor_search.py`, `suchlauf.csv`, `treffer_roh.csv`. Database GEO `gds`,
 filter `"Homo sapiens"[Organism] AND "gse"[Filter]`, crossed with osteogenic and
 chondrogenic differentiation, retmax 1000 (no axis ran against the upper bound).
 
@@ -89,7 +89,7 @@ is the data.
 
 ### 3.2 Screening by hand
 
-`54e_screening_by_hand.py`, `sichtung_hand.csv`. All 22 hits plus the six
+`21_donor_manual_screen.py`, `sichtung_hand.csv`. All 22 hits plus the six
 candidates named in advance, each checked against
 `data_raw/_meta/<GSE>_proben.csv` or against the GSM metadata — not against the
 series title.
@@ -157,7 +157,7 @@ preregistration expressly demands it **even when** nothing was found.
 
 ## 4. The built-in calibration — and what it costs
 
-`54b_cells.py`, `eichung.csv`. The positive control is `dWT` itself: does the
+`31_donor_cells_build_calibrate.py`, `eichung.csv`. The positive control is `dWT` itself: does the
 cell's **own** differentiation contrast recover the canonical lineage markers of
 **its** axis (`_module.kontrast`, directed, p < 0.05)?
 
@@ -207,7 +207,7 @@ osteogenic arm of our own LAMA5 series fails and carries no number.
 
 ## 5. The ladder of statistics
 
-`54c_ladder.py`, `statistik.csv`, `je_zelle.csv`. Calibrated cells only, a
+`32_donor_statistic_ladder.py`, `statistik.csv`, `je_zelle.csv`. Calibrated cells only, a
 baseline-stratified null, 20 000 draws, seed 20260822.
 
 ### 5.1 The programme (`dWT`, 173 module genes) — 7 cells, 5 donors, 4 studies, 19 donor pairs
@@ -320,7 +320,7 @@ rounds.
 
 ## 6. The circularity control — after the fact, not preregistered
 
-`54d_circularity.py`, `zirkularitaet.csv`. **This section arose after the
+`33_donor_circularity_control.py`, `zirkularitaet.csv`. **This section arose after the
 numbers were known** and is presented as what it is.
 
 The occasion stands in §3.4: four of the six study units helped define the
@@ -410,7 +410,7 @@ Three findings that need no lesion data and that belong in the main text:
 - **No new convergence axis**, no gene set by hand, no readjustment of the
   module. `PREREG_S6.md` §1 untouched.
 - **No second implementation of the metric.** The new statistics stand **in**
-  `reference_implementations/_module.py` (`leiter`, `synthese_flip`) and use the
+  `00_shared/_module.py` (`leiter`, `synthese_flip`) and use the
   same baseline-stratified null as `konkordanz`. `_marker.py` unchanged.
 - **No arithmetic mean over studies** — nowhere.
 - **No adjustment to a covariate of the baseline**; the control expression

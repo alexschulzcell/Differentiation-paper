@@ -1,26 +1,26 @@
 ==============================================================================
-Haengt der fetale Trend am einen HyperChon-Punkt? Regel im Kopf.
+Does the fetal trend hang on the single HyperChon point? Rule in the header.
 ==============================================================================
-Modul (173 Gene): 1 HyperChon-Punkte von 66
-  Variante A: rho 0.4299 | Null 0.0440 +- 0.0829 | z +4.653 | neue Grenze rho 0.2505 | ueber Grenze True
-Positivkontrolle chondrogen-naiv: 1 HyperChon-Punkte von 66
-  Variante A: rho 0.8796 | Null 0.4216 +- 0.0769 | z +5.958 | neue Grenze rho 0.6146 | ueber Grenze True
-PA309 gegen Modul: 1 HyperChon-Punkte von 66
-  Variante A: rho 0.8590 | Null 0.3548 +- 0.0831 | z +6.069 | neue Grenze rho 0.5631 | ueber Grenze True
-  Variante B (deskriptiv): rho 0.1688 | z +3.599 | Grenze 0.0829 | ueber Grenze True
-  Variante B (deskriptiv): rho 0.8611 | z +5.611 | Grenze 0.5378 | ueber Grenze True
-  Variante B (deskriptiv): rho 0.8218 | z +5.602 | Grenze 0.4797 | ueber Grenze True
+Modul (173 Gene): 1 HyperChon points of 66
+  variant A: rho 0.4299 | null 0.0440 +- 0.0829 | z +4.653 | new limit rho 0.2505 | above limit True
+Positivkontrolle chondrogen-naiv: 1 HyperChon points of 66
+  variant A: rho 0.8796 | null 0.4216 +- 0.0769 | z +5.958 | new limit rho 0.6146 | above limit True
+PA309 gegen Modul: 1 HyperChon points of 66
+  variant A: rho 0.8590 | null 0.3548 +- 0.0831 | z +6.069 | new limit rho 0.5631 | above limit True
+  variant B (descriptive): rho 0.1688 | z +3.599 | limit 0.0829 | above limit True
+  variant B (descriptive): rho 0.8611 | z +5.611 | limit 0.5378 | above limit True
+  variant B (descriptive): rho 0.8218 | z +5.602 | limit 0.4797 | above limit True
 
-Referenz (voller Lauf, results/invivo_spendertest.csv):
-  Positivkontrolle chondrogen-naiv rho 0.8605 | Grenze 0.6179 | ueber Grenze True
-  Modul (173 Gene)                 rho 0.4561 | Grenze 0.2743 | ueber Grenze True
-  PA309 gegen Modul                rho 0.8473 | Grenze 0.5682 | ueber Grenze True
+Reference (full run, results/invivo_spendertest.csv):
+  Positivkontrolle chondrogen-naiv rho 0.8605 | limit 0.6179 | above limit True
+  Modul (173 Gene)                 rho 0.4561 | limit 0.2743 | above limit True
+  PA309 gegen Modul                rho 0.8473 | limit 0.5682 | above limit True
 
-Der HyperChon-Kontrastwert im Zonenprofil (Mittel je Zone):
-  Modul (173 Gene)                 HZ-Punkt +0.1492 | Zonenmittel ChondroProg +0.051, HyperChon +0.149, MesCond +0.063, PrehyperChon +0.124, ProlifChon +0.075, RestingChon +0.057
-  Positivkontrolle chondrogen-naiv HZ-Punkt +1.6719 | Zonenmittel ChondroProg +1.277, HyperChon +1.672, MesCond +0.497, PrehyperChon +2.233, ProlifChon +1.840, RestingChon +1.836
-  PA309 gegen Modul                HZ-Punkt +0.1325 | Zonenmittel ChondroProg +0.109, HyperChon +0.132, MesCond +0.078, PrehyperChon +0.167, ProlifChon +0.137, RestingChon +0.128
+The HyperChon contrast value within the zone profile (mean per zone):
+  Modul (173 Gene)                 HZ point +0.1492 | zone means ChondroProg +0.051, HyperChon +0.149, MesCond +0.063, PrehyperChon +0.124, ProlifChon +0.075, RestingChon +0.057
+  Positivkontrolle chondrogen-naiv HZ point +1.6719 | zone means ChondroProg +1.277, HyperChon +1.672, MesCond +0.497, PrehyperChon +2.233, ProlifChon +1.840, RestingChon +1.836
+  PA309 gegen Modul                HZ point +0.1325 | zone means ChondroProg +0.109, HyperChon +0.132, MesCond +0.078, PrehyperChon +0.167, ProlifChon +0.137, RestingChon +0.128
 
 ==============================================================================
-NICHT AM TERMINALEN PUNKT HAENGEND: der Modultrend bleibt auch ohne HyperChon ueber seiner eigenen neuen Grenze (rho 0.4299 > 0.2505, z +4.65). die Positivkontrolle bleibt ueber ihrer neuen Grenze (rho 0.8796 > 0.6146) -- die Achse traegt auch ohne den terminalen Punkt.
+NOT HANGING ON THE TERMINAL POINT: without HyperChon too, the module trend stays above its own new limit (rho 0.4299 > 0.2505, z +4.65). the positive control stays above its new limit (rho 0.8796 > 0.6146) -- the axis carries without the terminal point too.
 ==============================================================================

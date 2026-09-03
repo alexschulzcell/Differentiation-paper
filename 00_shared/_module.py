@@ -62,6 +62,77 @@ def lade_module() -> pd.DataFrame:
 MODUL = lade_module()
 
 
+def gencode_karte() -> dict:
+    """Ensembl -> symbol from the Gencode 46 reference.
+
+    This is the map the calibration runs on. The project's internal gene map
+    covers only about 11 500 genes and leaves only 5 of the 12 chondrogenic
+    markers; with it, calibration would be underdetermined on the chondrogenic
+    axis. This choice is a matter of coverage, not of the result, and is
+    therefore recorded here.
+
+    The map is frozen in the repository as
+    `derived_data/R_intern/ensembl_symbol_gencode46.csv` (63 086 genes, all
+    18 osteogenic and all 12 chondrogenic markers), so the calibration
+    reproduces from the repository alone. The raw GTF under
+    `data_raw/_referenz/` is parsed only if the frozen file is absent.
+
+    There is exactly one implementation of this map, and it is this one.
+    """
+    import gzip
+    import re
+
+    gefroren = (WURZEL / "derived_data" / "R_intern" /
+                "ensembl_symbol_gencode46.csv")
+    if gefroren.exists():
+        es = pd.read_csv(gefroren).dropna(subset=["symbol"])
+        return dict(zip(es.ensembl, es.symbol))
+
+    for p in sorted((DATEN / "_referenz").glob("*.gtf*")):
+        m = {}
+        op = gzip.open if p.suffix == ".gz" else open
+        with op(p, "rt", encoding="utf-8", errors="replace") as f:
+            for ln in f:
+                if ln[0] == "#" or "	gene	" not in ln:
+                    continue
+                g = re.search(r'gene_id "([^".]+)', ln)
+                s = re.search(r'gene_name "([^"]+)', ln)
+                if g and s:
+                    m[g.group(1)] = s.group(1)
+        if m:
+            return m
+    raise RuntimeError(
+        "no Gencode reference found: neither the frozen "
+        "derived_data/R_intern/ensembl_symbol_gencode46.csv nor a GTF under "
+        "data_raw/_referenz/")
+
+
+def lade_dwt_je_punkt(sitzungen: "pathlib.Path | None" = None):
+    """Yield (point, per-gene table) for the 18 perturbation data sets.
+
+    Columns of each table: `gen` (Ensembl), `punkt`, `dWT`.
+
+    The per-gene dWT values are frozen in the repository as
+    `derived_data/reference_tables/20d_dWT_matrix.csv.gz`, so every analysis
+    built on them reproduces from the repository alone. The per-point session
+    files under `sitzungen` are read only if that frozen matrix is absent.
+
+    There is exactly one implementation of this loader, and it is this one.
+    """
+    gefroren = TABELLEN / "20d_dWT_matrix.csv.gz"
+    if gefroren.exists():
+        M = pd.read_csv(gefroren)
+        for pt, G in M.groupby("punkt", sort=True):
+            yield int(pt), G.reset_index(drop=True)
+        return
+    if sitzungen is None:
+        raise FileNotFoundError(
+            f"neither {gefroren} nor a session directory is available")
+    for f in sorted(pathlib.Path(sitzungen).glob("20d_gene_*.csv")):
+        G = pd.read_csv(f)
+        yield int(G.punkt.iloc[0]), G
+
+
 def konkordanz(delta: pd.Series,
                erwartet: pd.Series,
                hintergrund: pd.Series | None = None,
