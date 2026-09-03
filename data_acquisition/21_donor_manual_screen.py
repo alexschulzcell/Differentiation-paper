@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
 """Manual screening of the phase-M-D hits -- fixed as a CSV."""
 import pandas as pd, pathlib
-# --- path parameters (2026-08-23) ----------------------------------------
-# Previously hard-coded to ".../Scherenpaper_Folgeprojekt/derived_data/M_donoren"
-# -- this directory never existed there; the results live under
-# `Paper v2/Ergebnisse`. Overridable via PAPER_V2_ROOT.
+# --- path parameters ------------------------------------------------------
+# The output goes under the repository's derived_data/; the root is found from
+# this file's location, or from PAPER_V2_ROOT if set.
 import os
 _env = os.environ.get("PAPER_V2_ROOT")
 WURZEL = (pathlib.Path(_env) if _env

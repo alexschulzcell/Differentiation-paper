@@ -54,6 +54,7 @@ Output: derived_data/M_kalibrierung/eichung_achtzehn.csv
 """
 from __future__ import annotations
 
+import os
 import pathlib
 import sys
 
@@ -67,11 +68,15 @@ from _marker import ADIPOGEN, CHONDROGEN, MYOGEN, NAIV, OSTEOGEN  # noqa: E402
 from _module import ERGEBNISSE, kontrast, lade_dwt_je_punkt, gencode_karte  # noqa: E402
 
 WURZEL = pathlib.Path(__file__).resolve().parents[1]
-ANTRAG = WURZEL.parent
 AUS = ERGEBNISSE / "M_kalibrierung"
 AUS.mkdir(parents=True, exist_ok=True)
-GENE20D = (ANTRAG / "backups" / "_backup_2026-08-19_vor_paperaufbau" /
-           "20_Exploration" / "derived_data")
+# The per-gene dWT values come from the frozen matrix in this repository
+# (see 00_shared/_module.py::lade_dwt_je_punkt). The author's session tree is
+# only a fallback and is not part of this repository; point at it with
+# SCHERENPAPER_SITZUNGEN if you have it.
+GENE20D = (pathlib.Path(os.environ["SCHERENPAPER_SITZUNGEN"])
+           / "20_Exploration" / "derived_data"
+           if os.environ.get("SCHERENPAPER_SITZUNGEN") else None)
 
 MARKERSAETZE = {"OSTEOGEN": OSTEOGEN, "ADIPOGEN": ADIPOGEN,
                 "MYOGEN": MYOGEN, "CHONDROGEN": CHONDROGEN, "NAIV": NAIV}

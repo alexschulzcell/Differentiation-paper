@@ -27,6 +27,7 @@ Output: derived_data/M_donoren/{zellen.pkl, zellen_sichtung.csv,
 from __future__ import annotations
 
 import gzip
+import os
 import pathlib
 import pickle
 import re
@@ -46,7 +47,12 @@ AUS = ERGEBNISSE / "M_donoren"
 AUS.mkdir(parents=True, exist_ok=True)
 WURZEL = pathlib.Path(__file__).resolve().parents[1]
 ANTRAG = WURZEL.parent
-ALT19 = ANTRAG / "_backup_2026-08-19_vor_paperaufbau" / "03_Metrik_Elf_Punkte" / "data_raw"
+# Not part of this repository: the author's session tree, holding the
+# per-run intermediates of the original exploration. Point at it with
+# SCHERENPAPER_SITZUNGEN. This script is marked "needs raw data".
+SITZUNGEN = (pathlib.Path(os.environ["SCHERENPAPER_SITZUNGEN"])
+             if os.environ.get("SCHERENPAPER_SITZUNGEN") else ANTRAG)
+ALT19 = SITZUNGEN / "03_Metrik_Elf_Punkte" / "data_raw"
 
 MARKERSAETZE = {"OSTEOGEN": OSTEOGEN, "ADIPOGEN": ADIPOGEN,
                 "MYOGEN": MYOGEN, "CHONDROGEN": CHONDROGEN, "NAIV": NAIV}

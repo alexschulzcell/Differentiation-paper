@@ -24,13 +24,11 @@
 #
 # Output: derived_data/M_kalibrierung/kontraste/<groesse>_<punkt>.csv.gz
 # =============================================================================
-# --- path parameters (2026-08-23) ------------------------------------------
-# Previously a hard-coded path to ".../Scherenpaper_Folgeprojekt" (a
-# non-clonable Windows junction). Two different things sat in one variable:
-# the output location (actually under `Paper v2`) and the reference loader
-# (in the session tree). Both are now separate and overridable. The loader
-# comes from the repaired repo copy; the repository root falls back to the
-# parent of this script's directory.
+# --- path parameters -------------------------------------------------------
+# Two separate things, kept in separate variables: where the output goes (the
+# repository, found from this file's location or from PAPER_V2_ROOT) and where
+# the reference loader comes from (the session tree, PAPER_V2_SESSIONS), which
+# is not part of this repository.
 .skriptordner <- function() {
   a <- commandArgs(trailingOnly = FALSE)
   f <- sub("^--file=", "", a[grepl("^--file=", a)])

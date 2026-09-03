@@ -20,6 +20,7 @@ Output: derived_data/M_kalibrierung/{test1_*.csv, test2_snr.csv,
 """
 from __future__ import annotations
 
+import os
 import pathlib
 import sys
 
@@ -36,7 +37,12 @@ ANTRAG = WURZEL.parent
 AUS = ERGEBNISSE / "M_kalibrierung"
 AUS.mkdir(parents=True, exist_ok=True)
 KONTRASTE = AUS / "kontraste"
-GENE20D = (ANTRAG / "backups" / "_backup_2026-08-19_vor_paperaufbau" /
+# Not part of this repository: the author's session tree, holding the
+# per-run intermediates of the original exploration. Point at it with
+# SCHERENPAPER_SITZUNGEN. This script is marked "needs raw data".
+SITZUNGEN = (pathlib.Path(os.environ["SCHERENPAPER_SITZUNGEN"])
+             if os.environ.get("SCHERENPAPER_SITZUNGEN") else ANTRAG)
+GENE20D = (SITZUNGEN /
            "20_Exploration" / "derived_data")
 
 MIN_DATENSAETZE = 16       # universe U1, fixed in advance

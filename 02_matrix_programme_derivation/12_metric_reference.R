@@ -39,13 +39,10 @@ suppressMessages({ library(org.Hs.eg.db); library(AnnotationDbi)
 set.seed(20260818)
 
 # --- path parameters ---------------------------------------------------------
-# This script used to sit on hard-coded directories outside the repository --
-# among them a Windows junction (".../Scherenpaper_Folgeprojekt"); a junction
-# cannot be cloned or versioned, and its target was documented nowhere. As in
-# 10_load_reference_metric.R, the tree of raw analysis sessions is an explicit, overridable
-# parameter now. It holds 03_Metrik_Elf_Punkte (HIER) and the older sessions
-# that are read through ALT below. That tree is not part of the public
-# archive; set PAPER_V2_SESSIONS to point at it.
+# As in 10_load_reference_metric.R, the tree of raw analysis sessions is an
+# explicit, overridable parameter. It holds 03_Metrik_Elf_Punkte (HIER) and
+# the older sessions read through ALT below. That tree is not part of this
+# repository; set PAPER_V2_SESSIONS to point at it.
 SESSIONS <- Sys.getenv("PAPER_V2_SESSIONS")
 if (!nzchar(SESSIONS))
   stop("Set PAPER_V2_SESSIONS to the tree of raw analysis sessions. ",

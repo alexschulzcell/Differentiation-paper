@@ -8,14 +8,13 @@ import numpy as np
 import pandas as pd
 
 # --- path parameters (2026-08-23) -----------------------------------------
-# Previously a hard-coded path pointed to ".../DFG Antrag/
-# Scherenpaper_Folgeprojekt" -- a Windows junction, not clonable. Two
-# different trees sat in this one variable:
-#   * the session folders 25_Orthogonal_S11 / 26_Orthogonal_S12 -- they live
-#     under `Paper v2/_archiv/Sitzungen/`. The audit of 2026-08-22 had listed
-#     them as "missing"; they were just stored elsewhere.
-#   * `derived_data/manuscript`, `derived_data/reference_tables` -- these live under `Paper v2` itself.
-# Both are now separate and overridable via environment variables.
+# Two roots, kept separate because they are not the same tree:
+#   * the repository itself, which holds derived_data/ and results/ --
+#     found from this file's location, or from PAPER_V2_ROOT if set;
+#   * the author's session folders, which hold the per-run intermediates
+#     of the original exploration and are not part of this repository --
+#     SCHERENPAPER_SITZUNGEN if set. Steps that need them are marked
+#     "needs raw data" in the stage README.
 import os, pathlib
 _env = os.environ.get("PAPER_V2_ROOT")
 WURZEL = (pathlib.Path(_env) if _env

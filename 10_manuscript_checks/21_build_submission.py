@@ -412,6 +412,52 @@ def number_references(md: str, superscript: bool = True) -> str:
     return head + "".join(out)
 
 
+# Legends that stay over BMC's 300 words on purpose. Figure 2 carries nine
+# panels, and each of its statistics is reported with its own detection limit;
+# bringing it to 300 would mean moving numbers out from under the figure. The
+# deviation is stated in OPEN_ITEMS.md.
+LEGEND_OVER_BY_DECISION = {"Figure 2"}
+
+EXTENDED = re.compile(r"<!--x-->(.*?)<!--/x-->", re.S)
+
+
+def legend_short(md: str) -> str:
+    """The legend as the journal takes it: BMC allows 300 words per legend.
+
+    Passages marked <!--x-->...<!--/x--> in CAPTIONS_MAIN.md are the extended
+    detail -- method rationale, secondary statistics, caveats that the
+    Discussion also carries. They are removed here and delivered in full, and
+    verbatim, in Additional file 1, so nothing is lost: the legend keeps what
+    is needed to read the panel, the additional file keeps everything.
+    """
+    md = EXTENDED.sub("", md)
+    # Removing a clause can leave a doubled space, or a paragraph ending on the
+    # punctuation that introduced the removed clause.
+    md = re.sub(r"[ \t]{2,}", " ", md)
+    md = re.sub(r"[ \t]+([.,;:)])", r"\1", md)
+    md = re.sub(r"\(\s*\)", "", md)
+    md = re.sub(r"[ \t]*[;:,]\s*$", ".", md, flags=re.M)
+    md = re.sub(r"\.\s*\.", ".", md)
+    md = re.sub(r"[ \t]+$", "", md, flags=re.M)
+    return md
+
+
+def legend_full(md: str) -> str:
+    """The legend with every marked passage kept, markers removed."""
+    return EXTENDED.sub(lambda m: m.group(1), md)
+
+
+def legend_word_counts(md: str) -> "list[tuple[str, int]]":
+    """(figure, words) of each short legend body -- for the build report."""
+    out = []
+    for block in re.split(r"\n(?=## )", legend_short(md)):
+        if not block.startswith("## "):
+            continue
+        head, _, body = block.partition("\n")
+        name = head[3:].split("·")[0].strip()
+        out.append((name, len(body.split())))
+    return out
+
 def legends_as_list(md: str, prefix: str = "Figure") -> str:
     """Turn '## Figure 1 - Title' into the form the checklist asks for,
     'Figure 1. Title', and return the legends as ONE list."""
@@ -488,8 +534,17 @@ def build_manuscript(style: str, template: pathlib.Path,
     # and are not repeated in the manuscript. BMC Genomics carries none.
     md = re.sub(r"\n## Highlights\n.*?\n---\n", "\n", md, flags=re.S)
 
-    legends = legends_as_list(
-        (PAPER / "CAPTIONS_MAIN.md").read_text(encoding="utf-8"))
+    kapitel = (PAPER / "CAPTIONS_MAIN.md").read_text(encoding="utf-8")
+    legends = legends_as_list(legend_short(kapitel))
+    for name, n in legend_word_counts(kapitel):
+        if n <= 300 or name in LEGEND_OVER_BY_DECISION:
+            if n > 300:
+                print(f"  {name} legend {n} words -- over 300 by decision, "
+                      f"see OPEN_ITEMS.md")
+            continue
+        print(f"  ! {name} legend is {n} words; BMC allows 300. Mark more of "
+              f"it <!--x-->...<!--/x--> in CAPTIONS_MAIN.md, or add it to "
+              f"LEGEND_OVER_BY_DECISION.")
     if journal == "bmc":
         # BMC Genomics: Background/Results/Discussion/Conclusions/Methods/
         # abbreviations/additional files/Declarations/References. The figure
@@ -646,6 +701,20 @@ def build_supplement(style: str, template: pathlib.Path,
         parts.append("")
         parts += body.strip().split("\n")[1:]
         parts.append("")
+    # The extended main-figure legends. BMC caps a legend at 300 words, and
+    # the passages that do not fit are carried here in full rather than cut:
+    # every number of every main figure is in this section.
+    if journal == "bmc":
+        voll = legends_as_list(legend_full(
+            (PAPER / "CAPTIONS_MAIN.md").read_text(encoding="utf-8")))
+        parts += ["## Extended legends of the main figures", "",
+                  "The legends of Figures 1 to 6 in full. The manuscript",
+                  "carries them shortened to the 300 words the journal",
+                  "allows; the text below is the complete version, and no",
+                  "statistic appears here that is not also in Table S7.", ""]
+        parts += voll.split("\n")
+        parts.append("")
+
     parts += ["## Supplementary tables", "",
               "The supplementary tables are delivered as a single workbook,",
               f"`{tables_name(journal)}.xlsx`; each dataset below is one",
@@ -799,11 +868,17 @@ reframed and reformatted from an earlier Cell Press Multi-Journal submission
 
 Both are judgement calls; a reviewer or editor may ask for either to change.
 
-- **Figure legends exceed 300 words** (Figure 2 most: the sheet carries nine
-  panels). Every statistic in this paper is reported with its own detection
-  limit, and the legends are where those limits sit; cutting them to 300 words
-  would mean deleting numbers rather than prose. Table S7 in Additional file 2
-  lists every statistic with its limit as the machine-readable counterpart.
+- **One figure legend exceeds 300 words: Figure 2, at 419.** Figures 1 and
+  3 to 6 are within the limit (289, 276, 293, 211 and 219 words). The legends
+  are shortened at source: passages of method rationale, secondary statistics
+  and caveats the Discussion also carries are marked in
+  `manuscript/CAPTIONS_MAIN.md` and delivered verbatim, in full, as *Extended
+  legends of the main figures* in Additional file 1 — so nothing is cut, only
+  relocated. Figure 2 carries nine panels and every one of its statistics is
+  reported with its own detection limit; bringing it to 300 would mean moving
+  numbers out from under the figure, and we would rather keep them there.
+  Table S7 in Additional file 2 lists every statistic with its limit as the
+  machine-readable counterpart.
 - **Figure 2 is 230 mm tall and Figure 4 is 214 mm**, against BMC's 225 mm for
   figure plus legend. The sheets are drawn at 174 mm width, so they will be
   scaled slightly at BMC's 170 mm. Re-rendering was considered and not done, to
@@ -825,6 +900,16 @@ def main() -> int:
     a = ap.parse_args()
     if a.style is None:
         a.style = "vancouver" if a.journal == "bmc" else "cell"
+
+    if not (PAPER / "MANUSCRIPT.md").exists():
+        # The companion repository carries the analyses, not the manuscript.
+        # The two manuscript checks say so and exit 0; packaging must do the
+        # same rather than end in a traceback.
+        print("21_build_submission.py -- skipped")
+        print("  manuscript/MANUSCRIPT.md is not part of this checkout. The")
+        print("  submission package is built from the manuscript sources,")
+        print("  which are not distributed with the companion repository.")
+        return 0
 
     global OUT
     OUT = (pathlib.Path(a.out) if a.out else OUT_BY_JOURNAL[a.journal])

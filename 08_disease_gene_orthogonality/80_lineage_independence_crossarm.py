@@ -21,6 +21,7 @@ P2: does the module also carry in exactly those datasets whose OWN
 """
 from __future__ import annotations
 
+import os
 import pathlib
 import sys
 
@@ -36,7 +37,12 @@ ANTRAG = WURZEL.parent
 AUS = WURZEL / "derived_data" / "followup"
 AUS.mkdir(parents=True, exist_ok=True)
 
-GENE20D = (ANTRAG / "backups" / "_backup_2026-08-19_vor_paperaufbau" /
+# Not part of this repository: the author's session tree, holding the
+# per-run intermediates of the original exploration. Point at it with
+# SCHERENPAPER_SITZUNGEN. This script is marked "needs raw data".
+SITZUNGEN = (pathlib.Path(os.environ["SCHERENPAPER_SITZUNGEN"])
+             if os.environ.get("SCHERENPAPER_SITZUNGEN") else ANTRAG)
+GENE20D = (SITZUNGEN /
            "20_Exploration" / "derived_data")
 EICHUNG = pd.read_csv(WURZEL / "derived_data" / "M_kalibrierung" / "eichung_achtzehn.csv")
 KO = pd.read_csv(WURZEL / "derived_data" / "manuscript" / "f1_kohorte.csv")

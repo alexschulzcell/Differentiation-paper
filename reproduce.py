@@ -163,7 +163,12 @@ def main() -> int:
         return 1
     print(f"All {len(steps)} steps passed.")
     if any(g == "checks" for g, _, _ in steps):
-        print("The manuscript is consistent with the numbers just computed.")
+        if (ROOT / "manuscript" / "MANUSCRIPT.md").exists():
+            print("The manuscript is consistent with the numbers just "
+                  "computed.")
+        else:
+            print("Every number with a data source here matches what this run "
+                  "computed.")
     print("=" * 78)
     return 0
 

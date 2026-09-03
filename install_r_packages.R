@@ -7,7 +7,12 @@
 # installable names, and `install.packages(readLines("r_packages.txt"))` does
 # not work: it would try to install "ggplot2_4.0.3" and the comment lines.
 # This script reads that record, strips the version suffix, and routes each
-# package to CRAN or to Bioconductor, which is where four of them live.
+# package to CRAN or to Bioconductor.
+#
+# Only four of the recorded packages are needed for `python reproduce.py`
+# (ggplot2, patchwork, ragg, systemfonts). The rest belong to the stages
+# that read the raw data or query MSigDB; r_packages.txt says which is
+# which, and this script installs whatever is missing from either group.
 #
 # Versions are not pinned here. The figure scripts do not depend on the exact
 # versions; r_packages.txt states the ones the published figures were drawn
@@ -15,9 +20,11 @@
 
 CRAN_MIRROR <- "https://cloud.r-project.org"
 
-# These three are Bioconductor packages; install.packages() cannot find them.
-# matrixStats looks like one but is on CRAN.
-BIOC <- c("DESeq2", "rtracklayer", "GenomicRanges")
+# Bioconductor packages; install.packages() cannot find them. matrixStats and
+# msigdbr look like Bioconductor packages but are both on CRAN.
+BIOC <- c("DESeq2", "rtracklayer", "GenomicRanges", "GenomicFeatures",
+          "AnnotationDbi", "org.Hs.eg.db", "GO.db",
+          "TxDb.Hsapiens.UCSC.hg38.knownGene")
 
 root <- dirname(normalizePath(sub("^--file=", "", grep("^--file=",
   commandArgs(trailingOnly = FALSE), value = TRUE)[1])))

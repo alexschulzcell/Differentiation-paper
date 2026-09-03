@@ -13,8 +13,9 @@ orthogonal to the differentiation-dynamics axis the field searches on.
 
 **Scope.** This repository is the analysis companion: the code, the derived
 data, the panel data, the figures and the self-tests. The manuscript text is
-not part of it and is not needed to reproduce anything below. Where a step
-does need the manuscript sources, this README says so.
+not distributed with it and is not needed to reproduce anything below. A few
+steps do read the manuscript sources where they are present; each is marked,
+and each degrades to a stated skip where they are not.
 
 ---
 
@@ -115,16 +116,16 @@ the panel data, and to check a number you need only open its CSV.
 stands in it as a required value against `figures/data/*.csv`. If it exits 0,
 the repository is consistent with itself.
 
-Two of these three read the manuscript text where it is available, so they
-behave slightly differently here than in the authoring repository:
+Two of these three read the manuscript text where it is present, so their
+output depends on whether the checkout has it:
 
-* `10_check_numbers.py` runs **177** checks here. A further 10 compare figure
-  legends against the panel data; those need the manuscript sources and are
-  skipped, giving 187 in the authoring repository. The 177 cover every number
-  that has a data source in this repository.
+* `10_check_numbers.py` runs **177** checks without the manuscript sources and
+  **187** with them. The extra 10 compare the figure legends against the panel
+  data; the 177 cover every number that has a data source in this repository,
+  and are the ones a reader of the companion can verify.
 * `11_check_references.py` cross-checks the reference list against the running
-  text. With no manuscript here it reports that it was skipped and exits 0. The
-  result of the last run in the authoring repository stands in
+  text. Without the manuscript it prints why it was skipped and exits 0; the
+  result of the last authoring run is committed in
   [`results/reference_check.txt`](results/reference_check.txt): every reference
   cited, every citation resolved, nothing open in either direction.
 
@@ -218,7 +219,7 @@ lists every statistic in the paper with its own limit. A negative result
 without a limit is not reported.
 
 Each analysis is labelled confirmatory (preregistered), exploratory, or
-preregistered follow-up, in its figure legend and in Supplementary Table 8. The
+preregistered follow-up, in its figure legend and in Table S8. The
 main result is exploratory and says so in every legend.
 
 ---

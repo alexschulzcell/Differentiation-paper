@@ -1,10 +1,24 @@
-# R packages of the figure chain (R 4.4.3, as of 2026-08-24)
-# Versions taken from results/*_sessionInfo.txt.
+# R packages used by this repository (R 4.4.3, as of 2026-08-24).
+# Versions taken from results/*_sessionInfo.txt; `install_r_packages.R` reads
+# this record, strips the version suffix and routes each name to CRAN or
+# Bioconductor.
+
+# --- needed by the quickstart (09_figures/20 and /21, figure_style/) -------
 ggplot2_4.0.3
 patchwork_1.3.2
 ragg_1.5.2
 systemfonts_1.3.2
+
+# --- needed only by the stages that read the raw data or query MSigDB -----
+# Not required for `python reproduce.py`; listed so that an upstream stage can
+# be re-run without hunting for its dependencies.
 DESeq2_1.46.0
 matrixStats_1.5.0
 rtracklayer_1.66.0
 GenomicRanges_1.58.0
+GenomicFeatures_1.58.0
+AnnotationDbi_1.68.0
+org.Hs.eg.db_3.20.0
+GO.db_3.20.0
+TxDb.Hsapiens.UCSC.hg38.knownGene_3.20.0
+msigdbr_26.1.0

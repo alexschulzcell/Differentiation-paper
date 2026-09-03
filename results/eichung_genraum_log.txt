@@ -19,12 +19,12 @@ Pt Dataset                             A        B        C        D
 13 SERPINA3-KD osteo (GSE247528      nan    -0.74      nan    -0.77
 14 ERCC6L2-KD (GSE190542)           2.44     2.11     2.43     2.13
 15 TP53 LFS (GSE102732)             1.92    -0.31     1.90    -0.33
-16 YAP/TAZ-KD (GSE137035)           0.18     0.24     0.17     0.26
+16 YAP/TAZ-KD (GSE137035)           0.18     0.23     0.17     0.26
 17 RB1-mut isogen (GSE145235)       2.77     1.82     2.99     1.93
 18 RB1-del isogen (GSE145235)       1.79     1.27     1.98     1.39
 
 How far does each intervention move the z values (median |Delta z|)?
-  marker set swapped only (B - A): median 0.378 | maximum 2.226
+  marker set swapped only (B - A): median 0.378 | maximum 2.227
   background swapped only (C - A): median 0.017 | maximum 0.220
 
 Head count per variant (passing out of 18):

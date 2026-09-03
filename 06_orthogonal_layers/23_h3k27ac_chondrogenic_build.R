@@ -32,13 +32,10 @@ suppressMessages({
 })
 
 # --- path parameters (2026-08-23) ------------------------------------------
-# Previously a hard-coded path pointed to ".../DFG Antrag/
-# Scherenpaper_Folgeprojekt" -- a directory that only survived as a Windows
-# junction onto a backup and is therefore not clonable. Moreover, the
-# `data_raw/` read here and the `derived_data/` written here never actually
-# lived there, but under `Paper v2` itself.
-# WURZEL is from now on the project root; overridable via the environment
-# variable PAPER_V2_ROOT so the script runs from within a clone.
+# WURZEL is the repository root: the `data_raw/` this script reads and the
+# `derived_data/` it writes both sit under it. It is found from this file's
+# location, and can be pointed elsewhere with the environment variable
+# PAPER_V2_ROOT.
 .skriptordner <- function() {
   a <- commandArgs(trailingOnly = FALSE)
   f <- sub("^--file=", "", a[grepl("^--file=", a)])

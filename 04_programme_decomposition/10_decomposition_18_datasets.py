@@ -86,10 +86,13 @@ from _marker import ADIPOGEN, CHONDROGEN, MYOGEN, NAIV, OSTEOGEN  # noqa: E402
 from _module import lade_dwt_je_punkt  # noqa: E402
 from _module import kontrast, wilson  # noqa: E402
 
-SITZUNGEN = pathlib.Path(os.environ.get(
-    "SCHERENPAPER_SITZUNGEN",
-    str(WURZEL.parent / "backups" / "_backup_2026-08-19_vor_paperaufbau")))
-GENE20D = SITZUNGEN / "20_Exploration" / "derived_data"
+# The per-gene dWT values come from the frozen matrix in this repository
+# (see 00_shared/_module.py::lade_dwt_je_punkt). The author's session tree is
+# only a fallback and is not part of this repository; point at it with
+# SCHERENPAPER_SITZUNGEN if you have it.
+GENE20D = (pathlib.Path(os.environ["SCHERENPAPER_SITZUNGEN"])
+           / "20_Exploration" / "derived_data"
+           if os.environ.get("SCHERENPAPER_SITZUNGEN") else None)
 
 ERG = WURZEL / "derived_data"
 NEU = WURZEL / "derived_data" / "followup"
