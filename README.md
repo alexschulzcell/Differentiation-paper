@@ -1,6 +1,6 @@
 # What skeletal differentiation models measure: a shared matrix programme, separate from skeletal dysplasia genes
 
-*Companion repository for Schulz & Thiel (under submission; iScience / Cell Reports / Genome Biology). The manuscript itself is not part of this repository.*
+*Companion repository for Schulz & Thiel (manuscript under submission). The manuscript itself is not part of this repository.*
 
 A lineage-independent matrix programme runs in every published mesenchymal
 differentiation model we could reach — including where the model fails its own
@@ -13,7 +13,7 @@ negative result is reported together with the effect size it would have found.
 This repository is the submission companion: it holds the analysis code, the
 derived data behind every figure and table, the figures themselves and the
 preregistrations — everything needed to check every number in the manuscript,
-which is under submission (iScience, Cell Reports or Genome Biology) and
+which is under submission and
 therefore not part of this repository.
 
 ---
@@ -57,45 +57,48 @@ Every script derives the repository root from its own location; set
 `PAPER_V2_ROOT` only if you want to run against a copy somewhere else.
 
 ```bash
-python reference_implementations/56_calibration_eighteen.py  # the per-data-set calibration (2 of 18)
-python reference_implementations/manuscript/methods/20f_convergence_dwt.py  # reproduce the exploratory 173-gene module
-python code/29_calibration_gene_space.py                     # which gene space belongs under it
-python code/20_in_vivo_donor_test.py                         # donor-stratified in vivo test
-Rscript code/24a_gene_sets_v2_build.R                        # fix the broad gene sets (writes once)
-Rscript code/24_gene_sets_v2.R                               # Figure 2D against broad external sets
-python code/25_decomposition_eighteen.py                     # the decomposition on all 18 data sets
-python code/26_in_vivo_pseudobulk.py                         # atlas pseudobulk, cached (writes once)
-python code/27_in_vivo_gene_decomposition.py                 # is the in vivo trend broadly carried?
-python code/32_postnatal_growth_plate_annotation.py          # needs the raw archive and scanpy
-python code/33_postnatal_growth_plate_test.py                # postnatal anchor: not calibratable
-python code/34_hypertrophic_zone_sensitivity.py              # terminal-zone sensitivity
-python code/35_module_validation.py                          # held-out validation and robustness (Figure 2G,H)
-python code/36_external_validation.py                        # external validation on independent data (Figure 2I)
-python code/50_panel_data.py                                 # one CSV per main-figure panel
-python code/51_supplement_data.py                            # supplement panels and Tables S1-S14
-python code/52_s9_data.py                                    # the panels of supplementary Figure S9
-Rscript code/60_figures_main.R                               # F1 to F6, PDF and PNG
-Rscript code/61_figures_supplement.R                         # S1 to S9, PDF and PNG
-python code/62_graphical_abstract.py                         # graphical abstract, PDF and PNG
-python code/70_check_numbers.py                              # every number against its panel file
+python 03_lineage_calibration/10_calibration_18_datasets.py  # the per-data-set calibration (2 of 18)
+python 02_matrix_programme_derivation/31_derive_matrix_programme.py  # reproduce the exploratory 173-gene module
+python 03_lineage_calibration/12_calibration_gene_space.py                     # which gene space belongs under it
+python 07_in_vivo_growth_plate/12_fetal_donor_trend_test.py                         # donor-stratified in vivo test
+Rscript 06_orthogonal_layers/60_gene_sets_build.R                        # fix the broad gene sets (writes once)
+Rscript 06_orthogonal_layers/61_gene_set_enrichment.R                               # Figure 2D against broad external sets
+python 04_programme_decomposition/10_decomposition_18_datasets.py                     # the decomposition on all 18 data sets
+python 07_in_vivo_growth_plate/11_fetal_atlas_pseudobulk_store.py                         # atlas pseudobulk, cached (writes once)
+python 07_in_vivo_growth_plate/13_fetal_gene_decomposition.py                 # is the in vivo trend broadly carried?
+python 07_in_vivo_growth_plate/20_postnatal_growth_plate_annotation.py          # needs the raw archive and scanpy
+python 07_in_vivo_growth_plate/21_postnatal_growth_plate_test.py                # postnatal anchor: not calibratable
+python 07_in_vivo_growth_plate/14_hypertrophic_zone_sensitivity.py              # terminal-zone sensitivity
+python 05_programme_validation/10_heldout_and_robustness.py                          # held-out validation and robustness (Figure 2G,H)
+python 05_programme_validation/11_external_differentiation_systems.py                        # external validation on independent data (Figure 2I)
+python 09_figures/10_panel_data_main.py                                 # one CSV per main-figure panel
+python 09_figures/11_panel_data_supplement.py                            # supplement panels and Tables S1-S14
+python 09_figures/12_panel_data_second_cohort.py                                    # the panels of supplementary Figure S9
+Rscript 09_figures/20_figures_main.R                               # F1 to F6, PDF and PNG
+Rscript 09_figures/21_figures_supplement.R                         # S1 to S9, PDF and PNG
+python 09_figures/30_graphical_abstract.py                         # graphical abstract, PDF and PNG
+python 10_manuscript_checks/10_check_numbers.py                              # every number against its panel file
 ```
 
-`70_check_numbers.py` is the self-test: every load-bearing number of the text
+`10_check_numbers.py` is the self-test: every load-bearing number of the text
 and of the legends stands in it as a required value against
 `figures/data/*.csv`. If it exits 0, the repository is consistent with the
 numbers quoted in the manuscript. (The manuscript-side checks — references
 cited in both directions, language rules — live with the manuscript sources
 and are not part of this repository.)
 
-The panel and figure steps (`50_` upward) read only stored outputs under
-`derived_data/` and `results/`; they recompute nothing and take seconds to
-about three minutes in total. Three steps need external input and are marked in
-[`code/00_setup.md`](code/00_setup.md): `24a_gene_sets_v2_build.R` (MSigDB and
-`org.Hs.eg.db`, writes once), `26_in_vivo_pseudobulk.py` (the 7.6 GB limb atlas,
-writes once) and `28_geo_primary_publications.py` (NCBI E-utilities,
-bibliography only). Re-running the upstream analyses additionally needs the
-roughly 98 GB of raw data under `data_raw/`, which is not part of this
-repository; every accession is listed in
+Everything from stage `04` downward reads only stored outputs under
+`derived_data/` and `results/`; it recomputes nothing, runs in seconds to about
+three minutes, and reproduces from this repository alone. Two steps need
+external input the first time and are marked in [`00_setup.md`](00_setup.md):
+`06_orthogonal_layers/60_gene_sets_build.R` (MSigDB and `org.Hs.eg.db`, writes
+the frozen gene sets once) and `07_in_vivo_growth_plate/11_fetal_atlas_pseudobulk_store.py`
+(the 7.6 GB limb atlas, writes once). The bibliographic tables and the
+growth-plate zone-marker sets are frozen in the repository under
+`derived_data/reference_tables/`, so no literature-fetching script runs at build
+time. Re-running the upstream analyses (stages `01`–`03`, `06`–`08`, and
+`data_acquisition/`) additionally needs the roughly 98 GB of raw data under
+`data_raw/`, which is not part of this repository; every accession is listed in
 `figures/data/TS1_eighteen_datasets.csv`.
 
 Environments: Python 3.12 (`requirements.txt`) and R 4.4 (`r_packages.txt`).
@@ -111,9 +114,9 @@ set and was not predefined before this paper. It was identified in the
 explicitly exploratory `20_Exploration` analysis of the same 18 perturbation
 data sets and then frozen for every downstream analysis.
 
-`20d_genes.R` produces the per-gene, per-data-set `dWT` values. The archived
+`30_gene_level_convergence_build.R` produces the per-gene, per-data-set `dWT` values. The archived
 selection step is preserved in section (3) of
-`reference_implementations/manuscript/methods/20i_dexamethasone.R`:
+`02_matrix_programme_derivation/32_dexamethasone_confounder.R`:
 
 1. retain genes with a valid `dWT` in at least 14 of 18 data sets (12,563 genes);
 2. centre each data-set column on its median within that universe;
@@ -129,7 +132,7 @@ identity, `n`, `v` and `ri` against the frozen
 same 18 data sets define it; the subsequent uses treat the resulting table as
 fixed and do not reselect genes.
 
-This formation step is distinct from `01_internal_gene_map.py`, whose
+This formation step is distinct from `11_internal_gene_map.py`, whose
 15-of-18 filter belongs to its separate continuous gene-map analysis and does
 not define the 173-gene module.
 
@@ -137,17 +140,28 @@ not define the 173-gene module.
 
 ## Layout
 
+The pipeline is one numbered sequence of stages, each a folder at the
+repository root, ordered the way the biology is built up. Every metric is
+implemented exactly once, in `00_shared/`; no statistic is computed twice.
+
 ```
-code/                       the pipeline: 00_setup, 20-36 analyses,
-                            50-52 panel data, 60-62 figures, 70 numbers check
-reference_implementations/  one implementation per metric; nothing is
-                            computed twice. manuscript/methods holds the
-                            reference implementation of the metric itself
+00_shared/                  the metric, the marker sets and the enrichment
+                            test — the single implementation everything calls
+01_expression_landscape/    the internal per-gene RNA layer (continuous)
+02_matrix_programme_derivation/  derive and freeze the 173-gene programme
+03_lineage_calibration/     can the 18 models even reach their own lineage?
+04_programme_decomposition/  the three-way decomposition over all 18 data sets
+05_programme_validation/    held-out re-derivation, robustness, external data
+06_orthogonal_layers/       methylation, chromatin accessibility, H3K27ac
+07_in_vivo_growth_plate/    fetal limb atlas and postnatal growth plate
+08_disease_gene_orthogonality/  human-genetics anchor, patient and donor phases
+09_figures/                 panel data, main and supplementary figures, GA
+10_manuscript_checks/       number/reference/language checks and packaging
+data_acquisition/           GEO cohort search and screening — metadata only,
+                            no analysis, nothing downloaded here
 figure_style/               the publication style of the figures and the
                             rules they follow
-figures/                    F1-F6 and S1-S9 as PDF and PNG at 600 dpi, the
-                            graphical abstract GA at 300 dpi (1200 x 1200 px,
-                            the iScience requirement);
+figures/                    F1-F6 and S1-S9 as PDF and PNG at 600 dpi;
                             figures/data/ holds one CSV per panel and per
                             supplementary table
 derived_data/               stored analysis outputs that the pipeline reads
@@ -226,8 +240,7 @@ reported under their stated analysis status.
 
 ## Citation and licence
 
-This repository accompanies a manuscript under preparation for a multi-journal
-submission (iScience, Cell Reports or Genome Biology). Citation information will
+This repository accompanies a manuscript under submission. Citation information will
 be added on acceptance;
 [`CITATION.cff`](CITATION.cff) already carries the machine-readable form for
 the repository itself.

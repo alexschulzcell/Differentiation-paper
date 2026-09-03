@@ -8,20 +8,20 @@ panel file has and which source it came from.
 
 | file | produced by | used in |
 |---|---|---|
-| `invivo_spendertest.csv` | `code/20_in_vivo_donor_test.py` | Fig. 3C, panel `F3C` |
-| `eichung_achtzehn.csv` | `reference_implementations/56_calibration_eighteen.py` | Fig. 1D, Table S3 |
-| `eichung.csv` | `reference_implementations/54b_cells.py` | Fig. 1E, Table S3 |
-| `statistik.csv`, `auslassung.csv`, `zirkularitaet.csv` | `reference_implementations/54c_ladder.py`, `54d_circularity.py` | Fig. S5A, S5B |
-| `B_atac_modultest_final.csv`, `B_atac_eichung_je_achse.csv` | `reference_implementations/24_atac_calibration.py` | Fig. 2E/2F, Fig. S6A |
+| `invivo_spendertest.csv` | `07_in_vivo_growth_plate/12_fetal_donor_trend_test.py` | Fig. 3C, panel `F3C` |
+| `eichung_achtzehn.csv` | `03_lineage_calibration/10_calibration_18_datasets.py` | Fig. 1D, Table S3 |
+| `eichung.csv` | `08_disease_gene_orthogonality/31_donor_cells_build_calibrate.py` | Fig. 1E, Table S3 |
+| `statistik.csv`, `auslassung.csv`, `zirkularitaet.csv` | `08_disease_gene_orthogonality/32_donor_statistic_ladder.py`, `33_donor_circularity_control.py` | Fig. S5A, S5B |
+| `B_atac_modultest_final.csv`, `B_atac_eichung_je_achse.csv` | `06_orthogonal_layers/21_atac_calibration.py` | Fig. 2E/2F, Fig. S6A |
 | `figures_*_sessionInfo.txt` | the two figure scripts | reproducibility record |
-| `panel_data_log.txt`, `supplement_data_log.txt` | `code/50_`, `code/51_` | reproducibility record |
-| `gensaetze_v2_*.csv` | `code/24_gene_sets_v2.R` | Fig. 2D, Tables S9/S9b |
-| `zerlegung_achtzehn*.csv/.txt` | `code/25_decomposition_eighteen.py` | Fig. 2F, Table S10 |
-| `invivo_pseudobulk.csv.gz` | `code/26_in_vivo_pseudobulk.py` | input to `27_`; cached atlas pseudobulk |
-| `invivo_genzerlegung*.csv/.txt` | `code/27_in_vivo_gene_decomposition.py` | Fig. 3C legend, Tables S11/S11b |
-| `data_raw/_referenz/geo_primaerarbeiten.csv` | `code/28_geo_primary_publications.py` | Table S12 |
-| `data_raw/_referenz/gensaetze_v2/` | `code/24a_gene_sets_v2_build.R` | the fixed broad gene sets, with source/version/date |
-| `numbers_check.txt`, `reference_check.txt`, `language_check.txt` | `code/70_`, `71_`, `72_` | the three self-tests |
+| `panel_data_log.txt`, `supplement_data_log.txt` | `09_figures/10_panel_data_main.py`, `11_panel_data_supplement.py` | reproducibility record |
+| `gensaetze_v2_*.csv` | `06_orthogonal_layers/61_gene_set_enrichment.R` | Fig. 2D, Tables S9/S9b |
+| `zerlegung_achtzehn*.csv/.txt` | `04_programme_decomposition/10_decomposition_18_datasets.py` | Fig. 2F, Table S10 |
+| `invivo_pseudobulk.csv.gz` | `07_in_vivo_growth_plate/11_fetal_atlas_pseudobulk_store.py` | input to `13_fetal_gene_decomposition.py`; cached atlas pseudobulk |
+| `invivo_genzerlegung*.csv/.txt` | `07_in_vivo_growth_plate/13_fetal_gene_decomposition.py` | Fig. 3C legend, Tables S11/S11b |
+| `derived_data/reference_tables/geo_primary_publications*.csv` | frozen bibliographic metadata (no fetch script in the repo) | Table S12 |
+| `data_raw/_referenz/gensaetze_v2/` | `06_orthogonal_layers/60_gene_sets_build.R` | the fixed broad gene sets, with source/version/date |
+| `numbers_check.txt`, `reference_check.txt`, `language_check.txt` | `10_manuscript_checks/10_`, `11_`, `12_` | the three self-tests |
 
 ## Files that need a warning
 
@@ -30,7 +30,7 @@ discovering them again.
 
 | file | status |
 |---|---|
-| `derived_data/followup/ws8_atac_linienunabhaengigkeit.csv` | **orphan, provenance resolved.** No script in the project produces it. It is a condensation of `B_atac_modultest_final.csv` (rows with the background null) and `B_atac_eichung_je_achse.csv`, verified character-for-character by `code/50_panel_data.py`, which now regenerates it as `figures/data/F2E_atac_per_axis.csv`. **Do not cite the orphan file as a source.** |
+| `derived_data/followup/ws8_atac_linienunabhaengigkeit.csv` | **orphan, provenance resolved.** No script in the project produces it. It is a condensation of `B_atac_modultest_final.csv` (rows with the background null) and `B_atac_eichung_je_achse.csv`, verified character-for-character by `09_figures/10_panel_data_main.py`, which now regenerates it as `figures/data/F2E_atac_per_axis.csv`. **Do not cite the orphan file as a source.** |
 | `derived_data/followup/ws5_bilanz.csv` | **hand-made**, the companion table of the WS5 audit. Not a computation and not reproducible by script. Marked as such in the audit itself. |
 | `derived_data/M_diagnosen/punkte.csv` | **header row only, no data.** That is not an omission — it is the finding: the diagnosis screen produced no new points. Kept for the record, used nowhere. |
 | `derived_data/manuscript/f6_forest.csv` | no unambiguous producing script. Its content is contained in `f6_s12_fixed173_by_study.csv`, which **was** reproduced bit-identically on 2026-08-23. Use that file instead. |
@@ -49,12 +49,12 @@ and `bestanden` follows the preregistered z ≥ 2 rule. Head count **2 of 18**
 instead of 3. The full account, with the decomposition that isolates the
 cause, is kept in the project's internal audit records (working archive, not
 published); the rule itself is stated in the header of
-`code/29_calibration_gene_space.py`.
+`03_lineage_calibration/12_calibration_gene_space.py`.
 
 | file | status |
 |---|---|
 | `eichung_achtzehn_MIN_N15_ALT.csv` | **superseded.** The pre-2026-08-24 run under the MIN_N ≥ 15 filter. Kept for the record; **not a source of numbers.** |
-| `eichung_genraum.csv` | the four-variant decomposition behind that decision (`code/29_calibration_gene_space.py`) |
+| `eichung_genraum.csv` | the four-variant decomposition behind that decision (`03_lineage_calibration/12_calibration_gene_space.py`) |
 
 ## Files that must not be used as a source of numbers
 

@@ -1,0 +1,35 @@
+  Punkt  1  LAMA5-KO (chondr)            chondrogen   Konkordanz 0.939  z +11.00  p 0.0006664  (n=163)
+  Punkt  2  LAMA5-KO (osteo)             osteogen     Konkordanz 0.951  z +11.40  p 0.0006664  (n=163)
+  Punkt  3  FN1 FNC123R                  chondrogen   Konkordanz 1.000  z +12.80  p 0.0006664  (n=173)
+  Punkt  4  FN1 FNC231W                  chondrogen   Konkordanz 1.000  z +12.80  p 0.0006664  (n=173)
+  Punkt  5  SERPINA3-KD                  chondrogen   Konkordanz 1.000  z  +5.25  p 0.0006664  (n=29)
+  Punkt  6  MIR181A1HG-KD                osteogen     Konkordanz 0.971  z +12.16  p 0.0006664  (n=170)
+  Punkt  7  LINC01638-KD (GSE227512)     osteogen     Konkordanz 0.978  z +11.35  p 0.0006664  (n=135)
+  Punkt  8  ARSB / MPS VI (GSE218101)    chondrogen   Konkordanz 0.805  z  +8.08  p 0.0006664  (n=169)
+  Punkt  9  ACVR1 / FOP (GSE221128)      chondrogen   Konkordanz 0.916  z +10.24  p 0.0006664  (n=167)
+  Punkt 10  RNF4-KD (GSE205432)          osteogen     Konkordanz 0.925  z +11.30  p 0.0006664  (n=173)
+  Punkt 11  RB1 +/- (GSE245585)          osteogen     Konkordanz 0.886  z  +8.13  p 0.0006664  (n=166)
+  Punkt 12  Nonunion (GSE226565)         osteogen     Konkordanz 0.935  z +13.10  p 0.0006664  (n=169)
+  Punkt 13  SERPINA3-KD osteo (GSE247528 osteogen     Konkordanz 1.000  z  +5.48  p 0.0006664  (n=31)
+  Punkt 14  ERCC6L2-KD (GSE190542)       osteogen     Konkordanz 0.971  z +12.54  p 0.0006664  (n=171)
+  Punkt 15  TP53 LFS (GSE102732)         osteogen     Konkordanz 0.936  z +11.27  p 0.0006664  (n=173)
+  Punkt 16  YAP/TAZ-KD (GSE137035)       osteogen     Konkordanz 0.732  z  +5.52  p 0.0006664  (n=142)
+  Punkt 17  RB1-mut isogen (GSE145235)   osteogen     Konkordanz 0.971  z +12.45  p 0.0006664  (n=173)
+  Punkt 18  RB1-del isogen (GSE145235)   osteogen     Konkordanz 0.977  z +12.30  p 0.0006664  (n=171)
+
+==============================================================================
+P2 -- traegt das Modul in den Datensaetzen, deren EIGENE
+      Linienmarker-Eichung NICHT bestanden ist?
+==============================================================================
+  bestanden (n=3): Konkordanz-z Median 12.45, Anteil p<0.05 gerichtet: 3/3
+  durchgefallen (n=15): Konkordanz-z Median 11.30, Anteil p<0.05 gerichtet: 15/15
+  GEPOOLT durchgefallen  (n=15 Datensaetze): Konkordanz 1.000  z +12.94  p  0.00025  n_gene=173
+  GEPOOLT bestanden      (n=3 Datensaetze): Konkordanz 0.994  z +13.06  p  0.00025  n_gene=173
+
+==============================================================================
+P1 -- Kreuzkonkordanz zwischen den Armen (osteogen, chondrogen);
+      ADIPOGEN/MYOGEN sind unter den 18 Datensaetzen NICHT vertreten.
+==============================================================================
+  GEPOOLT arm_osteogen   (n=12 Datensaetze): Konkordanz 1.000  z +13.18  p  0.00025  n_gene=173
+  GEPOOLT arm_chondrogen (n=6 Datensaetze): Konkordanz 1.000  z +12.66  p  0.00025  n_gene=173
+  Arm-Arm Spearman-rho der Modulgene: 0.622 (Null-Mittel 0.091 +- 0.076, z +7.03, p 0.0003999)
