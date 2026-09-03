@@ -1,6 +1,6 @@
 11_check_references.py -- two-way cross-check
   references in the list    : 51
-  citations in running text : 49 (48 distinct)
+  citations in running text : 51 (48 distinct)
 
 (a) References NOT cited in the text
     none -- every reference is cited.

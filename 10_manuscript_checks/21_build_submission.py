@@ -6,14 +6,16 @@ Purpose   Rebuilds submission/ from scratch. File names and structure follow
           the target journal's file requirements:
 
             Manuscript.docx
-            highlights.docx
-            Graphical abstract.tif
             Cover letter.docx
-            KRT.docx                    (from 10_manuscript_checks/20_key_resources_table.py)
             Figure 1.tif ... Figure 6.tif
-            Supplemental Information.docx / .pdf
-            Supplementary_Tables.xlsx   (Tables S1-S14)
-            OPEN_ITEMS.md               (what only the authors can supply)
+            Additional file 1.docx / .pdf   (Figures S1-S9 with legends)
+            Additional file 2.xlsx          (Tables S1-S14)
+            OPEN_ITEMS.md                   (what only the authors can supply)
+
+          With --journal cell the names revert to Cell Press's own
+          (Supplemental Information, Supplementary_Tables) and the package
+          additionally carries highlights.docx, Graphical abstract.tif and
+          KRT.docx (the latter from 20_key_resources_table.py).
 
 Templates The two Word templates are generated here from pandoc's own default
           reference document and patched in place, so the build depends on
@@ -36,7 +38,8 @@ Images    The panels are drawn at 600 dpi (figure_style/publication_style.R).
 Inputs    manuscript/MANUSCRIPT.md, CAPTIONS_MAIN.md, CAPTIONS_SUPPLEMENT.md,
           COVER_LETTER.md, figures/F*.png, figures/S*.png, figures/GA.png,
           figures/data/TS*.csv
-Output    submission/
+Output    submission_BMC_Genomics/ beside the repository
+          (submission_CellPress_MJS/ with --journal cell)
 Runtime   about a minute (the PDF conversion needs Word)
 """
 from __future__ import annotations
@@ -60,7 +63,13 @@ ROOT = (pathlib.Path(_env) if _env
 PAPER = ROOT / "manuscript"
 FIG = ROOT / "figures"
 DAT = FIG / "data"
-OUT = ROOT / "submission"
+# The built package is a product, not a source, so it is written beside the
+# repository rather than into it -- one folder per target journal, so a
+# delivered package cannot be overwritten by a build for a different journal.
+# `--out` overrides this.
+OUT_BY_JOURNAL = {"bmc": ROOT.parent / "submission_BMC_Genomics",
+                  "cell": ROOT.parent / "submission_CellPress_MJS"}
+OUT = OUT_BY_JOURNAL["bmc"]
 
 PANDOC = shutil.which("pandoc") or str(
     pathlib.Path.home() / ".local" / "bin" / "pandoc.exe")
@@ -270,6 +279,56 @@ PRIMARY_LIST = ("<!-- PRIMARY_SOURCES:START -->", "<!-- PRIMARY_SOURCES:END -->"
 PRIMARY_CITE = ("<!-- PRIMARY_CITATIONS:START -->", "<!-- PRIMARY_CITATIONS:END -->")
 
 
+def _flatten_citations(md: str) -> str:
+    """Put every citation bracket on one line before it is numbered.
+
+    CITATION deliberately refuses to match across a newline, so that a stray
+    bracket in a table or a code block cannot be mistaken for a citation. The
+    cost is that a citation the source happens to wrap -- [Duggan 2021;
+    Savarirayan et al. 2024] over two lines -- is silently left in author-year
+    form in the delivered document. Flattening first removes that trap, and
+    non-breaking spaces inside the bracket become ordinary ones so that the
+    entry lookup sees the text it expects.
+    """
+    def eine(m: "re.Match[str]") -> str:
+        roh = m.group(1)
+        if "\n" not in roh:
+            return m.group(0)
+        flach = re.sub(r"\s+", " ", roh).strip()
+        return f"[{flach}]" if _is_citation(flach) else m.group(0)
+
+    return re.sub(r"\[([^\[\]]{4,1000})\]", eine, md, flags=re.S)
+
+
+def _compress(nums: "list[int]") -> str:
+    """Render a citation's numbers the way a numbered style expects them.
+
+    Three or more consecutive numbers become a range, so the collective
+    citation of the eighteen datasets' primary publications reads [11-36]
+    rather than as twenty-six comma-separated numbers.
+    """
+    teile: list[str] = []
+    lauf: list[int] = []
+
+    def spuele() -> None:
+        if not lauf:
+            return
+        if len(lauf) >= 3:
+            teile.append(f"{lauf[0]}-{lauf[-1]}")
+        else:
+            teile.extend(str(n) for n in lauf)
+        lauf.clear()
+
+    for n in sorted(dict.fromkeys(nums)):
+        if lauf and n == lauf[-1] + 1:
+            lauf.append(n)
+        else:
+            spuele()
+            lauf.append(n)
+    spuele()
+    return ",".join(teile)
+
+
 def number_references(md: str, superscript: bool = True) -> str:
     """Turn author-year citations into consecutive numbers.
 
@@ -331,9 +390,10 @@ def number_references(md: str, superscript: bool = True) -> str:
                 raise RuntimeError(f"citation without an entry: {single!r}")
             if k not in keys:
                 keys.append(k)
-        return "^" + ",".join(str(number_for(k)) for k in keys) + "^" \
-            if superscript else "[" + ",".join(str(number_for(k)) for k in keys) + "]"
+        nums = _compress([number_for(k) for k in keys])
+        return f"^{nums}^" if superscript else f"[{nums}]"
 
+    head = _flatten_citations(head)
     head = CITATION.sub(replace, head)
 
     # Uncited main references are appended rather than dropped; the two-way
@@ -390,8 +450,12 @@ def docx_to_pdf(source: pathlib.Path) -> pathlib.Path | None:
     r = subprocess.run(["powershell", "-NoProfile", "-Command", ps],
                        capture_output=True, text=True)
     if r.returncode != 0 or not target.exists():
-        print("  ! PDF skipped (Word not available):",
-              r.stderr.strip()[:200])
+        # Word reports through either stream, and on a hard COM failure through
+        # neither -- so guard both. A missing PDF is a skipped step, never a
+        # reason to abort the build: the journal wants the editable file.
+        grund = ((r.stderr or "") + (r.stdout or "")).strip()
+        print("  ! PDF skipped (Word unavailable or busy):",
+              grund[:200] or f"no output, exit {r.returncode}")
         return None
     return target
 
@@ -402,6 +466,18 @@ def png_to_tif(source: pathlib.Path, target: pathlib.Path,
     """PNG to TIFF with LZW, without resampling -- repackaging only."""
     im = Image.open(source).convert("RGB")
     im.save(target, format="TIFF", compression="tiff_lzw", dpi=(dpi, dpi))
+
+
+def supplement_name(journal: str) -> str:
+    """BMC Genomics cites supplementary material by additional-file name, and
+    the file itself must carry that name. Cell Press calls it Supplemental
+    Information."""
+    return ("Additional file 1" if journal == "bmc"
+            else "Supplemental Information")
+
+
+def tables_name(journal: str) -> str:
+    return "Additional file 2" if journal == "bmc" else "Supplementary_Tables"
 
 
 # ------------------------------------------------------------ the parts
@@ -416,12 +492,13 @@ def build_manuscript(style: str, template: pathlib.Path,
         (PAPER / "CAPTIONS_MAIN.md").read_text(encoding="utf-8"))
     if journal == "bmc":
         # BMC Genomics: Background/Results/Discussion/Conclusions/Methods/
-        # Declarations/References; the main figure legends as one list after the
-        # main text, just before the Declarations; the supplement is a separate
-        # file, so no "supplemental item titles" block in the manuscript.
-        md = md.replace("\n## Declarations\n",
+        # abbreviations/additional files/Declarations/References. The figure
+        # legends go into the main document -- BMC keeps them out of the
+        # graphic files -- directly after the Methods. The supplement is a
+        # separate additional file, so no "supplemental item titles" block.
+        md = md.replace("\n## List of abbreviations\n",
                         "\n## Figure legends\n\n" + legends
-                        + "\n\n## Declarations\n", 1)
+                        + "\n\n## List of abbreviations\n", 1)
     else:
         # Cell Press: figure legends between the discussion and the STAR
         # Methods, and the supplemental item titles before the references.
@@ -432,9 +509,14 @@ def build_manuscript(style: str, template: pathlib.Path,
                         "\n" + supplemental_item_titles() + "\n## References\n", 1)
 
     md = number_references(md, superscript=(style == "cell"))
-    md_to_docx(strip_rules(md), OUT / "Manuscript.docx", template, style=style)
+    target = OUT / "Manuscript.docx"
+    md_to_docx(strip_rules(md), target, template, style=style)
     print(f"  Manuscript.docx           {len(md.split())} words, "
           f"{'superscript numbers' if style == 'cell' else 'numbers in brackets'}")
+    # The journal wants the editable file; the PDF is for reading the package
+    # before it is uploaded.
+    if docx_to_pdf(target):
+        print("  Manuscript.pdf            written")
 
 
 def supplemental_item_titles() -> str:
@@ -506,8 +588,8 @@ def build_figures(journal: str = "cell") -> None:
     print("  Graphical abstract.tif    RGB, LZW, 1200x1200 px at 300 dpi")
 
 
-def build_tables() -> pathlib.Path:
-    target = OUT / "Supplementary_Tables.xlsx"
+def build_tables(journal: str = "cell") -> pathlib.Path:
+    target = OUT / f"{tables_name(journal)}.xlsx"
     with pd.ExcelWriter(target, engine="openpyxl") as w:
         contents = []
         for short, name, title in TABLES:
@@ -523,11 +605,12 @@ def build_tables() -> pathlib.Path:
                              "related to figure": RELATED.get(short, 1),
                              "rows": len(d), "columns": d.shape[1]})
         pd.DataFrame(contents).to_excel(w, sheet_name="Contents", index=False)
-    print(f"  Supplementary_Tables.xlsx {len(TABLES)} tables")
+    print(f"  {target.name} {len(TABLES)} tables")
     return target
 
 
-def build_supplement(style: str, template: pathlib.Path) -> None:
+def build_supplement(style: str, template: pathlib.Path,
+                     journal: str = "cell") -> None:
     """The S figures with their legends, plus the table legends, in ONE
     document: one figure per page, legend kept with its figure."""
     legends = (PAPER / "CAPTIONS_SUPPLEMENT.md").read_text(encoding="utf-8")
@@ -540,7 +623,13 @@ def build_supplement(style: str, template: pathlib.Path) -> None:
 
     # The checklist: no article title, no author list, no page numbers in the
     # supplement -- the publisher puts a cover sheet in front of it.
-    parts = ["# Supplemental Information", "", "## Supplemental Figures", ""]
+    if journal == "bmc":
+        parts = ["# Additional file 1", "",
+                 "Supplementary figures S1-S9 with their legends.", "",
+                 "## Supplementary figures", ""]
+    else:
+        parts = ["# Supplemental Information", "", "## Supplemental Figures",
+                 ""]
     blocks = re.split(r"(?m)^## Figure (S\d) ", legends)
     head = blocks[0].strip()
     if head:
@@ -557,21 +646,21 @@ def build_supplement(style: str, template: pathlib.Path) -> None:
         parts.append("")
         parts += body.strip().split("\n")[1:]
         parts.append("")
-    parts += ["## Supplemental Tables", "",
+    parts += ["## Supplementary tables", "",
               "The supplementary tables are delivered as a single workbook,",
-              "`Supplementary_Tables.xlsx`; each dataset below is one",
+              f"`{tables_name(journal)}.xlsx`; each dataset below is one",
               "individually named sheet in it (S1_datasets through",
               "S14_levels_book, plus S9b and S11b).", ""]
     if table_part:
         parts += table_part.strip().split("\n")
         parts.append("")
 
-    target = OUT / "Supplemental Information.docx"
+    target = OUT / f"{supplement_name(journal)}.docx"
     md_to_docx("\n".join(parts), target, template, style=style)
     typeset_supplement(target)
-    print(f"  Supplemental Information.docx  9 panels + {len(TABLES)} tables")
+    print(f"  {target.name}  9 panels + {len(TABLES)} tables")
     if docx_to_pdf(target):
-        print("  Supplemental Information.pdf   written")
+        print(f"  {target.stem}.pdf   written")
 
 
 def typeset_supplement(path: pathlib.Path) -> None:
@@ -647,9 +736,9 @@ def build_open_items() -> None:
 
 OPEN = """# Submission checklist -- what is still open
 
-Written by `10_manuscript_checks/21_build_submission.py`. Everything in `submission/` is built
-from the sources and is complete. The items below remain, and none of them is
-something a script can do.
+Written by `10_manuscript_checks/21_build_submission.py`. Every file beside
+this one is built from the sources and is complete. The items below remain,
+and none of them is something a script can do.
 
 Target journal: **BMC Genomics** (Research Article). The manuscript was
 reframed and reformatted from an earlier Cell Press Multi-Journal submission
@@ -677,7 +766,9 @@ reframed and reformatted from an earlier Cell Press Multi-Journal submission
       Erlangen-Nuernberg, Germany.
 - [x] **Funding.** DFG grant TH896/7-1 (C.T.T.).
 - [x] **Competing interests.** None declared (in Declarations).
-- [x] **Generative AI use** disclosed in the Acknowledgements.
+- [x] **Generative AI use** documented in Methods (*Use of large language
+      models*), which is where BMC asks for it, and pointed at from the
+      Acknowledgements.
 - [x] **Ethics.** No new human material or data; oversight for each reanalysed
       data set is documented in its primary publication, which is cited. The
       sex or gender limitation of the single-donor series is stated.
@@ -690,14 +781,42 @@ reframed and reformatted from an earlier Cell Press Multi-Journal submission
 - [x] `python 10_manuscript_checks/10_check_numbers.py` green
 - [x] `python 10_manuscript_checks/11_check_references.py` green
 - [x] `python 10_manuscript_checks/12_check_language.py` green
-- [x] Structured abstract; sections in BMC order (Background, Results,
-      Discussion, Conclusions, Methods, Declarations, References); figures as
-      separate TIFFs; supplement as one Additional file.
+- [x] Structured abstract, 349 words (limit 350), no references in it.
+- [x] Sections in BMC order: Background, Results, Discussion (Limitations as
+      its closing subsection), Conclusions, Methods, Figure legends, List of
+      abbreviations, Additional files, Declarations, References.
+- [x] Figures cited as `Fig. 2a`, panel letters lower case, numbered in order
+      of first mention; legends in the manuscript, not in the graphic files.
+- [x] Supplement cited by additional-file name and delivered under that name:
+      `Additional file 1` (figures S1-S9), `Additional file 2` (tables
+      S1-S14), each listed with format, title and description in the
+      *Additional files* section.
+- [x] Vancouver references, consecutive runs as ranges (for example [14-39]).
+- [x] Declarations carry all seven required subheadings, and the use of
+      generative AI is documented in Methods as BMC requires.
+
+## Deliberate deviations from the letter of the guidelines
+
+Both are judgement calls; a reviewer or editor may ask for either to change.
+
+- **Figure legends exceed 300 words** (Figure 2 most: the sheet carries nine
+  panels). Every statistic in this paper is reported with its own detection
+  limit, and the legends are where those limits sit; cutting them to 300 words
+  would mean deleting numbers rather than prose. Table S7 in Additional file 2
+  lists every statistic with its limit as the machine-readable counterpart.
+- **Figure 2 is 230 mm tall and Figure 4 is 214 mm**, against BMC's 225 mm for
+  figure plus legend. The sheets are drawn at 174 mm width, so they will be
+  scaled slightly at BMC's 170 mm. Re-rendering was considered and not done, to
+  avoid re-flowing panels that are already measured and checked.
 """
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=None,
+                    help="where to write the package; defaults to "
+                         "submission_BMC_Genomics/ (or submission_CellPress_"
+                         "MJS/ with --journal cell) beside the repository")
     ap.add_argument("--journal", choices=["cell", "bmc"], default="bmc",
                     help="bmc = BMC Genomics (default), cell = Cell Press")
     ap.add_argument("--style", choices=sorted(CSL), default=None,
@@ -707,15 +826,35 @@ def main() -> int:
     if a.style is None:
         a.style = "vancouver" if a.journal == "bmc" else "cell"
 
+    global OUT
+    OUT = (pathlib.Path(a.out) if a.out else OUT_BY_JOURNAL[a.journal])
     OUT.mkdir(parents=True, exist_ok=True)
+    # Rebuild means rebuild: a package left over from the other journal
+    # carries the other journal's file names, and a mixed package is worse
+    # than no package. Only what this run writes may stay.
+    gesperrt = []
+    for stale in sorted(OUT.iterdir()):
+        if not stale.is_file():
+            continue
+        try:
+            stale.unlink()
+        except OSError:
+            # Word holds the docx it is converting, and a reader may have one
+            # open. A file we cannot remove is not a reason to abort a build
+            # that would overwrite it anyway; only what stays behind unwritten
+            # is worth a warning at the end.
+            gesperrt.append(stale.name)
+    if gesperrt:
+        print("  ! in use, will be overwritten rather than replaced: "
+              + ", ".join(gesperrt))
     print(f"21_build_submission.py -- package into {OUT} "
           f"(journal: {a.journal}, style: {a.style})")
     tpl = templates()
     build_manuscript(a.style, tpl["manuscript"], journal=a.journal)
     build_cover_letter(a.style, tpl["letter"])
     build_figures(journal=a.journal)
-    build_tables()
-    build_supplement(a.style, tpl["supplement"])
+    build_tables(journal=a.journal)
+    build_supplement(a.style, tpl["supplement"], journal=a.journal)
     build_open_items()
     if a.journal == "cell":
         # Cell Press only: highlights and the Key Resources Table.
@@ -723,7 +862,8 @@ def main() -> int:
         if not (OUT / "KRT.docx").exists():
             print("  ! KRT.docx missing -- run "
                   "10_manuscript_checks/20_key_resources_table.py first")
-    print("\nContents of submission/:")
+    print()
+    print("Contents of " + OUT.name + "/:")
     for p in sorted(OUT.iterdir()):
         if p.is_file():
             print(f"  {p.name:34s} {p.stat().st_size / 1024:8.0f} kB")

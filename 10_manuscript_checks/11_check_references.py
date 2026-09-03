@@ -119,6 +119,22 @@ def fits(citation: str, reference: str) -> bool:
 
 
 def main() -> int:
+    # The cross-check reads the manuscript source. The companion repository
+    # does not carry manuscript/, so there this step is skipped rather than
+    # failed: it has no data inputs, and none of the number checks in
+    # 10_check_numbers.py depend on it. The result of the last run in the
+    # authoring repository stands committed in results/reference_check.txt,
+    # which is deliberately left untouched here.
+    if not MS.exists():
+        say("11_check_references.py -- two-way cross-check")
+        say("  Skipped: manuscript/MANUSCRIPT.md is not part of this")
+        say("  checkout. The manuscript source is not distributed with the")
+        say("  companion repository, so there is no running text to")
+        say("  cross-check here. The result of the last run in the authoring")
+        say("  repository is committed in results/reference_check.txt.")
+        print("\n".join(OUTPUT))
+        return 0
+
     ms = MS.read_text(encoding="utf-8")
     citations = citations_from_text(ms)
     refs = references_from_list(ms)

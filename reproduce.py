@@ -10,7 +10,7 @@ figure, and then verifies the manuscript against what it just computed.
     python reproduce.py --list         # show the steps, run nothing
     python reproduce.py --only checks  # one group only
     python reproduce.py --from figures # from that group onward
-    python reproduce.py --package      # also rebuild submission/ (needs pandoc + Word)
+    python reproduce.py --package      # also rebuild the submission package
 
 Groups, in dependency order:
 
@@ -83,11 +83,11 @@ STEPS: list[tuple[str, str, str]] = [
     ("checks", "10_manuscript_checks/11_check_references.py",
      "references and citations, in both directions"),
     ("checks", "10_manuscript_checks/12_check_language.py",
-     "the language rules of the material"),
+     "the naming and terminology rules the project follows"),
 ]
 
 PACKAGE = ("10_manuscript_checks/21_build_submission.py",
-           "the submission package under submission/")
+           "the submission package, written beside the repository as submission_BMC_Genomics/")
 
 GROUPS = ["analysis", "figures", "checks"]
 
@@ -121,7 +121,8 @@ def main() -> int:
     ap.add_argument("--from", dest="start", choices=GROUPS,
                     help="run from this group onward")
     ap.add_argument("--package", action="store_true",
-                    help="also rebuild submission/ (needs pandoc and Word)")
+                    help="also rebuild the submission package beside the "
+                         "repository (needs pandoc and Word)")
     a = ap.parse_args()
 
     steps = list(STEPS)
